@@ -148,7 +148,7 @@
             
           </div>
             
-            <div class="px-6 py-14 md:p-14 h-screen flex flex-col justify-between hidden md:block">">
+            <div class="px-6 py-14 md:p-14 h-screen flex flex-col justify-between hidden md:block">
                 
                 <div class="md:pr-6 mb-8">
                   
