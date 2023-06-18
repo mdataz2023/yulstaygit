@@ -18,6 +18,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- <link href="<?php echo get_template_directory_uri(); ?>/dist/output.css" rel="stylesheet"> -->
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css" rel="stylesheet" />
 	<?php wp_head(); ?>
 </head>
 
