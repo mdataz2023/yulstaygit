@@ -5,7 +5,7 @@
 get_header(); ?>
 
 <div class="h-screen w-screen mr-12 flex flex-col justify-between px-6 py-14 md:p-14 text-white">
-        <video autoplay muted loop id="myVideo" class="w-full h-full object-cover">
+        <video onclick="openModal()" autoplay muted loop id="myVideo" class="w-full h-full object-cover">
             <source src="<?php echo get_template_directory_uri(); ?>/assets/img/Yulstay.mp4" type="video/mp4">
             Your browser does not support HTML5 video.
           </video>
