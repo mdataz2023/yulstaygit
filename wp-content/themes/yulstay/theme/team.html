@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/dist/output.css" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/style.css">
+</head>
+<body>
+
+    <script>
+        var modal = document.getElementById("myModal");
+        
+        var btn = document.getElementById("MD_OPEN_BTN");
+        
+        var span = document.getElementsByClassName("close")[0];
+        
+        function openModal() {
+             document.getElementById("myModal").style.display = "block";
+        }
+        
+        function cancelModal() {
+             document.getElementById("myModal").style.display = "none";
+        }
+        
+        window.onclick = function(event) {
+          if (event.target == modal) {
+            modal.style.display = "none";
+          }
+        }
+        </script>
+    <nav class="w-12 h-screen right-0 fixed bg-slate-500 z-50 flex items-center content-between">
+       
+       <div class="" onclick="openModal()">
+            
+                 <svg xmlns="http://www.w3.org/2000/svg" class="nav-icon" width="48" height="48" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                 </svg>
+            
+       </div>
+    </nav>
+
+    <div id="myModal" class="modal" style="background-color: aqua;">
+        <div class="grid grid-cols-2 w-screen mr-12">
+            <div class="p-14 h-screen flex flex-col justify-between">
+                    <div>chanfima</div>
+                    <div>chandima</div>
+            </div>
+            <div class="p-14 h-screen flex flex-col justify-between">
+                <div>ch</div>
+                <div>ban</div>
+            </div>
+        </div>
+    </div>
+    <!-- Nav ending -->
+
+
+    <div class="h-screen w-screen mr-12 grid grid-cols-2 p-14">
+        <div>Partnership</div>
+        <div class="col-scroll">
+            <h3>Mortgage Specialists</h3>
+                    <p style="font-size: 20px;">By working with our team of professional mortgage specialists, you will
+                         obtain the best mortgage rates on the market as well as top tier quality of service. Ex: Orbis,
+                         BMO, CIBC</p>
+
+                    <h3>Notary</h3>
+                    <p style="font-size: 20px;">Having built relationships with notaries for multiple years, we are able to process your
+                         file as priority while continuing to offer competitive pricing.</p>
+
+                    <h3>Mortgage Insurance</h3>
+                    <p style="font-size: 20px;">Seeing that 75% of new homeowners take mortgage insurance
+                         from the bank to cover their mortgage and knowing that this product is not necessarily the best
+                         option in the market for all of our clients, we are happy to connect you with a trusted
+                         independent mortgage insurance broker. We suggest that you take the time to also discuss your
+                         tax planning strategy to minimize the impact regarding capital gain on your estate in the event
+                         of death.</p>
+
+                    <h3>Home Insurance</h3>
+                    <p style="font-size: 20px;">Your home may be your biggest investment, and home insurance will
+                         help protect it. In fact, this home insurance is required before the date of the notary. We are
+                         pleased to work with multiple industry leaders that can offer preferential pricing.</p>
+
+                    <h3>Maintenance</h3>
+                    <p style="font-size: 20px;">If you ever need interior maintenance such as painting, surface repairs and minor
+                         cosmetic changes, we will be glad to connect you to someone that can help.</p>
+
+                    <h3>Interior design</h3>
+                    <p style="font-size: 20px;">We work with multiple interior designers for big and small projects.
+                         They will be thrilled to help bring your vision to life.</p>
+
+                    <h3>Moving services</h3>
+                    <p style="font-size: 20px;">During your next move, we invite you to use MoveMate&#39;s services,
+                         they will be our new partner for all your moving needs. MoveMate is a tech company that will
+                         now be available to help you move or have your next appliance or sofa delivered to you. With
+                         this partnership, you will receive a 10% discount by using the discount code (YULSTAY10) on
+                         their platform. MoveMate offers a simple, efficient and 100% transparent solution for all your
+                         moving needs.</p>
+                    
+               </div>
+        </div>
+    </div>
+
+  
+</body>
+</html>

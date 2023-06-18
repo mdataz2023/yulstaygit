@@ -1,0 +1,17 @@
+{
+	"home_page_title": "Vertical Portfolio Homepage",
+	"blog_page_title": "Blog",
+	"menus": {
+		"primary": "Primary"
+	},
+	"templates": {
+		"header-template": "Vertical Portfolio Main Header",
+		"footer-template": "Footer"
+	},
+	"content_plugins": {
+		"liquid_js_composer": "Liquid WP Bakery Page Builder",
+		"hub-portfolio": "Hub Portfolio",
+		"contact-form-7": "Contact Form 7",
+        "liquid-gdpr": "Liquid GDPR Box"
+	}
+}

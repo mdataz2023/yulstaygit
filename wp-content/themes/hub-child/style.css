@@ -1,0 +1,52 @@
+/*
+Theme Name: Hub Child
+Theme URI: http://hub.liquid-themes.com/
+Author: Liquid Themes
+Author URI: https://themeforest.net/user/liquidthemes
+Template: hub
+Description: Smart, Powerful and Unlimited Customizable WordPress Theme.
+Version: 1.0
+License: GNU General Public License
+License URI: license.txt
+Text Domain: hub-child
+Tags: responsive, retina, rtl-language-support, blog, portfolio, custom-colors, live-editor
+*/
+
+.navbar-fullscreen .main-nav>li>a{
+	font-size: 42px !important;
+}
+
+.right-icon{
+	margin-top: 8px;
+}
+
+.fh{
+	height:100vh;
+}
+.fw{
+	width:100vh;
+}
+
+.non-scrollable{
+	position: fixed !important;
+}
+
+.bg-none{
+	background: none !important;
+}
+
+.logo-default{
+	height: 40px;
+}
+
+.home-logo{
+	width: 260px;
+}
+
+.nav-width{
+	    width: 60px !important;	
+}
+
+.fullheight{
+	height:100%;
+}

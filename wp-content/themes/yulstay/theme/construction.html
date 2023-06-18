@@ -1,0 +1,123 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/dist/output.css" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/style.css">
+</head>
+<body>
+
+    <script>
+        var modal = document.getElementById("myModal");
+        
+        var btn = document.getElementById("MD_OPEN_BTN");
+        
+        var span = document.getElementsByClassName("close")[0];
+        
+        function openModal() {
+             document.getElementById("myModal").style.display = "block";
+        }
+        
+        function cancelModal() {
+             document.getElementById("myModal").style.display = "none";
+        }
+        
+        window.onclick = function(event) {
+          if (event.target == modal) {
+            modal.style.display = "none";
+          }
+        }
+        </script>
+    <nav class="w-12 h-screen right-0 fixed bg-slate-500 z-50 flex items-center content-between">
+       
+       <div class="" onclick="openModal()">
+            
+                 <svg xmlns="http://www.w3.org/2000/svg" class="nav-icon" width="48" height="48" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                 </svg>
+            
+       </div>
+    </nav>
+
+    <div id="myModal" class="modal" style="background-color: aqua;">
+        <div class="grid grid-cols-2 w-screen mr-12">
+            <div class="p-14 h-screen flex flex-col justify-between">
+                    <div>chanfima</div>
+                    <div>chandima</div>
+            </div>
+            <div class="p-14 h-screen flex flex-col justify-between">
+                <div>ch</div>
+                <div>ban</div>
+            </div>
+        </div>
+    </div>
+    <!-- Nav ending -->
+
+
+    <div class="h-screen w-screen mr-12 grid grid-cols-2 p-14 gap-6">
+          <div>
+               <div>Partnership</div>
+               <div>
+                    <h1>Through our relationship in the industry and our volume of transactions, we
+                         are happy to have access to many new construction projects. This allows us to offer many benefits to any of our
+                         clients looking to purchase or invest in new constructions.</h1>
+                    <img src="./assets/img/300-rue-du-saint-sacrement-24-1.webp" alt="">
+               </div>
+          </div>
+          <div class="col-scroll">
+               <div style="padding-top: 80px;" class="text-black">
+                    <div class="d-flex flex-row mb-3 text-white mt-4 gap-4 text-uppercase text-black">
+                         <div class=""><a href style="text-decoration: underline; color: white;" !important> Development</a></div>
+                         <div class=""><a href>Properties</a></div>
+                    </div>
+
+                    <div class="text-black">
+                         <h1>Through our relationship in the industry and our volume of transactions, we
+                              are happy to have access to many new construction projects. This allows us to offer many benefits to any of our
+                              clients looking to purchase or invest in new constructions.</h1>
+                    </div>
+
+                    <div class="mt-5 text-secondary">
+                         <div onmouseover="hover(1);" onmouseout="hoverOut()">
+                              <a href><div class=""><h1>1500 De Maisonneuve</div></h1></a>
+                              <div class="text-uppercase">montreal,ca</div>
+                         </div>
+                              
+                         <div class="mt-2" onmouseover="hover(2);" onmouseout="hoverOut()">
+                              
+                              <a href><div class="fs-4"><h1>44 Saint-Antoine</div></a></h1>
+                              <div class="text-uppercase">montreal,ca</div>
+                              
+                         </div>
+
+                         <div class="mt-2" onmouseover="hover(3);" onmouseout="hoverOut()">
+                              
+                              <a href><div class="fs-4"><h1>1449-1455 Sainte-Catherine West</div></a></h1>
+                              <div class="text-uppercase">montreal,ca</div>
+                              
+                         </div>
+
+                         <div class="mt-2" onmouseover="hover(4);" onmouseout="hoverOut()">
+                              
+                              <a href><div class="fs-4"><h1>1300 Sherbrooke West</div></a></h1>
+                              <div class="text-uppercase">montreal,ca</div>
+                              
+                         </div>
+
+                         <div class="mt-2" onmouseover="hover(5);" onmouseout="hoverOut()">
+                              
+                              <a href><div class="fs-4"><h1>340 St-Sacrement</div></a></h1>
+                              <div class="text-uppercase">montreal,ca</div>
+                              
+                         </div>
+                    </div>
+               </div>
+                    
+               </div>
+          </div>
+    </div>
+
+  
+</body>
+</html>

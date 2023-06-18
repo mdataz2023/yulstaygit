@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/dist/output.css" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/style.css">
+</head>
+<body>
+
+    <script>
+        var modal = document.getElementById("myModal");
+        
+        var btn = document.getElementById("MD_OPEN_BTN");
+        
+        var span = document.getElementsByClassName("close")[0];
+        
+        function openModal() {
+             document.getElementById("myModal").style.display = "block";
+        }
+        
+        function cancelModal() {
+             document.getElementById("myModal").style.display = "none";
+        }
+        
+        window.onclick = function(event) {
+          if (event.target == modal) {
+            modal.style.display = "none";
+          }
+        }
+        </script>
+    <nav class="w-12 h-screen right-0 fixed bg-slate-500 z-50 flex items-center content-between">
+       
+       <div class="" onclick="openModal()">
+            
+                 <svg xmlns="http://www.w3.org/2000/svg" class="nav-icon" width="48" height="48" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                 </svg>
+            
+       </div>
+    </nav>
+
+    <div id="myModal" class="modal" style="background-color: aqua;">
+        <div class="grid grid-cols-2 w-screen mr-12">
+            <div class="p-14 h-screen flex flex-col justify-between">
+                    <div>chanfima</div>
+                    <div>chandima</div>
+            </div>
+            <div class="p-14 h-screen flex flex-col justify-between">
+                <div>ch</div>
+                <div>ban</div>
+            </div>
+        </div>
+    </div>
+    <!-- Nav ending -->
+
+
+    <div class="h-screen w-screen mr-12 grid grid-cols-12 p-14 gap-4">
+     <div class="col-span-5">
+          Partnership
+     </div>
+     <div class="col-span-1">
+          
+     </div>
+     <div class="col-span-6 col-scroll">
+                    <img src="./assets/img/l.webp" alt="">
+                    <img src="./assets/img/l.webp" alt="">
+                    <img src="./assets/img/l.webp" alt="">
+                    <img src="./assets/img/l.webp" alt="">
+                    <img src="./assets/img/l.webp" alt="">
+          </div>
+     </div>
+    </div>
+
+  
+</body>
+</html>
