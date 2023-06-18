@@ -2088,6 +2088,10 @@ body {
     height: 100vh;
   }
 
+  .md\:h-full {
+    height: 100%;
+  }
+
   .md\:w-12 {
     width: 3rem;
   }
