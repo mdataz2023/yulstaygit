@@ -21,7 +21,7 @@ get_header(); ?>
         
         <div class="flex justify-between">
             <div>
-                <a href="<?php bloginfo('url'); ?>/join-our-team" class="font-bold">Join our Team Asanka</a>
+                <a href="<?php bloginfo('url'); ?>/join-our-team" class="font-bold">Join our Team</a>
             </div>
             <div class="md:pr-6">
                 <a href="<?php bloginfo('url'); ?>/join-our-team" class="font-bold">Book a Consutation</a>
