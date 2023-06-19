@@ -152,8 +152,11 @@
             
           </div>
             
-            <div class="px-6 py-14 md:p-14 h-screen flex self-end justify-end">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/1.png" class="w-44 pb-4" alt="">
+            <div class="px-6 py-14 md:p-14 h-screen flex justify-end">
+              <div>
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/1.png" class="w-44 pb-4" alt="">
+              </div>
+              
             </div>
         </div>
     </div>
