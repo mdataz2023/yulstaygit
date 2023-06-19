@@ -131,7 +131,7 @@ $multi_residential_image_ten = get_field('multi_residential_image_ten');
         </svg>
     </div>
 
-    <div class="col-span-1 md:col-span-6 col-scroll" id="idCol6" style="text-align: -webkit-center;">
+    <div class="col-span-1 md:col-span-6 col-scroll flex self-center" id="idCol6" style="text-align: -webkit-center;">
     <div id="gallery" class="relative w-full" data-carousel="slide">
         <!-- Carousel wrapper -->
         <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
