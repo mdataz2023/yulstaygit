@@ -10,7 +10,7 @@ get_header(); ?>
 
 
 
-<div class="h-screen w-screen mr-12 grid grid-cols-1 md:grid-cols-2 p-14 gap-6 bg-[#1a1515]">
+<div class="h-screen w-screen mr-12 grid grid-cols-1 md:grid-cols-2 p-14 gap-6 bg-[#645656]">
 
     <div class="md:grid-cols-6">
 

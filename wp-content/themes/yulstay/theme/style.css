@@ -1640,6 +1640,11 @@ body {
   background-color: rgb(255 255 255 / 0.3);
 }
 
+.bg-\[\#645656\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(100 86 86 / var(--tw-bg-opacity));
+}
+
 .bg-cover {
   background-size: cover;
 }
