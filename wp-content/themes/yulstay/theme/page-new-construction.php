@@ -31,7 +31,9 @@ get_header(); ?>
 			</div>
         </div>
         </div>
-
+        <div class="md:block hidden">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/10.png" class="w-32 pb-4" alt="">
+          </div>
         <div>
 
 
