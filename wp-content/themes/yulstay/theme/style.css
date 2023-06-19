@@ -1540,6 +1540,10 @@ body {
   margin-bottom: calc(1rem * var(--tw-space-y-reverse));
 }
 
+.self-center {
+  align-self: center;
+}
+
 .overflow-hidden {
   overflow: hidden;
 }
@@ -2080,16 +2084,12 @@ body {
     display: none;
   }
 
-  .md\:h-96 {
-    height: 24rem;
+  .md\:h-\[640px\] {
+    height: 640px;
   }
 
   .md\:h-screen {
     height: 100vh;
-  }
-
-  .md\:h-full {
-    height: 100%;
   }
 
   .md\:w-12 {
