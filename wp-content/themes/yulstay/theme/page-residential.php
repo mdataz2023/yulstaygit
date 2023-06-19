@@ -15,7 +15,7 @@ get_header(); ?>
     <div>
 
         <div>
-        <div class="flex gap-3 mb-3">
+        <div class="flex gap-3 mb-3 mt-24">
 				<div>
 					<a href="<?php bloginfo('url'); ?>/home" class="text-gray-400 hover:text-gray-800 font-bold">Home</a>
 				</div>
@@ -31,6 +31,9 @@ get_header(); ?>
 			</div>
         </div>
         </div>
+        <div class="md:block hidden">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/4.png" class="w-32 pb-4" alt="">
+          </div>
 
         <?php
 

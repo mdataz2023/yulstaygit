@@ -57,6 +57,7 @@
         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.png" class="h-11" alt="">
         </a>
        </div>
+
        <div class="" >
             <img id="logoIcon" onclick="openModal()" class="w-12 h-auto" src="<?php echo get_template_directory_uri(); ?>/assets/img/12.png" alt="">
             <svg id="xIcon" onclick="cancelModal()" style="display:none;" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
@@ -138,6 +139,7 @@
                 
                 
           </div>
+          
                     <div>
                     <div>
                     <h2 class="text-xl">SUBSCRIBE TO OUR NEWSLETTER</h2>
@@ -153,7 +155,9 @@
             <div class="px-6 py-14 md:p-14 h-screen flex flex-col justify-between hidden md:block">
                 
                 <div class="md:pr-6 mb-8">
-                  
+                <div class="md:block hidden">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/1.png" class="w-32 pb-4" alt="">
+       </div>
                 </div>
             </div>
         </div>

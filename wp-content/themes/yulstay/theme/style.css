@@ -1338,6 +1338,10 @@ body {
   margin-top: auto;
 }
 
+.mt-24 {
+  margin-top: 6rem;
+}
+
 .block {
   display: block;
 }
