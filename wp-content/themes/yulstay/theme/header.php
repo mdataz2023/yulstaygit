@@ -152,12 +152,9 @@
             
           </div>
             
-            <div class="px-6 py-14 md:p-14 h-screen flex flex-col justify-between hidden md:block">
-                
-                <div class="md:pr-6 mb-8">
+            <div class="px-6 py-14 md:p-14 h-screen flex flex-col self-end justify-end hidden md:block">
                 <div class="md:block hidden">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/1.png" class="w-32 pb-4" alt="">
-       </div>
+                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/1.png" class="w-32 pb-4" alt="">
                 </div>
             </div>
         </div>

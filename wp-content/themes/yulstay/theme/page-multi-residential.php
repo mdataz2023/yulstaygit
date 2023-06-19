@@ -15,7 +15,7 @@ get_header(); ?>
     <div class="md:block hidden">
 
         <div>
-        <div class="flex gap-3 mb-3 mt-24">
+        <div class="flex gap-3 mb-3 mt-14">
 				<div>
 					<a href="<?php bloginfo('url'); ?>/home" class="text-gray-400 hover:text-gray-800 font-bold">Home</a>
 				</div>
