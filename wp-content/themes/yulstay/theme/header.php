@@ -59,7 +59,7 @@
        </div>
 
        <div class="" >
-            <img id="logoIcon" onclick="openModal()" class="w-12 h-auto" src="<?php echo get_template_directory_uri(); ?>/assets/img/12.png" alt="">
+            <img id="logoIcon" onclick="openModal()" class="w-12 h-auto" src="<?php echo get_template_directory_uri(); ?>/assets/img/menu_icon.png" alt="">
             <svg id="xIcon" onclick="cancelModal()" style="display:none;" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
             class="bi bi-x-lg transitionCS7 mt-auto w-12 h-auto" viewBox="0 0 16 16">
             <path
@@ -154,7 +154,7 @@
             
             <div class="px-6 py-14 md:p-14 h-screen flex justify-end items-end">
               <div>
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/1.png" class="w-44 pb-4" alt="">
+                <a href="<?php bloginfo('url'); ?>/home"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/1.png" class="w-44 pb-4" alt=""></a>
               </div>
               
             </div>
