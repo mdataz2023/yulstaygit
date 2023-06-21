@@ -26,7 +26,7 @@ $team_page_description = get_field('team_page_description');
 			</div>
 			</div>
 			<div class="grid grid-cols-3 gap-4">
-			<?php $the_query = new WP_Query( array('post_type' =>'team','posts_per_page' => '6',  'post__not_in'   => array( $id),) );?>
+			<?php $the_query = new WP_Query( array('post_type' =>'team','posts_per_page' => '9',  'post__not_in'   => array( $id),) );?>
 							     <?php if ( have_posts())   : while ( $the_query->have_posts() ) : $the_query->the_post();?>
 							  
 									   <?php

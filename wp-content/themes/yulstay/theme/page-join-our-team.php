@@ -142,8 +142,8 @@ $email = get_field('email');
     </div>
 
   </div>
-
-  <form action="#" method="POST" class="px-6 pb-24 pt-20 sm:pb-32 lg:px-8">
+<div class="md:overflow-y-scroll hide-scroll-bar">
+  <form action="#" method="POST" class="px-6 pb-24 pt-20 lg:px-8">
 
     <div class="mx-auto md:mr-8">
 
@@ -198,6 +198,18 @@ $email = get_field('email');
         </div>
 
         <div class="sm:col-span-2">
+        <label for="countries" class="block mb-2 text-sm font-medium text-gray-900 ">Type</label>
+        <select id="countries" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:focus:ring-blue-500 dark:focus:border-blue-500">
+        <option selected>Choose a Position</option>
+        <option value="US">New brokers</option>
+        <option value="CA">Experienced Brokers</option>
+        <option value="FR">Rental expert</option>
+        <option value="CA">Property Manager</option>
+        <option value="FR">Administrative</option>
+        </select>
+        </div>
+
+        <div class="sm:col-span-2">
 
           <label for="message" class="block text-sm font-semibold leading-6 text-gray-900">Message</label>
 
@@ -220,6 +232,7 @@ $email = get_field('email');
     </div>
 
   </form>
+  </div>
 
 </div>
 

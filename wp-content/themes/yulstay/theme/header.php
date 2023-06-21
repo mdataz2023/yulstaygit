@@ -74,40 +74,40 @@
             <div class="text-2xl uppercase">
               <div class="dropdown-container grid grid-cols-2">
                 <div>
-                  <a href="<?php bloginfo('url'); ?>/residential" class="text-gray-700 text-3xl hover:font-bold">Residential</a>
+                  <a href="<?php bloginfo('url'); ?>/residential-info" class="text-gray-700 text-3xl hover:font-bold">Residential</a>
                 </div>
                 <div>
                   <div class="ml-4">
                     <a href="<?php bloginfo('url'); ?>/residential" class="text-gray-600 link link-underline link-underline-black hover:font-bold">Properties</a>
                   </div>
                   <div class="ml-4">
-                    <a href="<?php bloginfo('url'); ?>/the-team" class="text-gray-600 link link-underline link-underline-black hover:font-bold">Team</a>
+                    <a href="<?php bloginfo('url'); ?>/residential-team" class="text-gray-600 link link-underline link-underline-black hover:font-bold">Team</a>
                   </div>
                 </div>
                 </div>
                 <div class="dropdown-container grid grid-cols-2">
                 <div class="mt-2">
-                  <a href="<?php bloginfo('url'); ?>/multi-residential" class="text-gray-700 text-3xl hover:font-bold">Multi-Residential</a>
+                  <a href="<?php bloginfo('url'); ?>/multi-residential-info" class="text-gray-700 text-3xl hover:font-bold">Multi-Residential</a>
                 </div>
                 <div>
                 <div class="ml-4">
                   <a href="<?php bloginfo('url'); ?>/multi-residential" class="text-gray-600 link link-underline link-underline-black hover:font-bold">Properties</a>
                 </div>
                 <div class="ml-4">
-                  <a href="<?php bloginfo('url'); ?>/the-team" class="text-gray-600 link link-underline link-underline-black hover:font-bold">Team</a>
+                  <a href="<?php bloginfo('url'); ?>/multi-residential-team" class="text-gray-600 link link-underline link-underline-black hover:font-bold">Team</a>
                 </div>
                 </div>
                 </div>
                 <div class="dropdown-container grid grid-cols-2">
                   <div class="mt-2">
-                    <a href="<?php bloginfo('url'); ?>/rental-property" class="text-gray-700 text-3xl hover:font-bold">Rental + Property</a>
+                    <a href="<?php bloginfo('url'); ?>/rental-property-info" class="text-gray-700 text-3xl hover:font-bold">Rental + Property</a>
                   </div>
                   <div>
                     <div class="ml-4">
                       <a href="<?php bloginfo('url'); ?>/rental-property" class="text-gray-600 link link-underline link-underline-black hover:font-bold">Properties</a>
                     </div>
                     <div class="ml-4">
-                      <a href="<?php bloginfo('url'); ?>/the-team" class="text-gray-600 link link-underline link-underline-black hover:font-bold">Team</a>
+                      <a href="<?php bloginfo('url'); ?>/rental-property-team" class="text-gray-600 link link-underline link-underline-black hover:font-bold">Team</a>
                     </div>
                   </div>
                 </div>
