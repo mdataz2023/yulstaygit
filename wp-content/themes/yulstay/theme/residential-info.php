@@ -10,7 +10,7 @@ get_header(); ?>
 
 <div class="h-screen w-screen mr-12 grid grid-cols-1 md:grid-cols-2 p-14 gap-6">
     <div>
-    <div>
+
         <div class="flex gap-3 mb-3">
 				<div>
 					<a href="<?php bloginfo('url'); ?>/home" class="text-gray-400 hover:text-gray-800 font-bold">Home</a>
@@ -23,14 +23,11 @@ get_header(); ?>
 						</svg>
 					</div>
 				</div>
-				<div class="font-medium"><?php the_title(); ?>
-			</div>
+				<div class="font-medium"><?php the_title(); ?></div>
         </div>
-        </div>
-        <div class="md:block hidden">
-        <a href="<?php bloginfo('url'); ?>/home"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/10.png" class="w-32 pb-4" alt=""></a>
+            <div class="md:block hidden">
+            <a href="<?php bloginfo('url'); ?>/home"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/10.png" class="w-32 pb-4" alt=""></a>
           </div>
-        <div>
         
 <div id="default-carousel" class="relative w-full" data-carousel="slide">
     <!-- Carousel wrapper -->
