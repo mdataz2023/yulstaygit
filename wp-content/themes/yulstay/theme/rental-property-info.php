@@ -2,7 +2,7 @@
 
 /*
 
-	Template Name: Multi Residential Info
+	Template Name: Rental + Property Info
 
 */
 
