@@ -81,14 +81,14 @@ get_header(); ?>
 <div class="mb-4 border-b border-gray-200 dark:border-gray-700">
     <ul class="flex flex-wrap -mb-px text-sm font-medium text-center" id="myTab" data-tabs-toggle="#myTabContent" role="tablist">
         <li class="mr-2" role="presentation">
-            <button class="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="dashboard-tab" data-tabs-target="#dashboard" type="button" role="tab" aria-controls="dashboard" aria-selected="false">SALE</button>
+            <button class="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="dashboard-tab" data-tabs-target="#dashboard" type="button" role="tab" aria-controls="dashboard" aria-selected="false">Rentel</button>
         </li>
         <li class="mr-2" role="presentation">
-            <button class="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="settings-tab" data-tabs-target="#settings" type="button" role="tab" aria-controls="settings" aria-selected="false">PURCHASE</button>
+            <button class="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="settings-tab" data-tabs-target="#settings" type="button" role="tab" aria-controls="settings" aria-selected="false">Management</button>
         </li>
-        <li role="presentation">
+        <!-- <li role="presentation">
             <button class="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="contacts-tab" data-tabs-target="#contacts" type="button" role="tab" aria-controls="contacts" aria-selected="false">INVESTMENT</button>
-        </li>
+        </li> -->
     </ul>
 </div>
 <div id="myTabContent">
@@ -97,6 +97,8 @@ get_header(); ?>
         <h3 class="text-3xl text-black pt-4 font-bold ">Our mission</h3>
         <p class="text-xl text-gray-900 ">This is some placeholder content the Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling.</p>
         <h3 class="text-3xl font-bold pt-4 text-black ">Peace of mind</h3>
+        <p class="text-xl text-gray-900 ">This is some placeholder content the Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling.</p>
+        <h3 class="text-3xl font-bold pt-4 text-black ">Transparency</h3>
         <p class="text-xl text-gray-900 ">This is some placeholder content the Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling.</p>
         <h3 class="text-3xl font-bold pt-4 text-black ">Transparency</h3>
         <p class="text-xl text-gray-900 ">This is some placeholder content the Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling.</p>
@@ -113,7 +115,7 @@ get_header(); ?>
         <h3 class="text-3xl font-bold pt-4 text-black ">Financial Incentive</h3>
         <p class="text-xl text-gray-900 ">This is some placeholder content the Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling.</p>
     </div>
-    <div class="hidden p-4 rounded-lg" id="contacts" role="tabpanel" aria-labelledby="contacts-tab">
+    <!-- <div class="hidden p-4 rounded-lg" id="contacts" role="tabpanel" aria-labelledby="contacts-tab">
         <p class="text-xl text-gray-900 ">This is some placeholder content the Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling.</p>
         <h3 class="text-3xl text-black pt-4 font-bold ">Our mission</h3>
         <p class="text-xl text-gray-900 ">This is some placeholder content the Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling.</p>
@@ -121,7 +123,9 @@ get_header(); ?>
         <p class="text-xl text-gray-900 ">This is some placeholder content the Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling.</p>
         <h3 class="text-3xl font-bold pt-4 text-black ">Transparency</h3>
         <p class="text-xl text-gray-900 ">This is some placeholder content the Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling.</p>
-    </div>
+        <h3 class="text-3xl font-bold pt-4 text-black ">Transparency</h3>
+        <p class="text-xl text-gray-900 ">This is some placeholder content the Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling.</p>
+    </div> -->
 </div>
 
     </div>
