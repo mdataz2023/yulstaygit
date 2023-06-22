@@ -58,7 +58,7 @@ $multi_residential_info_right_section_purchase_description_four = get_field('mul
 				<div class="font-medium"><?php the_title(); ?></div>
         </div>
             <div class="md:block hidden">
-            <a href="<?php bloginfo('url'); ?>/home"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/10.png <?php echo $multi_residential_info_left_section_company_logo; ?>" class="w-32 pb-4" alt=""></a>
+            <a href="<?php bloginfo('url'); ?>/home"><img src="<?php echo $multi_residential_info_left_section_company_logo; ?>" class="w-32 pb-4" alt=""></a>
           </div>
         
 <div id="default-carousel" class="relative w-full" data-carousel="slide">
