@@ -26,32 +26,48 @@ $team_page_description = get_field('team_page_description');
 			</div>
 			</div>
 			<div class="grid grid-cols-3 gap-4">
-			<?php $the_query = new WP_Query( array('post_type' =>'team','posts_per_page' => '6',  'post__not_in'   => array( $id),) );?>
-							     <?php if ( have_posts())   : while ( $the_query->have_posts() ) : $the_query->the_post();?>
-							  
-									   <?php
-										$thumbnail_id = get_post_thumbnail_id(); 
-										$thumbnail_url = wp_get_attachment_image_src( $thumbnail_id, 'thumbnail-size', true );
-										$thumbnail_meta = get_post_meta( $thumbnail_id, '_wp_attachment_image_alt', true); 
+    <?php
+    $ids_to_display = array(114, 116, 119, 121, 123, 426); // IDs of the posts you want to display
 
-                    $categories = get_the_category();
-										
-										?>
-				<div>
-				<?php 
-if ( has_post_thumbnail() ) {
-    $attachment_image = wp_get_attachment_url( get_post_thumbnail_id() );
-    //echo '<link rel="preload" as="image" href="' . esc_attr( $attachment_image ) . '">';  
-?>
-					<img src="<?php echo $attachment_image; ?>" alt="">
-					<?php } ?>
-					<div class="text-center">
-						<a href="<?php the_permalink(); ?>"><h3 class="text-2xl font-bold"><?php the_title(); ?></h3></a>
-						<p><?php the_excerpt(); ?></p>
-					</div>
-				</div>
-				<?php endwhile; endif; ?>
-			</div>
+    $the_query = new WP_Query(array(
+        'post_type' => 'team',
+        'post__in' => $ids_to_display,
+        'posts_per_page' => count($ids_to_display),
+    ));
+
+    if ($the_query->have_posts()) {
+        while ($the_query->have_posts()) {
+            $the_query->the_post();
+
+            $thumbnail_id = get_post_thumbnail_id();
+            $thumbnail_url = wp_get_attachment_image_src($thumbnail_id, 'thumbnail-size', true);
+            $thumbnail_meta = get_post_meta($thumbnail_id, '_wp_attachment_image_alt', true);
+
+            $categories = get_the_category();
+            ?>
+            <div>
+                <?php
+                if (has_post_thumbnail()) {
+                    $attachment_image = wp_get_attachment_url($thumbnail_id);
+                    //echo '<link rel="preload" as="image" href="' . esc_attr($attachment_image) . '">';
+                ?>
+                    <img src="<?php echo $attachment_image; ?>" alt="">
+                <?php } ?>
+                <div class="text-center">
+                    <a href="<?php the_permalink(); ?>"><h3 class="text-2xl font-bold"><?php the_title(); ?></h3></a>
+                    <p><?php the_excerpt(); ?></p>
+                </div>
+            </div>
+    <?php
+        }
+    } else {
+        echo 'No posts found.';
+    }
+
+    wp_reset_postdata();
+    ?>
+</div>
+
 		</div>
         <div class="md:overflow-y-scroll hide-scroll-bar">
 
