@@ -39,10 +39,10 @@ $team_page_description = get_field('team_page_description');
 										?>
 				<div>
 				<?php 
-if ( has_post_thumbnail() ) {
-    $attachment_image = wp_get_attachment_url( get_post_thumbnail_id() );
-    //echo '<link rel="preload" as="image" href="' . esc_attr( $attachment_image ) . '">';  
-?>
+				if ( has_post_thumbnail() ) {
+					$attachment_image = wp_get_attachment_url( get_post_thumbnail_id() );
+					//echo '<link rel="preload" as="image" href="' . esc_attr( $attachment_image ) . '">';  
+				?>
 					<img src="<?php echo $attachment_image; ?>" alt="">
 					<?php } ?>
 					<div class="text-center">
