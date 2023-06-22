@@ -6,7 +6,37 @@
 
 */
 
-get_header(); ?>
+get_header(); 
+
+$rental_property_info_left_section_company_logo = get_field('rental_property_info_left_section_company_logo');
+$rental_property_info_left_section_carousel_image_one = get_field('rental_property_info_left_section_carousel_image_one');
+$rental_property_info_left_section_carousel_image_two = get_field('rental_property_info_left_section_carousel_image_two');
+$rental_property_info_left_section_carousel_image_three = get_field('rental_property_info_left_section_carousel_image_three');
+$rental_property_info_left_section_carousel_image_four = get_field('rental_property_info_left_section_carousel_image_four');
+$rental_property_info_left_section_carousel_image_five = get_field('rental_property_info_left_section_carousel_image_five');
+
+$rental_property_info_right_section_rental_paragraph_one = get_field('rental_property_info_right_section_rental_paragraph_one');
+$rental_property_info_right_section_rental_title_one = get_field('rental_property_info_right_section_rental_title_one');
+$rental_property_info_right_section_rental_description_one = get_field('rental_property_info_right_section_rental_description_one');
+$rental_property_info_right_section_rental_title_two = get_field('rental_property_info_right_section_rental_title_two');
+$rental_property_info_right_section_rental_description_two = get_field('rental_property_info_right_section_rental_description_two');
+$rental_property_info_right_section_rental_title_three = get_field('rental_property_info_right_section_rental_title_three');
+$rental_property_info_right_section_rental_description_three = get_field('rental_property_info_right_section_rental_description_three');
+$rental_property_info_right_section_rental_title_four = get_field('rental_property_info_right_section_rental_title_four');
+$rental_property_info_right_section_rental_description_four = get_field('rental_property_info_right_section_rental_description_four');
+
+$multi_residential_info_right_section_purchase_paragraph_one = get_field('multi_residential_info_right_section_purchase_paragraph_one');
+$multi_residential_info_right_section_purchase_title_one = get_field('multi_residential_info_right_section_purchase_title_one');
+$multi_residential_info_right_section_purchase_description_one = get_field('multi_residential_info_right_section_purchase_description_one');
+$multi_residential_info_right_section_purchase_title_two = get_field('multi_residential_info_right_section_purchase_title_two');
+$multi_residential_info_right_section_purchase_description_two = get_field('multi_residential_info_right_section_purchase_description_two');
+$multi_residential_info_right_section_purchase_title_three = get_field('multi_residential_info_right_section_purchase_title_three');
+$multi_residential_info_right_section_purchase_description_three = get_field('multi_residential_info_right_section_purchase_description_three');
+$multi_residential_info_right_section_purchase_title_four = get_field('multi_residential_info_right_section_purchase_title_four');
+$multi_residential_info_right_section_purchase_description_four = get_field('multi_residential_info_right_section_purchase_description_four');
+
+
+?>
 
 <div class="h-screen w-screen mr-12 grid grid-cols-1 md:grid-cols-2 p-14 gap-6">
     <div>
