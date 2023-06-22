@@ -25,15 +25,15 @@ $rental_property_info_right_section_rental_description_three = get_field('rental
 $rental_property_info_right_section_rental_title_four = get_field('rental_property_info_right_section_rental_title_four');
 $rental_property_info_right_section_rental_description_four = get_field('rental_property_info_right_section_rental_description_four');
 
-$multi_residential_info_right_section_purchase_paragraph_one = get_field('multi_residential_info_right_section_purchase_paragraph_one');
-$multi_residential_info_right_section_purchase_title_one = get_field('multi_residential_info_right_section_purchase_title_one');
-$multi_residential_info_right_section_purchase_description_one = get_field('multi_residential_info_right_section_purchase_description_one');
-$multi_residential_info_right_section_purchase_title_two = get_field('multi_residential_info_right_section_purchase_title_two');
-$multi_residential_info_right_section_purchase_description_two = get_field('multi_residential_info_right_section_purchase_description_two');
-$multi_residential_info_right_section_purchase_title_three = get_field('multi_residential_info_right_section_purchase_title_three');
-$multi_residential_info_right_section_purchase_description_three = get_field('multi_residential_info_right_section_purchase_description_three');
-$multi_residential_info_right_section_purchase_title_four = get_field('multi_residential_info_right_section_purchase_title_four');
-$multi_residential_info_right_section_purchase_description_four = get_field('multi_residential_info_right_section_purchase_description_four');
+$rental_property_info_right_section_management_paragraph_one = get_field('rental_property_info_right_section_management_paragraph_one');
+$rental_property_info_right_section_management_title_one = get_field('rental_property_info_right_section_management_title_one');
+$rental_property_info_right_section_management_description_one = get_field('rental_property_info_right_section_management_description_one');
+$rental_property_info_right_section_management_title_two = get_field('rental_property_info_right_section_management_title_two');
+$rental_property_info_right_section_management_description_two = get_field('rental_property_info_right_section_management_description_two');
+$rental_property_info_right_section_management_title_three = get_field('rental_property_info_right_section_management_title_three');
+$rental_property_info_right_section_management_description_three = get_field('rental_property_info_right_section_management_description_three');
+$rental_property_info_right_section_management_title_four = get_field('rental_property_info_right_section_management_title_four');
+$rental_property_info_right_section_management_description_four = get_field('rental_property_info_right_section_management_description_four');
 
 
 ?>
@@ -55,7 +55,7 @@ $multi_residential_info_right_section_purchase_description_four = get_field('mul
 				<div class="font-medium"><?php the_title(); ?></div>
         </div>
             <div class="md:block hidden">
-            <a href="<?php bloginfo('url'); ?>/home"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/10.png" class="w-32 pb-4" alt=""></a>
+            <a href="<?php bloginfo('url'); ?>/home"><img src="<?php echo $rental_property_info_left_section_company_logo; ?>" class="w-32 pb-4" alt=""></a>
           </div>
         
 <div id="default-carousel" class="relative w-full" data-carousel="slide">
@@ -63,23 +63,23 @@ $multi_residential_info_right_section_purchase_description_four = get_field('mul
     <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
          <!-- Item 1 -->
         <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="https://mdataz.com/yulstaygit/wp-content/uploads/2023/06/4-4.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            <img src="<?php echo $rental_property_info_left_section_carousel_image_one; ?>" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
         </div>
         <!-- Item 2 -->
         <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="https://mdataz.com/yulstaygit/wp-content/uploads/2023/06/3-4.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            <img src="<?php echo $rental_property_info_left_section_carousel_image_two; ?>" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
         </div>
         <!-- Item 3 -->
         <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="https://mdataz.com/yulstaygit/wp-content/uploads/2023/06/2-4.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            <img src="<?php echo $rental_property_info_left_section_carousel_image_three; ?>" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
         </div>
         <!-- Item 4 -->
         <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="https://mdataz.com/yulstaygit/wp-content/uploads/2023/06/2-4.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            <img src="<?php echo $rental_property_info_left_section_carousel_image_four; ?>" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
         </div>
         <!-- Item 5 -->
         <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="https://mdataz.com/yulstaygit/wp-content/uploads/2023/06/1-4.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            <img src="<?php echo $rental_property_info_left_section_carousel_image_five; ?>" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
         </div>
     </div>
     <!-- Slider indicators -->
@@ -123,27 +123,27 @@ $multi_residential_info_right_section_purchase_description_four = get_field('mul
 </div>
 <div id="myTabContent">
     <div class="hidden p-4 rounded-lg" id="dashboard" role="tabpanel" aria-labelledby="dashboard-tab">
-        <p class="text-xl text-gray-900 ">This is some placeholder content the Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling.</p>
-        <h3 class="text-3xl text-black pt-4 font-bold ">Our mission</h3>
-        <p class="text-xl text-gray-900 ">This is some placeholder content the Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling.</p>
-        <h3 class="text-3xl font-bold pt-4 text-black ">Peace of mind</h3>
-        <p class="text-xl text-gray-900 ">This is some placeholder content the Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling.</p>
-        <h3 class="text-3xl font-bold pt-4 text-black ">Transparency</h3>
-        <p class="text-xl text-gray-900 ">This is some placeholder content the Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling.</p>
-        <h3 class="text-3xl font-bold pt-4 text-black ">Transparency</h3>
-        <p class="text-xl text-gray-900 ">This is some placeholder content the Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling.</p>
+        <p class="text-xl text-gray-900 "><?php echo $rental_property_info_right_section_rental_paragraph_one; ?></p>
+        <h3 class="text-3xl text-black pt-4 font-bold "><?php echo $rental_property_info_right_section_rental_title_one; ?></h3>
+        <p class="text-xl text-gray-900 "><?php echo $rental_property_info_right_section_rental_description_one; ?></p>
+        <h3 class="text-3xl font-bold pt-4 text-black "><?php echo $rental_property_info_right_section_rental_title_two; ?></h3>
+        <p class="text-xl text-gray-900 "><?php echo $rental_property_info_right_section_rental_description_two; ?></p>
+        <h3 class="text-3xl font-bold pt-4 text-black "><?php echo $rental_property_info_right_section_rental_title_three; ?></h3>
+        <p class="text-xl text-gray-900 "><?php echo $rental_property_info_right_section_rental_description_three; ?></p>
+        <h3 class="text-3xl font-bold pt-4 text-black "><?php echo $rental_property_info_right_section_rental_title_four; ?></h3>
+        <p class="text-xl text-gray-900 "><?php echo $rental_property_info_right_section_rental_description_four; ?></p>
 
     </div>
     <div class="hidden p-4 rounded-lg" id="settings" role="tabpanel" aria-labelledby="settings-tab">
-        <p class="text-xl text-gray-900 ">This is some placeholder content the Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling.</p>
-        <h3 class="text-3xl text-black pt-4 font-bold ">Our mission</h3>
-        <p class="text-xl text-gray-900 ">This is some placeholder content the Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling.</p>
-        <h3 class="text-3xl font-bold pt-4 text-black ">Peace of mind</h3>
-        <p class="text-xl text-gray-900 ">This is some placeholder content the Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling.</p>
-        <h3 class="text-3xl font-bold pt-4 text-black ">Transparency</h3>
-        <p class="text-xl text-gray-900 ">This is some placeholder content the Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling.</p>
-        <h3 class="text-3xl font-bold pt-4 text-black ">Financial Incentive</h3>
-        <p class="text-xl text-gray-900 ">This is some placeholder content the Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling.</p>
+        <p class="text-xl text-gray-900 "><?php echo $rental_property_info_right_section_management_paragraph_one; ?></p>
+        <h3 class="text-3xl text-black pt-4 font-bold "><?php echo $rental_property_info_right_section_management_title_one; ?></h3>
+        <p class="text-xl text-gray-900 "><?php echo $rental_property_info_right_section_management_description_one; ?></p>
+        <h3 class="text-3xl font-bold pt-4 text-black "><?php echo $rental_property_info_right_section_management_title_two; ?></h3>
+        <p class="text-xl text-gray-900 "><?php echo $rental_property_info_right_section_management_description_two; ?></p>
+        <h3 class="text-3xl font-bold pt-4 text-black "><?php echo $rental_property_info_right_section_management_title_three; ?></h3>
+        <p class="text-xl text-gray-900 "><?php echo $rental_property_info_right_section_management_description_three; ?></p>
+        <h3 class="text-3xl font-bold pt-4 text-black "><?php echo $rental_property_info_right_section_management_title_four; ?></h3>
+        <p class="text-xl text-gray-900 "><?php echo $rental_property_info_right_section_management_description_four; ?></p>
     </div>
     <!-- <div class="hidden p-4 rounded-lg" id="contacts" role="tabpanel" aria-labelledby="contacts-tab">
         <p class="text-xl text-gray-900 ">This is some placeholder content the Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling.</p>
