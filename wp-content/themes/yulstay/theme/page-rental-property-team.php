@@ -27,7 +27,7 @@ $team_page_description = get_field('team_page_description');
 			</div>
 			<div class="grid grid-cols-3 gap-4">
     <?php
-    $ids_to_display = array(114, 116, 119, 121, 123); // IDs of the posts you want to display
+    $ids_to_display = array(114, 119, 121, 123); // IDs of the posts you want to display
 
     $the_query = new WP_Query(array(
         'post_type' => 'team',
