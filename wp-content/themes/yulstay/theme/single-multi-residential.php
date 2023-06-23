@@ -136,25 +136,16 @@ $multi_residential_image_ten = get_field('multi_residential_image_ten');
         <!-- Carousel wrapper -->
         <div class="relative h-56 overflow-hidden rounded-lg md:h-[640px]">
              <!-- Item 1 -->
+             <?php if( have_rows('multi_residential_images') ): $s= 1; $a=0; ?>
+				
+                <?php while( have_rows('multi_residential_images') ): the_row() ;   
+                   $i++;
+                          $multi_residential_image = get_sub_field('multi_residential_image');
+                  ?>
             <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                <img src="https://mdataz.com/yulstaygit/wp-content/uploads/2023/06/1-4.jpg" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
+                <img src="<?php echo $multi_residential_image; ?>" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
             </div>
-            <!-- Item 2 -->
-            <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
-                <img src="https://mdataz.com/yulstaygit/wp-content/uploads/2023/06/2-4.jpg" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
-            </div>
-            <!-- Item 3 -->
-            <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                <img src="https://mdataz.com/yulstaygit/wp-content/uploads/2023/06/3-4.jpg" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
-            </div>
-            <!-- Item 4 -->
-            <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                <img src="https://mdataz.com/yulstaygit/wp-content/uploads/2023/06/4-4.jpg" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
-            </div>
-            <!-- Item 5 -->
-            <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                <img src="https://mdataz.com/yulstaygit/wp-content/uploads/2023/06/4-4.jpg" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
-            </div>
+            <?php   endwhile; endif; ?>
         </div>
         <!-- Slider controls -->
         <button type="button" class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
