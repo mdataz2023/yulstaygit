@@ -68,25 +68,16 @@ $residential_info_right_section_investment_description_three = get_field('reside
     <!-- Carousel wrapper -->
     <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
          <!-- Item 1 -->
+         <?php if( have_rows('residential_info_left_section_carousel_images') ): $s= 1; $a=0; ?>
+				
+                <?php while( have_rows('residential_info_left_section_carousel_images') ): the_row() ;   
+                   $i++;
+                          $residential_info_left_section_carousel_image = get_sub_field('residential_info_left_section_carousel_image');
+                  ?>
         <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="<?php echo $residential_info_left_section_carousel_image_one; ?>" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            <img src="<?php echo $residential_info_left_section_carousel_image; ?>" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
         </div>
-        <!-- Item 2 -->
-        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="<?php echo $residential_info_left_section_carousel_image_two; ?>" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-        </div>
-        <!-- Item 3 -->
-        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="<?php echo $residential_info_left_section_carousel_image_three; ?>" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-        </div>
-        <!-- Item 4 -->
-        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="<?php echo $residential_info_left_section_carousel_image_four; ?>" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-        </div>
-        <!-- Item 5 -->
-        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="<?php echo $residential_info_left_section_carousel_image_five; ?>" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-        </div>
+        <?php   endwhile; endif; ?>
     </div>
     <!-- Slider indicators -->
     <div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
