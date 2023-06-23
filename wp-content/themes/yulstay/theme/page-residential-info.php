@@ -141,13 +141,25 @@ $residential_info_right_section_investment_description_three = get_field('reside
         <p class="text-xl text-gray-900 "><?php echo $residential_info_right_section_purchase_description_four; ?></p>
     </div>
     <div class="hidden p-4 rounded-lg" id="contacts" role="tabpanel" aria-labelledby="contacts-tab">
-        <p class="text-xl text-gray-900 "><?php echo $residential_info_right_section_investment_paragraph_one; ?></p>
-        <h3 class="text-3xl text-black pt-4 font-bold "><?php echo $residential_info_right_section_investment_title_one; ?></h3>
-        <p class="text-xl text-gray-900 "><?php echo $residential_info_right_section_investment_description_one; ?></p>
+    <p class="text-xl text-gray-900 "><?php echo $residential_info_right_section_investment_paragraph_one; ?></p>
+    <?php if( have_rows('residential_info_right_section_investment') ): $s= 1; $a=0; ?>
+				
+                <?php while( have_rows('residential_info_right_section_investment') ): the_row() ;   
+                   $i++;
+                          $residential_info_right_section_investment_title = get_sub_field('residential_info_right_section_investment_title');
+                          $residential_info_right_section_investment_description = get_sub_field('residential_info_right_section_investment_description');
+                  ?>
+                
+                <h3 class="text-3xl text-black pt-4 font-bold "><?php echo $residential_info_right_section_investment_title; ?></h3>
+                <p class="text-xl text-gray-900 "><?php echo $residential_info_right_section_investment_description; ?></p>
+        <?php   endwhile; endif; ?>
+
+
+        <!-- 
         <h3 class="text-3xl font-bold pt-4 text-black "><?php echo $residential_info_right_section_investment_title_two; ?></h3>
         <p class="text-xl text-gray-900 "><?php echo $residential_info_right_section_investment_description_two; ?></p>
         <h3 class="text-3xl font-bold pt-4 text-black "><?php echo $residential_info_right_section_investment_title_three; ?></h3>
-        <p class="text-xl text-gray-900 "><?php echo $residential_info_right_section_investment_description_three; ?></p>
+        <p class="text-xl text-gray-900 "><?php echo $residential_info_right_section_investment_description_three; ?></p> -->
     </div>
 </div>
 
