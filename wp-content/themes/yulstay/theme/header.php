@@ -141,6 +141,13 @@
           </div>
           
                     <div>
+                    <div id="language-switcher" class="py-2">
+  <ul class="flex space-x-4">
+    <li>
+      <?php do_action('wpml_add_language_selector'); ?>
+    </li>
+  </ul>
+</div>
                     <div>
                     <h2 class="text-xl">SUBSCRIBE TO OUR NEWSLETTER</h2>
                     <div class="flex gap-4 border-b border-black pt-5">
