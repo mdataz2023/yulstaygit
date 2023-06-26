@@ -68,7 +68,7 @@ $linkedin_link = get_field('linkedin_link');
 						</svg>
 					</div>
 				</div>
-				<div><a href="<?php bloginfo('url'); ?>/home" class="text-gray-400 hover:text-gray-800 font-bold">The Team</a></div>
+				<div><a href="<?php bloginfo('url'); ?>/home" class="text-gray-400 hover:text-gray-800 font-bold"><?php the_title(); ?></a></div>
                     <div class="flex items-center content-between">
 					<div>
 						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
@@ -87,65 +87,33 @@ $linkedin_link = get_field('linkedin_link');
                <h1 class="text-3xl font-bold"><?php the_title(); ?></h1>
                <p><?php the_excerpt(); ?></p>
                <div class="flex flex-col gap-3">
+               <?php if( have_rows('residential_info_right_section_investment') ): $s= 1; $a=0; ?>
+				
+                    <?php while( have_rows('residential_info_right_section_investment') ): the_row() ;   
+                       $i++;
+                              $residential_info_right_section_investment_title = get_sub_field('residential_info_right_section_investment_title');
+                              
+                      ?>
+                    
                     <div>
                          <p><?php echo $paragraph_one; ?></p>
                     </div>
-                    <div>
-                         <p><?php echo $paragraph_two; ?></p>
-                    </div>
-                    <div>
-                         <p><?php echo $paragraph_three; ?></p>
-                    </div>
-                    <div>
-                         <p><?php echo $paragraph_four; ?></p>
-                    </div>
-                    <div>
-                         <p><?php echo $paragraph_five; ?></p>
-                    </div>
-                    <div>
-                         <p><?php echo $paragraph_six; ?></p>
-                    </div>
-                    <div>
-                         <p><?php echo $paragraph_seven; ?></p>
-                    </div>
-                    <div>
-                         <p><?php echo $paragraph_eight; ?></p>
-                    </div>
-                    <div>
-                         <p><?php echo $paragraph_nine; ?></p>
-                    </div>
-                    <div>
-                         <p><?php echo $paragraph_ten; ?></p>
-                    </div>
-                    <div>
-                         <p><?php echo $paragraph_eleven; ?></p>
-                    </div>
+                    <?php   endwhile; endif; ?>
                </div>
                <div>
+               <?php if( have_rows('residential_info_right_section_investment') ): $s= 1; $a=0; ?>
+				
+                    <?php while( have_rows('residential_info_right_section_investment') ): the_row() ;   
+                       $i++;
+                              $residential_info_right_section_investment_title = get_sub_field('residential_info_right_section_investment_title');
+                              $residential_info_right_section_investment_description = get_sub_field('residential_info_right_section_investment_description');
+                      ?>
+                    
                     <div>
                          <h3 class="text-3xl font-bold"><?php echo $title_one; ?></h3>
                          <p><?php echo $description_one; ?></p>
                     </div>
-                    <div>
-                         <h3 class="text-3xl font-bold"><?php echo $title_two; ?></h3>
-                         <p><?php echo $description_two; ?></p>
-                    </div>
-                    <div>
-                         <h3 class="text-3xl font-bold"><?php echo $title_three; ?></h3>
-                         <p><?php echo $description_three; ?></p>
-                    </div>
-                    <div>
-                         <h3 class="text-3xl font-bold"><?php echo $title_four; ?></h3>
-                         <p><?php echo $description_four; ?></p>
-                    </div>
-                    <div class="text-3xl font-bold">
-                         <h3><?php echo $title_five; ?></h3>
-                         <p><?php echo $description_five; ?></p>
-                    </div class="text-3xl font-bold">
-                    <div>
-                         <h3><?php echo $title_six; ?></h3>
-                         <p><?php echo $description_six; ?></p>
-                    </div>
+                    <?php   endwhile; endif; ?>
                </div>
                <div>
                     <h4><?php echo $team_member_name; ?></h4>
