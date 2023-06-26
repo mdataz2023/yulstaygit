@@ -24,7 +24,7 @@ get_header(); ?>
                 <a href="<?php bloginfo('url'); ?>/join-our-team" class="font-bold"><?php _e('Join Our Team','theme-text-domain'); ?></a>
             </div>
             <div class="md:pr-6">
-                <a href="<?php bloginfo('url'); ?>/join-our-team" class="font-bold"<?php _e('Book a Consutation','theme-text-domain'); ?>></a>
+                <a href="<?php bloginfo('url'); ?>/join-our-team" class="font-bold"><?php _e('Book a Consutation','theme-text-domain'); ?>></a>
             </div>
         </div>
     </div>
