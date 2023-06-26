@@ -11,30 +11,34 @@ get_header();
 $contact_page_title = get_field('contact_page_title');
 $contact_page_description = get_field('contact_page_description');
 
-$paragraph_one = get_field('paragraph_one');
-$paragraph_two = get_field('paragraph_two');
-$paragraph_three = get_field('paragraph_three');
-$paragraph_four = get_field('paragraph_four');
-$paragraph_five = get_field('paragraph_five');
-$paragraph_six = get_field('paragraph_six');
-$paragraph_seven = get_field('paragraph_seven');
-$paragraph_eight = get_field('paragraph_eight');
-$paragraph_nine = get_field('paragraph_nine');
-$paragraph_ten = get_field('paragraph_ten');
-$paragraph_eleven = get_field('paragraph_eleven');
+$paragraph = get_field('paragraph');
+$title = get_field('title');
+$description = get_field('description');
 
-$title_one = get_field('title_one');
-$description_one = get_field('description_one');
-$title_two = get_field('title_two');
-$description_two = get_field('description_two');
-$title_three = get_field('title_three');
-$description_three = get_field('description_three');
-$title_four = get_field('title_four');
-$description_four = get_field('description_four');
-$title_five = get_field('title_five');
-$description_five = get_field('description_five');
-$title_six = get_field('title_six');
-$description_six = get_field('description_six');
+// $paragraph_one = get_field('paragraph_one');
+// $paragraph_two = get_field('paragraph_two');
+// $paragraph_three = get_field('paragraph_three');
+// $paragraph_four = get_field('paragraph_four');
+// $paragraph_five = get_field('paragraph_five');
+// $paragraph_six = get_field('paragraph_six');
+// $paragraph_seven = get_field('paragraph_seven');
+// $paragraph_eight = get_field('paragraph_eight');
+// $paragraph_nine = get_field('paragraph_nine');
+// $paragraph_ten = get_field('paragraph_ten');
+// $paragraph_eleven = get_field('paragraph_eleven');
+
+// $title_one = get_field('title_one');
+// $description_one = get_field('description_one');
+// $title_two = get_field('title_two');
+// $description_two = get_field('description_two');
+// $title_three = get_field('title_three');
+// $description_three = get_field('description_three');
+// $title_four = get_field('title_four');
+// $description_four = get_field('description_four');
+// $title_five = get_field('title_five');
+// $description_five = get_field('description_five');
+// $title_six = get_field('title_six');
+// $description_six = get_field('description_six');
 
 $team_member_name = get_field('team_member_name');
 $team_member_position = get_field('team_member_position');
@@ -87,31 +91,31 @@ $linkedin_link = get_field('linkedin_link');
                <h1 class="text-3xl font-bold"><?php the_title(); ?></h1>
                <p><?php the_excerpt(); ?></p>
                <div class="flex flex-col gap-3">
-               <?php if( have_rows('residential_info_right_section_investment') ): $s= 1; $a=0; ?>
+               <?php if( have_rows('paragraph_repeater') ): $s= 1; $a=0; ?>
 				
-                    <?php while( have_rows('residential_info_right_section_investment') ): the_row() ;   
+                    <?php while( have_rows('paragraph_repeater') ): the_row() ;   
                        $i++;
-                              $residential_info_right_section_investment_title = get_sub_field('residential_info_right_section_investment_title');
+                              $paragraph = get_sub_field('paragraph');
                               
                       ?>
                     
                     <div>
-                         <p><?php echo $paragraph_one; ?></p>
+                         <p><?php echo $paragraph; ?></p>
                     </div>
                     <?php   endwhile; endif; ?>
                </div>
                <div>
-               <?php if( have_rows('residential_info_right_section_investment') ): $s= 1; $a=0; ?>
+               <?php if( have_rows('title_description_repeater') ): $s= 1; $a=0; ?>
 				
-                    <?php while( have_rows('residential_info_right_section_investment') ): the_row() ;   
+                    <?php while( have_rows('title_description_repeater') ): the_row() ;   
                        $i++;
-                              $residential_info_right_section_investment_title = get_sub_field('residential_info_right_section_investment_title');
-                              $residential_info_right_section_investment_description = get_sub_field('residential_info_right_section_investment_description');
+                              $title = get_sub_field('title');
+                              $description = get_sub_field('description');
                       ?>
                     
                     <div>
-                         <h3 class="text-3xl font-bold"><?php echo $title_one; ?></h3>
-                         <p><?php echo $description_one; ?></p>
+                         <h3 class="text-3xl font-bold"><?php echo $title; ?></h3>
+                         <p><?php echo $description; ?></p>
                     </div>
                     <?php   endwhile; endif; ?>
                </div>
