@@ -11,9 +11,9 @@ get_header();
 $contact_page_title = get_field('contact_page_title');
 $contact_page_description = get_field('contact_page_description');
 
-$paragraph = get_field('paragraph');
-$title = get_field('title');
-$description = get_field('description');
+// $paragraph = get_field('paragraph');
+// $title = get_field('title');
+// $description = get_field('description');
 
 // $paragraph_one = get_field('paragraph_one');
 // $paragraph_two = get_field('paragraph_two');
