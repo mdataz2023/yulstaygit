@@ -74,40 +74,40 @@
             <div class="text-2xl uppercase">
               <div class="dropdown-container grid grid-cols-2">
                 <div>
-                  <a href="<?php bloginfo('url'); ?>/residential-info" class="text-gray-700 text-3xl hover:font-bold">Residential</a>
+                  <a href="<?php bloginfo('url'); ?>/residential-info" class="text-gray-700 text-3xl hover:font-bold"><?php _e('Residential','theme-text-domain'); ?></a>
                 </div>
                 <div>
                   <div class="ml-4">
-                    <a href="<?php bloginfo('url'); ?>/residential" class="text-gray-600 link link-underline link-underline-black hover:font-bold">Properties</a>
+                    <a href="<?php bloginfo('url'); ?>/residential" class="text-gray-600 link link-underline link-underline-black hover:font-bold"><?php _e('Properties','theme-text-domain'); ?></a>
                   </div>
                   <div class="ml-4">
-                    <a href="<?php bloginfo('url'); ?>/residential-team" class="text-gray-600 link link-underline link-underline-black hover:font-bold">Team</a>
+                    <a href="<?php bloginfo('url'); ?>/residential-team" class="text-gray-600 link link-underline link-underline-black hover:font-bold"><?php _e('Team','theme-text-domain'); ?></a>
                   </div>
                 </div>
                 </div>
                 <div class="dropdown-container grid grid-cols-2">
                 <div class="mt-2">
-                  <a href="<?php bloginfo('url'); ?>/multi-residential-info" class="text-gray-700 text-3xl hover:font-bold">Multi-Residential</a>
+                  <a href="<?php bloginfo('url'); ?>/multi-residential-info" class="text-gray-700 text-3xl hover:font-bold"><?php _e('Multi-Residential','theme-text-domain'); ?></a>
                 </div>
                 <div>
                 <div class="ml-4">
-                  <a href="<?php bloginfo('url'); ?>/multi-residential" class="text-gray-600 link link-underline link-underline-black hover:font-bold">Properties</a>
+                  <a href="<?php bloginfo('url'); ?>/multi-residential" class="text-gray-600 link link-underline link-underline-black hover:font-bold"><?php _e('Properties','theme-text-domain'); ?></a>
                 </div>
                 <div class="ml-4">
-                  <a href="<?php bloginfo('url'); ?>/multi-residential-team" class="text-gray-600 link link-underline link-underline-black hover:font-bold">Team</a>
+                  <a href="<?php bloginfo('url'); ?>/multi-residential-team" class="text-gray-600 link link-underline link-underline-black hover:font-bold"><?php _e('Team','theme-text-domain'); ?></a>
                 </div>
                 </div>
                 </div>
                 <div class="dropdown-container grid grid-cols-2">
                   <div class="mt-2">
-                    <a href="<?php bloginfo('url'); ?>/rental-property-info" class="text-gray-700 text-3xl hover:font-bold">Rental + Property</a>
+                    <a href="<?php bloginfo('url'); ?>/rental-property-info" class="text-gray-700 text-3xl hover:font-bold"><?php _e('Rental + Property','theme-text-domain'); ?></a>
                   </div>
                   <div>
                     <div class="ml-4">
-                      <a href="<?php bloginfo('url'); ?>/rental-property" class="text-gray-600 link link-underline link-underline-black hover:font-bold">Properties</a>
+                      <a href="<?php bloginfo('url'); ?>/rental-property" class="text-gray-600 link link-underline link-underline-black hover:font-bold"><?php _e('Properties','theme-text-domain'); ?></a>
                     </div>
                     <div class="ml-4">
-                      <a href="<?php bloginfo('url'); ?>/rental-property-team" class="text-gray-600 link link-underline link-underline-black hover:font-bold">Team</a>
+                      <a href="<?php bloginfo('url'); ?>/rental-property-team" class="text-gray-600 link link-underline link-underline-black hover:font-bold"><?php _e('Team','theme-text-domain'); ?></a>
                     </div>
                   </div>
                 </div>
@@ -117,21 +117,21 @@
                 </div>
                 <div>
                 <div class="ml-4">
-                  <a href="<?php bloginfo('url'); ?>/events-collaboration" class="text-gray-600 link link-underline link-underline-black hover:font-bold">Events & Collaboration</a>
+                  <a href="<?php bloginfo('url'); ?>/events-collaboration" class="text-gray-600 link link-underline link-underline-black hover:font-bold"><?php _e('Events & Collaboration','theme-text-domain'); ?></a>
                 </div>
                 <div class="ml-4">
-                  <a href="<?php bloginfo('url'); ?>/podcasts" class="text-gray-600 link link-underline link-underline-black hover:font-bold">Podcasts</a>
+                  <a href="<?php bloginfo('url'); ?>/podcasts" class="text-gray-600 link link-underline link-underline-black hover:font-bold"><?php _e('Podcasts','theme-text-domain'); ?></a>
                 </div>
                 <div class="ml-4">
-                  <a href="<?php bloginfo('url'); ?>/building-history" class="text-gray-600 link link-underline link-underline-black hover:font-bold">Building History</a>
+                  <a href="<?php bloginfo('url'); ?>/building-history" class="text-gray-600 link link-underline link-underline-black hover:font-bold"><?php _e('Building History','theme-text-domain'); ?></a>
                 </div>
                 <div class="ml-4">
-                  <a href="<?php bloginfo('url'); ?>/join-our-team" class="text-gray-600 link link-underline link-underline-black hover:font-bold">Join the Team</a>
+                  <a href="<?php bloginfo('url'); ?>/join-our-team" class="text-gray-600 link link-underline link-underline-black hover:font-bold"><?php _e('Join the Team','theme-text-domain'); ?></a>
                 </div>
                 </div>
                 </div>
                 <div class="mt-2">
-                  <a href="<?php bloginfo('url'); ?>/new-construction" class="text-gray-700 text-3xl link link-underline link-underline-black hover:font-bold">New Construction</a>
+                  <a href="<?php bloginfo('url'); ?>/new-construction" class="text-gray-700 text-3xl link link-underline link-underline-black hover:font-bold"><?php _e('New Construction','theme-text-domain'); ?></a>
                 </div>
                 <div class="mt-2">
                   <a href="<?php bloginfo('url'); ?>/contact-us" class="text-gray-700 text-3xl link link-underline link-underline-black hover:font-bold"><?php _e('Contact Us','theme-text-domain'); ?></a>
@@ -149,10 +149,10 @@
   </ul>
 </div>
                     <div>
-                    <h2 class="text-xl">SUBSCRIBE TO OUR NEWSLETTER</h2>
+                    <h2 class="text-xl"><?php _e('SUBSCRIBE TO OUR NEWSLETTER','theme-text-domain'); ?></h2>
                     <div class="flex gap-4 border-b border-black pt-5">
                       <input type="email" name="" placeholder="Email address" class="w-full bg-[#d5d5d5] outline-none" id="">
-                      <input type="submit" value="Join" class="hover:font-black">
+                      <input type="submit" value="<?php _e('Join','theme-text-domain'); ?>" class="hover:font-black">
                     </div>
                   </div>
                     </div>
