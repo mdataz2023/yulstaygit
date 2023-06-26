@@ -17,7 +17,7 @@ get_header(); ?>
         <div>
         <div class="flex gap-3 mb-3">
 				<div>
-					<a href="<?php bloginfo('url'); ?>/home" class="text-gray-400 hover:text-gray-800 font-bold">Home</a>
+					<a href="<?php bloginfo('url'); ?>/home" class="text-gray-400 hover:text-gray-800 font-bold"><?php _e('Home','theme-text-domain'); ?></a>
 				</div>
 				
                 <div class="flex items-center content-between">
