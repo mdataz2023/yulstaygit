@@ -134,7 +134,7 @@
                   <a href="<?php bloginfo('url'); ?>/new-construction" class="text-gray-700 text-3xl link link-underline link-underline-black hover:font-bold">New Construction</a>
                 </div>
                 <div class="mt-2">
-                  <a href="<?php bloginfo('url'); ?>/contact-us" class="text-gray-700 text-3xl link link-underline link-underline-black hover:font-bold">Contact Us</a>
+                  <a href="<?php bloginfo('url'); ?>/contact-us" class="text-gray-700 text-3xl link link-underline link-underline-black hover:font-bold"><?php _e('Contact Us','theme-text-domain'); ?></a>
                 </div>
                 
                 
