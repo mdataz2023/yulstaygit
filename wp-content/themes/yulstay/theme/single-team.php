@@ -95,8 +95,7 @@ $linkedin_link = get_field('linkedin_link');
 				
                     <?php while( have_rows('paragraph_repeater') ): the_row() ;   
                        $i++;
-                              $paragraph = get_sub_field('paragraph');
-                              
+                              $paragraph = get_sub_field('paragraph');     
                       ?>
                     
                     <div>

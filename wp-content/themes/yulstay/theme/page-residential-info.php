@@ -43,7 +43,7 @@ $residential_info_right_section_investment_description_three = get_field('reside
 
 ?>
 
-<div class="h-screen w-screen mr-12 grid grid-cols-1 md:grid-cols-2 p-14 gap-6">
+<div class="h-screen w-screen mr-12 p-14 gap-6">
     <div>
 
         <div class="flex gap-3 mb-3">
@@ -60,50 +60,71 @@ $residential_info_right_section_investment_description_three = get_field('reside
 				</div>
 				<div class="font-medium"><?php the_title(); ?></div>
         </div>
-            <div class="md:block hidden">
-            <a href="<?php bloginfo('url'); ?>/home"><img src="<?php echo $residential_info_left_section_company_logo; ?>" class="w-32 pb-4" alt=""></a>
-          </div>
-        
-<div id="default-carousel" class="relative w-full" data-carousel="slide">
-    <!-- Carousel wrapper -->
-    <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
-         <!-- Item 1 -->
-         <?php if( have_rows('residential_info_left_section_carousel_images') ): $s= 1; $a=0; ?>
-				
-                <?php while( have_rows('residential_info_left_section_carousel_images') ): the_row() ;   
-                   $i++;
-                          $residential_info_left_section_carousel_image = get_sub_field('residential_info_left_section_carousel_image');
-                  ?>
-        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="<?php echo $residential_info_left_section_carousel_image; ?>" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        <div class="md:block hidden flex justify-center">
+            <a href="<?php bloginfo('url'); ?>/home" class="flex justify-center"><img src="<?php echo $residential_info_left_section_company_logo; ?>" class="w-32 pb-4" alt=""></a>
         </div>
-        <?php   endwhile; endif; ?>
+        <div class="grid grid-cols-3">
+            
+        </div>
+        <div class="flex justify-center gap-1">
+  <div class="w-1/3">
+    <button id="button1" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 mb-4 w-full" onclick="toggleDescription(1)">SALE</button>
+    <div id="description1" class="hidden bg-gray-200 p-4">
+        <p class="text-xl text-gray-900 "><?php echo $residential_info_right_section_sales_paragraph_one; ?></p>
+        <h3 class="text-3xl text-black pt-4 font-bold "><?php echo $residential_info_right_section_sales_title_one; ?></h3>
+        <p class="text-xl text-gray-900 "><?php echo $residential_info_right_section_sales_description_one; ?></p>
+        <h3 class="text-3xl font-bold pt-4 text-black "><?php echo $residential_info_right_section_sales_title_two; ?></h3>
+        <p class="text-xl text-gray-900 "><?php echo $residential_info_right_section_sales_description_two; ?></p>
+        <h3 class="text-3xl font-bold pt-4 text-black "><?php echo $residential_info_right_section_sales_title_three; ?></h3>
+        <p class="text-xl text-gray-900 "><?php echo $residential_info_right_section_sales_description_three; ?></p>
     </div>
-    <!-- Slider indicators -->
-    <div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
-        <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
-        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
-        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
-        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
-        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
-    </div>
-    <!-- Slider controls -->
-    <button type="button" class="hidden absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
-        <span class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-            <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
-            <span class="sr-only"><?php _e('Previous','theme-text-domain'); ?></span>
-        </span>
-    </button>
-    <button type="button" class="hidden absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
-        <span class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-            <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
-            <span class="sr-only"><?php _e('Next','theme-text-domain'); ?></span>
-        </span>
-    </button>
+  </div>
+  <div class="w-1/3">
+    <button id="button2" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 mb-4 w-full" onclick="toggleDescription(2)">PURCHASE</button>
+    <div id="description2" class="hidden bg-gray-200 p-4">Description for column 2</div>
+  </div>
+  <div class="w-1/3">
+    <button id="button3" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 mb-4 w-full" onclick="toggleDescription(3)">INVESTMENT</button>
+    <div id="description3" class="hidden bg-gray-200 p-4">Description for column 3</div>
+  </div>
 </div>
 
-    </div>
-    <div class="overflow-y-scroll">
+
+<script>
+var previousColors = {
+  button1: 'bg-blue-500',
+  button2: 'bg-blue-500',
+  button3: 'bg-blue-500'
+};
+
+function toggleDescription(col) {
+  var description = document.getElementById(`description${col}`);
+  var button = document.getElementById(`button${col}`);
+
+  description.classList.toggle('hidden');
+
+  if (description.classList.contains('hidden')) {
+    button.classList.remove('bg-red-500');
+    button.classList.add(previousColors[`button${col}`]);
+  } else {
+    previousColors[`button${col}`] = button.classList.value;
+    button.classList.remove(previousColors[`button${col}`]);
+    button.classList.add('bg-red-500');
+  }
+}
+
+// Adjust button width
+var columns = document.querySelectorAll('.w-1/3');
+var buttons = document.querySelectorAll('button');
+
+buttons.forEach(function(button, index) {
+  button.style.width = columns[index].offsetWidth + 'px';
+});
+
+</script>
+        
+
+    <!-- <div class="overflow-y-scroll">
         
 <div class="mb-4 border-b border-gray-200 dark:border-gray-700">
     <ul class="flex flex-wrap -mb-px text-sm font-medium text-center" id="myTab" data-tabs-toggle="#myTabContent" role="tablist">
@@ -153,15 +174,8 @@ $residential_info_right_section_investment_description_three = get_field('reside
                 <h3 class="text-3xl text-black pt-4 font-bold "><?php echo $residential_info_right_section_investment_title; ?></h3>
                 <p class="text-xl text-gray-900 "><?php echo $residential_info_right_section_investment_description; ?></p>
         <?php   endwhile; endif; ?>
-
-
-        <!-- 
-        <h3 class="text-3xl font-bold pt-4 text-black "><?php echo $residential_info_right_section_investment_title_two; ?></h3>
-        <p class="text-xl text-gray-900 "><?php echo $residential_info_right_section_investment_description_two; ?></p>
-        <h3 class="text-3xl font-bold pt-4 text-black "><?php echo $residential_info_right_section_investment_title_three; ?></h3>
-        <p class="text-xl text-gray-900 "><?php echo $residential_info_right_section_investment_description_three; ?></p> -->
     </div>
-</div>
+</div> -->
 
     </div>
   
