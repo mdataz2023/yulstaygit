@@ -83,6 +83,9 @@
                   <div class="ml-4">
                     <a href="<?php bloginfo('url'); ?>/residential-team" class="text-gray-600 link link-underline link-underline-black hover:font-bold"><?php _e('Team','theme-text-domain'); ?></a>
                   </div>
+                  <div class="ml-4">
+                    <a href="<?php bloginfo('url'); ?>/residential-info" class="text-gray-600 link link-underline link-underline-black hover:font-bold"><?php _e('Residential Info','theme-text-domain'); ?></a>
+                  </div>
                 </div>
                 </div>
                 <div class="dropdown-container grid grid-cols-2">
@@ -96,6 +99,9 @@
                 <div class="ml-4">
                   <a href="<?php bloginfo('url'); ?>/multi-residential-team" class="text-gray-600 link link-underline link-underline-black hover:font-bold"><?php _e('Team','theme-text-domain'); ?></a>
                 </div>
+                <div class="ml-4">
+                    <a href="<?php bloginfo('url'); ?>/multi-residential-info" class="text-gray-600 link link-underline link-underline-black hover:font-bold"><?php _e('Multi-Residential Info','theme-text-domain'); ?></a>
+                  </div>
                 </div>
                 </div>
                 <div class="dropdown-container grid grid-cols-2">
@@ -108,6 +114,9 @@
                     </div>
                     <div class="ml-4">
                       <a href="<?php bloginfo('url'); ?>/rental-property-team" class="text-gray-600 link link-underline link-underline-black hover:font-bold"><?php _e('Team','theme-text-domain'); ?></a>
+                    </div>
+                    <div class="ml-4">
+                    <a href="<?php bloginfo('url'); ?>/rental-property-info" class="text-gray-600 link link-underline link-underline-black hover:font-bold"><?php _e('Rental + Property Info','theme-text-domain'); ?></a>
                     </div>
                   </div>
                 </div>

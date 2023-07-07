@@ -76,7 +76,7 @@ $residential_info_right_section_investment_description_three = get_field('reside
 </div>
 
 <div id="main" class="w-full h-10">
-  Default content
+<p class="text-xl text-gray-900 "><?php echo $residential_info_right_section_sales_paragraph_one; ?></p>
 </div>
 
 <script>
@@ -87,24 +87,46 @@ $residential_info_right_section_investment_description_three = get_field('reside
 
   button1.addEventListener("click", () => {
     const saleContent = `
-      <h2>Sale Section</h2>
-      <p>This is the content for the Sale section. This is the content for the Purchase section. This is the content for the Purchase section.</p>
+    <p class="text-xl text-gray-900 "><?php echo $residential_info_right_section_sales_paragraph_one; ?></p>
+        <h3 class="text-3xl text-black pt-4 font-bold "><?php echo $residential_info_right_section_sales_title_one; ?></h3>
+        <p class="text-xl text-gray-900 "><?php echo $residential_info_right_section_sales_description_one; ?></p>
+        <h3 class="text-3xl font-bold pt-4 text-black "><?php echo $residential_info_right_section_sales_title_two; ?></h3>
+        <p class="text-xl text-gray-900 "><?php echo $residential_info_right_section_sales_description_two; ?></p>
+        <h3 class="text-3xl font-bold pt-4 text-black "><?php echo $residential_info_right_section_sales_title_three; ?></h3>
+        <p class="text-xl text-gray-900 "><?php echo $residential_info_right_section_sales_description_three; ?></p>
     `;
     mainDiv.innerHTML = saleContent;
   });
 
   button2.addEventListener("click", () => {
     const purchaseContent = `
-      <h2>Purchase Section</h2>
-      <p>This is the content for the Purchase section. This is the content for the Purchase section. This is the content for the Purchase section.</p>
+    <p class="text-xl text-gray-900 "><?php echo $residential_info_right_section_purchase_paragraph_one; ?></p>
+        <h3 class="text-3xl text-black pt-4 font-bold "><?php echo $residential_info_right_section_purchase_title_one; ?></h3>
+        <p class="text-xl text-gray-900 "><?php echo $residential_info_right_section_purchase_description_one; ?></p>
+        <h3 class="text-3xl font-bold pt-4 text-black "><?php echo $residential_info_right_section_purchase_title_two; ?></h3>
+        <p class="text-xl text-gray-900 "><?php echo $residential_info_right_section_purchase_description_two; ?></p>
+        <h3 class="text-3xl font-bold pt-4 text-black "><?php echo $residential_info_right_section_purchase_title_three; ?></h3>
+        <p class="text-xl text-gray-900 "><?php echo $residential_info_right_section_purchase_description_three; ?></p>
+        <h3 class="text-3xl font-bold pt-4 text-black "><?php echo $residential_info_right_section_purchase_title_four; ?></h3>
+        <p class="text-xl text-gray-900 "><?php echo $residential_info_right_section_purchase_description_four; ?></p>
     `;
     mainDiv.innerHTML = purchaseContent;
   });
 
   button3.addEventListener("click", () => {
     const investmentContent = `
-      <h2>Investment Section</h2>
-      <p>This is the content for the Investment section. This is the content for the Purchase section. This is the content for the Purchase section.</p>
+    <p class="text-xl text-gray-900 "><?php echo $residential_info_right_section_investment_paragraph_one; ?></p>
+    <?php if( have_rows('residential_info_right_section_investment') ): $s= 1; $a=0; ?>
+				
+                <?php while( have_rows('residential_info_right_section_investment') ): the_row() ;   
+                   $i++;
+                          $residential_info_right_section_investment_title = get_sub_field('residential_info_right_section_investment_title');
+                          $residential_info_right_section_investment_description = get_sub_field('residential_info_right_section_investment_description');
+                  ?>
+                
+                <h3 class="text-3xl text-black pt-4 font-bold "><?php echo $residential_info_right_section_investment_title; ?></h3>
+                <p class="text-xl text-gray-900 "><?php echo $residential_info_right_section_investment_description; ?></p>
+        <?php   endwhile; endif; ?>
     `;
     mainDiv.innerHTML = investmentContent;
   });
