@@ -63,63 +63,58 @@ $residential_info_right_section_investment_description_three = get_field('reside
         <div class="md:block hidden flex justify-center">
             <a href="<?php bloginfo('url'); ?>/home" class="flex justify-center"><img src="<?php echo $residential_info_left_section_company_logo; ?>" class="w-32 pb-4" alt=""></a>
         </div>
-        <div class="grid grid-cols-3">
-            
-        </div>
-        <div class="flex justify-center gap-1">
-  <div class="w-1/3">
-    <button id="button1" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 mb-4 w-full" onclick="toggleDescription(1)">SALE</button>
-    <div id="description1" class="hidden bg-gray-200 p-4">
-        <p class="text-xl text-gray-900 "><?php echo $residential_info_right_section_sales_paragraph_one; ?></p>
-        <h3 class="text-3xl text-black pt-4 font-bold "><?php echo $residential_info_right_section_sales_title_one; ?></h3>
-        <p class="text-xl text-gray-900 "><?php echo $residential_info_right_section_sales_description_one; ?></p>
-        <h3 class="text-3xl font-bold pt-4 text-black "><?php echo $residential_info_right_section_sales_title_two; ?></h3>
-        <p class="text-xl text-gray-900 "><?php echo $residential_info_right_section_sales_description_two; ?></p>
-        <h3 class="text-3xl font-bold pt-4 text-black "><?php echo $residential_info_right_section_sales_title_three; ?></h3>
-        <p class="text-xl text-gray-900 "><?php echo $residential_info_right_section_sales_description_three; ?></p>
-    </div>
+        <div class="grid grid-cols-3 gap-1">
+  <div>
+    <button id="button1" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 mb-4 w-full">SALE</button>
   </div>
-  <div class="w-1/3">
-    <button id="button2" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 mb-4 w-full" onclick="toggleDescription(2)">PURCHASE</button>
-    <div id="description2" class="hidden bg-gray-200 p-4">Description for column 2</div>
+  <div>
+    <button id="button2" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 mb-4 w-full">PURCHASE</button>
   </div>
-  <div class="w-1/3">
-    <button id="button3" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 mb-4 w-full" onclick="toggleDescription(3)">INVESTMENT</button>
-    <div id="description3" class="hidden bg-gray-200 p-4">Description for column 3</div>
+  <div>
+    <button id="button3" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 mb-4 w-full">INVESTMENT</button>
   </div>
 </div>
 
+<div id="main" class="w-full h-10">
+  Default content
+</div>
 
 <script>
-var previousColors = {
-  button1: 'bg-blue-500',
-  button2: 'bg-blue-500',
-  button3: 'bg-blue-500'
-};
+  const button1 = document.getElementById("button1");
+  const button2 = document.getElementById("button2");
+  const button3 = document.getElementById("button3");
+  const mainDiv = document.getElementById("main");
 
-function toggleDescription(col) {
-  var description = document.getElementById(`description${col}`);
-  var button = document.getElementById(`button${col}`);
+  button1.addEventListener("click", () => {
+    const saleContent = `
+      <h2>Sale Section</h2>
+      <p>This is the content for the Sale section.</p>
+    `;
+    mainDiv.innerHTML = saleContent;
+  });
 
-  description.classList.toggle('hidden');
+  button2.addEventListener("click", () => {
+    const purchaseContent = `
+      <h2>Purchase Section</h2>
+      <p>This is the content for the Purchase section.</p>
+    `;
+    mainDiv.innerHTML = purchaseContent;
+  });
 
-  if (description.classList.contains('hidden')) {
-    button.classList.remove('bg-red-500');
-    button.classList.add(previousColors[`button${col}`]);
-  } else {
-    previousColors[`button${col}`] = button.classList.value;
-    button.classList.remove(previousColors[`button${col}`]);
-    button.classList.add('bg-red-500');
-  }
-}
+  button3.addEventListener("click", () => {
+    const investmentContent = `
+      <h2>Investment Section</h2>
+      <p>This is the content for the Investment section.</p>
+    `;
+    mainDiv.innerHTML = investmentContent;
+  });
+</script>
 
-// Adjust button width
-var columns = document.querySelectorAll('.w-1/3');
-var buttons = document.querySelectorAll('button');
 
-buttons.forEach(function(button, index) {
-  button.style.width = columns[index].offsetWidth + 'px';
-});
+
+
+<script>
+
 
 </script>
         
