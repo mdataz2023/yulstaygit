@@ -88,7 +88,7 @@ $residential_info_right_section_investment_description_three = get_field('reside
   button1.addEventListener("click", () => {
     const saleContent = `
       <h2>Sale Section</h2>
-      <p>This is the content for the Sale section.</p>
+      <p>This is the content for the Sale section. This is the content for the Purchase section. This is the content for the Purchase section.</p>
     `;
     mainDiv.innerHTML = saleContent;
   });
@@ -96,7 +96,7 @@ $residential_info_right_section_investment_description_three = get_field('reside
   button2.addEventListener("click", () => {
     const purchaseContent = `
       <h2>Purchase Section</h2>
-      <p>This is the content for the Purchase section.</p>
+      <p>This is the content for the Purchase section. This is the content for the Purchase section. This is the content for the Purchase section.</p>
     `;
     mainDiv.innerHTML = purchaseContent;
   });
@@ -104,7 +104,7 @@ $residential_info_right_section_investment_description_three = get_field('reside
   button3.addEventListener("click", () => {
     const investmentContent = `
       <h2>Investment Section</h2>
-      <p>This is the content for the Investment section.</p>
+      <p>This is the content for the Investment section. This is the content for the Purchase section. This is the content for the Purchase section.</p>
     `;
     mainDiv.innerHTML = investmentContent;
   });
