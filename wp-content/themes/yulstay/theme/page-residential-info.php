@@ -63,6 +63,18 @@ $residential_info_right_section_investment_description_three = get_field('reside
         <div class="md:block hidden flex justify-center">
             <a href="<?php bloginfo('url'); ?>/home" class="flex justify-center"><img src="<?php echo $residential_info_left_section_company_logo; ?>" class="w-60 pb-4" alt=""></a>
         </div>
+
+        <div class="grid grid-cols-6">
+          <div class="h-5"></div>
+          <div class="h-5 border-l-4 border-indigo-500 border-t-4 "></div>
+          <div class="h-5 border-t-4 border-r-4 border-indigo-500"></div>
+          <div class="h-5 border-t-4  border-indigo-500"></div>
+          <div class="h-5 border-r-4 border-t-4 border-indigo-500"></div>
+          <div class="h-5"></div>
+
+        </div>
+
+
         <div class="grid grid-cols-3 gap-1">
   <div>
     <button id="button1" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 mb-4 w-full">SALE</button>
