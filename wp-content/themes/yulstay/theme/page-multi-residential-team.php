@@ -72,7 +72,7 @@ $team_page_description = get_field('team_page_description');
 
 
 
-<div class="mx-auto md:mr-8">
+<div class="mx-auto md:mr-8"></div>
 
 <div class="grid grid-cols-1">
 
