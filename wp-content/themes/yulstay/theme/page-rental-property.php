@@ -109,12 +109,7 @@ if ($the_query->have_posts()) {
 
             <div class="text-black" style="font-size: 22px;">
 
-                <h1>Through our relationship in the industry and our volume of transactions, we
-
-                    are happy to have access to many new construction projects. This allows us to offer many benefits to
-                    any of our
-
-                    clients looking to purchase or invest in new constructions.</h1>
+               
 
             </div>
 
