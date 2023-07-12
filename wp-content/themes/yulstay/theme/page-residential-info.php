@@ -88,7 +88,7 @@ $residential_info_right_section_investment_description_three = get_field('reside
 </div>
 
 <div id="main" class="w-full h-10">
-<p class="text-xl text-gray-900 "><?php echo $residential_info_right_section_sales_paragraph_one; ?></p>
+
 </div>
 
 <script>
