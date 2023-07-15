@@ -87,7 +87,7 @@ $team_page_description = get_field('team_page_description');
 </div>
 
 <div id="main" class="w-full h-10">
-  Default content
+Choose Form
 </div>
 
 <script>

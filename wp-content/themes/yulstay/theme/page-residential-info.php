@@ -63,30 +63,100 @@ $residential_info_right_section_investment_description_three = get_field('reside
         <div class="md:block hidden flex justify-center">
             <a href="<?php bloginfo('url'); ?>/home" class="flex justify-center"><img src="<?php echo $residential_info_left_section_company_logo; ?>" class="w-60 pb-4" alt=""></a>
         </div>
+<!-- section -->
+<div class="grid grid-cols-2">
+  <div id="col1" class="h-5 border-r-4 border-gray-400"></div>
+  <div></div>
+</div>
 
-        <div class="grid grid-cols-6">
-          <div class="h-5"></div>
-          <div class="h-5 border-l-4 border-indigo-500 border-t-4 "></div>
-          <div class="h-5 border-t-4 border-r-4 border-indigo-500"></div>
-          <div class="h-5 border-t-4  border-indigo-500"></div>
-          <div class="h-5 border-r-4 border-t-4 border-indigo-500"></div>
-          <div class="h-5"></div>
+<div class="grid grid-cols-6">
+  <div id="col2" class="h-5"></div>
+  <div id="col3" class="h-5 border-l-4 border-gray-400 border-t-4 "></div>
+  <div id="col4" class="h-5 border-t-4 border-r-4 border-gray-400"></div>
+  <div id="col5" class="h-5 border-t-4  border-gray-400"></div>
+  <div id="col6" class="h-5 border-r-4 border-t-4 border-gray-400"></div>
+  <div id="col7" class="h-5"></div>
+</div>
 
-        </div>
-
-
-        <div class="grid grid-cols-3 gap-1">
+<div class="grid grid-cols-3 gap-1">
   <div>
-    <button id="button1" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 mb-4 w-full">SALE</button>
+    <button id="button1" class="bg-gray-400 hover:bg-blue-700 text-white font-bold py-2 px-4 mb-4 w-full">SALE</button>
   </div>
   <div>
-    <button id="button2" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 mb-4 w-full">PURCHASE</button>
+    <button id="button2" class="bg-gray-400 hover:bg-blue-700 text-white font-bold py-2 px-4 mb-4 w-full">PURCHASE</button>
   </div>
   <div>
-    <button id="button3" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 mb-4 w-full">INVESTMENT</button>
+    <button id="button3" class="bg-gray-400 hover:bg-blue-700 text-white font-bold py-2 px-4 mb-4 w-full">INVESTMENT</button>
   </div>
 </div>
 
+<script>
+  const button1 = document.getElementById("button1");
+  const button2 = document.getElementById("button2");
+  const button3 = document.getElementById("button3");
+  const col1 = document.getElementById("col1");
+  const col3 = document.getElementById("col3");
+  const col4 = document.getElementById("col4");
+  const col5 = document.getElementById("col5");
+  const col6 = document.getElementById("col6");
+
+  // Button 1 event listeners
+  button1.addEventListener("click", function () {
+    col1.classList.add("border-blue-700");
+    col3.classList.add("border-blue-700");
+    col4.classList.add("border-blue-700");
+  });
+
+  button1.addEventListener("mouseover", function () {
+    col1.classList.add("border-blue-700");
+    col3.classList.add("border-blue-700");
+    col4.classList.add("border-blue-700");
+  });
+
+  button1.addEventListener("mouseout", function () {
+    col1.classList.remove("border-blue-700");
+    col3.classList.remove("border-blue-700");
+    col4.classList.remove("border-blue-700");
+  });
+
+  // Button 2 event listeners
+  button2.addEventListener("click", function () {
+    col1.classList.add("border-blue-700");
+    col5.classList.add("border-blue-700");
+  });
+
+  button2.addEventListener("mouseover", function () {
+    col1.classList.add("border-blue-700");
+    col5.classList.add("border-blue-700");
+  });
+
+  button2.addEventListener("mouseout", function () {
+    col1.classList.remove("border-blue-700");
+    col5.classList.remove("border-blue-700");
+  });
+
+  // Button 3 event listeners
+  button3.addEventListener("click", function () {
+    col1.classList.add("border-blue-700");
+    col5.classList.add("border-blue-700");
+    col6.classList.add("border-blue-700");
+  });
+
+  button3.addEventListener("mouseover", function () {
+    col1.classList.add("border-blue-700");
+    col5.classList.add("border-blue-700");
+    col6.classList.add("border-blue-700");
+  });
+
+  button3.addEventListener("mouseout", function () {
+    col1.classList.remove("border-blue-700");
+    col5.classList.remove("border-blue-700");
+    col6.classList.remove("border-blue-700");
+  });
+</script>
+
+
+<!-- section -->
 <div id="main" class="w-full h-10">
 
 </div>
