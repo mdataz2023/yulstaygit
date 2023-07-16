@@ -109,6 +109,24 @@ button1.addEventListener("click", () => {
         <div class="my-3 text-lg font-bold">Purchase</div>
         <!-- Form Purchase -->
       <form action="#" method="POST" class="pb-24 sm:pb-32">
+
+      <div>
+          <label class="text-base font-semibold text-gray-900">Invesment</label>
+          <p class="text-sm text-gray-500">Are you going to make a Invesment?</p>
+          <fieldset class="mt-4 ml-2">
+            <legend class="sr-only">Notification method</legend>
+            <div class="space-y-4 sm:flex sm:items-center sm:space-x-10 sm:space-y-0">
+              <div class="flex items-center">
+                <input id="email" name="notification-method" type="radio" checked class="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-600">
+                <label for="email" class="ml-3 block text-sm font-medium leading-6 text-gray-900">Yes</label>
+              </div>
+              <div class="flex items-center">
+                <input id="sms" name="notification-method" type="radio" class="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-600">
+                <label for="sms" class="ml-3 block text-sm font-medium leading-6 text-gray-900">NO</label>
+              </div>
+            </div>
+          </fieldset>
+        </div>
  
       <label for="last-name" class="block text-sm font-semibold leading-6 text-gray-900 mt-2.5">Down payment available</label>
 
@@ -174,6 +192,24 @@ button2.addEventListener("click", () => {
         <div class="my-3 text-lg font-bold">Sales</div>
         <!-- Form Sale -->
       <form action="#" method="POST" class="pb-24 sm:pb-32">
+
+      <div>
+          <label class="text-base font-semibold text-gray-900">Invesment</label>
+          <p class="text-sm text-gray-500">Are you going to make a Invesment?</p>
+          <fieldset class="mt-4 ml-2">
+            <legend class="sr-only">Notification method</legend>
+            <div class="space-y-4 sm:flex sm:items-center sm:space-x-10 sm:space-y-0">
+              <div class="flex items-center">
+                <input id="email" name="notification-method" type="radio" checked class="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-600">
+                <label for="email" class="ml-3 block text-sm font-medium leading-6 text-gray-900">Yes</label>
+              </div>
+              <div class="flex items-center">
+                <input id="sms" name="notification-method" type="radio" class="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-600">
+                <label for="sms" class="ml-3 block text-sm font-medium leading-6 text-gray-900">NO</label>
+              </div>
+            </div>
+          </fieldset>
+        </div>
     
       <label for="last-name" class="block text-sm font-semibold leading-6 text-gray-900 mt-2.5">Address</label>
 

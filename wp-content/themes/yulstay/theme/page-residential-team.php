@@ -109,10 +109,31 @@ Choose Form
   button1.addEventListener("click", () => {
     const saleContent = `
     <div>
+
+        
           <div class="my-3 text-lg font-bold">Purchase</div>
           <!-- Form Purchase -->
         <form action="#" method="POST" class="pb-24 sm:pb-32">
-          <label for="countries" class="block mb-2 text-sm font-medium text-gray-900 ">Type</label>
+
+        <div>
+          <label class="text-base font-semibold text-gray-900">Invesment</label>
+          <p class="text-sm text-gray-500">Are you going to make a Invesment?</p>
+          <fieldset class="mt-4 ml-2">
+            <legend class="sr-only">Notification method</legend>
+            <div class="space-y-4 sm:flex sm:items-center sm:space-x-10 sm:space-y-0">
+              <div class="flex items-center">
+                <input id="email" name="notification-method" type="radio" checked class="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-600">
+                <label for="email" class="ml-3 block text-sm font-medium leading-6 text-gray-900">Yes</label>
+              </div>
+              <div class="flex items-center">
+                <input id="sms" name="notification-method" type="radio" class="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-600">
+                <label for="sms" class="ml-3 block text-sm font-medium leading-6 text-gray-900">NO</label>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+
+          <label for="countries" class="block mb-2 text-sm font-medium text-gray-900 mt-2.5">Type</label>
           <select id="countries" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:focus:ring-blue-500 dark:focus:border-blue-500">
           <option selected>Choose a type</option>
           <option value="US">Condo</option>
@@ -124,7 +145,7 @@ Choose Form
 
         <div class="mt-2.5">
 
-          <input type="text" name="last-name" id="last-name" autocomplete="family-name" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+          <input type="text" name="last-name" id="last-name" autocomplete="family-name" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" placeholder="Test">
 
         </div>
         <label for="last-name" class="block text-sm font-semibold leading-6 text-gray-900 mt-2.5">Area</label>
@@ -215,6 +236,24 @@ Choose Form
           <div class="my-3 text-lg font-bold">Sales</div>
           <!-- Form Sale -->
         <form action="#" method="POST" class="pb-24 sm:pb-32">
+
+        <div>
+          <label class="text-base font-semibold text-gray-900">Invesment</label>
+          <p class="text-sm text-gray-500">Are you going to make a Invesment?</p>
+          <fieldset class="mt-4 ml-2">
+            <legend class="sr-only">Notification method</legend>
+            <div class="space-y-4 sm:flex sm:items-center sm:space-x-10 sm:space-y-0">
+              <div class="flex items-center">
+                <input id="email" name="notification-method" type="radio" checked class="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-600">
+                <label for="email" class="ml-3 block text-sm font-medium leading-6 text-gray-900">Yes</label>
+              </div>
+              <div class="flex items-center">
+                <input id="sms" name="notification-method" type="radio" class="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-600">
+                <label for="sms" class="ml-3 block text-sm font-medium leading-6 text-gray-900">NO</label>
+              </div>
+            </div>
+          </fieldset>
+        </div>
           
 
         <label for="last-name" class="block text-sm font-semibold leading-6 text-gray-900 mt-2.5">Pre-approval</label>
