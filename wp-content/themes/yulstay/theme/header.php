@@ -26,6 +26,21 @@
 <body <?php body_class(); ?>>
 
 <?php wp_body_open(); ?>
+
+<style>
+  .dropdown-container .ml-20 {
+    opacity: 0;
+    display: none;
+
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  }
+  
+  .dropdown-container:hover .ml-20 {
+    opacity: 1;
+    display: block;
+  }
+
+</style>
     <script>
         var modal = document.getElementById("myModal");
         
