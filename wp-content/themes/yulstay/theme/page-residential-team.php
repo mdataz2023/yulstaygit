@@ -9,7 +9,11 @@ $team_page_description = get_field('team_page_description');
 ?>
 
 <div class="grid w-screen h-screen grid-cols-1 gap-8 mr-12 overflow-y-scroll md:grid-cols-2 p-14 md:overflow-y-hidden">
+  
         <div class="md:overflow-y-scroll hide-scroll-bar">
+        <div class="md:block hidden">
+          <a href="<?php bloginfo('url'); ?>/home"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/1.png" class="w-32 pb-4" alt=""></a>
+          </div>
 			<div class="flex gap-3 mb-3">
 				<div>
 					<a href="<?php bloginfo('url'); ?>/home" class="font-bold text-gray-400 hover:text-gray-800"><?php _e('Home','theme-text-domain'); ?></a>
@@ -86,10 +90,10 @@ $team_page_description = get_field('team_page_description');
 
   <div class="grid grid-cols-2 gap-1">
   <div>
-    <button id="button1" class="w-full px-4 py-2 mb-4 font-bold text-white bg-blue-500 hover:bg-blue-700">PURCHASE</button>
+    <button id="button1" class="w-full px-4 py-2 mb-4 font-bold text-white bg-[#00AEC5] hover:bg-blue-700">PURCHASE</button>
   </div>
   <div>
-    <button id="button2" class="w-full px-4 py-2 mb-4 font-bold text-white bg-blue-500 hover:bg-blue-700">SALE</button>
+    <button id="button2" class="w-full px-4 py-2 mb-4 font-bold text-white bg-[#00AEC5] hover:bg-blue-700">SALE</button>
   </div>
 </div>
 

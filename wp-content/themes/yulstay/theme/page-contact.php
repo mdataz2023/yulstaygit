@@ -158,13 +158,13 @@ $email = get_field('email');
 
         <div class="mx-auto md:mr-8">
 
-          <div class="grid grid-cols-1 gap-7">
+          <div class="grid grid-cols-1 gap-7 my-auto">
 
           
-            <a href="<?php bloginfo('url'); ?>/residential-team" class="bg-blue-500 leading-10 rounded-md text-center text-white"><span class=my-auto>Residential Team</span></button>
-            <a href="<?php bloginfo('url'); ?>/multi-residential-team" class="bg-blue-500 leading-10 rounded-md text-center text-white"><span class=my-auto>Multi Residential</span></button>
-            <a href="<?php bloginfo('url'); ?>/rental-property-team" class="bg-blue-500 leading-10 rounded-md text-center text-white"><span class=my-auto>Rental + Property Team</span></button>
-            <a href="<?php bloginfo('url'); ?>/join-our-team" class="bg-blue-500 leading-10 rounded-md text-center text-white"><span class=my-auto>Join our Team</span></button>
+            <a href="<?php bloginfo('url'); ?>/residential-team" class="bg-[#00AEC5] hover:bg-blue-700 leading-10 rounded-full text-center text-white"><span class=my-auto>Residential Team</span></button>
+            <a href="<?php bloginfo('url'); ?>/multi-residential-team" class="bg-[#00AEC5] hover:bg-blue-700 leading-10 rounded-full text-center text-white"><span class=my-auto>Multi Residential</span></button>
+            <a href="<?php bloginfo('url'); ?>/rental-property-team" class="bg-[#00AEC5] hover:bg-blue-700 leading-10 rounded-full text-center text-white"><span class=my-auto>Rental + Property Team</span></button>
+            <a href="<?php bloginfo('url'); ?>/join-our-team" class="bg-[#00AEC5] hover:bg-blue-700 leading-10 rounded-full text-center text-white"><span class=my-auto>Join our Team</span></button>
 
           </div>
 

@@ -72,7 +72,8 @@
         <div class="grid grid-cols-1 md:grid-cols-2 w-screen mr-12">
           <div class="px-6 py-14 md:p-14 h-screen flex flex-col justify-between">
             <div class="text-2xl uppercase">
-              <div class="dropdown-container grid grid-cols-1">
+
+              <div class="dropdown-container">
                 <div>
                   <a href="<?php bloginfo('url'); ?>/residential-info" class="text-gray-700 text-3xl hover:font-bold"><?php _e('Residential','theme-text-domain'); ?></a>
                 </div>
@@ -88,7 +89,8 @@
                   </div>
                 </div>
                 </div>
-                <div class="dropdown-container grid grid-cols-1">
+
+                <div class="dropdown-container">
                 <div class="mt-2">
                   <a href="<?php bloginfo('url'); ?>/multi-residential-info" class="text-gray-700 text-3xl hover:font-bold"><?php _e('Multi-Residential','theme-text-domain'); ?></a>
                 </div>
@@ -104,7 +106,8 @@
                   </div>
                 </div>
                 </div>
-                <div class="dropdown-container grid grid-cols-1">
+
+                <div class="dropdown-container">
                   <div class="mt-2">
                     <a href="<?php bloginfo('url'); ?>/rental-property-info" class="text-gray-700 text-3xl hover:font-bold"><?php _e('Rental + Property','theme-text-domain'); ?></a>
                   </div>
@@ -120,25 +123,27 @@
                     </div>
                   </div>
                 </div>
-                <div class="dropdown-container grid grid-cols-1">
-                <div class="mt-2">
-                  <a href="#" class="text-gray-700 text-3xl hover:font-bold">Yulstay +</a>
+                
+                <div class="dropdown-container">
+                  <div class="mt-2">
+                    <a href="#" class="text-gray-700 text-3xl hover:font-bold">Yulstay +</a>
+                  </div>
+                  <div>
+                    <div class="ml-20">
+                      <a href="<?php bloginfo('url'); ?>/events-collaboration" class="text-gray-600 link link-underline link-underline-black hover:font-bold"><?php _e('Events & Collaboration','theme-text-domain'); ?></a>
+                    </div>
+                    <div class="ml-20">
+                      <a href="<?php bloginfo('url'); ?>/podcasts" class="text-gray-600 link link-underline link-underline-black hover:font-bold"><?php _e('Podcasts','theme-text-domain'); ?></a>
+                    </div>
+                    <div class="ml-20">
+                      <a href="<?php bloginfo('url'); ?>/building-history" class="text-gray-600 link link-underline link-underline-black hover:font-bold"><?php _e('Building History','theme-text-domain'); ?></a>
+                    </div>
+                    <div class="ml-20">
+                      <a href="<?php bloginfo('url'); ?>/join-our-team" class="text-gray-600 link link-underline link-underline-black hover:font-bold"><?php _e('Join the Team','theme-text-domain'); ?></a>
+                    </div>
+                  </div>
                 </div>
-                <div>
-                <div class="ml-20">
-                  <a href="<?php bloginfo('url'); ?>/events-collaboration" class="text-gray-600 link link-underline link-underline-black hover:font-bold"><?php _e('Events & Collaboration','theme-text-domain'); ?></a>
-                </div>
-                <div class="ml-20">
-                  <a href="<?php bloginfo('url'); ?>/podcasts" class="text-gray-600 link link-underline link-underline-black hover:font-bold"><?php _e('Podcasts','theme-text-domain'); ?></a>
-                </div>
-                <div class="ml-20">
-                  <a href="<?php bloginfo('url'); ?>/building-history" class="text-gray-600 link link-underline link-underline-black hover:font-bold"><?php _e('Building History','theme-text-domain'); ?></a>
-                </div>
-                <div class="ml-20">
-                  <a href="<?php bloginfo('url'); ?>/join-our-team" class="text-gray-600 link link-underline link-underline-black hover:font-bold"><?php _e('Join the Team','theme-text-domain'); ?></a>
-                </div>
-                </div>
-                </div>
+
                 <div class="mt-2">
                   <a href="<?php bloginfo('url'); ?>/new-construction" class="text-gray-700 text-3xl link link-underline link-underline-black hover:font-bold"><?php _e('New Construction','theme-text-domain'); ?></a>
                 </div>
@@ -151,12 +156,12 @@
           
                     <div>
                     <div id="language-switcher" class="py-2">
-  <ul class="flex space-x-4">
-    <li>
-      <?php do_action('wpml_add_language_selector'); ?>
-    </li>
-  </ul>
-</div>
+                    <ul class="flex space-x-4">
+                      <li>
+                        <?php do_action('wpml_add_language_selector'); ?>
+                      </li>
+                    </ul>
+                  </div>
                     <div>
                     <h2 class="text-xl"><?php _e('SUBSCRIBE TO OUR NEWSLETTER','theme-text-domain'); ?></h2>
                     <div class="flex gap-4 border-b border-black pt-5">
