@@ -27,7 +27,7 @@ $team_page_description = get_field('team_page_description');
 			</div>
 			<div class="grid grid-cols-3 gap-4">
     <?php
-    $ids_to_display = array(114, 119, 121, 123); // IDs of the posts you want to display
+    $ids_to_display = array(123, 121, 119, 114); // IDs of the posts you want to display114, 119, 121, 123
 
     $the_query = new WP_Query(array(
         'post_type' => 'team',
@@ -69,7 +69,11 @@ $team_page_description = get_field('team_page_description');
 </div>
 		</div>
         <div class="md:overflow-y-scroll hide-scroll-bar">
+        <h2>Yulstay is your one-stop-shop for all your real estate needs in Montreal. We offer a comprehensive range of strategic advice and services that cover everything from purchasing, financing, managing, selling and optimizing your multiresidential properties.</h2>
 
+<h2>We serve a broad range of investors from all corners of the globe, and our team manages the investments of over 100 real estate investors worldwide. With Yulstay, you can rest assured that your real estate investments in Montreal are in the best possible hands.</h2>
+
+<h2>Our team has consistently ranked in the top producers nationwide and continues to deliver its promises of peace of mind, transparency and results. Do not hesitate to book a consultation to discuss how we can help you maximize your investments.</h2>
         <div class="mx-auto md:mr-8"></div>
 
 <div class="grid grid-cols-1">
