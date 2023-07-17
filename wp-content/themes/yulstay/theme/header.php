@@ -85,7 +85,7 @@
        </div>
     </nav>
 
-    <div id="myModal" class="modal z-40" style="background-color: #d5d5d5;">
+    <div id="myModal" class="modal z-40" style="background-color: #fff;">
         <div class="grid grid-cols-1 md:grid-cols-2 w-screen mr-12">
           <div class="px-6 py-14 md:p-14 h-screen flex flex-col justify-between">
             <div class="text-2xl uppercase">
@@ -172,17 +172,11 @@
           </div>
           
                     <div>
-                    <div id="language-switcher" class="py-2">
-                    <ul class="flex space-x-4">
-                      <li>
-                        <?php do_action('wpml_add_language_selector'); ?>
-                      </li>
-                    </ul>
-                  </div>
+                    
                     <div>
                     <h2 class="text-xl"><?php _e('SUBSCRIBE TO OUR NEWSLETTER','theme-text-domain'); ?></h2>
                     <div class="flex gap-4 border-b border-black pt-5">
-                      <input type="email" name="" placeholder="Email address" class="w-full bg-[#d5d5d5] outline-none" id="">
+                      <input type="email" name="" placeholder="Email address" class="w-full bg-[#fff] outline-none" id="">
                       <input type="submit" value="<?php _e('Join','theme-text-domain'); ?>" class="hover:font-black">
                     </div>
                   </div>
@@ -191,6 +185,13 @@
           </div>
             
             <div class="px-6 py-14 md:p-14 h-screen flex justify-end items-end">
+            <div id="language-switcher" class="py-2">
+                    <ul class="flex space-x-4">
+                      <li>
+                        <?php do_action('wpml_add_language_selector'); ?>
+                      </li>
+                    </ul>
+                  </div>
               <div>
                 <a href="<?php bloginfo('url'); ?>/home"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/1.png" class="w-44 pb-4" alt=""></a>
               </div>
