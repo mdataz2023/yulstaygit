@@ -90,15 +90,15 @@ $team_page_description = get_field('team_page_description');
 
   <div class="grid grid-cols-2 gap-1">
   <div>
-    <button id="button1" class="w-full px-4 py-2 mb-4 font-bold text-white bg-[#00AEC5] hover:bg-blue-700">PURCHASE</button>
+    <button id="button1" class="w-full px-4 py-2 mb-4 font-bold text-white rounded-full bg-[#00AEC5] hover:bg-blue-700">PURCHASE</button>
   </div>
   <div>
-    <button id="button2" class="w-full px-4 py-2 mb-4 font-bold text-white bg-[#00AEC5] hover:bg-blue-700">SALE</button>
+    <button id="button2" class="w-full px-4 py-2 mb-4 font-bold text-white rounded-full bg-[#00AEC5] hover:bg-blue-700">SALE</button>
   </div>
 </div>
 
 <div id="main" class="w-full h-10">
-Choose Form
+
 </div>
 
 <script>
@@ -220,7 +220,7 @@ Choose Form
 
       <div class="flex justify-end mt-8">
 
-        <button type="submit" class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Send message</button>
+        <button type="submit" class="bg-[#00AEC5] px-3.5 py-2.5 text-center rounded-full text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Send message</button>
 
       </div>
       </form>
@@ -335,7 +335,7 @@ Choose Form
 
       <div class="flex justify-end mt-8">
 
-        <button type="submit" class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Send message</button>
+        <button type="submit" class="rounded-full bg-[#00AEC5] px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Send message</button>
 
       </div>
       </form>
