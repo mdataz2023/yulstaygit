@@ -13,6 +13,10 @@ module.exports = {
 	],
 	theme: {
 		// Extend the default Tailwind theme.
+		fontFamily: {
+            'ropa': ['"Ropa Sans", sans-serif'],
+			'poppins': ['"Poppins", sans-serif'],
+        },
 		extend: {},
 	},
 	corePlugins: {

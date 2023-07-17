@@ -113,7 +113,7 @@ $linkedin_link = get_field('linkedin_link');
                <div class="accordion-flush" data-accordion="collapse" data-active-classes="bg-white dark:bg-gray-900 text-gray-900 dark:text-white" data-inactive-classes="text-gray-500 dark:text-gray-400">
                <h2 class="accordion-flush-heading">
                <button type="button" class="flex items-center justify-between w-full py-5 font-medium text-left text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400" aria-expanded="false">
-                    <h3 class="text-2xl font-bold"><?php echo $title; ?></h3>
+                    <h3 class="font-poppins font-medium text-lg"><?php echo $title; ?></h3>
                     <svg class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
                     </svg>
@@ -121,7 +121,7 @@ $linkedin_link = get_field('linkedin_link');
                </h2>
                <div class="accordion-flush-body hidden">
                <div class="py-5 border-b border-gray-200 dark:border-gray-700">
-                    <p class="mb-2 text-gray-500 dark:text-gray-400"><?php echo $description; ?></p>
+                    <p class="mb-2 text-gray-500 dark:text-gray-400 font-poppins font-medium text-base"><?php echo $description; ?></p>
                </div>
                </div>
                </div>
