@@ -184,7 +184,7 @@
             
           </div>
             
-            <div class="px-6 py-14 md:p-14 h-screen flex justify-end items-end">
+            <div class="px-6 py-14 md:p-14 h-screen flex justify-between items-end">
             <div id="language-switcher" class="py-2">
                     <ul class="flex space-x-4">
                       <li>
