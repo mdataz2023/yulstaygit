@@ -58,7 +58,7 @@ $team_page_description = get_field('team_page_description');
                     <img src="<?php echo $attachment_image; ?>" alt="">
                 <?php } ?>
                 <div class="text-center">
-                    <a href="<?php the_permalink(); ?>"><h3 class="text-2xl font-bold"><?php the_title(); ?></h3></a>
+                    <a href="<?php the_permalink(); ?>"><h3 class="text-2xl font-semibold hover:font-bold"><?php the_title(); ?></h3></a>
                     <p><?php the_excerpt(); ?></p>
                 </div>
             </div>
