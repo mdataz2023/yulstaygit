@@ -21,10 +21,10 @@ get_header(); ?>
         
         <div class="flex justify-between">
             <div>
-                <a href="<?php bloginfo('url'); ?>/join-our-team" class="font-bold"><?php _e('Join Our Team','theme-text-domain'); ?></a>
+                <a href="<?php bloginfo('url'); ?>/join-our-team" class="px-4 py-2 mb-4 rounded-full bg-none hover:bg-[#00AEC5] hover:text-white font-poppins font-semibold"><?php _e('Join Our Team','theme-text-domain'); ?></a>
             </div>
             <div class="md:pr-6">
-                <a href="<?php bloginfo('url'); ?>/join-our-team" class="font-bold"><?php _e('Book a Consutation','theme-text-domain'); ?></a>
+                <a href="<?php bloginfo('url'); ?>/join-our-team" class="px-4 py-2 mb-4 rounded-full bg-none hover:bg-[#00AEC5] hover:text-white font-poppins font-semibold"><?php _e('Book a Consutation','theme-text-domain'); ?></a>
             </div>
         </div>
     </div>
