@@ -44,7 +44,7 @@ $residential_info_right_section_investment_description_three = get_field('reside
 ?>
 
 <div class="h-screen w-screen mr-12 p-14 gap-6">
-    <div>
+    <div class="overflow-y-scroll">
 
         <div class="flex gap-3 mb-3">
 				<div>
