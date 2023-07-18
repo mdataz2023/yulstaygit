@@ -90,10 +90,10 @@ $team_page_description = get_field('team_page_description');
 
 <div class="grid grid-cols-2 gap-1">
 <div>
-  <button id="button1" class="w-full px-4 py-2 mb-4 font-bold text-white rounded-full bg-[#00AEC5] hover:bg-blue-700">PURCHASE</button>
+  <button id="button1" class="w-full px-4 py-2 mb-4 rounded-full bg-white hover:bg-[#00AEC5] text-black hover:text-white border border-black hover:border-none font-poppins font-semibold">PURCHASE</button>
 </div>
 <div>
-  <button id="button2" class="w-full px-4 py-2 mb-4 font-bold text-white rounded-full bg-[#00AEC5] hover:bg-blue-700">SALE</button>
+  <button id="button2" class="w-full px-4 py-2 mb-4 rounded-full bg-white hover:bg-[#00AEC5] text-black hover:text-white border border-black hover:border-none font-poppins font-semibold">SALE</button>
 </div>
 </div>
 
