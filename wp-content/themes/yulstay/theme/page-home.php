@@ -13,7 +13,7 @@ get_header(); ?>
           <div class="hidden md:block">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.png" class="w-80" alt="">
         </div>
-        <h2 class="text-5xl pt-4 font-bold">
+        <h2 class="text-5xl font-poppins pt-4 font-bold">
                 Investing in peace of mind
             </h2>
           </div>
