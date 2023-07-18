@@ -48,7 +48,7 @@ $team_page_description = get_field('team_page_description');
 
             $categories = get_the_category();
             ?>
-            <a class="hover:bg-gray-800" href="<?php the_permalink(); ?>">
+            <a class="hover:bg-gray-400" href="<?php the_permalink(); ?>">
             <div >
                 <?php
                 if (has_post_thumbnail()) {
