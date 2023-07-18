@@ -49,8 +49,9 @@ $team_page_description = get_field('team_page_description');
 
             $categories = get_the_category();
             ?>
-            <a class="hover:bg-gray-400" href="<?php the_permalink(); ?>">
+            
             <div>
+            <a class="hover:bg-gray-400" href="<?php the_permalink(); ?>">
                 <?php
                 if (has_post_thumbnail()) {
                     $attachment_image = wp_get_attachment_url($thumbnail_id);
@@ -62,7 +63,8 @@ $team_page_description = get_field('team_page_description');
                     <a href="<?php the_permalink(); ?>"><h3 class="text-2xl font-semibold hover:font-bold"><?php the_title(); ?></h3></a>
                     <p><?php the_excerpt(); ?></p>
                 </div>
-            </div></a>
+                </a>
+            </div>
     <?php
         }
     } else {
