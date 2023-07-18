@@ -48,6 +48,7 @@ $team_page_description = get_field('team_page_description');
 
             $categories = get_the_category();
             ?>
+            <a href="<?php the_permalink(); ?>">
             <div>
                 <?php
                 if (has_post_thumbnail()) {
@@ -57,10 +58,10 @@ $team_page_description = get_field('team_page_description');
                     <img src="<?php echo $attachment_image; ?>" alt="">
                 <?php } ?>
                 <div class="text-center">
-                    <a href="<?php the_permalink(); ?>"><h3 class="text-2xl font-semibold hover:font-bold"><?php the_title(); ?></h3></a>
+                    <h3 class="text-2xl font-semibold hover:font-bold"><?php the_title(); ?></h3>
                     <p><?php the_excerpt(); ?></p>
                 </div>
-            </div>
+            </div></a>
     <?php
         }
     } else {
@@ -72,21 +73,21 @@ $team_page_description = get_field('team_page_description');
 </div>
 		</div>
         <div class="md:overflow-y-scroll hide-scroll-bar">
-        <h2 class="font-poppins font-medium text-base pb-1">Yulstay is your one-stop-shop for all your real estate needs in Montreal. We offer a comprehensive range of strategic advice and services that cover everything from purchasing, financing, managing, selling and optimizing your multiresidential properties.</h2>
+        <h2 class="font-poppins font-medium text-base pb-1 text-justify">Yulstay is your one-stop-shop for all your real estate needs in Montreal. We offer a comprehensive range of strategic advice and services that cover everything from purchasing, financing, managing, selling and optimizing your multiresidential properties.</h2>
 
-<h2 class="font-poppins font-medium text-base pb-1">We serve a broad range of investors from all corners of the globe, and our team manages the investments of over 100 real estate investors worldwide. With Yulstay, you can rest assured that your real estate investments in Montreal are in the best possible hands.</h2>
+<h2 class="font-poppins font-medium text-base pb-1 text-justify">We serve a broad range of investors from all corners of the globe, and our team manages the investments of over 100 real estate investors worldwide. With Yulstay, you can rest assured that your real estate investments in Montreal are in the best possible hands.</h2>
 
-<h2 class="font-poppins font-medium text-base pb-1">Our team has consistently ranked in the top producers nationwide and continues to deliver its promises of peace of mind, transparency and results. Do not hesitate to book a consultation to discuss how we can help you maximize your investments.</h2>
+<h2 class="font-poppins font-medium text-base pb-1 text-justify">Our team has consistently ranked in the top producers nationwide and continues to deliver its promises of peace of mind, transparency and results. Do not hesitate to book a consultation to discuss how we can help you maximize your investments.</h2>
         <div class="mx-auto md:mr-8"></div>
 
 <div class="grid grid-cols-1">
 
 <div class="grid grid-cols-2 gap-1">
 <div>
-  <button id="button1" class="w-full px-4 py-2 mb-4 font-bold text-white rounded-full bg-[#00AEC5] hover:bg-blue-700">Rental / Management</button>
+  <button id="button1" class="w-full px-4 py-2 mb-4 rounded-full bg-white hover:bg-[#00AEC5] text-black hover:text-white border border-black hover:border-none font-poppins font-semibold">Rental / Management</button>
 </div>
 <div>
-  <button id="button2" class="w-full px-4 py-2 mb-4 font-bold text-white rounded-full bg-[#00AEC5] hover:bg-blue-700">Rental + Management</button>
+  <button id="button2" class="w-full px-4 py-2 mb-4 rounded-full bg-white hover:bg-[#00AEC5] text-black hover:text-white border border-black hover:border-none font-poppins font-semibold">Rental + Management</button>
 </div>
 </div>
 
