@@ -52,6 +52,9 @@ $email = get_field('email');
         </svg>
 
       </div>
+      <div class="md:block hidden">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/1.png" class="w-32 pb-4" alt="">
+      </div>
       <div class="flex gap-3 mb-3">
 				<div>
 					<a href="<?php bloginfo('url'); ?>/home" class="text-gray-400 hover:text-gray-800 font-bold"><?php _e('Home','theme-text-domain'); ?></a>
@@ -66,9 +69,7 @@ $email = get_field('email');
 				<div class="font-medium"><?php the_title(); ?>
 			</div>
         </div>
-      <div class="md:block hidden">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/1.png" class="w-32 pb-4" alt="">
-      </div>
+
       <h2 class="text-3xl font-bold tracking-tight text-gray-900"><?php echo $join_our_team_page_title; ?></h2>
 
       <p class="mt-6 text-lg leading-8 text-gray-600"><?php echo $join_our_team_page_description; ?></p>
@@ -225,7 +226,7 @@ $email = get_field('email');
 
       <div class="mt-8 flex justify-end">
 
-        <button type="submit" class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Send message</button>
+        <button type="submit" class="text-center w-full py-3 rounded-full bg-white hover:bg-[#00AEC5] text-black hover:text-white border border-black hover:border-none">Send message</button>
 
       </div>
 

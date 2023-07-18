@@ -90,7 +90,7 @@
           <div class="px-6 py-14 md:p-14 h-screen flex flex-col justify-between">
             <div class="text-2xl uppercase">
 
-              <div class="dropdown-container">
+              <div class="dropdown-container grid grid-cols-2">
                 <div>
                   <a href="<?php bloginfo('url'); ?>/residential-info" class="text-gray-700 text-3xl hover:font-bold"><?php _e('Residential','theme-text-domain'); ?></a>
                 </div>
@@ -107,7 +107,7 @@
                 </div>
                 </div>
 
-                <div class="dropdown-container">
+                <div class="dropdown-container grid grid-cols-2">
                 <div class="mt-2">
                   <a href="<?php bloginfo('url'); ?>/multi-residential-info" class="text-gray-700 text-3xl hover:font-bold"><?php _e('Multi-Residential','theme-text-domain'); ?></a>
                 </div>
@@ -124,7 +124,7 @@
                 </div>
                 </div>
 
-                <div class="dropdown-container">
+                <div class="dropdown-container grid grid-cols-2">
                   <div class="mt-2">
                     <a href="<?php bloginfo('url'); ?>/rental-property-info" class="text-gray-700 text-3xl hover:font-bold"><?php _e('Rental + Property','theme-text-domain'); ?></a>
                   </div>
@@ -141,7 +141,7 @@
                   </div>
                 </div>
                 
-                <div class="dropdown-container">
+                <div class="dropdown-container grid grid-cols-2">
                   <div class="mt-2">
                     <a href="#" class="text-gray-700 text-3xl hover:font-bold">Yulstay +</a>
                   </div>
@@ -185,14 +185,15 @@
           </div>
             
             <div class="px-6 py-14 md:p-14 h-screen flex flex-col justify-between">
+            
             <div id="language-switcher" class="py-2">
-                    <ul class="flex space-x-4">
+                    <ul class="flex justify-end">
                       <li>
                         <?php do_action('wpml_add_language_selector'); ?>
                       </li>
                     </ul>
                   </div>
-              <div>
+              <div class="flex justify-end">
                 <a href="<?php bloginfo('url'); ?>/home"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/1.png" class="w-44 pb-4" alt=""></a>
               </div>
               
