@@ -49,8 +49,8 @@ $team_page_description = get_field('team_page_description');
             $categories = get_the_category();
             ?>
             
-            <div>
-            <a class="hover:bg-gray-400" href="<?php the_permalink(); ?>">
+            <div class="hover:bg-gray-400">
+            <a href="<?php the_permalink(); ?>">
                 <?php
                 if (has_post_thumbnail()) {
                     $attachment_image = wp_get_attachment_url($thumbnail_id);
