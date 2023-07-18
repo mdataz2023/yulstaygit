@@ -115,7 +115,7 @@ $residential_info_right_section_investment_description_three = get_field('reside
 
   button1.addEventListener("click", () => {
     const saleContent = `
-    <p class="font-poppins text-xl text-gray-900 "><?php echo $residential_info_right_section_sales_paragraph_one; ?></p>
+    <p class="font-poppins text-lg text-gray-900 "><?php echo $residential_info_right_section_sales_paragraph_one; ?></p>
         <h3 class="font-poppins text-xl text-black pt-4 font-bold "><?php echo $residential_info_right_section_sales_title_one; ?></h3>
         <p class="font-poppins text-xl text-gray-900 "><?php echo $residential_info_right_section_sales_description_one; ?></p>
         <h3 class="font-poppins text-xl font-bold pt-4 text-black "><?php echo $residential_info_right_section_sales_title_two; ?></h3>
