@@ -64,56 +64,43 @@ $residential_info_right_section_investment_description_three = get_field('reside
             <a href="<?php bloginfo('url'); ?>/home" class="flex justify-center"><img src="<?php echo $residential_info_left_section_company_logo; ?>" class="w-60 pb-4" alt=""></a>
         </div>
 <!-- section -->
-<div class="grid grid-cols-2">
-  <div id="col1" class="h-5 border-r-4 border-gray-400"></div>
-  <div></div>
+<div class="grid grid-cols-6 h-2 ">
+  <div id="col1" class=""></div>
+  <div id="col2" class="bg-[#00AEC5]"></div>
+  <div id="col3" class="bg-[#00AEC5]"></div>
+  <div id="col4" class="bg-[#00AEC5]"></div>
+  <div id="col5" class="bg-[#00AEC5]"></div>
+  <div id="col6" class=""></div>
 </div>
-
-<div class="grid grid-cols-6">
-  <div id="col2" class="h-5"></div>
-  <div id="col3" class="h-5 border-l-4 border-gray-400 border-t-4 "></div>
-  <div id="col4" class="h-5 border-t-4  border-gray-400"></div>
-  <div id="col5" class="h-5 border-t-4 border-l-4 border-gray-400"></div>
-  <div id="col6" class="h-5 border-r-4 border-t-4 border-gray-400"></div>
-  <div id="col7" class="h-5"></div>
+<div class="grid grid-cols-6 h-7">
+  <div id="col7"></div>
+  <div id="col8" class="grid grid-cols-12">
+    <div id="col9" class="bg-[#00AEC5]"></div>
+    <div id="col10" class="col-span-11"></div>
+  </div>
+  <div id="col11"></div>
+  <div id="col12" class="grid grid-cols-12">
+    <div id="col13" class="bg-[#00AEC5]"></div>
+    <div id="col14" class="col-span-11"></div>
+  </div>
+  <div id="col15" class="grid grid-cols-12">
+    <div id="col16" class="col-span-11"></div>
+    <div id="col17" class="bg-[#00AEC5]"></div>
+  </div>
+  <div id="col18"></div>
 </div>
 
 <div class="grid grid-cols-3 gap-1">
   <div>
-    <button id="button1" class="bg-gray-400 hover:bg-blue-700 text-white font-bold py-2 px-4 mb-4 w-full">SALE</button>
+    <button id="button1" class="bg-white hover:bg-[#00AEC5] text-black hover:text-white border border-black hover:border-none font-poppins font-semibold py-2 px-4 mb-4 w-full">SALE</button>
   </div>
   <div>
-    <button id="button2" class="bg-gray-400 hover:bg-blue-700 text-white font-bold py-2 px-4 mb-4 w-full">PURCHASE</button>
+    <button id="button2" class="bg-white hover:bg-[#00AEC5] text-black hover:text-white border border-black hover:border-none font-poppins font-semibold py-2 px-4 mb-4 w-full">PURCHASE</button>
   </div>
   <div>
-    <button id="button3" class="bg-gray-400 hover:bg-blue-700 text-white font-bold py-2 px-4 mb-4 w-full">INVESTMENT</button>
+    <button id="button3" class="bg-white hover:bg-[#00AEC5] text-black hover:text-white border border-black hover:border-none font-poppins font-semibold py-2 px-4 mb-4 w-full">INVESTMENT</button>
   </div>
 </div>
-
-<script>
-  const button1 = document.getElementById("button1");
-  const col1 = document.getElementById("col1");
-  const col3 = document.getElementById("col3");
-  const col4 = document.getElementById("col4");
-
-  button1.addEventListener("click", function () {
-    col1.classList.add("border-blue-700");
-    col3.classList.add("border-blue-700");
-    col4.classList.add("border-blue-700");
-  });
-
-  button1.addEventListener("mouseover", function () {
-    col1.classList.add("border-blue-700");
-    col3.classList.add("border-blue-700");
-  });
-
-  button1.addEventListener("mouseout", function () {
-    col1.classList.remove("border-blue-700");
-    col3.classList.remove("border-blue-700");
-  });
-
-</script>
-
 
 <!-- section -->
 <div id="main" class="w-full h-10">
@@ -128,35 +115,37 @@ $residential_info_right_section_investment_description_three = get_field('reside
 
   button1.addEventListener("click", () => {
     const saleContent = `
-    <p class="text-xl text-gray-900 "><?php echo $residential_info_right_section_sales_paragraph_one; ?></p>
-        <h3 class="text-3xl text-black pt-4 font-bold "><?php echo $residential_info_right_section_sales_title_one; ?></h3>
-        <p class="text-xl text-gray-900 "><?php echo $residential_info_right_section_sales_description_one; ?></p>
-        <h3 class="text-3xl font-bold pt-4 text-black "><?php echo $residential_info_right_section_sales_title_two; ?></h3>
-        <p class="text-xl text-gray-900 "><?php echo $residential_info_right_section_sales_description_two; ?></p>
-        <h3 class="text-3xl font-bold pt-4 text-black "><?php echo $residential_info_right_section_sales_title_three; ?></h3>
-        <p class="text-xl text-gray-900 "><?php echo $residential_info_right_section_sales_description_three; ?></p>
+    <p class="font-poppins text-xl text-gray-900 "><?php echo $residential_info_right_section_sales_paragraph_one; ?></p>
+        <h3 class="font-poppins text-3xl text-black pt-4 font-bold "><?php echo $residential_info_right_section_sales_title_one; ?></h3>
+        <p class="font-poppins text-xl text-gray-900 "><?php echo $residential_info_right_section_sales_description_one; ?></p>
+        <h3 class="font-poppins text-3xl font-bold pt-4 text-black "><?php echo $residential_info_right_section_sales_title_two; ?></h3>
+        <p class="font-poppins text-xl text-gray-900 "><?php echo $residential_info_right_section_sales_description_two; ?></p>
+        <h3 class="font-poppins text-3xl font-bold pt-4 text-black "><?php echo $residential_info_right_section_sales_title_three; ?></h3>
+        <p class="font-poppins text-xl text-gray-900 "><?php echo $residential_info_right_section_sales_description_three; ?></p>
     `;
     mainDiv.innerHTML = saleContent;
+    setActiveButton(button1);
   });
 
   button2.addEventListener("click", () => {
     const purchaseContent = `
-    <p class="text-xl text-gray-900 "><?php echo $residential_info_right_section_purchase_paragraph_one; ?></p>
-        <h3 class="text-3xl text-black pt-4 font-bold "><?php echo $residential_info_right_section_purchase_title_one; ?></h3>
-        <p class="text-xl text-gray-900 "><?php echo $residential_info_right_section_purchase_description_one; ?></p>
-        <h3 class="text-3xl font-bold pt-4 text-black "><?php echo $residential_info_right_section_purchase_title_two; ?></h3>
-        <p class="text-xl text-gray-900 "><?php echo $residential_info_right_section_purchase_description_two; ?></p>
-        <h3 class="text-3xl font-bold pt-4 text-black "><?php echo $residential_info_right_section_purchase_title_three; ?></h3>
-        <p class="text-xl text-gray-900 "><?php echo $residential_info_right_section_purchase_description_three; ?></p>
-        <h3 class="text-3xl font-bold pt-4 text-black "><?php echo $residential_info_right_section_purchase_title_four; ?></h3>
-        <p class="text-xl text-gray-900 "><?php echo $residential_info_right_section_purchase_description_four; ?></p>
+    <p class="font-poppins text-xl text-gray-900 "><?php echo $residential_info_right_section_purchase_paragraph_one; ?></p>
+        <h3 class="font-poppins text-3xl text-black pt-4 font-bold "><?php echo $residential_info_right_section_purchase_title_one; ?></h3>
+        <p class="font-poppins text-xl text-gray-900 "><?php echo $residential_info_right_section_purchase_description_one; ?></p>
+        <h3 class="font-poppins text-3xl font-bold pt-4 text-black "><?php echo $residential_info_right_section_purchase_title_two; ?></h3>
+        <p class="font-poppins text-xl text-gray-900 "><?php echo $residential_info_right_section_purchase_description_two; ?></p>
+        <h3 class="font-poppins text-3xl font-bold pt-4 text-black "><?php echo $residential_info_right_section_purchase_title_three; ?></h3>
+        <p class="font-poppins text-xl text-gray-900 "><?php echo $residential_info_right_section_purchase_description_three; ?></p>
+        <h3 class="font-poppins text-3xl font-bold pt-4 text-black "><?php echo $residential_info_right_section_purchase_title_four; ?></h3>
+        <p class="font-poppins text-xl text-gray-900 "><?php echo $residential_info_right_section_purchase_description_four; ?></p>
     `;
     mainDiv.innerHTML = purchaseContent;
+    setActiveButton(button2);
   });
 
   button3.addEventListener("click", () => {
     const investmentContent = `
-    <p class="text-xl text-gray-900 "><?php echo $residential_info_right_section_investment_paragraph_one; ?></p>
+    <p class="font-poppins text-xl text-gray-900"><?php echo $residential_info_right_section_investment_paragraph_one; ?></p>
     <?php if( have_rows('residential_info_right_section_investment') ): $s= 1; $a=0; ?>
 				
                 <?php while( have_rows('residential_info_right_section_investment') ): the_row() ;   
@@ -165,13 +154,33 @@ $residential_info_right_section_investment_description_three = get_field('reside
                           $residential_info_right_section_investment_description = get_sub_field('residential_info_right_section_investment_description');
                   ?>
                 
-                <h3 class="text-3xl text-black pt-4 font-bold "><?php echo $residential_info_right_section_investment_title; ?></h3>
-                <p class="text-xl text-gray-900 "><?php echo $residential_info_right_section_investment_description; ?></p>
+                <h3 class="font-poppins text-3xl text-black pt-4 font-bold "><?php echo $residential_info_right_section_investment_title; ?></h3>
+                <p class="font-poppins text-xl text-gray-900 "><?php echo $residential_info_right_section_investment_description; ?></p>
         <?php   endwhile; endif; ?>
     `;
     mainDiv.innerHTML = investmentContent;
+    setActiveButton(button3);
   });
+
+  function setActiveButton(activeButton) {
+    // Remove the active class from all buttons
+    const buttons = document.querySelectorAll("button");
+    buttons.forEach((button) => {
+      button.classList.remove("active");
+    });
+
+    // Add the active class to the clicked button
+    activeButton.classList.add("active");
+  }
 </script>
+<style>
+  /* Add a style for the active button */
+  .active {
+    background-color: #00AEC5;
+    color: white;
+    border: none;
+  }
+</style>
 
 
 
