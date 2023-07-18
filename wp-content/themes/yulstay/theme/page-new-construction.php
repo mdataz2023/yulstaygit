@@ -10,11 +10,14 @@ get_header(); ?>
 
 
 
-<div class="h-screen w-screen mr-12 grid grid-cols-1 md:grid-cols-2 p-14 gap-6 bg-[#645656]">
+<div class="h-screen w-screen mr-12 grid grid-cols-1 md:grid-cols-2 p-14 gap-6 bg-white">
 
     <div class="md:grid-cols-6">
 
         <div>
+        <div class="md:block hidden">
+        <a href="<?php bloginfo('url'); ?>/home"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/10.png" class="w-32 pb-4" alt=""></a>
+          </div>
         <div class="flex gap-3 mb-3">
 				<div>
 					<a href="<?php bloginfo('url'); ?>/home" class="text-gray-400 hover:text-gray-800 font-bold"><?php _e('Home','theme-text-domain'); ?></a>
@@ -31,9 +34,7 @@ get_header(); ?>
 			</div>
         </div>
         </div>
-        <div class="md:block hidden">
-        <a href="<?php bloginfo('url'); ?>/home"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/10.png" class="w-32 pb-4" alt=""></a>
-          </div>
+
         <div>
 
 
@@ -58,7 +59,7 @@ get_header(); ?>
 
                     ?>
 
-            <h1><?php the_excerpt(); ?></h1>
+            
 
             <?php
 
@@ -86,15 +87,11 @@ get_header(); ?>
     <div class="col-scroll">
 
         <div class="text-black">
-            <div class="d-flex flex-row mb-3 mt-4 gap-4 text-uppercase text-black ">
-                <div class=""><a href style="text-decoration: underline; color: white;" !important> Development</a>
-                </div>
-                <div class=""><a href style="color: white;">Properties</a></div>
-            </div>
 
 
 
-            <div class="text-black" style="font-size: 20px;color: white;">
+
+            <div class="text-black font-poppins font-medium text-base">
 
                 <h1>Through our relationship in the industry and our volume of transactions, we
 
@@ -137,10 +134,9 @@ get_header(); ?>
 
                     <a href="<?php the_permalink(); ?>">
 
-                        <div class="text-5xl text-gray-400 hover:text-white transitionCS">
-                            <h2>
-                                <?php the_title(); ?></h2>
-                            <div class="text-uppercase text-xl">montreal,ca
+                        <div class="text-5xl text-gray-500 my-4 font-poppins hover:text-black transitionCS">
+                            <h2 class="font-poppins"><?php the_title(); ?></h2>
+                            <div class="text-uppercase font-poppins text-xl">montreal,ca
                             </div>
                         </div>
                     </a>

@@ -48,6 +48,7 @@ $team_page_description = get_field('team_page_description');
 
             $categories = get_the_category();
             ?>
+            <a class="hover:bg-gray-400" href="<?php the_permalink(); ?>">
             <div>
                 <?php
                 if (has_post_thumbnail()) {
@@ -60,7 +61,7 @@ $team_page_description = get_field('team_page_description');
                     <a href="<?php the_permalink(); ?>"><h3 class="text-2xl font-semibold hover:font-bold"><?php the_title(); ?></h3></a>
                     <p><?php the_excerpt(); ?></p>
                 </div>
-            </div>
+            </div></a>
     <?php
         }
     } else {
