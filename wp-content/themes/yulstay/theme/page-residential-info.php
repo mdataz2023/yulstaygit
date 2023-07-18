@@ -115,13 +115,13 @@ $residential_info_right_section_investment_description_three = get_field('reside
 
   button1.addEventListener("click", () => {
     const saleContent = `
-    <p class="font-poppins text-lg text-gray-900 "><?php echo $residential_info_right_section_sales_paragraph_one; ?></p>
+    <p class="font-poppins text-base text-gray-900 "><?php echo $residential_info_right_section_sales_paragraph_one; ?></p>
         <h3 class="font-poppins text-lg text-black pt-4 font-bold "><?php echo $residential_info_right_section_sales_title_one; ?></h3>
-        <p class="font-poppins text-lg text-gray-900 "><?php echo $residential_info_right_section_sales_description_one; ?></p>
-        <h3 class="font-poppins text-xl font-bold pt-4 text-black "><?php echo $residential_info_right_section_sales_title_two; ?></h3>
-        <p class="font-poppins text-lg text-gray-900 "><?php echo $residential_info_right_section_sales_description_two; ?></p>
-        <h3 class="font-poppins text-xl font-bold pt-4 text-black "><?php echo $residential_info_right_section_sales_title_three; ?></h3>
-        <p class="font-poppins text-lg text-gray-900 "><?php echo $residential_info_right_section_sales_description_three; ?></p>
+        <p class="font-poppins text-base text-gray-900 "><?php echo $residential_info_right_section_sales_description_one; ?></p>
+        <h3 class="font-poppins text-lg font-bold pt-4 text-black "><?php echo $residential_info_right_section_sales_title_two; ?></h3>
+        <p class="font-poppins text-base text-gray-900 "><?php echo $residential_info_right_section_sales_description_two; ?></p>
+        <h3 class="font-poppins text-lg font-bold pt-4 text-black "><?php echo $residential_info_right_section_sales_title_three; ?></h3>
+        <p class="font-poppins text-base text-gray-900 "><?php echo $residential_info_right_section_sales_description_three; ?></p>
     `;
     mainDiv.innerHTML = saleContent;
     setActiveButton(button1);
@@ -129,15 +129,15 @@ $residential_info_right_section_investment_description_three = get_field('reside
 
   button2.addEventListener("click", () => {
     const purchaseContent = `
-    <p class="font-poppins text-lg text-gray-900 "><?php echo $residential_info_right_section_purchase_paragraph_one; ?></p>
-        <h3 class="font-poppins text-xl text-black pt-4 font-bold "><?php echo $residential_info_right_section_purchase_title_one; ?></h3>
-        <p class="font-poppins text-lg text-gray-900 "><?php echo $residential_info_right_section_purchase_description_one; ?></p>
-        <h3 class="font-poppins text-xl font-bold pt-4 text-black "><?php echo $residential_info_right_section_purchase_title_two; ?></h3>
-        <p class="font-poppins text-lg text-gray-900 "><?php echo $residential_info_right_section_purchase_description_two; ?></p>
-        <h3 class="font-poppins text-xl font-bold pt-4 text-black "><?php echo $residential_info_right_section_purchase_title_three; ?></h3>
-        <p class="font-poppins text-lg text-gray-900 "><?php echo $residential_info_right_section_purchase_description_three; ?></p>
-        <h3 class="font-poppins text-xl font-bold pt-4 text-black "><?php echo $residential_info_right_section_purchase_title_four; ?></h3>
-        <p class="font-poppins text-lg text-gray-900 "><?php echo $residential_info_right_section_purchase_description_four; ?></p>
+    <p class="font-poppins text-base text-gray-900 "><?php echo $residential_info_right_section_purchase_paragraph_one; ?></p>
+        <h3 class="font-poppins text-lg text-black pt-4 font-bold "><?php echo $residential_info_right_section_purchase_title_one; ?></h3>
+        <p class="font-poppins text-base text-gray-900 "><?php echo $residential_info_right_section_purchase_description_one; ?></p>
+        <h3 class="font-poppins text-lg font-bold pt-4 text-black "><?php echo $residential_info_right_section_purchase_title_two; ?></h3>
+        <p class="font-poppins text-base text-gray-900 "><?php echo $residential_info_right_section_purchase_description_two; ?></p>
+        <h3 class="font-poppins text-lg font-bold pt-4 text-black "><?php echo $residential_info_right_section_purchase_title_three; ?></h3>
+        <p class="font-poppins text-base text-gray-900 "><?php echo $residential_info_right_section_purchase_description_three; ?></p>
+        <h3 class="font-poppins text-lg font-bold pt-4 text-black "><?php echo $residential_info_right_section_purchase_title_four; ?></h3>
+        <p class="font-poppins text-base text-gray-900 "><?php echo $residential_info_right_section_purchase_description_four; ?></p>
     `;
     mainDiv.innerHTML = purchaseContent;
     setActiveButton(button2);
@@ -145,7 +145,7 @@ $residential_info_right_section_investment_description_three = get_field('reside
 
   button3.addEventListener("click", () => {
     const investmentContent = `
-    <p class="font-poppins text-xl text-gray-900"><?php echo $residential_info_right_section_investment_paragraph_one; ?></p>
+    <p class="font-poppins text-base text-gray-900"><?php echo $residential_info_right_section_investment_paragraph_one; ?></p>
     <?php if( have_rows('residential_info_right_section_investment') ): $s= 1; $a=0; ?>
 				
                 <?php while( have_rows('residential_info_right_section_investment') ): the_row() ;   
@@ -154,8 +154,8 @@ $residential_info_right_section_investment_description_three = get_field('reside
                           $residential_info_right_section_investment_description = get_sub_field('residential_info_right_section_investment_description');
                   ?>
                 
-                <h3 class="font-poppins text-xl text-black pt-4 font-bold "><?php echo $residential_info_right_section_investment_title; ?></h3>
-                <p class="font-poppins text-xl text-gray-900 "><?php echo $residential_info_right_section_investment_description; ?></p>
+                <h3 class="font-poppins text-lg text-black pt-4 font-bold "><?php echo $residential_info_right_section_investment_title; ?></h3>
+                <p class="font-poppins text-base text-gray-900 "><?php echo $residential_info_right_section_investment_description; ?></p>
         <?php   endwhile; endif; ?>
     `;
     mainDiv.innerHTML = investmentContent;
