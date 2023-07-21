@@ -98,7 +98,7 @@
                   <div class="ml-2">
                     <a href="<?php bloginfo('url'); ?>/residential" class="text-gray-600 link link-underline link-underline-black hover:font-bold"><?php _e('Properties','theme-text-domain'); ?></a>
                   </div>
-                  <div class="ml-20">
+                  <div class="ml-2">
                     <a href="<?php bloginfo('url'); ?>/residential-team" class="text-gray-600 link link-underline link-underline-black hover:font-bold"><?php _e('Team','theme-text-domain'); ?></a>
                   </div>
                   <div class="ml-2">

@@ -8,7 +8,7 @@ $team_page_description = get_field('team_page_description');
 
 ?>
 
-<div class="grid w-screen h-screen grid-cols-1 gap-8 mr-12 overflow-y-scroll md:grid-cols-2 p-14 md:overflow-y-hidden">
+<div class="grid w-screen h-screen grid-cols-1 gap-8 mr-12 overflow-y-scroll md:grid-cols-2 px-14 py-5 md:overflow-y-hidden">
   
         <div class="md:overflow-y-scroll hide-scroll-bar">
         <div class="hidden md:block">
