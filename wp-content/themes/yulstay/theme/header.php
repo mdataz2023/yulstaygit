@@ -30,14 +30,14 @@
 <?php wp_body_open(); ?>
 
 <style>
-  .dropdown-container .ml-20 {
+  .dropdown-container .ml-2 {
     opacity: 0;
     display: none;
 
   transition: opacity 0.3s ease, visibility 0.3s ease;
   }
   
-  .dropdown-container:hover .ml-20 {
+  .dropdown-container:hover .ml-2 {
     opacity: 1;
     display: block;
   }
