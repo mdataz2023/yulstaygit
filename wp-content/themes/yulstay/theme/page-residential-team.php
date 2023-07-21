@@ -8,8 +8,8 @@ $team_page_description = get_field('team_page_description');
 
 ?>
 
-<div class="grid w-screen h-screen grid-cols-1 gap-8 mr-12 overflow-y-scroll md:grid-cols-2 px-14 py-5 md:overflow-y-hidden">
-  
+<div class="grid w-screen h-screen grid-cols-1 gap-8 mr-12 overflow-y-scroll md:grid-cols-2 px-6 md:px-14 pt-24 py-5 md:py-5 md:overflow-y-hidden">
+  <!-- copy -->
         <div class="md:overflow-y-scroll hide-scroll-bar">
         <div class="hidden md:block">
           <a href="<?php bloginfo('url'); ?>/home"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/1.png" class="w-32 pb-4" alt=""></a>
@@ -29,7 +29,7 @@ $team_page_description = get_field('team_page_description');
 				<div class="font-medium"><?php the_title(); ?>
 			</div>
 			</div>
-			<div class="grid grid-cols-3 gap-4">
+			<div class="grid grid-cols-2 md:grid-cols-3 gap-4">
     <?php
     $ids_to_display = array(426, 123, 121, 119, 116, 114); // IDs of the posts you want to display114, 116, 119, 121, 123, 426
 
