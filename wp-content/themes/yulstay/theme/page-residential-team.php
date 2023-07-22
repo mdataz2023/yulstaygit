@@ -10,23 +10,23 @@ $team_page_description = get_field('team_page_description');
 <style>
   .scroll-style::-webkit-scrollbar-track
 {
-	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-	background-color: #F5F5F5;
+	-webkit-box-shadow: inset 0 0 6px #fff;
+	background-color: #fff;
   
 }
 
 .scroll-style::-webkit-scrollbar
 {
 	width: 10px;
-	background-color: #00AEC5;
+	background-color: #fff;
   border-radius: 10px;
 }
 
 .scroll-style::-webkit-scrollbar-thumb
 {
   border-radius: 10px;
-	background-color: #00AEC5;
-	border: 2px solid #00AEC5;
+	background-color: #9cebf6;
+	border: 2px solid #9cebf6;
 }
 </style>
 

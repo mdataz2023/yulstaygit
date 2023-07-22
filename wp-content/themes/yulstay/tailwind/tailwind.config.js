@@ -18,6 +18,14 @@ module.exports = {
 			'poppins': ['"Poppins", sans-serif'],
         },
 		extend: {},
+
+		transitionProperty: {
+			'transform': 'transform',
+		  },
+		  // Define the custom duration class
+		  transitionDuration: {
+			'300': '300ms',
+		  },
 	},
 	corePlugins: {
 		// Disable Preflight base styles in builds targeting the editor.
