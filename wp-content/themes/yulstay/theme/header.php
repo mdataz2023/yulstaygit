@@ -198,7 +198,7 @@
                       </li>
                     </ul>
                   </div> -->
-                  <div>
+                  <div class="flex justify-end">
                     <div>
                       <?php
                       if (has_nav_menu('main-menu')) {
