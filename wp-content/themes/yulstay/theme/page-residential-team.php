@@ -11,8 +11,6 @@ $team_page_description = get_field('team_page_description');
 <div class="grid w-screen h-screen grid-cols-1 gap-8 mr-12 overflow-y-scroll md:grid-cols-2 px-6 md:px-14 pt-24 py-5 md:py-5 md:overflow-y-hidden">
   <!-- copy -->
 
-
-		</div>
         <div class="md:overflow-y-scroll hide-scroll-bar">
         <div>
         <h2 class="font-poppins font-medium text-base pb-1 text-justify">Yulstay is your one-stop-shop for all your real estate needs in Montreal. We offer a comprehensive range of strategic advice and services that cover everything from purchasing, financing, managing, selling and optimizing your multiresidential properties.</h2>
@@ -40,6 +38,73 @@ $team_page_description = get_field('team_page_description');
 <div id="main" class="w-full h-10">
 
 </div>
+
+<div class="md:overflow-y-scroll hide-scroll-bar">
+        <div class="hidden md:block">
+          <a href="<?php bloginfo('url'); ?>/home"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/1.png" class="w-32 pb-4" alt=""></a>
+          </div>
+			<div class="flex gap-3 mb-3">
+				<div>
+					<a href="<?php bloginfo('url'); ?>/home" class="font-bold text-gray-400 hover:text-gray-800"><?php _e('Home','theme-text-domain'); ?></a>
+				</div>
+				
+                <div class="flex items-center content-between">
+					<div>
+						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+						<path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+						</svg>
+					</div>
+				</div>
+				<div class="font-medium"><?php the_title(); ?>
+			</div>
+			</div>
+			<div class="grid grid-cols-2 md:grid-cols-3 gap-4 pb-12">
+    <?php
+    $ids_to_display = array(426, 123, 121, 119, 116, 114); // IDs of the posts you want to display114, 116, 119, 121, 123, 426
+
+    $the_query = new WP_Query(array(
+        'post_type' => 'team',
+        'post__in' => $ids_to_display,
+        'posts_per_page' => count($ids_to_display),
+    ));
+
+    if ($the_query->have_posts()) {
+        while ($the_query->have_posts()) {
+            $the_query->the_post();
+
+            $thumbnail_id = get_post_thumbnail_id();
+            $thumbnail_url = wp_get_attachment_image_src($thumbnail_id, 'thumbnail-size', true);
+            $thumbnail_meta = get_post_meta($thumbnail_id, '_wp_attachment_image_alt', true);
+
+            $categories = get_the_category();
+            ?>
+            
+            <div class="hover:bg-gray-400 p-2">
+            <a href="<?php the_permalink(); ?>">
+                <?php
+                if (has_post_thumbnail()) {
+                    $attachment_image = wp_get_attachment_url($thumbnail_id);
+                    //echo '<link rel="preload" as="image" href="' . esc_attr($attachment_image) . '">';
+                ?>
+                    <img src="<?php echo $attachment_image; ?>" alt="">
+                <?php } ?>
+                <div class="text-center">
+                    <a href="<?php the_permalink(); ?>"><h3 class="text-2xl font-medium hover:font-bold"><?php the_title(); ?></h3></a>
+                    <p><?php the_excerpt(); ?></p>
+                </div>
+                </a>
+            </div>
+    <?php
+        }
+    } else {
+        echo 'No posts found.';
+    }
+
+    wp_reset_postdata();
+    ?>
+</div>
+
+		</div>
 
 <script>
   const button1 = document.getElementById("button1");
@@ -474,70 +539,6 @@ $team_page_description = get_field('team_page_description');
 
 
 </div>
-</div>
-<div class="md:overflow-y-scroll hide-scroll-bar">
-        <div class="hidden md:block">
-          <a href="<?php bloginfo('url'); ?>/home"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/1.png" class="w-32 pb-4" alt=""></a>
-          </div>
-			<div class="flex gap-3 mb-3">
-				<div>
-					<a href="<?php bloginfo('url'); ?>/home" class="font-bold text-gray-400 hover:text-gray-800"><?php _e('Home','theme-text-domain'); ?></a>
-				</div>
-				
-                <div class="flex items-center content-between">
-					<div>
-						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
-						<path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
-						</svg>
-					</div>
-				</div>
-				<div class="font-medium"><?php the_title(); ?>
-			</div>
-			</div>
-			<div class="grid grid-cols-2 md:grid-cols-3 gap-4 pb-12">
-    <?php
-    $ids_to_display = array(426, 123, 121, 119, 116, 114); // IDs of the posts you want to display114, 116, 119, 121, 123, 426
-
-    $the_query = new WP_Query(array(
-        'post_type' => 'team',
-        'post__in' => $ids_to_display,
-        'posts_per_page' => count($ids_to_display),
-    ));
-
-    if ($the_query->have_posts()) {
-        while ($the_query->have_posts()) {
-            $the_query->the_post();
-
-            $thumbnail_id = get_post_thumbnail_id();
-            $thumbnail_url = wp_get_attachment_image_src($thumbnail_id, 'thumbnail-size', true);
-            $thumbnail_meta = get_post_meta($thumbnail_id, '_wp_attachment_image_alt', true);
-
-            $categories = get_the_category();
-            ?>
-            
-            <div class="hover:bg-gray-400 p-2">
-            <a href="<?php the_permalink(); ?>">
-                <?php
-                if (has_post_thumbnail()) {
-                    $attachment_image = wp_get_attachment_url($thumbnail_id);
-                    //echo '<link rel="preload" as="image" href="' . esc_attr($attachment_image) . '">';
-                ?>
-                    <img src="<?php echo $attachment_image; ?>" alt="">
-                <?php } ?>
-                <div class="text-center">
-                    <a href="<?php the_permalink(); ?>"><h3 class="text-2xl font-medium hover:font-bold"><?php the_title(); ?></h3></a>
-                    <p><?php the_excerpt(); ?></p>
-                </div>
-                </a>
-            </div>
-    <?php
-        }
-    } else {
-        echo 'No posts found.';
-    }
-
-    wp_reset_postdata();
-    ?>
 </div>
 </div>
 
