@@ -2058,6 +2058,10 @@ video {
   padding-top: 1.25rem;
 }
 
+.pr-\[18px\] {
+  padding-right: 18px;
+}
+
 .text-left {
   text-align: left;
 }

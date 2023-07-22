@@ -198,7 +198,7 @@
                       </li>
                     </ul>
                   </div>
-                  <div class="flex flex-row gap-5 justify-end pr-[18px]">
+                  <div class="flex flex-row gap-5 justify-end pr-4">
                     <a href="">FACEBOOK</a>
                     <a href="">TWITTER</a>
                     <a href="">INSTAGRAM</a>
