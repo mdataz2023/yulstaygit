@@ -198,17 +198,22 @@
                       </li>
                     </ul>
                   </div> -->
-                  <?php
-if (has_nav_menu('main-menu')) {
-    wp_nav_menu(
-        array(
-            'theme_location' => 'main-menu',
-            'menu_class'     => 'main-menu', // Optional: Add a custom CSS class to the menu
-            // Additional arguments for customizing the menu output can be added here
-        )
-    );
-}
-?>
+                  <div>
+                    <div>
+                      <?php
+                      if (has_nav_menu('main-menu')) {
+                          wp_nav_menu(
+                              array(
+                                  'theme_location' => 'main-menu',
+                                  'menu_class'     => 'main-menu', // Optional: Add a custom CSS class to the menu
+                                  // Additional arguments for customizing the menu output can be added here
+                              )
+                          );
+                      }
+                      ?>
+                    </div>
+                  </div>
+                  
                   <div class="flex flex-row gap-5 justify-end pr-4">
                     <a href="">FACEBOOK</a>
                     <a href="">TWITTER</a>
