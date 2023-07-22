@@ -191,12 +191,17 @@
             
             <div class="px-6 py-14 md:px-14 md:py-5 h-screen flex flex-col justify-between">
             <div>
-            <div id="language-switcher" class="py-2">
+                  <div id="language-switcher" class="py-2">
                     <ul class="flex justify-end">
                       <li>
                         <?php do_action('wpml_add_language_selector'); ?>
                       </li>
                     </ul>
+                  </div>
+                  <div class="flex flex-row gap-5">
+                    <a href="">FACEBOOK</a>
+                    <a href="">TWITTER</a>
+                    <a href="">INSTAGRAM</a>
                   </div>
             </div>
            
