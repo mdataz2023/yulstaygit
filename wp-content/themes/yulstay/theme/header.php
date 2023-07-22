@@ -96,7 +96,7 @@
                 <div>
                   <a href="<?php bloginfo('url'); ?>/residential-info" class="text-gray-700 text-3xl hover:font-bold"><?php _e('Residential','theme-text-domain'); ?></a>
                 </div>
-                <div>
+                <div class="font-poppins">
                 <div class="ml-2">
                     <a href="<?php bloginfo('url'); ?>/residential-info" class="text-gray-600 link link-underline link-underline-black hover:font-bold"><?php _e('Residential Info','theme-text-domain'); ?></a>
                   </div>
@@ -114,7 +114,7 @@
                 <div class="mt-2">
                   <a href="<?php bloginfo('url'); ?>/multi-residential-info" class="text-gray-700 text-3xl hover:font-bold"><?php _e('Multi-Residential','theme-text-domain'); ?></a>
                 </div>
-                <div>
+                <div class="font-poppins">
                 <div class="ml-2">
                     <a href="<?php bloginfo('url'); ?>/multi-residential-info" class="text-gray-600 link link-underline link-underline-black hover:font-bold"><?php _e('Multi-Residential Info','theme-text-domain'); ?></a>
                   </div>
@@ -132,7 +132,7 @@
                   <div class="mt-2">
                     <a href="<?php bloginfo('url'); ?>/rental-property-info" class="text-gray-700 text-3xl hover:font-bold"><?php _e('Rental + Property','theme-text-domain'); ?></a>
                   </div>
-                  <div>
+                  <div class="font-poppins">
                   <div class="ml-2">
                     <a href="<?php bloginfo('url'); ?>/rental-property-info" class="text-gray-600 link link-underline link-underline-black hover:font-bold"><?php _e('Rental + Property Info','theme-text-domain'); ?></a>
                     </div>
@@ -150,7 +150,7 @@
                   <div class="mt-2">
                     <a href="#" class="text-gray-700 text-3xl hover:font-bold">Yulstay +</a>
                   </div>
-                  <div>
+                  <div class="font-poppins">
                     <div class="ml-2">
                       <a href="<?php bloginfo('url'); ?>/events-collaboration" class="text-gray-600 link link-underline link-underline-black hover:font-bold"><?php _e('Events & Collaboration','theme-text-domain'); ?></a>
                     </div>
@@ -198,7 +198,7 @@
                       </li>
                     </ul>
                   </div>
-                  <div class="flex flex-row gap-5">
+                  <div class="flex flex-row gap-5 justify-end">
                     <a href="">FACEBOOK</a>
                     <a href="">TWITTER</a>
                     <a href="">INSTAGRAM</a>
