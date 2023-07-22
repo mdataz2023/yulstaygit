@@ -29,6 +29,8 @@ module.exports = {
 
 		// Add Tailwind Typography.
 		require('@tailwindcss/typography'),
+		require('tailwind-scrollbar'),
+		require('tailwind-scrollbar')({ nocompatible: true }),
 
 		// Uncomment below to add additional first-party Tailwind plugins.
 		// require('@tailwindcss/forms'),

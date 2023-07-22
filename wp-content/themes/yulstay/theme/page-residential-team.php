@@ -7,15 +7,34 @@ $team_page_title = get_field('team_page_title');
 $team_page_description = get_field('team_page_description');
 
 ?>
+<style>
+  .scroll-style::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+  
+}
+
+.scroll-style::-webkit-scrollbar
+{
+	width: 10px;
+	background-color: #00AEC5;
+  border-radius: 10px;
+}
+
+.scroll-style::-webkit-scrollbar-thumb
+{
+  border-radius: 10px;
+	background-color: #00AEC5;
+	border: 2px solid #00AEC5;
+}
+</style>
 
 <div class="grid w-screen h-screen grid-cols-1 gap-8 mr-12 overflow-y-scroll md:grid-cols-2 px-6 md:px-14 pt-24 py-5 md:py-5 md:overflow-y-hidden">
   <!-- copy -->
-<div class="md:overflow-y-scroll order-last">
-        <div class="hidden md:block">
-          <a href="<?php bloginfo('url'); ?>/home"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/1.png" class="w-32 pb-4" alt=""></a>
-          </div>
+<div class="md:overflow-y-scroll scroll-style order-last">
 
-			</div>
+
 			<div class="grid grid-cols-2 md:grid-cols-3 gap-4 pb-12">
     <?php
     $ids_to_display = array(426, 123, 121, 119, 116, 114); // IDs of the posts you want to display114, 116, 119, 121, 123, 426
@@ -63,12 +82,17 @@ $team_page_description = get_field('team_page_description');
 </div>
 
 		</div>
-    <div class="flex gap-3 mb-3">
+        <div class="md:overflow-y-scroll scroll-style order-first">
+        <div class="hidden md:block">
+          <a href="<?php bloginfo('url'); ?>/home"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/1.png" class="w-32 pb-4" alt=""></a>
+          </div>
+        <div>
+        <div class="flex gap-3 mb-3">
 				<div>
 					<a href="<?php bloginfo('url'); ?>/home" class="font-bold text-gray-400 hover:text-gray-800"><?php _e('Home','theme-text-domain'); ?></a>
 				</div>
 				
-        <div class="flex items-center content-between">
+                <div class="flex items-center content-between">
 					<div>
 						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
 						<path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
@@ -77,13 +101,8 @@ $team_page_description = get_field('team_page_description');
 				</div>
 				<div class="font-medium"><?php the_title(); ?>
 			</div>
-        <div class="md:overflow-y-scroll order-first">
-        <div>
-        <h2 class="font-poppins font-medium text-base pb-1 text-justify">Yulstay is your one-stop-shop for all your real estate needs in Montreal. We offer a comprehensive range of strategic advice and services that cover everything from purchasing, financing, managing, selling and optimizing your multiresidential properties.</h2>
-
-<h2 class="font-poppins font-medium text-base pb-1 text-justify">We serve a broad range of investors from all corners of the globe, and our team manages the investments of over 100 real estate investors worldwide. With Yulstay, you can rest assured that your real estate investments in Montreal are in the best possible hands.</h2>
-
-<h2 class="font-poppins font-medium text-base pb-1 text-justify">Our team has consistently ranked in the top producers nationwide and continues to deliver its promises of peace of mind, transparency and results. Do not hesitate to book a consultation to discuss how we can help you maximize your investments.</h2>
+			</div>
+        
 
         </div>
 
@@ -91,6 +110,11 @@ $team_page_description = get_field('team_page_description');
 <div class="mx-auto md:mr-8">
 
   <div class="grid grid-cols-1">
+  <h2 class="font-poppins font-medium text-base pb-1 text-justify">Yulstay is your one-stop-shop for all your real estate needs in Montreal. We offer a comprehensive range of strategic advice and services that cover everything from purchasing, financing, managing, selling and optimizing your multiresidential properties.</h2>
+
+<h2 class="font-poppins font-medium text-base pb-1 text-justify">We serve a broad range of investors from all corners of the globe, and our team manages the investments of over 100 real estate investors worldwide. With Yulstay, you can rest assured that your real estate investments in Montreal are in the best possible hands.</h2>
+
+<h2 class="font-poppins font-medium text-base pb-1 text-justify">Our team has consistently ranked in the top producers nationwide and continues to deliver its promises of peace of mind, transparency and results. Do not hesitate to book a consultation to discuss how we can help you maximize your investments.</h2>
 
   <div class="grid grid-cols-2 gap-1">
   <div>
