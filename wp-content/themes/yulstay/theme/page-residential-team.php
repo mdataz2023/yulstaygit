@@ -14,20 +14,7 @@ $team_page_description = get_field('team_page_description');
         <div class="hidden md:block">
           <a href="<?php bloginfo('url'); ?>/home"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/1.png" class="w-32 pb-4" alt=""></a>
           </div>
-			<div class="flex gap-3 mb-3">
-				<div>
-					<a href="<?php bloginfo('url'); ?>/home" class="font-bold text-gray-400 hover:text-gray-800"><?php _e('Home','theme-text-domain'); ?></a>
-				</div>
-				
-        <div class="flex items-center content-between">
-					<div>
-						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
-						<path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
-						</svg>
-					</div>
-				</div>
-				<div class="font-medium"><?php the_title(); ?>
-			</div>
+
 			</div>
 			<div class="grid grid-cols-2 md:grid-cols-3 gap-4 pb-12">
     <?php
@@ -76,6 +63,20 @@ $team_page_description = get_field('team_page_description');
 </div>
 
 		</div>
+    <div class="flex gap-3 mb-3">
+				<div>
+					<a href="<?php bloginfo('url'); ?>/home" class="font-bold text-gray-400 hover:text-gray-800"><?php _e('Home','theme-text-domain'); ?></a>
+				</div>
+				
+        <div class="flex items-center content-between">
+					<div>
+						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+						<path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+						</svg>
+					</div>
+				</div>
+				<div class="font-medium"><?php the_title(); ?>
+			</div>
         <div class="md:overflow-y-scroll order-first">
         <div>
         <h2 class="font-poppins font-medium text-base pb-1 text-justify">Yulstay is your one-stop-shop for all your real estate needs in Montreal. We offer a comprehensive range of strategic advice and services that cover everything from purchasing, financing, managing, selling and optimizing your multiresidential properties.</h2>
