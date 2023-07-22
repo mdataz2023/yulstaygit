@@ -190,7 +190,7 @@
           </div>
             
             <div class="px-6 py-14 md:px-14 md:py-5 h-screen flex flex-col justify-between">
-            
+            <div>
             <div id="language-switcher" class="py-2">
                     <ul class="flex justify-end">
                       <li>
@@ -198,6 +198,8 @@
                       </li>
                     </ul>
                   </div>
+            </div>
+           
               <div class="flex justify-end">
                 <a href="<?php bloginfo('url'); ?>/home"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/1.png" class="w-44 pb-4" alt=""></a>
               </div>
