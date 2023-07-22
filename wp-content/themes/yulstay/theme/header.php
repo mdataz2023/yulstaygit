@@ -191,13 +191,24 @@
             
             <div class="px-6 py-14 md:px-14 md:py-5 h-screen flex flex-col justify-between">
             <div>
-                  <div id="language-switcher" class="py-2">
+                  <!-- <div id="language-switcher" class="py-2">
                     <ul class="flex justify-end">
                       <li>
                         <?php do_action('wpml_add_language_selector'); ?>
                       </li>
                     </ul>
-                  </div>
+                  </div> -->
+                  <?php
+if (has_nav_menu('main-menu')) {
+    wp_nav_menu(
+        array(
+            'theme_location' => 'main-menu',
+            'menu_class'     => 'main-menu', // Optional: Add a custom CSS class to the menu
+            // Additional arguments for customizing the menu output can be added here
+        )
+    );
+}
+?>
                   <div class="flex flex-row gap-5 justify-end pr-4">
                     <a href="">FACEBOOK</a>
                     <a href="">TWITTER</a>
