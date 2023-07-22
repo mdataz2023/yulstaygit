@@ -10,7 +10,7 @@ $team_page_description = get_field('team_page_description');
 
 <div class="grid w-screen h-screen grid-cols-1 gap-8 mr-12 overflow-y-scroll md:grid-cols-2 px-6 md:px-14 pt-24 py-5 md:py-5 md:overflow-y-hidden">
   <!-- copy -->
-<div class="md:overflow-y-scroll hide-scroll-bar">
+<div class="md:overflow-y-scroll hide-scroll-bar order-last">
         <div class="hidden md:block">
           <a href="<?php bloginfo('url'); ?>/home"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/1.png" class="w-32 pb-4" alt=""></a>
           </div>
@@ -76,7 +76,7 @@ $team_page_description = get_field('team_page_description');
 </div>
 
 		</div>
-        <div class="md:overflow-y-scroll hide-scroll-bar">
+        <div class="md:overflow-y-scroll hide-scroll-bar order-first">
         <div>
         <h2 class="font-poppins font-medium text-base pb-1 text-justify">Yulstay is your one-stop-shop for all your real estate needs in Montreal. We offer a comprehensive range of strategic advice and services that cover everything from purchasing, financing, managing, selling and optimizing your multiresidential properties.</h2>
 
@@ -532,6 +532,7 @@ $team_page_description = get_field('team_page_description');
       </div>
       </form>
       <!-- Form Sale -->
+
     </div>
 
 
