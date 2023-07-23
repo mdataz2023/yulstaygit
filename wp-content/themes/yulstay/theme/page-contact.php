@@ -70,11 +70,11 @@ $email = get_field('email');
 
   <h2 class="text-3xl font-bold tracking-tight text-gray-900"><?php echo $contact_page_title; ?></h2>
 
-<p class="mt-6 text-lg leading-8 text-gray-600"><?php echo $contact_page_description; ?></p>
+<p class="mt-6 text-lg leading-8 text-black"><?php echo $contact_page_description; ?></p>
 
 <div class="grid grid-cols-2">
 
-  <dl class="mt-10 space-y-4 text-base leading-7 text-gray-600">
+  <dl class="mt-10 space-y-4 text-base leading-7 text-black">
 
     <div class="flex gap-x-4">
 
@@ -82,7 +82,7 @@ $email = get_field('email');
 
         <span class="sr-only">Address</span>
 
-        <svg class="h-7 w-6 text-gray-400" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+        <svg class="h-7 w-6 text-black" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
 
           <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 3.75h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008z" />
 
@@ -100,7 +100,7 @@ $email = get_field('email');
 
         <span class="sr-only">Telephone</span>
 
-        <svg class="h-7 w-6 text-gray-400" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+        <svg class="h-7 w-6 text-black" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
 
           <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
 
@@ -118,7 +118,7 @@ $email = get_field('email');
 
         <span class="sr-only">Email</span>
 
-        <svg class="h-7 w-6 text-gray-400" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+        <svg class="h-7 w-6 text-black" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
 
           <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
 
@@ -144,13 +144,13 @@ $email = get_field('email');
             <button class="inline-block p-4 border-b-2 rounded-t-lg" id="profile-tab" data-tabs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Residential</button>
         </li>
         <li class="mr-2" role="presentation">
-            <button class="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-[#00AEC5] hover:border-[#00AEC5] dark:hover:text-gray-300" id="dashboard-tab" data-tabs-target="#dashboard" type="button" role="tab" aria-controls="dashboard" aria-selected="false">Multi Residential</button>
+            <button class="inline-block p-4 border-b-2 border-transparent rounded-t-lg text-black hover:text-[#00AEC5] hover:border-[#00AEC5] dark:hover:text-gray-300" id="dashboard-tab" data-tabs-target="#dashboard" type="button" role="tab" aria-controls="dashboard" aria-selected="false">Multi Residential</button>
         </li>
         <li class="mr-2" role="presentation">
-            <button class="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-[#00AEC5] hover:border-[#00AEC5] dark:hover:text-gray-300" id="settings-tab" data-tabs-target="#settings" type="button" role="tab" aria-controls="settings" aria-selected="false">Rental + Property</button>
+            <button class="inline-block p-4 border-b-2 border-transparent rounded-t-lg text-black hover:text-[#00AEC5] hover:border-[#00AEC5] dark:hover:text-gray-300" id="settings-tab" data-tabs-target="#settings" type="button" role="tab" aria-controls="settings" aria-selected="false">Rental + Property</button>
         </li>
         <li role="presentation">
-            <button class="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-[#00AEC5] hover:border-[#00AEC5] dark:hover:text-gray-300" id="contacts-tab" data-tabs-target="#contacts" type="button" role="tab" aria-controls="contacts" aria-selected="false">Join our Team</button>
+            <button class="inline-block p-4 border-b-2 border-transparent rounded-t-lg text-black hover:text-[#00AEC5] hover:border-[#00AEC5] dark:hover:text-gray-300" id="contacts-tab" data-tabs-target="#contacts" type="button" role="tab" aria-controls="contacts" aria-selected="false">Join our Team</button>
         </li>
     </ul>
 </div>
