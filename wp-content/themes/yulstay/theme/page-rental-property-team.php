@@ -86,23 +86,23 @@ $team_page_description = get_field('team_page_description');
 
 <div class="grid grid-cols-2 gap-1">
 <div>
-  <button id="button1" class="w-full px-4 py-2 mb-4 rounded-full bg-white hover:bg-[#00AEC5] text-black hover:text-white border border-black hover:border-none font-poppins font-semibold">Rental / Management</button>
+  <button id="button111" class="w-full px-4 py-2 mb-4 rounded-full bg-white hover:bg-[#00AEC5] text-black hover:text-white border border-black hover:border-none font-poppins font-semibold">Rental / Management</button>
 </div>
 <div>
-  <button id="button2" class="w-full px-4 py-2 mb-4 rounded-full bg-white hover:bg-[#00AEC5] text-black hover:text-white border border-black hover:border-none font-poppins font-semibold">Rental + Management</button>
+  <button id="button222" class="w-full px-4 py-2 mb-4 rounded-full bg-white hover:bg-[#00AEC5] text-black hover:text-white border border-black hover:border-none font-poppins font-semibold">Rental + Management</button>
 </div>
 </div>
 
-<div id="main" class="w-full h-10">
+<div id="main2" class="w-full h-10">
 
 </div>
 
 <script>
-const button1 = document.getElementById("button1");
-const button2 = document.getElementById("button2");
-const mainDiv = document.getElementById("main");
+const button111 = document.getElementById("button111");
+const button222 = document.getElementById("button222");
+const mainDiv2 = document.getElementById("main2");
 
-button1.addEventListener("click", () => {
+button111.addEventListener("click", () => {
   const saleContent = `
   <div>
         <div class="my-3 text-lg font-bold">Rental / Management</div>
@@ -221,10 +221,10 @@ button1.addEventListener("click", () => {
     <!-- Form Purchase -->
   </div>
   `;
-  mainDiv.innerHTML = saleContent;
+  mainDiv2.innerHTML = saleContent;
 });
 
-button2.addEventListener("click", () => {
+button222.addEventListener("click", () => {
   const purchaseContent = `
   <div>
         <div class="my-3 text-lg font-bold">Rental + Management</div>
@@ -342,7 +342,7 @@ button2.addEventListener("click", () => {
     <!-- Form Sale -->
   </div>
   `;
-  mainDiv.innerHTML = purchaseContent;
+  mainDiv2.innerHTML = purchaseContent;
 });
 </script>
 

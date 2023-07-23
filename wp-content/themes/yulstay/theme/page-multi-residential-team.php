@@ -90,23 +90,23 @@ $team_page_description = get_field('team_page_description');
 
 <div class="grid grid-cols-2 gap-1">
 <div>
-  <button id="button1" class="w-full px-4 py-2 mb-4 rounded-full bg-white hover:bg-[#00AEC5] text-black hover:text-white border border-black hover:border-none font-poppins font-semibold">PURCHASE</button>
+  <button id="button11" class="w-full px-4 py-2 mb-4 rounded-full bg-white hover:bg-[#00AEC5] text-black hover:text-white border border-black hover:border-none font-poppins font-semibold">PURCHASE</button>
 </div>
 <div>
-  <button id="button2" class="w-full px-4 py-2 mb-4 rounded-full bg-white hover:bg-[#00AEC5] text-black hover:text-white border border-black hover:border-none font-poppins font-semibold">SALE</button>
+  <button id="button22" class="w-full px-4 py-2 mb-4 rounded-full bg-white hover:bg-[#00AEC5] text-black hover:text-white border border-black hover:border-none font-poppins font-semibold">SALE</button>
 </div>
 </div>
 
-<div id="main" class="w-full h-10">
+<div id="main1" class="w-full h-10">
 
 </div>
 
 <script>
-const button1 = document.getElementById("button1");
-const button2 = document.getElementById("button2");
-const mainDiv = document.getElementById("main");
+const button11 = document.getElementById("button11");
+const button22 = document.getElementById("button22");
+const mainDiv1 = document.getElementById("main1");
 
-button1.addEventListener("click", () => {
+button11.addEventListener("click", () => {
   const saleContent = `
   <div>
         <div class="my-3 text-lg font-bold">Purchase</div>
@@ -186,10 +186,10 @@ button1.addEventListener("click", () => {
     <!-- Form Purchase -->
   </div>
   `;
-  mainDiv.innerHTML = saleContent;
+  mainDiv1.innerHTML = saleContent;
 });
 
-button2.addEventListener("click", () => {
+button22.addEventListener("click", () => {
   const purchaseContent = `
   <div>
         <div class="my-3 text-lg font-bold">Sales</div>
@@ -300,7 +300,7 @@ button2.addEventListener("click", () => {
     <!-- Form Sale -->
   </div>
   `;
-  mainDiv.innerHTML = purchaseContent;
+  mainDiv1.innerHTML = purchaseContent;
 });
 </script>
 

@@ -123,18 +123,18 @@ $email = get_field('email');
             <button class="inline-block p-4 border-b-2 rounded-t-lg" id="profile-tab" data-tabs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Residential</button>
         </li>
         <li class="mr-2" role="presentation">
-            <button class="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="dashboard-tab" data-tabs-target="#dashboard" type="button" role="tab" aria-controls="dashboard" aria-selected="false">Multi Residential</button>
+            <button class="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-[#00AEC5] hover:border-[#00AEC5] dark:hover:text-gray-300" id="dashboard-tab" data-tabs-target="#dashboard" type="button" role="tab" aria-controls="dashboard" aria-selected="false">Multi Residential</button>
         </li>
         <li class="mr-2" role="presentation">
-            <button class="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="settings-tab" data-tabs-target="#settings" type="button" role="tab" aria-controls="settings" aria-selected="false">Rental + Property</button>
+            <button class="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-[#00AEC5] hover:border-[#00AEC5] dark:hover:text-gray-300" id="settings-tab" data-tabs-target="#settings" type="button" role="tab" aria-controls="settings" aria-selected="false">Rental + Property</button>
         </li>
         <li role="presentation">
-            <button class="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="contacts-tab" data-tabs-target="#contacts" type="button" role="tab" aria-controls="contacts" aria-selected="false">Join our Team</button>
+            <button class="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-[#00AEC5] hover:border-[#00AEC5] dark:hover:text-gray-300" id="contacts-tab" data-tabs-target="#contacts" type="button" role="tab" aria-controls="contacts" aria-selected="false">Join our Team</button>
         </li>
     </ul>
 </div>
 <div id="myTabContent">
-    <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800 h-full" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+    <div class="hidden p-4 rounded-lg  h-full" id="profile" role="tabpanel" aria-labelledby="profile-tab">
         <!-- 1 -->
         
         <div class="grid grid-cols-2 gap-1">
@@ -398,17 +398,588 @@ $email = get_field('email');
 
 </div>
 </div>
-    <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="dashboard" role="tabpanel" aria-labelledby="dashboard-tab">
+    <div class="hidden p-4 rounded-lg" id="dashboard" role="tabpanel" aria-labelledby="dashboard-tab">
         <!-- 2 -->
-        1
-    </div>   
-    <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="settings" role="tabpanel" aria-labelledby="settings-tab">
-        <!-- 3 -->
-        2
+        <div class="grid grid-cols-1">
+
+<div class="grid grid-cols-2 gap-1">
+<div>
+  <button id="button11" class="w-full px-4 py-2 mb-4 rounded-full bg-white hover:bg-[#00AEC5] text-black hover:text-white border border-black hover:border-none font-poppins font-semibold">PURCHASE</button>
+</div>
+<div>
+  <button id="button22" class="w-full px-4 py-2 mb-4 rounded-full bg-white hover:bg-[#00AEC5] text-black hover:text-white border border-black hover:border-none font-poppins font-semibold">SALE</button>
+</div>
+</div>
+
+<div id="main1" class="w-full h-10">
+
+</div>
+
+<script>
+const button11 = document.getElementById("button11");
+const button22 = document.getElementById("button22");
+const mainDiv1 = document.getElementById("main1");
+
+button11.addEventListener("click", () => {
+  const saleContent = `
+  <div>
+        <div class="my-3 text-lg font-bold">Purchase</div>
+        <!-- Form Purchase -->
+      <form action="#" method="POST" class="pb-24 sm:pb-32">
+
+      <div>
+          <label class="text-base font-semibold text-gray-900">Invesment</label>
+          <p class="text-sm text-gray-500">Are you going to make a Invesment?</p>
+          <fieldset class="mt-4 ml-2">
+            <legend class="sr-only">Notification method</legend>
+            <div class="space-y-4 sm:flex sm:items-center sm:space-x-10 sm:space-y-0">
+              <div class="flex items-center">
+                <input id="email" name="notification-method" type="radio" checked class="w-4 h-4 text-indigo-600 border-gray-300 focus:ring-indigo-600">
+                <label for="email" class="block ml-3 text-sm font-medium leading-6 text-gray-900">Yes</label>
+              </div>
+              <div class="flex items-center">
+                <input id="sms" name="notification-method" type="radio" class="w-4 h-4 text-indigo-600 border-gray-300 focus:ring-indigo-600">
+                <label for="sms" class="block ml-3 text-sm font-medium leading-6 text-gray-900">NO</label>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+ 
+      <label for="last-name" class="block text-sm font-semibold leading-6 text-gray-900 mt-2.5">Down payment available</label>
+
+      <div class="mt-2.5">
+
+        <input type="text" name="last-name" id="last-name" autocomplete="family-name" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" placeholder="Down payment available">
+
+      </div>
+      <label for="last-name" class="block text-sm font-semibold leading-6 text-gray-900 mt-2.5">Doors owned</label>
+
+      <div class="mt-2.5">
+
+        <input type="text" name="last-name" id="last-name" autocomplete="family-name" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" placeholder="Doors owned">
+
+      </div>
+      <label for="last-name" class="block text-sm font-semibold leading-6 text-gray-900 mt-2.5">Minimum doors to acquire</label>
+
+      <div class="mt-2.5">
+
+        <input type="text" name="last-name" id="last-name" autocomplete="family-name" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" placeholder="Minimum doors to acquire">
+
+      </div>
+
+      <label for="email" class="block text-sm font-semibold leading-6 text-gray-900  mt-2.5">Name</label>
+
+      
+
+<input type="email" name="email" id="email" autocomplete="email" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 mt-2.5" placeholder="Enter your name">
+
+
+
+<label for="email" class="block text-sm font-semibold leading-6 text-gray-900  mt-2.5">Email</label>
+
+
+
+<input type="email" name="email" id="email" autocomplete="email" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 mt-2.5" placeholder="Enter your email">
+
+
+
+<label for="phone-number" class="block text-sm font-semibold leading-6 text-gray-900  mt-2.5">Phone number</label>
+
+
+
+<input type="tel" name="phone-number" id="phone-number" autocomplete="tel" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 mt-2.5" placeholder="Enter your phone number">
+
+
+<div class="flex justify-end mt-8">
+
+<button type="submit" class="rounded-full bg-[#00AEC5] px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Send message</button>
+
+</div>
+      
+    </form>
+    <!-- Form Purchase -->
+  </div>
+  `;
+  mainDiv1.innerHTML = saleContent;
+});
+
+button22.addEventListener("click", () => {
+  const purchaseContent = `
+  <div>
+        <div class="my-3 text-lg font-bold">Sales</div>
+        <!-- Form Sale -->
+      <form action="#" method="POST" class="pb-24 sm:pb-32">
+
+      <div>
+          <label class="text-base font-semibold text-gray-900">Invesment</label>
+          <p class="text-sm text-gray-500">Are you going to make a Invesment?</p>
+          <fieldset class="mt-4 ml-2">
+            <legend class="sr-only">Notification method</legend>
+            <div class="space-y-4 sm:flex sm:items-center sm:space-x-10 sm:space-y-0">
+              <div class="flex items-center">
+                <input id="email" name="notification-method" type="radio" checked class="w-4 h-4 text-indigo-600 border-gray-300 focus:ring-indigo-600">
+                <label for="email" class="block ml-3 text-sm font-medium leading-6 text-gray-900">Yes</label>
+              </div>
+              <div class="flex items-center">
+                <input id="sms" name="notification-method" type="radio" class="w-4 h-4 text-indigo-600 border-gray-300 focus:ring-indigo-600">
+                <label for="sms" class="block ml-3 text-sm font-medium leading-6 text-gray-900">NO</label>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+    
+      <label for="last-name" class="block text-sm font-semibold leading-6 text-gray-900 mt-2.5">Address</label>
+
+      <div class="mt-2.5">
+
+        <input type="text" name="last-name" id="last-name" autocomplete="family-name" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" placeholder="Enter Address">
+
+      </div>
+      <label for="last-name" class="block text-sm font-semibold leading-6 text-gray-900 mt-2.5">Doors</label>
+
+      <div class="mt-2.5">
+
+        <input type="text" name="last-name" id="last-name" autocomplete="family-name" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" placeholder="Doors">
+
+      </div>
+      <label for="last-name" class="block text-sm font-semibold leading-6 text-gray-900 mt-2.5">Gross revenue</label>
+
+      <div class="mt-2.5">
+
+        <input type="text" name="last-name" id="last-name" autocomplete="family-name" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" placeholder="Enter Gross revenue">
+
+      </div>
+      <label for="last-name" class="block text-sm font-semibold leading-6 text-gray-900 mt-2.5">Taxes</label>
+
+      <div class="mt-2.5">
+
+        <input type="text" name="last-name" id="last-name" autocomplete="family-name" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" placeholder="Enter Taxes">
+
+      </div>
+      <label for="last-name" class="block text-sm font-semibold leading-6 text-gray-900 mt-2.5">Hydro</label>
+
+      <div class="mt-2.5">
+
+        <input type="text" name="last-name" id="last-name" autocomplete="family-name" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" placeholder="Hydro">
+
+      </div>
+      <label for="last-name" class="block text-sm font-semibold leading-6 text-gray-900 mt-2.5">Heating</label>
+
+      <div class="mt-2.5">
+
+        <input type="text" name="last-name" id="last-name" autocomplete="family-name" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" placeholder="Heating">
+
+      </div>
+      <label for="last-name" class="block text-sm font-semibold leading-6 text-gray-900 mt-2.5">Insurance</label>
+
+      <div class="mt-2.5">
+
+        <input type="text" name="last-name" id="last-name" autocomplete="family-name" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" placeholder="Insurance">
+
+      </div>
+
+      
+
+    
+
+      <label for="email" class="block text-sm font-semibold leading-6 text-gray-900  mt-2.5">Name</label>
+
+      
+
+        <input type="email" name="email" id="email" autocomplete="email" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 mt-2.5" placeholder="Enter your name">
+
+      
+
+      <label for="email" class="block text-sm font-semibold leading-6 text-gray-900  mt-2.5">Email</label>
+
+      
+
+        <input type="email" name="email" id="email" autocomplete="email" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 mt-2.5" placeholder="Enter your email">
+
+      
+
+      <label for="phone-number" class="block text-sm font-semibold leading-6 text-gray-900  mt-2.5">Phone number</label>
+
+      
+
+        <input type="tel" name="phone-number" id="phone-number" autocomplete="tel" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 mt-2.5" placeholder="Enter your phone number">
+
+
+    <div class="flex justify-end mt-8">
+
+      <button type="submit" class="rounded-full bg-[#00AEC5] px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Send message</button>
+
     </div>
-    <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="contacts" role="tabpanel" aria-labelledby="contacts-tab">
+    </form>
+    <!-- Form Sale -->
+  </div>
+  `;
+  mainDiv1.innerHTML = purchaseContent;
+});
+</script>
+
+
+        </div>
+    </div>   
+    <div class="hidden p-4 rounded-lg" id="settings" role="tabpanel" aria-labelledby="settings-tab">
+        <!-- 3 -->
+        <div class="grid grid-cols-1">
+
+<div class="grid grid-cols-2 gap-1">
+<div>
+  <button id="button111" class="w-full px-4 py-2 mb-4 rounded-full bg-white hover:bg-[#00AEC5] text-black hover:text-white border border-black hover:border-none font-poppins font-semibold">Rental / Management</button>
+</div>
+<div>
+  <button id="button222" class="w-full px-4 py-2 mb-4 rounded-full bg-white hover:bg-[#00AEC5] text-black hover:text-white border border-black hover:border-none font-poppins font-semibold">Rental + Management</button>
+</div>
+</div>
+
+<div id="main2" class="w-full h-10">
+
+</div>
+
+<script>
+const button111 = document.getElementById("button111");
+const button222 = document.getElementById("button222");
+const mainDiv2 = document.getElementById("main2");
+
+button111.addEventListener("click", () => {
+  const saleContent = `
+  <div>
+        <div class="my-3 text-lg font-bold">Rental / Management</div>
+        <!-- Form Purchase -->
+      <form action="#" method="POST" class="pb-24 sm:pb-32">
+
+      <div>
+          <label class="text-base font-semibold text-gray-900">Invesment</label>
+          <p class="text-sm text-gray-500">Are you going to make a Invesment?</p>
+          <fieldset class="mt-4 ml-2">
+            <legend class="sr-only">Notification method</legend>
+            <div class="space-y-4 sm:flex sm:items-center sm:space-x-10 sm:space-y-0">
+              <div class="flex items-center">
+                <input id="email" name="notification-method" type="radio" checked class="w-4 h-4 text-indigo-600 border-gray-300 focus:ring-indigo-600">
+                <label for="email" class="block ml-3 text-sm font-medium leading-6 text-gray-900">Yes</label>
+              </div>
+              <div class="flex items-center">
+                <input id="sms" name="notification-method" type="radio" class="w-4 h-4 text-indigo-600 border-gray-300 focus:ring-indigo-600">
+                <label for="sms" class="block ml-3 text-sm font-medium leading-6 text-gray-900">NO</label>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+
+
+      <label for="last-name" class="block text-sm font-semibold leading-6 text-gray-900 mt-2.5">Address</label>
+
+      <div class="mt-2.5">
+
+        <input type="text" name="last-name" id="last-name" autocomplete="family-name" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" placeholder="Enter Address">
+
+      </div>
+      <label for="last-name" class="block text-sm font-semibold leading-6 text-gray-900 mt-2.5">Number of Bedrooms</label>
+
+      <div class="mt-2.5">
+
+        <input type="text" name="last-name" id="last-name" autocomplete="family-name" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" placeholder="Enter Number of Bedrooms">
+
+      </div>
+      <label for="last-name" class="block text-sm font-semibold leading-6 text-gray-900 mt-2.5">Number of Bathrooms</label>
+
+      <div class="mt-2.5">
+
+        <input type="text" name="last-name" id="last-name" autocomplete="family-name" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" placeholder="Enter Number of Bathrooms">
+
+      </div>
+      <label for="last-name" class="block text-sm font-semibold leading-6 text-gray-900 mt-2.5">Number of Garages</label>
+
+      <div class="mt-2.5">
+
+        <input type="text" name="last-name" id="last-name" autocomplete="family-name" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" placeholder="Enter Number of Garages">
+
+      </div>
+      <label for="last-name" class="block text-sm font-semibold leading-6 text-gray-900 mt-2.5">Number of Locker</label>
+
+      <div class="mt-2.5">
+
+        <input type="text" name="last-name" id="last-name" autocomplete="family-name" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" placeholder="Enter Number of Locker">
+
+      </div>
+      <label for="last-name" class="block text-sm font-semibold leading-6 text-gray-900 mt-2.5">Is unit rented?</label>
+
+      <div class="mt-2.5">
+
+        <input type="text" name="last-name" id="last-name" autocomplete="family-name" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" placeholder="Is unit rented?">
+
+      </div>
+      <label for="last-name" class="block text-sm font-semibold leading-6 text-gray-900 mt-2.5">If so, Rental end date</label>
+
+      <div class="mt-2.5">
+
+        <input type="text" name="last-name" id="last-name" autocomplete="family-name" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" placeholder="Rental end date">
+
+      </div>
+      <label for="last-name" class="block text-sm font-semibold leading-6 text-gray-900 mt-2.5">Interested in management?</label>
+
+      <div class="mt-2.5">
+
+        <input type="text" name="last-name" id="last-name" autocomplete="family-name" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" placeholder="Interested in management?">
+
+      </div>
+
+      
+
+    
+
+      <label for="email" class="block text-sm font-semibold leading-6 text-gray-900  mt-2.5">Name</label>
+
+      
+
+        <input type="email" name="email" id="email" autocomplete="email" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 mt-2.5" placeholder="Enter your Name">
+
+      
+
+      <label for="email" class="block text-sm font-semibold leading-6 text-gray-900  mt-2.5">Email</label>
+
+      
+
+        <input type="email" name="email" id="email" autocomplete="email" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 mt-2.5" placeholder="Enter your Email">
+
+      
+
+      <label for="phone-number" class="block text-sm font-semibold leading-6 text-gray-900  mt-2.5">Phone number</label>
+
+      
+
+        <input type="tel" name="phone-number" id="phone-number" autocomplete="tel" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 mt-2.5" placeholder="Enter your phone number">
+
+
+    <div class="flex justify-end mt-8">
+
+      <button type="submit" class="rounded-full bg-[#00AEC5] px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Send message</button>
+
+    </div>
+    </form>
+    <!-- Form Purchase -->
+  </div>
+  `;
+  mainDiv2.innerHTML = saleContent;
+});
+
+button222.addEventListener("click", () => {
+  const purchaseContent = `
+  <div>
+        <div class="my-3 text-lg font-bold">Rental + Management</div>
+        <!-- Form Sale -->
+      <form action="#" method="POST" class="pb-24 sm:pb-32">
+
+      <div>
+          <label class="text-base font-semibold text-gray-900">Invesment</label>
+          <p class="text-sm text-gray-500">Are you going to make a Invesment?</p>
+          <fieldset class="mt-4 ml-2">
+            <legend class="sr-only">Notification method</legend>
+            <div class="space-y-4 sm:flex sm:items-center sm:space-x-10 sm:space-y-0">
+              <div class="flex items-center">
+                <input id="email" name="notification-method" type="radio" checked class="w-4 h-4 text-indigo-600 border-gray-300 focus:ring-indigo-600">
+                <label for="email" class="block ml-3 text-sm font-medium leading-6 text-gray-900">Yes</label>
+              </div>
+              <div class="flex items-center">
+                <input id="sms" name="notification-method" type="radio" class="w-4 h-4 text-indigo-600 border-gray-300 focus:ring-indigo-600">
+                <label for="sms" class="block ml-3 text-sm font-medium leading-6 text-gray-900">NO</label>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+
+      <label for="last-name" class="block text-sm font-semibold leading-6 text-gray-900 mt-2.5">Address</label>
+
+<div class="mt-2.5">
+
+  <input type="text" name="last-name" id="last-name" autocomplete="family-name" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" placeholder="Enter Address">
+
+</div>
+<label for="last-name" class="block text-sm font-semibold leading-6 text-gray-900 mt-2.5">Number of Bedrooms</label>
+
+<div class="mt-2.5">
+
+  <input type="text" name="last-name" id="last-name" autocomplete="family-name" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" placeholder="Enter Number of Bedrooms">
+
+</div>
+<label for="last-name" class="block text-sm font-semibold leading-6 text-gray-900 mt-2.5">Number of Bathrooms</label>
+
+<div class="mt-2.5">
+
+  <input type="text" name="last-name" id="last-name" autocomplete="family-name" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" placeholder="Enter Number of Bathrooms">
+
+</div>
+<label for="last-name" class="block text-sm font-semibold leading-6 text-gray-900 mt-2.5">Number of Garages</label>
+
+<div class="mt-2.5">
+
+  <input type="text" name="last-name" id="last-name" autocomplete="family-name" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" placeholder="Enter Number of Garages">
+
+</div>
+<label for="last-name" class="block text-sm font-semibold leading-6 text-gray-900 mt-2.5">Number of Locker</label>
+
+<div class="mt-2.5">
+
+  <input type="text" name="last-name" id="last-name" autocomplete="family-name" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" placeholder="Enter Number of Locker">
+
+</div>
+<label for="last-name" class="block text-sm font-semibold leading-6 text-gray-900 mt-2.5">Is unit rented?</label>
+
+<div class="mt-2.5">
+
+  <input type="text" name="last-name" id="last-name" autocomplete="family-name" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" placeholder="Is unit rented?">
+
+</div>
+<label for="last-name" class="block text-sm font-semibold leading-6 text-gray-900 mt-2.5">If so, Rental end date</label>
+
+<div class="mt-2.5">
+
+  <input type="text" name="last-name" id="last-name" autocomplete="family-name" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" placeholder="If so, Rental end date">
+
+</div>
+<label for="last-name" class="block text-sm font-semibold leading-6 text-gray-900 mt-2.5">Interested in management?</label>
+
+<div class="mt-2.5">
+
+  <input type="text" name="last-name" id="last-name" autocomplete="family-name" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" placeholder="Interested in management?">
+
+</div>
+
+
+
+
+
+<label for="email" class="block text-sm font-semibold leading-6 text-gray-900  mt-2.5">Name</label>
+
+
+
+  <input type="email" name="email" id="email" autocomplete="email" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 mt-2.5" placeholder="Enter your name">
+
+
+
+<label for="email" class="block text-sm font-semibold leading-6 text-gray-900  mt-2.5">Email</label>
+
+
+
+  <input type="email" name="email" id="email" autocomplete="email" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 mt-2.5" placeholder="Enter your email">
+
+
+
+<label for="phone-number" class="block text-sm font-semibold leading-6 text-gray-900  mt-2.5">Phone number</label>
+
+
+
+  <input type="tel" name="phone-number" id="phone-number" autocomplete="tel" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 mt-2.5" placeholder="Enter your phone number">
+
+
+<div class="flex justify-end mt-8">
+
+<button type="submit" class="rounded-full bg-[#00AEC5] px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Send message</button>
+
+</div>
+    </form>
+    <!-- Form Sale -->
+  </div>
+  `;
+  mainDiv2.innerHTML = purchaseContent;
+});
+</script>
+
+        </div>
+    </div>
+    <div class="hidden p-4 rounded-lg " id="contacts" role="tabpanel" aria-labelledby="contacts-tab">
         <!-- 4 -->
-        3
+        <form action="#" method="POST" class="px-6 pb-24 lg:px-8">
+
+<div class="mx-auto md:mr-8">
+
+  <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
+
+    <div>
+
+      <label for="first-name" class="block text-sm font-semibold leading-6 text-gray-900">First name</label>
+
+      <div class="mt-2.5">
+
+        <input type="text" name="first-name" id="first-name" autocomplete="given-name" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+
+      </div>
+
+    </div>
+
+    <div>
+
+      <label for="last-name" class="block text-sm font-semibold leading-6 text-gray-900">Last name</label>
+
+      <div class="mt-2.5">
+
+        <input type="text" name="last-name" id="last-name" autocomplete="family-name" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+
+      </div>
+
+    </div>
+
+    <div class="sm:col-span-2">
+
+      <label for="email" class="block text-sm font-semibold leading-6 text-gray-900">Email</label>
+
+      <div class="mt-2.5">
+
+        <input type="email" name="email" id="email" autocomplete="email" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+
+      </div>
+
+    </div>
+
+    <div class="sm:col-span-2">
+
+      <label for="phone-number" class="block text-sm font-semibold leading-6 text-gray-900">Phone number</label>
+
+      <div class="mt-2.5">
+
+        <input type="tel" name="phone-number" id="phone-number" autocomplete="tel" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+
+      </div>
+
+    </div>
+
+    <div class="sm:col-span-2">
+    <label for="countries" class="block mb-2 text-sm font-medium text-gray-900 ">Type</label>
+    <select id="countries" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:focus:ring-blue-500 dark:focus:border-blue-500">
+    <option selected>Choose a Position</option>
+    <option value="US">New brokers</option>
+    <option value="CA">Experienced Brokers</option>
+    <option value="FR">Rental expert</option>
+    <option value="CA">Property Manager</option>
+    <option value="FR">Administrative</option>
+    </select>
+    </div>
+
+    <div class="sm:col-span-2">
+
+      <label for="message" class="block text-sm font-semibold leading-6 text-gray-900">Message</label>
+
+      <div class="mt-2.5">
+
+        <textarea name="message" id="message" rows="4" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"></textarea>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="mt-8 flex justify-end">
+
+    <button type="submit" class="text-center w-full py-3 rounded-full bg-white hover:bg-[#00AEC5] text-black hover:text-white border border-black hover:border-none">Send message</button>
+
+  </div>
+
+</div>
+
+</form>
     </div>
 </div>
 </div>
