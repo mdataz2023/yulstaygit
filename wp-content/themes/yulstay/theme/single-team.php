@@ -60,6 +60,29 @@ $instagram_link = get_field('instagram_link');
 $linkedin_link = get_field('linkedin_link');
 ?>
 
+<style>
+  .scroll-style::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px #fff;
+	background-color: #fff;
+  
+}
+
+.scroll-style::-webkit-scrollbar
+{
+	width: 10px;
+	background-color: #fff;
+  border-radius: 10px;
+}
+
+.scroll-style::-webkit-scrollbar-thumb
+{
+  border-radius: 10px;
+	background-color: #9cebf6;
+	border: 2px solid #9cebf6;
+}
+</style>
+
 <div class="h-screen w-screen mr-12 grid grid-cols-1 md:grid-cols-12 p-14 gap-4">
 
      <div class="col-span-1 md:col-span-5">
@@ -86,7 +109,7 @@ $linkedin_link = get_field('linkedin_link');
                     <img src="<?php echo wp_get_attachment_url( get_post_thumbnail_id() ); ?>" alt="">
                </div>
      </div>
-     <div class="col-span-1 md:col-span-7 col-scroll">
+     <div class="col-span-1 md:col-span-7 col-scroll scroll-style">
           <div>
                <h1 class="text-3xl font-bold font-poppins pb-2"><?php the_title(); ?></h1>
                <p class="font-poppins font-medium text-xl pb-2"><?php the_excerpt(); ?></p>
@@ -114,14 +137,14 @@ $linkedin_link = get_field('linkedin_link');
                <h2 class="accordion-flush-heading">
                <button type="button" class="flex items-center justify-between w-full py-5 font-medium text-left text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400" aria-expanded="false">
                     <h3 class="font-poppins font-medium text-lg"><?php echo $title; ?></h3>
-                    <svg class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00AEC5" class="bi bi-plus" viewBox="0 0 16 16">
+                    <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
                     </svg>
                </button>
                </h2>
                <div class="accordion-flush-body hidden">
                <div class="py-5 border-b border-gray-200 dark:border-gray-700">
-                    <p class="mb-2 text-gray-500 dark:text-gray-400 font-poppins font-medium text-base"><?php echo $description; ?></p>
+                    <p class="mb-2 text-black font-poppins font-medium text-base"><?php echo $description; ?></p>
                </div>
                </div>
                </div>
