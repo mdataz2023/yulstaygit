@@ -23,7 +23,28 @@ $email = get_field('email');
 
 ?>
 
+<style>
+  .scroll-style::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px #fff;
+	background-color: #fff;
+  
+}
 
+.scroll-style::-webkit-scrollbar
+{
+	width: 10px;
+	background-color: #fff;
+  border-radius: 10px;
+}
+
+.scroll-style::-webkit-scrollbar-thumb
+{
+  border-radius: 10px;
+	background-color: #9cebf6;
+	border: 2px solid #9cebf6;
+}
+</style>
 
 <div class="h-screen w-screen mr-12 grid grid-cols-1 md:grid-cols-2 p-14 gap-6 bg-white">
 
