@@ -152,7 +152,7 @@ $linkedin_link = get_field('linkedin_link');
               
 
                <div>
-                    <h4 class="font-poppins font-bold text-lg pb-2"><?php echo $team_member_name; ?></h4>
+                    <h4 class="font-poppins font-bold text-lg pt-3 pb-2"><?php echo $team_member_name; ?></h4>
                     <p class="font-poppins font-medium text-lg pb-3"><?php echo $team_member_position; ?></p>
                     <div class="flex gap-5 pb-2">
                          <div>
