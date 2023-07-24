@@ -165,15 +165,12 @@ $residential_info_right_section_investment_description_three = get_field('reside
   function setActiveButton(activeButton) {
     // Remove the active class from all buttons
     const buttons = document.querySelectorAll("button");
-    const col2 = document.querySelectorAll("col2");
     buttons.forEach((button) => {
       button.classList.remove("active");
-      col2.classList.remove("active");
     });
 
     // Add the active class to the clicked button
     activeButton.classList.add("active");
-    activeButton.classList.add("col2");
   }
 </script>
 <style>
