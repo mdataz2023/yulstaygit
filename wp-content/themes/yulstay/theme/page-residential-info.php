@@ -114,6 +114,7 @@ $residential_info_right_section_investment_description_three = get_field('reside
   const mainDiv = document.getElementById("main");
 
   button1.addEventListener("click", () => {
+    console.log('xxxxxxxxxxxbutton1')
     const saleContent = `
     <p class="font-poppins text-base text-gray-900 text-justify"><?php echo $residential_info_right_section_sales_paragraph_one; ?></p>
         <h3 class="font-poppins text-lg text-black pt-2 font-bold "><?php echo $residential_info_right_section_sales_title_one; ?></h3>
@@ -136,6 +137,7 @@ $residential_info_right_section_investment_description_three = get_field('reside
   });
 
   button2.addEventListener("click", () => {
+    console.log('xxxxxxxxxxxbutton2')
     const purchaseContent = `
     <p class="font-poppins text-base text-gray-900 text-justify"><?php echo $residential_info_right_section_purchase_paragraph_one; ?></p>
         <h3 class="font-poppins text-lg text-black pt-2 font-bold "><?php echo $residential_info_right_section_purchase_title_one; ?></h3>
@@ -160,6 +162,7 @@ $residential_info_right_section_investment_description_three = get_field('reside
   });
 
   button3.addEventListener("click", () => {
+    console.log('xxxxxxxxxxxbutton3')
     const investmentContent = `
     <p class="font-poppins text-base text-gray-900 text-justify"><?php echo $residential_info_right_section_investment_paragraph_one; ?></p>
     <?php if( have_rows('residential_info_right_section_investment') ): $s= 1; $a=0; ?>
@@ -272,4 +275,4 @@ $residential_info_right_section_investment_description_three = get_field('reside
   
 </div>
 
-<?php get_footer(); ?> 
+<?php get_footer(); ?>
