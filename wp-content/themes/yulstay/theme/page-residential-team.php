@@ -30,7 +30,7 @@ $team_page_description = get_field('team_page_description');
 }
 </style>
 
-<div class="grid w-screen h-screen grid-cols-1 gap-8 mr-12 overflow-y-scroll md:grid-cols-2 px-6 md:px-14 pt-24 py-5 md:py-5 md:overflow-y-hidden">
+<div class="grid w-screen h-screen grid-cols-1 gap-8 mr-12 overflow-y-scroll md:grid-cols-2 px-6 md:px-14 pt-24 py-5 md:py-5 md:overflow-y-hidden scroll-style">
   <!-- copy -->
 <div class="md:overflow-y-scroll scroll-style order-last">
 
@@ -110,13 +110,13 @@ $team_page_description = get_field('team_page_description');
 <div class="mx-auto md:mr-8">
 
   <div class="grid grid-cols-1">
-  <h2 class="font-poppins font-medium text-base pb-1 text-justify">Yulstay is your one-stop-shop for all your real estate needs in Montreal. We offer a comprehensive range of strategic advice and services that cover everything from purchasing, financing, managing, selling and optimizing your multiresidential properties.</h2>
+  <h2 class="font-poppins font-medium text-base pb-1 text-justify pt-4">Yulstay is your one-stop-shop for all your real estate needs in Montreal. We offer a comprehensive range of strategic advice and services that cover everything from purchasing, financing, managing, selling and optimizing your multiresidential properties.</h2>
 
 <h2 class="font-poppins font-medium text-base pb-1 text-justify">We serve a broad range of investors from all corners of the globe, and our team manages the investments of over 100 real estate investors worldwide. With Yulstay, you can rest assured that your real estate investments in Montreal are in the best possible hands.</h2>
 
 <h2 class="font-poppins font-medium text-base pb-1 text-justify">Our team has consistently ranked in the top producers nationwide and continues to deliver its promises of peace of mind, transparency and results. Do not hesitate to book a consultation to discuss how we can help you maximize your investments.</h2>
 
-  <div class="grid grid-cols-2 gap-1">
+  <div class="grid grid-cols-2 gap-1 pt-4">
   <div>
     <button id="button1" class="w-full px-4 py-2 mb-4 rounded-full bg-white hover:bg-[#00AEC5] text-black hover:text-white border border-black hover:border-none font-poppins font-semibold transition-colors duration-300">PURCHASE</button>
   </div>
