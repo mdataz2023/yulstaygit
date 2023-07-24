@@ -66,26 +66,26 @@ $residential_info_right_section_investment_description_three = get_field('reside
 <!-- section -->
 <div class="grid grid-cols-6 h-2 ">
   <div id="col1" class=""></div>
-  <div id="col2" class="bg-[#00AEC5]"></div>
-  <div id="col3" class="bg-[#00AEC5]"></div>
-  <div id="col4" class="bg-[#00AEC5]"></div>
-  <div id="col5" class="bg-[#00AEC5]"></div>
+  <div id="col2" class="bg-gray-400"></div>
+  <div id="col3" class="bg-gray-400"></div>
+  <div id="col4" class="bg-gray-400"></div>
+  <div id="col5" class="bg-gray-400"></div>
   <div id="col6" class=""></div>
 </div>
 <div class="grid grid-cols-6 h-7">
   <div id="col7"></div>
   <div id="col8" class="grid grid-cols-12">
-    <div id="col9" class="bg-[#00AEC5]"></div>
+    <div id="col9" class="bg-gray-400"></div>
     <div id="col10" class="col-span-11"></div>
   </div>
   <div id="col11"></div>
   <div id="col12" class="grid grid-cols-12">
-    <div id="col13" class="bg-[#00AEC5]"></div>
+    <div id="col13" class="bg-gray-400"></div>
     <div id="col14" class="col-span-11"></div>
   </div>
   <div id="col15" class="grid grid-cols-12">
     <div id="col16" class="col-span-11"></div>
-    <div id="col17" class="bg-[#00AEC5]"></div>
+    <div id="col17" class="bg-gray-400"></div>
   </div>
   <div id="col18"></div>
 </div>
@@ -165,12 +165,15 @@ $residential_info_right_section_investment_description_three = get_field('reside
   function setActiveButton(activeButton) {
     // Remove the active class from all buttons
     const buttons = document.querySelectorAll("button");
+    const col2 = document.querySelectorAll("col2");
     buttons.forEach((button) => {
       button.classList.remove("active");
+      col2.classList.remove("active");
     });
 
     // Add the active class to the clicked button
     activeButton.classList.add("active");
+    activeButton.classList.add("col2");
   }
 </script>
 <style>
