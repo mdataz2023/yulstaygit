@@ -124,6 +124,14 @@ $residential_info_right_section_investment_description_three = get_field('reside
         <p class="font-poppins text-base text-gray-900 text-justify"><?php echo $residential_info_right_section_sales_description_three; ?></p>
     `;
     mainDiv.innerHTML = saleContent;
+    document.getElementById("col9").style.background="#00AEC5";
+    document.getElementById("col2").style.background="#00AEC5";
+    document.getElementById("col3").style.background="#00AEC5";
+
+    document.getElementById("col13").style.background="#9ca3af";
+    document.getElementById("col4").style.background="#9ca3af";
+    document.getElementById("col5").style.background="#9ca3af";
+    document.getElementById("col7").style.background="#9ca3af";
     setActiveButton(button1);
   });
 
@@ -139,6 +147,14 @@ $residential_info_right_section_investment_description_three = get_field('reside
         <h3 class="font-poppins text-lg font-bold pt-2 text-black "><?php echo $residential_info_right_section_purchase_title_four; ?></h3>
         <p class="font-poppins text-base text-gray-900 text-justify"><?php echo $residential_info_right_section_purchase_description_four; ?></p>
     `;
+    document.getElementById("col13").style.background="#00AEC5";
+
+    document.getElementById("col4").style.background="#9ca3af";
+    document.getElementById("col5").style.background="#9ca3af";
+    document.getElementById("col7").style.background="#9ca3af";
+    document.getElementById("col9").style.background="#9ca3af";
+    document.getElementById("col2").style.background="#9ca3af";
+    document.getElementById("col3").style.background="#9ca3af";
     mainDiv.innerHTML = purchaseContent;
     setActiveButton(button2);
   });
@@ -158,6 +174,14 @@ $residential_info_right_section_investment_description_three = get_field('reside
                 <p class="font-poppins text-base text-gray-900 text-justify"><?php echo $residential_info_right_section_investment_description; ?></p>
         <?php   endwhile; endif; ?>
     `;
+    document.getElementById("col4").style.background="#00AEC5";
+    document.getElementById("col5").style.background="#00AEC5";
+    document.getElementById("col7").style.background="#00AEC5";
+
+    document.getElementById("col9").style.background="#9ca3af";
+    document.getElementById("col2").style.background="#9ca3af";
+    document.getElementById("col3").style.background="#9ca3af";
+    document.getElementById("col13").style.background="#9ca3af";
     mainDiv.innerHTML = investmentContent;
     setActiveButton(button3);
   });
@@ -248,4 +272,4 @@ $residential_info_right_section_investment_description_three = get_field('reside
   
 </div>
 
-<?php get_footer(); ?>
+<?php get_footer(); ?> 
