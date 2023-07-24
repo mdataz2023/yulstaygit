@@ -112,9 +112,52 @@ $residential_info_right_section_investment_description_three = get_field('reside
   const button2 = document.getElementById("button2");
   const button3 = document.getElementById("button3");
   const mainDiv = document.getElementById("main");
+  let b1=false;
+  let b2=false;
+  let b3=false;
+
+  button1.addEventListener("mouseover", () => {
+    document.getElementById("col9").style.background="#00AEC5";
+    document.getElementById("col2").style.background="#00AEC5";
+    document.getElementById("col3").style.background="#00AEC5";
+  });
+  
+  button2.addEventListener("mouseover", () => {
+    document.getElementById("col13").style.background="#00AEC5";
+  });
+  
+  button3.addEventListener("mouseover", () => {
+    document.getElementById("col4").style.background="#00AEC5";
+    document.getElementById("col5").style.background="#00AEC5";
+    document.getElementById("col17").style.background="#00AEC5";
+  });
+  
+  button1.addEventListener("mouseout", () => {
+  if(!b1){
+    document.getElementById("col9").style.background="#9ca3af";
+    document.getElementById("col2").style.background="#9ca3af";
+    document.getElementById("col3").style.background="#9ca3af"; 
+  }
+  });
+  button2.addEventListener("mouseout", () => {
+  if(!b2){
+    document.getElementById("col13").style.background="#9ca3af";
+  }
+  });
+  button3.addEventListener("mouseout", () => {
+  if(!b3){
+    document.getElementById("col4").style.background="#9ca3af";
+    document.getElementById("col5").style.background="#9ca3af";
+    document.getElementById("col17").style.background="#9ca3af";
+  }
+  });
+
 
   button1.addEventListener("click", () => {
-    console.log('xxxxxxxxxxxbutton1')
+    b1=true;
+    b2=false;
+    b3=false;
+
     const saleContent = `
     <p class="font-poppins text-base text-gray-900 text-justify"><?php echo $residential_info_right_section_sales_paragraph_one; ?></p>
         <h3 class="font-poppins text-lg text-black pt-2 font-bold "><?php echo $residential_info_right_section_sales_title_one; ?></h3>
@@ -132,12 +175,14 @@ $residential_info_right_section_investment_description_three = get_field('reside
     document.getElementById("col13").style.background="#9ca3af";
     document.getElementById("col4").style.background="#9ca3af";
     document.getElementById("col5").style.background="#9ca3af";
-    document.getElementById("col7").style.background="#9ca3af";
+    document.getElementById("col17").style.background="#9ca3af";
     setActiveButton(button1);
   });
 
   button2.addEventListener("click", () => {
-    console.log('xxxxxxxxxxxbutton2')
+    b1=false;
+    b2=true;
+    b3=false;  
     const purchaseContent = `
     <p class="font-poppins text-base text-gray-900 text-justify"><?php echo $residential_info_right_section_purchase_paragraph_one; ?></p>
         <h3 class="font-poppins text-lg text-black pt-2 font-bold "><?php echo $residential_info_right_section_purchase_title_one; ?></h3>
@@ -153,7 +198,7 @@ $residential_info_right_section_investment_description_three = get_field('reside
 
     document.getElementById("col4").style.background="#9ca3af";
     document.getElementById("col5").style.background="#9ca3af";
-    document.getElementById("col7").style.background="#9ca3af";
+    document.getElementById("col17").style.background="#9ca3af";
     document.getElementById("col9").style.background="#9ca3af";
     document.getElementById("col2").style.background="#9ca3af";
     document.getElementById("col3").style.background="#9ca3af";
@@ -162,7 +207,9 @@ $residential_info_right_section_investment_description_three = get_field('reside
   });
 
   button3.addEventListener("click", () => {
-    console.log('xxxxxxxxxxxbutton3')
+    b1=false;
+    b2=false;
+    b3=true;  
     const investmentContent = `
     <p class="font-poppins text-base text-gray-900 text-justify"><?php echo $residential_info_right_section_investment_paragraph_one; ?></p>
     <?php if( have_rows('residential_info_right_section_investment') ): $s= 1; $a=0; ?>
@@ -179,7 +226,7 @@ $residential_info_right_section_investment_description_three = get_field('reside
     `;
     document.getElementById("col4").style.background="#00AEC5";
     document.getElementById("col5").style.background="#00AEC5";
-    document.getElementById("col7").style.background="#00AEC5";
+    document.getElementById("col17").style.background="#00AEC5";
 
     document.getElementById("col9").style.background="#9ca3af";
     document.getElementById("col2").style.background="#9ca3af";
