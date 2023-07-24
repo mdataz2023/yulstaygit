@@ -64,26 +64,42 @@ $residential_info_right_section_investment_description_three = get_field('reside
             <a href="<?php bloginfo('url'); ?>/home" class="flex justify-center"><img src="<?php echo $residential_info_left_section_company_logo; ?>" class="w-60 pb-4" alt=""></a>
         </div>
 <!-- section -->
-<div class="grid grid-cols-6 h-2 ">
+<div class="grid grid-cols-6 h-7">
+  <div id="" class=""></div>
+  <div id="" class=""></div>
+  <div id="" class=""></div>
+  <div id="" class="grid grid-cols-12">
+    <div id="col21" class="bg-gray-400"></div>
+    <div id="" class="col-span-11"></div>
+  </div>
+  <div id="" class=""></div>
+  <div id="" class=""></div>
+</div>
+
+<div class="grid grid-cols-6 h-2">
   <div id="col1" class=""></div>
   <div id="col2" class="bg-gray-400"></div>
   <div id="col3" class="bg-gray-400"></div>
-  <div id="col4" class="bg-gray-400"></div>
+  <div id="col4" class="bg-gray-400 grid grid-cols-12">
+    <div id="col19" class="bg-gray-400"></div>
+    <div id="col20" class="col-span-11"></div>
+  </div>
   <div id="col5" class="bg-gray-400"></div>
   <div id="col6" class=""></div>
 </div>
-<div class="grid grid-cols-6 h-7">
+
+<div class="grid grid-cols-6">
   <div id="col7"></div>
-  <div id="col8" class="grid grid-cols-12">
+  <div id="col8" class="grid grid-cols-12 h-7">
     <div id="col9" class="bg-gray-400"></div>
     <div id="col10" class="col-span-11"></div>
   </div>
   <div id="col11"></div>
-  <div id="col12" class="grid grid-cols-12">
+  <div id="col12" class="grid grid-cols-12 h-4">
     <div id="col13" class="bg-gray-400"></div>
     <div id="col14" class="col-span-11"></div>
   </div>
-  <div id="col15" class="grid grid-cols-12">
+  <div id="col15" class="grid grid-cols-12 h-7">
     <div id="col16" class="col-span-11"></div>
     <div id="col17" class="bg-gray-400"></div>
   </div>
@@ -120,16 +136,22 @@ $residential_info_right_section_investment_description_three = get_field('reside
     document.getElementById("col9").style.background="#00AEC5";
     document.getElementById("col2").style.background="#00AEC5";
     document.getElementById("col3").style.background="#00AEC5";
+    document.getElementById("col19").style.background="#00AEC5";
+    document.getElementById("col21").style.background="#00AEC5";
   });
   
   button2.addEventListener("mouseover", () => {
     document.getElementById("col13").style.background="#00AEC5";
+    document.getElementById("col19").style.background="#00AEC5";
+    document.getElementById("col21").style.background="#00AEC5";
   });
   
   button3.addEventListener("mouseover", () => {
     document.getElementById("col4").style.background="#00AEC5";
     document.getElementById("col5").style.background="#00AEC5";
     document.getElementById("col17").style.background="#00AEC5";
+    document.getElementById("col19").style.background="#00AEC5";
+    document.getElementById("col21").style.background="#00AEC5";
   });
   
   button1.addEventListener("mouseout", () => {
@@ -137,11 +159,15 @@ $residential_info_right_section_investment_description_three = get_field('reside
     document.getElementById("col9").style.background="#9ca3af";
     document.getElementById("col2").style.background="#9ca3af";
     document.getElementById("col3").style.background="#9ca3af"; 
+    document.getElementById("col19").style.background="#9ca3af";
+    document.getElementById("col21").style.background="#9ca3af";
   }
   });
   button2.addEventListener("mouseout", () => {
   if(!b2){
     document.getElementById("col13").style.background="#9ca3af";
+    document.getElementById("col19").style.background="#9ca3af";
+    document.getElementById("col21").style.background="#9ca3af";
   }
   });
   button3.addEventListener("mouseout", () => {
@@ -149,6 +175,8 @@ $residential_info_right_section_investment_description_three = get_field('reside
     document.getElementById("col4").style.background="#9ca3af";
     document.getElementById("col5").style.background="#9ca3af";
     document.getElementById("col17").style.background="#9ca3af";
+    document.getElementById("col19").style.background="#9ca3af";
+    document.getElementById("col21").style.background="#9ca3af";
   }
   });
 
@@ -171,6 +199,8 @@ $residential_info_right_section_investment_description_three = get_field('reside
     document.getElementById("col9").style.background="#00AEC5";
     document.getElementById("col2").style.background="#00AEC5";
     document.getElementById("col3").style.background="#00AEC5";
+    document.getElementById("col19").style.background="#00AEC5";
+    document.getElementById("col21").style.background="#00AEC5";
 
     document.getElementById("col13").style.background="#9ca3af";
     document.getElementById("col4").style.background="#9ca3af";
@@ -195,6 +225,8 @@ $residential_info_right_section_investment_description_three = get_field('reside
         <p class="font-poppins text-base text-gray-900 text-justify"><?php echo $residential_info_right_section_purchase_description_four; ?></p>
     `;
     document.getElementById("col13").style.background="#00AEC5";
+    document.getElementById("col19").style.background="#00AEC5";
+    document.getElementById("col21").style.background="#00AEC5";
 
     document.getElementById("col4").style.background="#9ca3af";
     document.getElementById("col5").style.background="#9ca3af";
@@ -227,6 +259,8 @@ $residential_info_right_section_investment_description_three = get_field('reside
     document.getElementById("col4").style.background="#00AEC5";
     document.getElementById("col5").style.background="#00AEC5";
     document.getElementById("col17").style.background="#00AEC5";
+    document.getElementById("col19").style.background="#00AEC5";
+    document.getElementById("col21").style.background="#00AEC5";
 
     document.getElementById("col9").style.background="#9ca3af";
     document.getElementById("col2").style.background="#9ca3af";
