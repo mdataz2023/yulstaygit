@@ -35,7 +35,7 @@ $team_page_description = get_field('team_page_description');
 <div class="md:overflow-y-scroll scroll-style order-last">
 
 
-			<div class="grid grid-cols-2 md:grid-cols-3 gap-4 pb-12">
+			<div class="grid grid-cols-2 md:grid-cols-2 gap-4 pb-12">
     <?php
     $ids_to_display = array(426, 123, 121, 119, 116, 114); // IDs of the posts you want to display114, 116, 119, 121, 123, 426
 

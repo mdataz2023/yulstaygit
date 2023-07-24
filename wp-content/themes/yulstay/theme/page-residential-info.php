@@ -95,7 +95,7 @@ $residential_info_right_section_investment_description_three = get_field('reside
     <div id="col10" class="col-span-11"></div>
   </div>
   <div id="col11"></div>
-  <div id="col12" class="grid grid-cols-12 h-4">
+  <div id="col12" class="grid grid-cols-12 h-9">
     <div id="col13" class="bg-gray-400"></div>
     <div id="col14" class="col-span-11"></div>
   </div>
