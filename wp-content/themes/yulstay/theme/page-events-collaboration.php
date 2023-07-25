@@ -287,7 +287,7 @@ button:active {
 
 
 </style>
-<div class="container">
+<div class="container gap-6">
 
     <a href="#" class="button">
       <div class="button__line"></div>
