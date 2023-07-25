@@ -7,6 +7,7 @@ get_header();
 $join_our_team_page_title = get_field('join_our_team_page_title');
 
 $join_our_team_page_description = get_field('join_our_team_page_description');
+$join_our_team_page_description_two = get_field('join_our_team_page_description_two');
 
 $phone_number_link = get_field('phone_number_link');
 $phone_number = get_field('phone_number');
@@ -47,6 +48,13 @@ $email = get_field('email');
       <h2 class="text-3xl font-bold tracking-tight text-black"><?php echo $join_our_team_page_title; ?></h2>
 
       <p class="mt-6 text-lg leading-8 text-black"><?php echo $join_our_team_page_description; ?></p>
+
+      <?php if( have_rows('join_our_team_page_description_list') ): $s= 1; $a=0; ?>
+				
+                    <?php while( have_rows('join_our_team_page_description_list') ): the_row() ;   
+                       $i++;
+                              $list_item = get_sub_field('list_item');     
+                      ?>
       <div class="flex gap-2">
         <div>
           <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#00AEC5" class="bi bi-plus" viewBox="0 0 16 16">
@@ -54,12 +62,12 @@ $email = get_field('email');
           </svg>
         </div>
         <div>
-          <p class="mt-6 text-lg leading-8 text-black">Test</p>
+          <p class="text-lg leading-8 text-black"><?php echo $list_item; ?></p>
         </div>
-        
       </div>
+      <?php endwhile; endif; ?>
       
-      <p class="mt-6 text-lg leading-8 text-black">Test test</p>
+      <p class="mt-6 text-lg leading-8 text-black"><?php echo $join_our_team_page_description_two; ?></p>
 
       <div class="grid grid-cols-2">
 
