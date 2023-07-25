@@ -18,11 +18,9 @@ $email = get_field('email');
 
 ?>
 
-<div class="relative isolate bg-white h-screen overflow-y-scroll md:overflow-y-auto">
 
-<div class="mx-auto grid max-w-7xl grid-cols-1 lg:grid-cols-2">
 
-  <div class="relative px-6 pb-20 pt-24 sm:pt-32 lg:static lg:px-8">
+  <div class="h-screen w-screen mr-12 grid grid-cols-1 md:grid-cols-2 p-14 gap-6 bg-white">
 
     <div class="mx-auto lg:mx-0 lg:max-w-lg md:pr-12">
 
@@ -137,7 +135,9 @@ $email = get_field('email');
 
     </div>
 
-  </div>
+
+
+
 <div class="md:overflow-y-scroll hide-scroll-bar">
   <form action="#" method="POST" class="px-6 pb-24 pt-20 lg:px-8">
 
@@ -230,8 +230,6 @@ $email = get_field('email');
   </form>
   </div>
 
-</div>
 
-</div>
 
 <?php get_footer(); ?>
