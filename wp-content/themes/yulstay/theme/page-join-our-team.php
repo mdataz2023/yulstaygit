@@ -18,11 +18,32 @@ $email = get_field('email');
 
 ?>
 
+<style>
+  .scroll-style::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px #fff;
+	background-color: #fff;
+  
+}
 
+.scroll-style::-webkit-scrollbar
+{
+	width: 10px;
+	background-color: #fff;
+  border-radius: 10px;
+}
+
+.scroll-style::-webkit-scrollbar-thumb
+{
+  border-radius: 10px;
+	background-color: #9cebf6;
+	border: 2px solid #9cebf6;
+}
+</style>
 
   <div class="h-screen w-screen mr-12 grid grid-cols-1 md:grid-cols-2 p-14 gap-6 bg-white">
 
-    <div class="mx-auto lg:mx-0 md:pr-12 md:overflow-y-scroll hide-scroll-bar">
+    <div class="mx-auto lg:mx-0 md:pr-12 md:overflow-y-scroll scroll-style">
 
 
       <div class="md:block hidden">
@@ -139,7 +160,7 @@ $email = get_field('email');
 
 
 <div class="md:overflow-y-scroll hide-scroll-bar">
-  <form action="#" method="POST" class="px-6 pb-24 pt-20 lg:px-8">
+  <form action="#" method="POST" class="px-6 pb-24 lg:px-8">
 
     <div class="mx-auto md:mr-8">
 
