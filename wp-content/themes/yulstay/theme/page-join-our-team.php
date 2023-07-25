@@ -88,7 +88,7 @@ $email = get_field('email');
       
       <p class="mt-6 text-lg leading-8 text-black"><?php echo $join_our_team_page_description_two; ?></p>
 
-      <div class="grid grid-cols-2">
+      <div class="grid grid-cols-1">
 
         <dl class="mt-10 space-y-4 text-base leading-7 text-gray-600">
 
@@ -159,7 +159,7 @@ $email = get_field('email');
 
 
 
-<div class="md:overflow-y-scroll hide-scroll-bar">
+<div class="md:overflow-y-scroll scroll-style">
   <form action="#" method="POST" class="px-6 pb-24 lg:px-8">
 
     <div class="mx-auto md:mr-8">

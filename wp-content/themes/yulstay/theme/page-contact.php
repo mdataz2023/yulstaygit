@@ -44,6 +44,7 @@ $email = get_field('email');
 	background-color: #9cebf6;
 	border: 2px solid #9cebf6;
 }
+
 </style>
 
 <div class="h-screen w-screen mr-12 grid grid-cols-1 md:grid-cols-2 p-14 gap-6 bg-white">
@@ -72,7 +73,7 @@ $email = get_field('email');
 
 <p class="mt-6 text-lg leading-8 text-black"><?php echo $contact_page_description; ?></p>
 
-<div class="grid grid-cols-2">
+<div class="grid grid-cols-1">
 
   <dl class="mt-10 space-y-4 text-base leading-7 text-black">
 
@@ -147,18 +148,17 @@ $email = get_field('email');
         </div>
         <div class="py-4" id="tabContent">
             <div class="tab-pane hidden" id="content1">
-              <div class="grid grid-cols-2">
-                <div class="bg-green-600">
-                  <button class="w-full text-center">BTN1</button>
-                </div>
-                <div>
-                  <button class="w-full text-center">BTN2</button>
-                </div>
-              </div>
+              
             </div>
-            <div class="tab-pane hidden" id="content2">Content of Tab 2</div>
-            <div class="tab-pane hidden" id="content3">Content of Tab 3</div>
-            <div class="tab-pane hidden" id="content4">Content of Tab 4</div>
+            <div class="tab-pane hidden" id="content2">
+
+            </div>
+            <div class="tab-pane hidden" id="content3">
+          
+            </div>
+            <div class="tab-pane hidden" id="content4">
+           
+            </div>
         </div>
     </div>
 </div>
