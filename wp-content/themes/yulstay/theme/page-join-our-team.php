@@ -22,7 +22,7 @@ $email = get_field('email');
 
   <div class="h-screen w-screen mr-12 grid grid-cols-1 md:grid-cols-2 p-14 gap-6 bg-white">
 
-    <div class="mx-auto lg:mx-0 lg:max-w-lg md:pr-12">
+    <div class="mx-auto lg:mx-0 lg:max-w-lg md:pr-12 md:overflow-y-scroll hide-scroll-bar">
 
 
       <div class="md:block hidden">
