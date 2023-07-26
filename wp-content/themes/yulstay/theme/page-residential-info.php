@@ -64,6 +64,7 @@ $residential_info_right_section_investment_description_three = get_field('reside
             <a href="<?php bloginfo('url'); ?>/home" class="flex justify-center"><img src="<?php echo $residential_info_left_section_company_logo; ?>" class="w-60 pb-4" alt=""></a>
         </div>
 <!-- section -->
+<div>
 <div class="grid grid-cols-6 h-7">
   <div id="" class=""></div>
   <div id="" class=""></div>
@@ -121,6 +122,7 @@ $residential_info_right_section_investment_description_three = get_field('reside
 <!-- section -->
 <div id="main" class="w-full h-10">
 
+</div>
 </div>
 
 <script>
