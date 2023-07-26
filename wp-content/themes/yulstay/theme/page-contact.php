@@ -77,7 +77,7 @@ $email = get_field('email');
 
   <dl class="mt-10 space-y-4 text-base leading-7 text-black">
 
-    <div class="flex gap-x-4">
+    <div class="flex gap-x-4 hover:animate-bounce">
 
       <dt class="flex-none">
 
@@ -95,7 +95,7 @@ $email = get_field('email');
 
     </div>
 
-    <div class="flex gap-x-4">
+    <div class="flex gap-x-4 hover:animate-bounce">
 
       <dt class="flex-none">
 
@@ -113,7 +113,7 @@ $email = get_field('email');
 
     </div>
 
-    <div class="flex gap-x-4">
+    <div class="flex gap-x-4 hover:animate-bounce">
 
       <dt class="flex-none">
 
@@ -147,10 +147,10 @@ $email = get_field('email');
       </style>
       
       <div class="w3-bar w3-black flex justify-around mb-7 border-b border-gray-500 pb-6">
-        <button class="w3-bar-item w3-button hover:text-[#00AEC5]" onclick="openCity('London')">Residential</button>
-        <button class="w3-bar-item w3-button hover:text-[#00AEC5]" onclick="openCity('Paris')">Multi Residential</button>
-        <button class="w3-bar-item w3-button hover:text-[#00AEC5]" onclick="openCity('Tokyo')">Rental + Property</button>
-        <button class="w3-bar-item w3-button hover:text-[#00AEC5]" onclick="openCity('NewYork')">Join our Team</button>
+        <button class="w3-bar-item w3-button font-semibold hover:text-[#00AEC5]" onclick="openCity('London')">Residential</button>
+        <button class="w3-bar-item w3-button font-semibold hover:text-[#00AEC5]" onclick="openCity('Paris')">Multi Residential</button>
+        <button class="w3-bar-item w3-button font-semibold hover:text-[#00AEC5]" onclick="openCity('Tokyo')">Rental + Property</button>
+        <button class="w3-bar-item w3-button font-semibold hover:text-[#00AEC5]" onclick="openCity('NewYork')">Join our Team</button>
       </div>
       
       <div id="London" class="w3-container city" style="display:none">
