@@ -144,7 +144,7 @@ $residential_info_right_section_investment_description_three = get_field('reside
 </div>
 
 <!-- section -->
-<div id="main" class="w-full h-10">
+<div id="main" class="w-full h-full">
 
 </div>
 </div>
