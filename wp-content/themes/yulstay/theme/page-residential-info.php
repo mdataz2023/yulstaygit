@@ -48,6 +48,7 @@ $residential_info_right_section_investment_description_three = get_field('reside
 {
 	-webkit-box-shadow: inset 0 0 6px #fff;
 	background-color: #fff;
+  direction:ltr;
   
 }
 
