@@ -191,6 +191,8 @@ $residential_info_right_section_investment_description_three = get_field('reside
     const saleContent = `
     <div class="pb-16">
     <p class="font-poppins text-base text-gray-900 text-justify"><?php echo $residential_info_right_section_sales_paragraph_one; ?></p>
+    <h3 class="font-poppins text-lg text-black pt-2 font-bold ">Our mission</h3>
+        <p class="font-poppins text-base text-gray-900 text-justify">Help our clients sell their property with complete peace of mind by offering result-oriented strategies and services with the highest degree of transparency. We hold true to our mission and are able to deliver on it by focusing on our three core elements:</p>
         <h3 class="font-poppins text-lg text-black pt-2 font-bold "><?php echo $residential_info_right_section_sales_title_one; ?></h3>
         <p class="font-poppins text-base text-gray-900 text-justify"><?php echo $residential_info_right_section_sales_description_one; ?></p>
         <h3 class="font-poppins text-lg font-bold pt-2 text-black "><?php echo $residential_info_right_section_sales_title_two; ?></h3>
@@ -220,6 +222,8 @@ $residential_info_right_section_investment_description_three = get_field('reside
     const purchaseContent = `
     <div class="pb-16">
     <p class="font-poppins text-base text-gray-900 text-justify"><?php echo $residential_info_right_section_purchase_paragraph_one; ?></p>
+    <h3 class="font-poppins text-lg text-black pt-2 font-bold ">Our mission</h3>
+        <p class="font-poppins text-base text-gray-900 text-justify">Help our clients successfully acquire their property with complete peace of mind by leveraging our experience and extensive network to achieve the desired results with the highest degree of transparency. We hold true to our mission and are able to deliver on it by focusing on our three core elements</p>
         <h3 class="font-poppins text-lg text-black pt-2 font-bold "><?php echo $residential_info_right_section_purchase_title_one; ?></h3>
         <p class="font-poppins text-base text-gray-900 text-justify"><?php echo $residential_info_right_section_purchase_description_one; ?></p>
         <h3 class="font-poppins text-lg font-bold pt-2 text-black "><?php echo $residential_info_right_section_purchase_title_two; ?></h3>
@@ -251,6 +255,8 @@ $residential_info_right_section_investment_description_three = get_field('reside
     const investmentContent = `
     <div class="pb-16">
     <p class="font-poppins text-base text-gray-900 text-justify"><?php echo $residential_info_right_section_investment_paragraph_one; ?></p>
+    <h3 class="font-poppins text-lg text-black pt-2 font-bold ">Our mission</h3>
+        <p class="font-poppins text-base text-gray-900 text-justify">Help our customers invest in Montreal with complete peace of mind by offering result-oriented real estate investment services with the highest degree of transparency. We hold true to our mission and are able to deliver on it by focusing on our three core elements</p>
     <?php if( have_rows('residential_info_right_section_investment') ): $s= 1; $a=0; ?>
 				
                 <?php while( have_rows('residential_info_right_section_investment') ): the_row() ;   
