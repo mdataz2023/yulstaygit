@@ -1638,6 +1638,10 @@ video {
   animation: bounce 1s infinite;
 }
 
+.animate-\[wiggle_1s_ease-in-out_infinite\] {
+  animation: wiggle 1s ease-in-out infinite;
+}
+
 .cursor-pointer {
   cursor: pointer;
 }
