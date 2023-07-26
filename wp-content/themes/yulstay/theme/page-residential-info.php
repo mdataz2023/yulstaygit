@@ -43,7 +43,31 @@ $residential_info_right_section_investment_description_three = get_field('reside
 
 ?>
 
-<div class="h-screen w-screen mr-12 p-14 gap-6 overflow-y-scroll">
+<style>
+  .scroll-style::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px #fff;
+	background-color: #fff;
+  
+}
+
+.scroll-style::-webkit-scrollbar
+{
+	width: 10px;
+	background-color: #fff;
+  border-radius: 10px;
+}
+
+.scroll-style::-webkit-scrollbar-thumb
+{
+  border-radius: 10px;
+	background-color: #9cebf6;
+	border: 2px solid #9cebf6;
+}
+
+</style>
+
+<div class="h-screen w-screen mr-12 p-14 gap-6 overflow-y-scroll scroll-style">
     <div class="">
 
         <div class="flex gap-3 mb-3">
