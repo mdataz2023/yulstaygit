@@ -67,8 +67,8 @@ $residential_info_right_section_investment_description_three = get_field('reside
 
 </style>
 
-<div class="h-screen w-screen mr-12 p-14 gap-6 ">
-    <div class="overflow-y-scroll scroll-style">
+<div class="h-screen w-screen mr-12 p-14 gap-6 overflow-y-scroll scroll-style">
+    <div class="">
 
         <div class="flex gap-3 mb-3">
 				<div>
@@ -144,7 +144,7 @@ $residential_info_right_section_investment_description_three = get_field('reside
 </div>
 
 <!-- section -->
-<div id="main" class="w-full h-full">
+<div id="main" class="w-full h-10">
 
 </div>
 </div>
