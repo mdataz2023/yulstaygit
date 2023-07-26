@@ -109,7 +109,7 @@ $email = get_field('email');
 
       </dt>
 
-      <dd><a class="hover:text-gray-900" href="<?php echo $phone_number_link; ?>"><?php echo $phone_number; ?></a></dd>
+      <dd><a class="hover:text-gray-900" href="tel:<?php echo $phone_number_link; ?>"><?php echo $phone_number; ?></a></dd>
 
     </div>
 
@@ -127,7 +127,7 @@ $email = get_field('email');
 
       </dt>
 
-      <dd><a class="hover:text-gray-900" href="<?php echo $email_link; ?>"><?php echo $email; ?></a></dd>
+      <dd><a class="hover:text-gray-900" href="mailto:<?php echo $email_link; ?>"><?php echo $email; ?></a></dd>
 
     </div>
 
