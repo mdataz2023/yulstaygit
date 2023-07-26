@@ -189,6 +189,7 @@ $residential_info_right_section_investment_description_three = get_field('reside
     b3=false;
 
     const saleContent = `
+    <div class="pb-16">
     <p class="font-poppins text-base text-gray-900 text-justify"><?php echo $residential_info_right_section_sales_paragraph_one; ?></p>
         <h3 class="font-poppins text-lg text-black pt-2 font-bold "><?php echo $residential_info_right_section_sales_title_one; ?></h3>
         <p class="font-poppins text-base text-gray-900 text-justify"><?php echo $residential_info_right_section_sales_description_one; ?></p>
@@ -196,6 +197,7 @@ $residential_info_right_section_investment_description_three = get_field('reside
         <p class="font-poppins text-base text-gray-900 text-justify"><?php echo $residential_info_right_section_sales_description_two; ?></p>
         <h3 class="font-poppins text-lg font-bold pt-2 text-black "><?php echo $residential_info_right_section_sales_title_three; ?></h3>
         <p class="font-poppins text-base text-gray-900 text-justify"><?php echo $residential_info_right_section_sales_description_three; ?></p>
+        </div>
     `;
     mainDiv.innerHTML = saleContent;
     document.getElementById("col9").style.background="#00AEC5";
@@ -216,6 +218,7 @@ $residential_info_right_section_investment_description_three = get_field('reside
     b2=true;
     b3=false;  
     const purchaseContent = `
+    <div class="pb-16">
     <p class="font-poppins text-base text-gray-900 text-justify"><?php echo $residential_info_right_section_purchase_paragraph_one; ?></p>
         <h3 class="font-poppins text-lg text-black pt-2 font-bold "><?php echo $residential_info_right_section_purchase_title_one; ?></h3>
         <p class="font-poppins text-base text-gray-900 text-justify"><?php echo $residential_info_right_section_purchase_description_one; ?></p>
@@ -225,6 +228,7 @@ $residential_info_right_section_investment_description_three = get_field('reside
         <p class="font-poppins text-base text-gray-900 text-justify"><?php echo $residential_info_right_section_purchase_description_three; ?></p>
         <h3 class="font-poppins text-lg font-bold pt-2 text-black "><?php echo $residential_info_right_section_purchase_title_four; ?></h3>
         <p class="font-poppins text-base text-gray-900 text-justify"><?php echo $residential_info_right_section_purchase_description_four; ?></p>
+        </div>
     `;
     document.getElementById("col13").style.background="#00AEC5";
     document.getElementById("col19").style.background="#00AEC5";
@@ -245,6 +249,7 @@ $residential_info_right_section_investment_description_three = get_field('reside
     b2=false;
     b3=true;  
     const investmentContent = `
+    <div class="pb-16">
     <p class="font-poppins text-base text-gray-900 text-justify"><?php echo $residential_info_right_section_investment_paragraph_one; ?></p>
     <?php if( have_rows('residential_info_right_section_investment') ): $s= 1; $a=0; ?>
 				
@@ -257,6 +262,7 @@ $residential_info_right_section_investment_description_three = get_field('reside
                 <h3 class="font-poppins text-lg text-black pt-2 font-bold "><?php echo $residential_info_right_section_investment_title; ?></h3>
                 <p class="font-poppins text-base text-gray-900 text-justify"><?php echo $residential_info_right_section_investment_description; ?></p>
         <?php   endwhile; endif; ?>
+        </div>
     `;
     document.getElementById("col4").style.background="#00AEC5";
     document.getElementById("col5").style.background="#00AEC5";
