@@ -1327,6 +1327,10 @@ video {
   grid-column: span 9 / span 9;
 }
 
+.m-14 {
+  margin: 3.5rem;
+}
+
 .mx-6 {
   margin-left: 1.5rem;
   margin-right: 1.5rem;
@@ -1438,6 +1442,14 @@ video {
 
 .mb-7 {
   margin-bottom: 1.75rem;
+}
+
+.ml-14 {
+  margin-left: 3.5rem;
+}
+
+.mr-14 {
+  margin-right: 3.5rem;
 }
 
 .block {
