@@ -250,7 +250,7 @@ function listFunction() {
     </ul>
 </div>
 
-    <div class="grid grid-cols-4 gap-4">
+    <div class="grid grid-cols-4 gap-4" style="display: none;">
         <div>
             <a href="">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/194417071.jpg" alt="Image" class="w-full">
