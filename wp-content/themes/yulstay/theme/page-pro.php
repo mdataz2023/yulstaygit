@@ -10,7 +10,7 @@ get_header();
 
 <div>
     <!-- <button onclick="wheelFunction()" id="btnwheel">wheel</button> -->
-    <button onclick="gridFunction()" id="girdbtn" class="bg-white hover:bg-[#00AEC5] text-black hover:text-white border border-black hover:border-none font-poppins font-semibold py-1 px-4 mb-4 rounded-full">grid</button>
+    <button onclick="gridFunction()" borber id="girdbtn" class="bg-white hover:bg-[#00AEC5] text-black hover:text-white border border-black hover:border-none font-poppins font-semibold py-1 px-4 mb-4 rounded-full">grid</button>
     <button onclick="listFunction()" id="btnlist" class="bg-white hover:bg-[#00AEC5] text-black hover:text-white border border-black hover:border-none font-poppins font-semibold py-1 px-4 mb-4 rounded-full">list</button>
 </div>
 

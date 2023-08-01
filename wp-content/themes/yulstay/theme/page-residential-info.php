@@ -133,7 +133,7 @@ $residential_info_right_section_investment_description_three = get_field('reside
 
 <div class="grid grid-cols-3 gap-1">
   <div>
-    <button id="button1" class="bg-white hover:bg-[#00AEC5] text-black hover:text-white border border-black hover:border-none font-poppins font-semibold py-2 px-4 mb-4 rounded-full w-full">SALE</button>
+    <button id="button1" class="bg-white hover:bg-[#00AEC5] text-black hover:text-white border border-black hover:border-none font-poppins font-semibold py-2 px-4 mb-4 rounded-full w-full">SALE t</button>
   </div>
   <div>
     <button id="button2" class="bg-white hover:bg-[#00AEC5] text-black hover:text-white border border-black hover:border-none font-poppins font-semibold py-2 px-4 mb-4 rounded-full w-full">PURCHASE</button>
