@@ -225,7 +225,7 @@ $residential_image_ten = get_field('residential_image_ten');
                                     </div>
                                 </div>
                                 <div>
-                                    <div class="text-base font-semibold">Dimensions</div>
+                                    <div class="text-base font-semibold">Fees and taxes</div>
                                     <div class="grid grid-cols-3 text-sm py-1 gap-y-1">
                                         <div class="font-medium col-span-2">Municipal Taxes :</div>
                                         <div class="font-light">test</div>
@@ -238,7 +238,7 @@ $residential_image_ten = get_field('residential_image_ten');
                                     </div>
                                 </div>
                                 <div>
-                                    <div class="text-base font-semibold">Dimensions</div>
+                                    <div class="text-base font-semibold">Municipal evaluation</div>
                                     <div class="grid grid-cols-3 text-sm py-1 gap-y-1">
                                         <div class="font-medium col-span-2">Year</div>
                                         <div class="font-light">test</div>
