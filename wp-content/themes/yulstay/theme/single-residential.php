@@ -56,55 +56,134 @@ $residential_image_ten = get_field('residential_image_ten');
 
 
 
-        <div class="mt-28" style='padding: 10px;'>
-            <p style="font-size: 40px;"> <?php echo get_the_title(); ?></p>
-            <div class="grid grid-cols-2 transitionCS7" id="detailId2">
-                <div><?php echo $residential_list_title_one; ?></div>
-                <div><?php echo $residential_list_description_one; ?></div>
-                <div><?php echo $residential_list_title_two; ?></div>
-                <div><?php echo $residential_list_description_two; ?> <br> <?php echo $residential_list_description_two; ?></div>
-                <div><?php echo $residential_list_title_three; ?></div>
-                <div><?php echo $residential_list_description_three; ?></div>
-                <div><?php echo $residential_list_title_four; ?></div>
-                <div><?php echo $residential_list_description_four; ?></div>
-                <div><?php echo $residential_list_title_five; ?></div>
-                <div><?php echo $residential_list_description_five; ?> <br> <?php echo $residential_list_description_five; ?></div>
-                <div><?php echo $residential_list_title_six; ?></div>
-                <div><?php echo $residential_list_description_six; ?></div>
-                <div><?php echo $residential_list_title_seven; ?></div>
-                <div><?php echo $residential_list_description_seven; ?></div>
-                <div><?php echo $residential_list_title_eight; ?></div>
-                <div><?php echo $residential_list_description_eight; ?> <br> <?php echo $residential_list_description_eight; ?></div>
-                <div><?php echo $residential_list_title_nine; ?></div>
-                <div><?php echo $residential_list_description_nine; ?></div>
+        <div>
+            <h1 class="text-2xl font-light font-poppins"><?php echo get_the_title(); ?></h1>
+            <div class="transitionCS7 pt-1 font-poppins" id="detailId2">
+                <div class="font-bold text-base">Address</div>
+                <div class="text-sm font-normal">3007 , Rue Cherrier , Montréal (L'Île-Bizard/Sainte-Geneviève)</div>
+                <div class="font-bold text-base pt-1">Description - MLS 19441707 </div>
+                <div class="text-sm font-normal">Room(s) : 20 | Bedroom(s) : 5 | Bathroom(s) : 3 | Powder room(s) : 1</div>
+                <div class="text-sm font-normal pt-1">This stunning waterfront property boasts 5 bedrooms and 3.5 bathrooms, with walnut and heated ceramic floors throughout. The marble countertop adds an element of elegance to the home, and the large basement provides easy access to the backyard and paved jumbo terrace, perfect for outdoor entertaining. The garage can accommodate a lift for up to 4 cars. The location offers privacy and tranquility, but is just a short drive from all services, providing access to shopping, the REM, and other public transportation. This luxurious home is the perfect retreat for those seeking waterfront living with all the amenities of city life nearby </div>
             </div>
-            <div class="flex justify-between border-b border-black transitionCS7" id="detailId1">
-                <div>Deatils</div>
+            <div class="transitionCS7" id="detailId1">
+                <div class="container mx-auto">
+                    <div class="flex justify-between border-b text-black border-gray-300">
+                        <div class="cursor-pointer my-2 text-base font-normal hover:text-[#00AEC5] pr-1 border-r border-black" id="tab1">Characteristics</div>
+                        <div class="cursor-pointer my-2 text-base font-normal hover:text-[#00AEC5] pr-1 border-r border-black" id="tab2">Room Dimentions</div>
+                        <div class="cursor-pointer my-2 text-base font-normal hover:text-[#00AEC5] pr-1 border-r border-black" id="tab3">Inclusions</div>
+                        <div class="cursor-pointer my-2 text-base font-normal hover:text-[#00AEC5] pr-1 border-r border-black" id="tab4">Addenda</div>
+                        <div class="cursor-pointer my-2 text-base font-normal hover:text-[#00AEC5] pr-1 border-r border-black" id="tab5">Calculators</div>
+                        <div class="cursor-pointer my-2 text-base font-normal hover:text-[#00AEC5] pr-1 border-r border-black" id="tab6">Map</div>
+                        <div class="cursor-pointer my-2 text-base font-normal hover:text-[#00AEC5]" id="tab7">Contact</div>
+                    </div>
+                    <div class="py-4l" id="tabContent">
+                        <div class="tab-pane hidden" id="content1">
+                            <div class="grid grid-cols-2 text-sm py-1 border-dashed border-b border-gray-500">
+                                <div class="font-medium">Property Type</div>
+                                <div class="font-light">Two or more storey</div>
+                            </div>
+                            <div class="grid grid-cols-2 text-sm py-1 border-dashed border-b border-gray-500">
+                                <div class="font-medium">Property Type</div>
+                                <div class="font-light">Two or more storey</div>
+                            </div>
+                            <div class="grid grid-cols-2 gap-5">
+                                <div>
+                                    <div class="grid grid-cols-2 text-sm py-1 border-dashed border-b border-gray-500">
+                                        <div class="font-medium">Property Type</div>
+                                        <div class="font-light">Two or more storey</div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="grid grid-cols-2 text-sm py-1 border-dashed border-b border-gray-500">
+                                        <div class="font-medium">Property Type</div>
+                                        <div class="font-light">Two or more storey</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane hidden" id="content2">
+                            <div class="flex justify-between border-b-2 px-1 border-black">
+                                <div class="text-sm font-bold font-poppins">
+                                    Room(s) : 20
+                                </div>
+                                <div class="text-sm font-bold font-poppins">
+                                    Bedroom(s) : 5
+                                </div>
+                                <div class="text-sm font-bold font-poppins">
+                                    Bathroom(s) : 3
+                                </div>
+                                <div class="text-sm font-bold font-poppins">
+                                    Powder room(s) : 1
+                                </div>
+                            </div>
+                            <div class="grid grid-cols-5">
+                                <div class="text-xs font-poppins font-medium py-1">ROOM(S)</div>
+                                <div class="text-xs font-poppins font-medium py-1">LEVEL</div>
+                                <div class="text-xs font-poppins font-medium py-1">DIMENSIONS</div>
+                                <div class="text-xs font-poppins font-medium py-1">TYPE OF FLOORING</div>
+                                <div class="text-xs font-poppins font-medium py-1">ADDITIONAL INFO.</div>
+                                <div class="text-xs font-poppins font-medium py-1">Washroom</div>
+                                <div class="text-xs font-poppins font-medium py-1">Ground floor</div>
+                                <div class="text-xs font-poppins font-medium py-1">8x5.6 P - irr</div>
+                                <div class="text-xs font-poppins font-medium py-1">Ceramic tiles</div>
+                                <div class="text-xs font-poppins font-medium py-1"></div>
+                                <div class="text-xs font-poppins font-medium py-1">Washroom</div>
+                                <div class="text-xs font-poppins font-medium py-1">Ground floor</div>
+                                <div class="text-xs font-poppins font-medium py-1">8x5.6 P - irr</div>
+                                <div class="text-xs font-poppins font-medium py-1">Ceramic tiles</div>
+                                <div class="text-xs font-poppins font-medium py-1"></div>
+                            </div>
+                        </div>
+                        <div class="tab-pane hidden" id="content3">
+                            <div class="text-sm font-medium py-1 font-poppins">
+                                All major appliances. 
+                            </div>
+                        </div>
+                        <div class="tab-pane hidden" id="content4">
+                            <div class="text-sm font-medium py-1 font-poppins">
+                            Beautiful 2 story home located in Ile-Bizard with a direct view of the Rivière des Prairies. A total of 5 large bedrooms with one in the basement, 3 full bathrooms and 1 powder room, easy access to the backyard through the large basement. A double size garage is also available. The master bedroom has a walk-in closet, direct access to a private balcony with view of the river and in-suite bathroom with stand-up shower and french bathtub. 
 
-                <div>
-                    <svg onclick="slideToggle('detailId','open')" id="moreDetailId" xmlns="http://www.w3.org/2000/svg"
-                        width="16" height="16" fill="bg-black" class="bi bi-plus-lg transitionCS7" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd"
-                            d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z" />
-                    </svg>
+The area is quiet and secluded yet a short drive from west-island and all that it has to offer such as shopping and access to the REM and other public transport.
 
-                    <svg id="closeDetailId" onclick="slideToggle('detailId','close')" style="display:none; "
-                        xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="bg-black" class="bi bi-x-lg transitionCS7"
-                        viewBox="0 0 16 16">
-                        <path
-                            d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" />
-                    </svg>
+Nearby- Rivières des Prairies- 4 Golf clubs: St-Raphael, Royal Montreal, Elm Ridge, LA Cité,- Bois-de-L'Ile-Bizard Nature Park- St-Raphael Sports Complex- Several parks- Grocery stores, pharmacies, banks- Fairview Pointe-Claire Shopping Center- Ferry to access Laval-sur-le-Lac- Several daycares, primary and high schools, CEGEP
+                            </div>
+                        </div>
+                        <div class="tab-pane hidden" id="content5">Content of Tab 2</div>
+                        <div class="tab-pane hidden" id="content6">Content of Tab 3</div>
+                        <div class="tab-pane hidden" id="content7">Content of Tab 4</div>
+                    </div>
                 </div>
+    
+                <script>
+                    // JavaScript to handle tab switching
+                    const tabs = document.querySelectorAll('[id^="tab"]');
+                    const tabContents = document.querySelectorAll('[id^="content"]');
+                
+                    tabs.forEach(tab => {
+                        tab.addEventListener('click', () => {
+                            // Hide all tab contents
+                            tabContents.forEach(content => content.classList.add('hidden'));
+                
+                            // Remove 'text-[#00AEC5]' class from all tabs
+                            tabs.forEach(t => t.classList.remove('text-[#00AEC5]'));
+                
+                            // Show the selected tab content
+                            const tabContentId = tab.getAttribute('id').replace('tab', 'content');
+                            const tabContent = document.getElementById(tabContentId);
+                            tabContent.classList.remove('hidden');
+                
+                            // Add 'text-[#00AEC5]' class to the clicked tab
+                            tab.classList.add('text-[#00AEC5]');
+                        });
+                    });
+                
+                    // Simulate click on the first tab to open it on page load
+                    tabs[0].click();
+                </script>
+
+               
             </div>
-            <div id="detailId" class="transitionCS7 detailId">
-                <div>
-                <?php echo $residential_details_description; ?>
-                </div>
-                <div class="grid grid-cols-6 transitionCS7">
-                    <div class="col-span-1">address</div>
-                    <div class="col-span-5"><?php echo $residential_address; ?></div>
-                </div>
-            </div>
+
         </div>
 
     </div>
