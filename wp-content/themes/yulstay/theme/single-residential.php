@@ -77,15 +77,130 @@ $residential_image_ten = get_field('residential_image_ten');
                         <div class="cursor-pointer my-2 text-base font-normal hover:text-[#00AEC5]" id="tab7">Contact</div>
                     </div>
                     <div class="py-4l" id="tabContent">
+                        <!-- tab 1 -->
                         <div class="tab-pane hidden" id="content1">
                             <div class="grid grid-cols-2 text-sm py-1 border-dashed border-b border-gray-500">
                                 <div class="font-medium">Property Type</div>
-                                <div class="font-light">Two or more storey</div>
+                                <div class="font-light">test</div>
                             </div>
                             <div class="grid grid-cols-2 text-sm py-1 border-dashed border-b border-gray-500">
-                                <div class="font-medium">Property Type</div>
-                                <div class="font-light">Two or more storey</div>
+                                <div class="font-medium">Type of building</div>
+                                <div class="font-light">test</div>
                             </div>
+                            <div class="grid grid-cols-2 text-sm py-1 border-dashed border-b border-gray-500">
+                                <div class="font-medium">Building dimensions</div>
+                                <div class="font-light">test</div>
+                            </div>
+                            <div class="grid grid-cols-2 text-sm py-1 border-dashed border-b border-gray-500">
+                                <div class="font-medium">Living Area</div>
+                                <div class="font-light">test</div>
+                            </div>
+                            <div class="grid grid-cols-2 text-sm py-1 border-dashed border-b border-gray-500">
+                                <div class="font-medium">Lot dimensions</div>
+                                <div class="font-light">test</div>
+                            </div>
+                            <div class="grid grid-cols-2 text-sm py-1 border-dashed border-b border-gray-500">
+                                <div class="font-medium">Zoning</div>
+                                <div class="font-light">test</div>
+                            </div>
+                            <div class="grid grid-cols-2 text-sm py-1 border-dashed border-b border-gray-500">
+                                <div class="font-medium">Water supply</div>
+                                <div class="font-light">test</div>
+                            </div>
+                            <div class="grid grid-cols-2 text-sm py-1 border-dashed border-b border-gray-500">
+                                <div class="font-medium">Roofing</div>
+                                <div class="font-light">test</div>
+                            </div>
+                            <div class="grid grid-cols-2 text-sm py-1 border-dashed border-b border-gray-500">
+                                <div class="font-medium">Siding</div>
+                                <div class="font-light">test</div>
+                            </div>
+                            <div class="grid grid-cols-2 text-sm py-1 border-dashed border-b border-gray-500">
+                                <div class="font-medium">Windows</div>
+                                <div class="font-light">test</div>
+                            </div>
+                            <div class="grid grid-cols-2 text-sm py-1 border-dashed border-b border-gray-500">
+                                <div class="font-medium">Window Type</div>
+                                <div class="font-light">test</div>
+                            </div>
+                            <div class="grid grid-cols-2 text-sm py-1 border-dashed border-b border-gray-500">
+                                <div class="font-medium">Energy/Heating</div>
+                                <div class="font-light">test</div>
+                            </div>
+                            <div class="grid grid-cols-2 text-sm py-1 border-dashed border-b border-gray-500">
+                                <div class="font-medium">Basement</div>
+                                <div class="font-light">test</div>
+                            </div>
+                            <div class="grid grid-cols-2 text-sm py-1 border-dashed border-b border-gray-500">
+                                <div class="font-medium">Bathroom</div>
+                                <div class="font-light">test</div>
+                            </div>
+                            <div class="grid grid-cols-2 text-sm py-1 border-dashed border-b border-gray-500">
+                                <div class="font-medium">Heating system</div>
+                                <div class="font-light">test</div>
+                            </div>
+                            <div class="grid grid-cols-2 text-sm py-1 border-dashed border-b border-gray-500">
+                                <div class="font-medium">Sewage system</div>
+                                <div class="font-light">test</div>
+                            </div>
+                            <div class="grid grid-cols-2 text-sm py-1 border-dashed border-b border-gray-500">
+                                <div class="font-medium">Year of construction</div>
+                                <div class="font-light">test</div>
+                            </div>
+                            <div class="grid grid-cols-2 text-sm py-1 border-dashed border-b border-gray-500">
+                                <div class="font-medium">Trade possible</div>
+                                <div class="font-light">test</div>
+                            </div>
+                            <div class="grid grid-cols-2 text-sm py-1 border-dashed border-b border-gray-500">
+                                <div class="font-medium">Certificate of Location</div>
+                                <div class="font-light">test</div>
+                            </div>
+                            <div class="grid grid-cols-2 text-sm py-1 border-dashed border-b border-gray-500">
+                                <div class="font-medium">Certificate of Location</div>
+                                <div class="font-light">test</div>
+                            </div>
+                            <div class="grid grid-cols-2 text-sm py-1 border-dashed border-b border-gray-500">
+                                <div class="font-medium">Deed of Sale Signature</div>
+                                <div class="font-light">test</div>
+                            </div>
+                            <div class="grid grid-cols-2 text-sm py-1 border-dashed border-b border-gray-500">
+                                <div class="font-medium">Pool</div>
+                                <div class="font-light">test</div>
+                            </div>
+
+                            <div class="grid grid-cols-2 text-sm py-1 border-dashed border-b border-gray-500">
+                                <div class="font-medium">Parking (total)</div>
+                                <div class="font-light">test</div>
+                            </div>
+                            <div class="grid grid-cols-2 text-sm py-1 border-dashed border-b border-gray-500">
+                                <div class="font-medium">Driveway</div>
+                                <div class="font-light">test</div>
+                            </div>
+                            <div class="grid grid-cols-2 text-sm py-1 border-dashed border-b border-gray-500">
+                                <div class="font-medium">Garage</div>
+                                <div class="font-light">test</div>
+                            </div>
+                            <div class="grid grid-cols-2 text-sm py-1 border-dashed border-b border-gray-500">
+                                <div class="font-medium">Lot</div>
+                                <div class="font-light">test</div>
+                            </div>
+                            <div class="grid grid-cols-2 text-sm py-1 border-dashed border-b border-gray-500">
+                                <div class="font-medium">Topography</div>
+                                <div class="font-light">test</div>
+                            </div>
+                            <div class="grid grid-cols-2 text-sm py-1 border-dashed border-b border-gray-500">
+                                <div class="font-medium">Distinctive Features</div>
+                                <div class="font-light">test</div>
+                            </div>
+                            <div class="grid grid-cols-2 text-sm py-1 border-dashed border-b border-gray-500">
+                                <div class="font-medium">Proximity</div>
+                                <div class="font-light">test</div>
+                            </div>
+                            <div class="grid grid-cols-2 text-sm pt-1 pb-8 border-dashed border-b border-gray-500">
+                                <div class="font-medium">Parking</div>
+                                <div class="font-light">test</div>
+                            </div>
+                            
                             <div class="grid grid-cols-2 gap-5">
                                 <div>
                                     <div class="grid grid-cols-2 text-sm py-1 border-dashed border-b border-gray-500">
@@ -101,6 +216,7 @@ $residential_image_ten = get_field('residential_image_ten');
                                 </div>
                             </div>
                         </div>
+                        <!-- tab 2 -->
                         <div class="tab-pane hidden" id="content2">
                             <div class="flex justify-between border-b-2 px-1 border-black">
                                 <div class="text-sm font-bold font-poppins">
@@ -122,11 +238,13 @@ $residential_image_ten = get_field('residential_image_ten');
                                 <div class="text-xs font-poppins font-medium py-1">DIMENSIONS</div>
                                 <div class="text-xs font-poppins font-medium py-1">TYPE OF FLOORING</div>
                                 <div class="text-xs font-poppins font-medium py-1">ADDITIONAL INFO.</div>
+
                                 <div class="text-xs font-poppins font-medium py-1">Washroom</div>
                                 <div class="text-xs font-poppins font-medium py-1">Ground floor</div>
                                 <div class="text-xs font-poppins font-medium py-1">8x5.6 P - irr</div>
                                 <div class="text-xs font-poppins font-medium py-1">Ceramic tiles</div>
                                 <div class="text-xs font-poppins font-medium py-1"></div>
+
                                 <div class="text-xs font-poppins font-medium py-1">Washroom</div>
                                 <div class="text-xs font-poppins font-medium py-1">Ground floor</div>
                                 <div class="text-xs font-poppins font-medium py-1">8x5.6 P - irr</div>
@@ -134,6 +252,7 @@ $residential_image_ten = get_field('residential_image_ten');
                                 <div class="text-xs font-poppins font-medium py-1"></div>
                             </div>
                         </div>
+                        <!-- tab 3 -->
                         <div class="tab-pane hidden" id="content3">
                             <div class="text-sm font-medium py-1 font-poppins">
                                 All major appliances. 
