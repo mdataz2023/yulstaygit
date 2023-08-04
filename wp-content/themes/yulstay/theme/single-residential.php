@@ -196,22 +196,58 @@ $residential_image_ten = get_field('residential_image_ten');
                                 <div class="font-medium">Proximity</div>
                                 <div class="font-light">test</div>
                             </div>
-                            <div class="grid grid-cols-2 text-sm pt-1 pb-8 border-dashed border-b border-gray-500">
+                            <div class="grid grid-cols-2 text-sm pt-1 mb-8 border-dashed border-b border-gray-500">
                                 <div class="font-medium">Parking</div>
                                 <div class="font-light">test</div>
                             </div>
                             
-                            <div class="grid grid-cols-2 gap-5">
+                            <div class="grid grid-cols-2 gap-5 pb-8">
                                 <div>
-                                    <div class="grid grid-cols-2 text-sm py-1 border-dashed border-b border-gray-500">
-                                        <div class="font-medium">Property Type</div>
-                                        <div class="font-light">Two or more storey</div>
+                                    <div class="text-base font-semibold">Dimensions</div>
+                                    <div class="grid grid-cols-3 text-sm py-1 gap-y-1">
+                                        <div class="font-medium col-span-2">Width of the building</div>
+                                        <div class="font-light">test</div>
+
+                                        <div class="font-medium col-span-2">Depth building</div>
+                                        <div class="font-light">test</div>
+
+                                        <div class="font-medium col-span-2">Living area</div>
+                                        <div class="font-light">test</div>
+
+                                        <div class="font-medium col-span-2">Lot frontage</div>
+                                        <div class="font-light">test</div>
+
+                                        <div class="font-medium col-span-2">Depth of field</div>
+                                        <div class="font-light">test</div>
+
+                                        <div class="font-medium col-span-2">Lot dimensions (Sq. ft.)</div>
+                                        <div class="font-light">test</div>
                                     </div>
                                 </div>
                                 <div>
-                                    <div class="grid grid-cols-2 text-sm py-1 border-dashed border-b border-gray-500">
-                                        <div class="font-medium">Property Type</div>
-                                        <div class="font-light">Two or more storey</div>
+                                    <div class="text-base font-semibold">Dimensions</div>
+                                    <div class="grid grid-cols-3 text-sm py-1 gap-y-1">
+                                        <div class="font-medium col-span-2">Municipal Taxes :</div>
+                                        <div class="font-light">test</div>
+
+                                        <div class="font-medium col-span-2">School taxes :</div>
+                                        <div class="font-light">test</div>
+
+                                        <div class="font-medium col-span-2">Total</div>
+                                        <div class="font-light">test</div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="text-base font-semibold">Dimensions</div>
+                                    <div class="grid grid-cols-3 text-sm py-1 gap-y-1">
+                                        <div class="font-medium col-span-2">Year</div>
+                                        <div class="font-light">test</div>
+
+                                        <div class="font-medium col-span-2">Lot</div>
+                                        <div class="font-light">test</div>
+
+                                        <div class="font-medium col-span-2">Total</div>
+                                        <div class="font-light">test</div>
                                     </div>
                                 </div>
                             </div>
