@@ -312,11 +312,11 @@ $residential_image_ten = get_field('residential_image_ten');
                             <div class="text-sm font-medium py-1 font-poppins">
                                 <?php
                                  global $wpdb;
-                                 $tablename =  'addenda';
-                                 $results = $wpdb->get_results("SELECT * FROM addenda WHERE NO_INSCRIPTION = 15930318", OBJECT );
+                                 $results = $wpdb->get_results("SELECT * FROM ADDENDA WHERE NO_INSCRIPTION = 15930318", OBJECT );
                                  foreach ($results as $page) {
                                     echo $page->TEXTE.'<br/>';
                                  }
+                               print_r(  $wpdb->last_error);
                                 ?>
                             </div>
                         </div>
