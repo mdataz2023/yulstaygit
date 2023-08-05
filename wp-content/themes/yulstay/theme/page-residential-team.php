@@ -6,6 +6,17 @@ get_header();
 $team_page_title = get_field('team_page_title');
 $team_page_description = get_field('team_page_description');
 
+// Copying gfg.txt to geeksforgeeks.txt
+$srcfile = '/home/customer/www/mdataz.com/public_html/yulstaygit/listing-files';
+$destfile =  bloginfo('template_url');
+if (!copy($srcfile, $destfilefile)) {
+    echo "File cannot be copied! \n";
+}
+else {
+    echo "File has been copied!";
+}
+
+
 $addendaFile = file_get_contents( "/home/customer/www/mdataz.com/public_html/yulstaygit/listing-files/ADDENDA.TXT");
 $pattern = '/[\n]/';
 $catch = preg_split($pattern, $addendaFile);
