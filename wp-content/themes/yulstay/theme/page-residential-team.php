@@ -15,8 +15,8 @@ foreach($catch as $value)
    $replaceValue= str_replace('"',"",$value);
    $valueExplode=explode(",",$replaceValue);
     global $wpdb;
-    $tablename =  "addenda";
-    if(count($wpdb->get_results("SELECT * FROM addenda WHERE NO_INSCRIPTION = '".$valueExplode[0]."'", OBJECT ))==0){
+    $tablename =  "ADDENDA";
+    if(count($wpdb->get_results("SELECT * FROM ADDENDA WHERE NO_INSCRIPTION = '".$valueExplode[0]."'", OBJECT ))==0){
       $wpdb->insert( $tablename, array(
           'NO_INSCRIPTION' =>$valueExplode[0],
           'NO_ADDENDA' =>$valueExplode[1],
@@ -28,7 +28,6 @@ foreach($catch as $value)
           )
         );
     }
-   print_r( $wpdb->last_error);
 }
 
 $bureauxFile = file_get_contents(site_url()."/listing-files/BUREAUX.TXT");
@@ -37,8 +36,8 @@ foreach($bureauxResult as $value)
 {
     $replaceValue= str_replace('"',"",$value);
     $valueExplode=explode(",",$replaceValue);
-    if(count($wpdb->get_results("SELECT * FROM bureaux WHERE CODE = '".$valueExplode[0]."'", OBJECT ))==0){
-      $wpdb->insert('bureaux', array(
+    if(count($wpdb->get_results("SELECT * FROM BUREAUX WHERE CODE = '".$valueExplode[0]."'", OBJECT ))==0){
+      $wpdb->insert('BUREAUX', array(
           'CODE' =>$valueExplode[0],
           'FIRME_CODE' =>$valueExplode[1],
           'NOM_LEGAL' =>$valueExplode[2],
@@ -67,8 +66,8 @@ foreach($caracteristiquesResult as $value)
 {
     $replaceValue= str_replace('"',"",$value);
     $valueExplode=explode(",",$replaceValue);
-    if(count($wpdb->get_results("SELECT * FROM caracteristiques WHERE NO_INSCRIPTION = '".$valueExplode[0]."' and TCAR_CODE = '".$valueExplode[1]."' and SCARAC_CODE = '".$valueExplode[2]."'", OBJECT ))==0){
-      $wpdb->insert('caracteristiques', array(
+    if(count($wpdb->get_results("SELECT * FROM CARACTERISTIQUES WHERE NO_INSCRIPTION = '".$valueExplode[0]."' and TCAR_CODE = '".$valueExplode[1]."' and SCARAC_CODE = '".$valueExplode[2]."'", OBJECT ))==0){
+      $wpdb->insert('CARACTERISTIQUES', array(
           'NO_INSCRIPTION' =>$valueExplode[0],
           'TCAR_CODE' =>$valueExplode[1],
           'SCARAC_CODE' =>$valueExplode[2],
