@@ -2,17 +2,92 @@
 /*
 	Template Name: Residential Team
 */
-get_header(); 
+get_header();
 $team_page_title = get_field('team_page_title');
 $team_page_description = get_field('team_page_description');
 
+print_r("<h1>"."/home/customer/www/mdataz.com/public_html/yulstaygit/listing-files/ADDENDA.TXT"."</h1>");
+$addendaFile = file_get_contents( "/home/customer/www/mdataz.com/public_html/yulstaygit/listing-files/ADDENDA.TXT");
+print_r(site_url()."/listing-files/ADDENDA.TXT" );
+$pattern = "/[\n]/";
+$catch = preg_split($pattern, $addendaFile);
+
+foreach($catch as $value)
+{
+   $replaceValue= str_replace('"',"",$value);
+  $valueExplode=explode(",",$replaceValue);
+    global $wpdb;
+    $tablename =  'addenda';
+    if(count($wpdb->get_results("SELECT * FROM addenda WHERE NO_INSCRIPTION = '".$valueExplode[0]."'", OBJECT ))==0){
+      $wpdb->insert( $tablename, array(
+          'NO_INSCRIPTION' =>$valueExplode[0],
+          'NO_ADDENDA' =>$valueExplode[1],
+          'CODE_LANGUE' =>$valueExplode[2],
+          'ORDRE_AFFICHAGE' =>$valueExplode[3],
+          'CHAMP_INUTILISE_1' =>$valueExplode[4],
+          'CHAMP_INUTILISE_2' =>$valueExplode[5],
+          'TEXTE' =>$valueExplode[6]
+          )
+        );
+    }
+}
+
+$bureauxFile = file_get_contents(site_url()."/listing-files/BUREAUX.TXT");
+$bureauxResult = preg_split($pattern, $bureauxFile);
+foreach($bureauxResult as $value)
+{
+    $replaceValue= str_replace('"',"",$value);
+    $valueExplode=explode(",",$replaceValue);
+    if(count($wpdb->get_results("SELECT * FROM bureaux WHERE CODE = '".$valueExplode[0]."'", OBJECT ))==0){
+      $wpdb->insert('bureaux', array(
+          'CODE' =>$valueExplode[0],
+          'FIRME_CODE' =>$valueExplode[1],
+          'NOM_LEGAL' =>$valueExplode[2],
+          'NO_CIVIQUE' =>$valueExplode[3],
+          'NOM_RUE' =>$valueExplode[4],
+          'BUREAU' =>$valueExplode[5],
+          'MUNICIPALITE' =>$valueExplode[6],
+          'PROVINCE' =>$valueExplode[7],
+          'CODE_POSTAL' =>$valueExplode[8],
+          'TELEPHONE_1' =>$valueExplode[9],
+          'TELEPHONE_2' =>$valueExplode[10],
+          'POSTE_2' =>$valueExplode[11],
+          'TELEPHONE_FAX' =>$valueExplode[12],
+          'COURRIEL' =>$valueExplode[14],
+          'SITE_WEB' =>$valueExplode[15],
+          'DIRECTEUR_CODE' =>$valueExplode[16],
+          'URL_LOGO_BUREAU' =>$valueExplode[17]
+          )
+        );
+
+    }
+}
+$caracteristiquesFile = file_get_contents(site_url()."/listing-files/CARACTERISTIQUES.TXT");
+$caracteristiquesResult = preg_split($pattern, $caracteristiquesFile);
+foreach($caracteristiquesResult as $value)
+{
+    $replaceValue= str_replace('"',"",$value);
+    $valueExplode=explode(",",$replaceValue);
+    if(count($wpdb->get_results("SELECT * FROM caracteristiques WHERE NO_INSCRIPTION = '".$valueExplode[0]."' and TCAR_CODE = '".$valueExplode[1]."' and SCARAC_CODE = '".$valueExplode[2]."'", OBJECT ))==0){
+      $wpdb->insert('caracteristiques', array(
+          'NO_INSCRIPTION' =>$valueExplode[0],
+          'TCAR_CODE' =>$valueExplode[1],
+          'SCARAC_CODE' =>$valueExplode[2],
+          'NOMBRE' =>$valueExplode[3],
+          'INFORMATIONS_FRANCAISES' =>$valueExplode[4],
+          'INFORMATIONS_ANGLAISES' =>$valueExplode[5],
+          'MONTANT' =>$valueExplode[6]
+          )
+        );
+    }
+}
 ?>
 <style>
   .scroll-style::-webkit-scrollbar-track
 {
 	-webkit-box-shadow: inset 0 0 6px #fff;
 	background-color: #fff;
-  
+
 }
 
 .scroll-style::-webkit-scrollbar
@@ -55,7 +130,7 @@ $team_page_description = get_field('team_page_description');
 
             $categories = get_the_category();
             ?>
-            
+
             <div class="hover:bg-gray-400 p-2">
             <a href="<?php the_permalink(); ?>">
                 <?php
@@ -91,7 +166,7 @@ $team_page_description = get_field('team_page_description');
 				<div>
 					<a href="<?php bloginfo('url'); ?>/home" class="font-bold text-gray-400 hover:text-gray-800"><?php _e('Home','theme-text-domain'); ?></a>
 				</div>
-				
+
                 <div class="flex items-center content-between">
 					<div>
 						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
@@ -102,7 +177,7 @@ $team_page_description = get_field('team_page_description');
 				<div class="font-medium"><?php the_title(); ?>
 			</div>
 			</div>
-        
+
 
         </div>
 
@@ -138,7 +213,7 @@ $team_page_description = get_field('team_page_description');
     const saleContent = `
     <div>
 
-        
+
           <div class="my-3 text-lg font-bold">Purchase</div>
           <!-- Form Purchase -->
         <form action="#" method="POST" class="pb-24 sm:pb-32">
@@ -219,29 +294,29 @@ $team_page_description = get_field('team_page_description');
 
         </div>
 
-        
 
-      
+
+
 
         <label for="email" class="block text-sm font-semibold leading-6 text-gray-900  mt-2.5">Name</label>
 
-        
+
 
           <input type="email" name="email" id="email" autocomplete="email" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-[#00AEC5] focus:ring-opacity-50 placeholder:text-gray-400 focus:outline-none sm:text-sm sm:leading-6 mt-2.5" placeholder="Enter your name">
 
-        
+
 
         <label for="email" class="block text-sm font-semibold leading-6 text-gray-900  mt-2.5">Email</label>
 
-        
+
 
           <input type="email" name="email" id="email" autocomplete="email" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-[#00AEC5] focus:ring-opacity-50 placeholder:text-gray-400 focus:outline-none sm:text-sm sm:leading-6 mt-2.5" placeholder="Enter your Email">
 
-        
+
 
         <label for="phone-number" class="block text-sm font-semibold leading-6 text-gray-900  mt-2.5">Phone number</label>
 
-        
+
 
           <input type="tel" name="phone-number" id="phone-number" autocomplete="tel" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-[#00AEC5] focus:ring-opacity-50 placeholder:text-gray-400 focus:outline-none sm:text-sm sm:leading-6 mt-2.5" placeholder="Enter your phone number ">
 
@@ -282,7 +357,7 @@ $team_page_description = get_field('team_page_description');
             </div>
           </fieldset>
         </div>
-          
+
 
         <label for="last-name" class="block text-sm font-semibold leading-6 text-gray-900 mt-2.5">Pre-approval</label>
 
@@ -334,29 +409,29 @@ $team_page_description = get_field('team_page_description');
 
         </div>
 
-        
 
-      
+
+
 
         <label for="email" class="block text-sm font-semibold leading-6 text-gray-900  mt-2.5">Name</label>
 
-        
+
 
           <input type="email" name="email" id="email" autocomplete="email" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-[#00AEC5] focus:ring-opacity-50 placeholder:text-gray-400 focus:outline-none sm:text-sm sm:leading-6 mt-2.5" placeholder="Enter your name ">
 
-        
+
 
         <label for="email" class="block text-sm font-semibold leading-6 text-gray-900  mt-2.5">Email</label>
 
-        
+
 
           <input type="email" name="email" id="email" autocomplete="email" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-[#00AEC5] focus:ring-opacity-50 placeholder:text-gray-400 focus:outline-none sm:text-sm sm:leading-6 mt-2.5" placeholder="Enter your Email ">
 
-        
+
 
         <label for="phone-number" class="block text-sm font-semibold leading-6 text-gray-900  mt-2.5">Phone number</label>
 
-        
+
 
           <input type="tel" name="phone-number" id="phone-number" autocomplete="tel" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-[#00AEC5] focus:ring-opacity-50 placeholder:text-gray-400 focus:outline-none sm:text-sm sm:leading-6 mt-2.5" placeholder="Enter your phone number ">
 
