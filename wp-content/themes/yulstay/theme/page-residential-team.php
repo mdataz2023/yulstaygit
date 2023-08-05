@@ -9,14 +9,14 @@ $team_page_description = get_field('team_page_description');
 $addendaFile = file_get_contents( "/home/customer/www/mdataz.com/public_html/yulstaygit/listing-files/ADDENDA.TXT");
 $pattern = '/[\n]/';
 $catch = preg_split($pattern, $addendaFile);
+global $wpdb;
 
 foreach($catch as $value)
 {
    $replaceValue= str_replace('"',"",$value);
    $valueExplode=explode(",",$replaceValue);
-    global $wpdb;
     $tablename =  "ADDENDA";
-    if(count($wpdb->get_results("SELECT * FROM ADDENDA WHERE NO_INSCRIPTION = '".$valueExplode[0]."'", OBJECT ))==0){
+    if(count($wpdb->get_results("SELECT * FROM ADDENDA WHERE NO_INSCRIPTION = '".$valueExplode[0]."' and NO_ADDENDA = '".$valueExplode[1]."' and ORDRE_AFFICHAGE = '".$valueExplode[3]."' ", OBJECT ))===0){
       $wpdb->insert( $tablename, array(
           'NO_INSCRIPTION' =>$valueExplode[0],
           'NO_ADDENDA' =>$valueExplode[1],
@@ -28,9 +28,10 @@ foreach($catch as $value)
           )
         );
     }
+
 }
 
-$bureauxFile = file_get_contents(site_url()."/listing-files/BUREAUX.TXT");
+$bureauxFile = file_get_contents("/home/customer/www/mdataz.com/public_html/yulstaygit/listing-files/BUREAUX.TXT");
 $bureauxResult = preg_split($pattern, $bureauxFile);
 foreach($bureauxResult as $value)
 {
@@ -60,7 +61,7 @@ foreach($bureauxResult as $value)
 
     }
 }
-$caracteristiquesFile = file_get_contents(site_url()."/listing-files/CARACTERISTIQUES.TXT");
+$caracteristiquesFile = file_get_contents("/home/customer/www/mdataz.com/public_html/yulstaygit/listing-files/CARACTERISTIQUES.TXT");
 $caracteristiquesResult = preg_split($pattern, $caracteristiquesFile);
 foreach($caracteristiquesResult as $value)
 {
