@@ -32,7 +32,7 @@ foreach($catch as $value)
     }
 }
 
-$bureauxFile = file_get_contents(site_url()."/listing-files/BUREAUX.txt");
+$bureauxFile = file_get_contents(site_url()."/listing-files/BUREAUX.TXT");
 $bureauxResult = preg_split($pattern, $bureauxFile);
 foreach($bureauxResult as $value)
 {
@@ -62,7 +62,7 @@ foreach($bureauxResult as $value)
 
     }
 }
-$caracteristiquesFile = file_get_contents(site_url()."/listing-files/CARACTERISTIQUES.txt");
+$caracteristiquesFile = file_get_contents(site_url()."/listing-files/CARACTERISTIQUES.TXT");
 $caracteristiquesResult = preg_split($pattern, $caracteristiquesFile);
 foreach($caracteristiquesResult as $value)
 {
