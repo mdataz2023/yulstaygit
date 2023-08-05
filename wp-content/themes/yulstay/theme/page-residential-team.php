@@ -7,7 +7,7 @@ get_header();
 // $team_page_description = get_field('team_page_description');
 $team_page_title ="";//
 $team_page_description ='';//
-$addendaFile = file_get_contents("https://mdataz.com/public_html/yulstaygit/listing-files/ADDENDA.txt");
+$addendaFile = file_get_contents(site_url()."/listing-files/ADDENDA.txt");
 $pattern = '/[\n]/';
 $catch = preg_split($pattern, $addendaFile);
 
@@ -31,7 +31,7 @@ foreach($catch as $value)
     }
 }
 
-$bureauxFile = file_get_contents("https://mdataz.com/public_html/yulstaygit/listing-files/BUREAUX.txt");
+$bureauxFile = file_get_contents(site_url()."/listing-files/BUREAUX.txt");
 $bureauxResult = preg_split($pattern, $bureauxFile);
 foreach($bureauxResult as $value)
 {
@@ -61,7 +61,7 @@ foreach($bureauxResult as $value)
 
     }
 }
-$caracteristiquesFile = file_get_contents("https://mdataz.com/public_html/yulstaygit/listing-files/CARACTERISTIQUES.txt");
+$caracteristiquesFile = file_get_contents(site_url()."/listing-files/CARACTERISTIQUES.txt");
 $caracteristiquesResult = preg_split($pattern, $caracteristiquesFile);
 foreach($caracteristiquesResult as $value)
 {
