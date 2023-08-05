@@ -10,8 +10,7 @@ print_r("<h1>"."/home/customer/www/mdataz.com/public_html/yulstaygit/listing-fil
 $addendaFile = file_get_contents( "/home/customer/www/mdataz.com/public_html/yulstaygit/listing-files/ADDENDA.TXT");
 print_r(site_url()."/listing-files/ADDENDA.TXT" );
 
-
-$pattern = '/[\n]/';
+$pattern = "/[\n]/";
 $catch = preg_split($pattern, $addendaFile);
 
 foreach($catch as $value)
@@ -19,7 +18,7 @@ foreach($catch as $value)
    $replaceValue= str_replace('"',"",$value);
   $valueExplode=explode(",",$replaceValue);
     global $wpdb;
-    $tablename =  'addenda';
+    $tablename =  "addenda";
     if(count($wpdb->get_results("SELECT * FROM addenda WHERE NO_INSCRIPTION = '".$valueExplode[0]."'", OBJECT ))==0){
       $wpdb->insert( $tablename, array(
           'NO_INSCRIPTION' =>$valueExplode[0],
