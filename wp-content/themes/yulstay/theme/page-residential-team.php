@@ -6,21 +6,10 @@ get_header();
 $team_page_title = get_field('team_page_title');
 $team_page_description = get_field('team_page_description');
 
-// Copying gfg.txt to geeksforgeeks.txt
-$srcfile = '/home/customer/www/mdataz.com/public_html/yulstaygit/listing-files';
-$destfile =  bloginfo('template_url');
-if (!copy($srcfile, $destfilefile)) {
-    echo "File cannot be copied! \n";
-}
-else {
-    echo "File has been copied!";
-}
-
-
 $addendaFile = file_get_contents( "/home/customer/www/mdataz.com/public_html/yulstaygit/listing-files/ADDENDA.TXT");
 $pattern = '/[\n]/';
-$catch = preg_split($pattern, $addendaFile);
 global $wpdb;
+$catch = preg_split($pattern, $addendaFile);
 
 foreach($catch as $value)
 {
@@ -87,6 +76,30 @@ foreach($caracteristiquesResult as $value)
           'INFORMATIONS_FRANCAISES' =>$valueExplode[4],
           'INFORMATIONS_ANGLAISES' =>$valueExplode[5],
           'MONTANT' =>$valueExplode[6]
+          )
+        );
+    }
+}
+
+// =================================
+$depensesFile = file_get_contents("/home/customer/www/mdataz.com/public_html/yulstaygit/listing-files/DEPENSES.TXT");
+$depensesResult = preg_split($pattern, $depensesFile);
+foreach($depensesResult as $value)
+{
+    $replaceValue= str_replace('"',"",$value);
+    $valueExplode=explode(",",$replaceValue);
+    if(count($wpdb->("SELECT * FROM DEPENSES WHERE NO_INSCRIPTION = '".$valueExplode[0]."' and TDEP_CODE = '".$valueExplode[1]."' and PART_DEPENSE = '".$valueExplode[2]."'", OBJECT ))==0){
+      $wpdb->insert('DEPENSES', array(
+          'NO_INSCRIPTION' =>$valueExplode[0],
+          'TCAR_CODE' =>$valueExplode[1],
+          'MONTANT_DEPENSE' =>$valueExplode[2],
+          'ANNEE' =>$valueExplode[3],
+          'ANNEE_EXPIRATION' =>$valueExplode[4],
+          'INFORMATIONS_ANGLAISES' =>$valueExplode[5],
+          'FREQUENCE' =>$valueExplode[6]
+          'PART_DEPENSE' =>$valueExplode[7],
+          'AU_DEPENSE_INFO_F' =>$valueExplode[8],
+          'AU_DEPENSE_INFO_A' =>$valueExplode[9],
           )
         );
     }
