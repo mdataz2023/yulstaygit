@@ -12,11 +12,8 @@ $catch = preg_split($pattern, $addendaFile);
 
 foreach($catch as $value)
 {
-  print_r("<pre>");
-  print_r( $value);
-  print_r("</pre>");
    $replaceValue= str_replace('"',"",$value);
-  $valueExplode=explode(",",$replaceValue);
+   $valueExplode=explode(",",$replaceValue);
     global $wpdb;
     $tablename =  "addenda";
     if(count($wpdb->get_results("SELECT * FROM addenda WHERE NO_INSCRIPTION = '".$valueExplode[0]."'", OBJECT ))==0){
@@ -31,6 +28,7 @@ foreach($catch as $value)
           )
         );
     }
+   print_r( $wpdb->last_error);
 }
 
 $bureauxFile = file_get_contents(site_url()."/listing-files/BUREAUX.TXT");
