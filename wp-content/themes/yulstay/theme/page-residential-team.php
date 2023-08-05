@@ -3,13 +3,10 @@
 	Template Name: Residential Team
 */
 get_header();
-// $team_page_title = get_field('team_page_title');
-// $team_page_description = get_field('team_page_description');
-$team_page_title ="";//
-$team_page_description ='';//
+$team_page_title = get_field('team_page_title');
+$team_page_description = get_field('team_page_description');
 
-
-print_r("<h1>"."/home/customer/www/mdataz.com/public_html/yulstaygit/listing-files/ADDENDA.txt"."</h1>");"
+print_r("<h1>"."/home/customer/www/mdataz.com/public_html/yulstaygit/listing-files/ADDENDA.txt"."</h1>");
 $addendaFile = file_get_contents( "/home/customer/www/mdataz.com/public_html/yulstaygit/listing-files/ADDENDA.txt");
 print_r(site_url()."/listing-files/ADDENDA.txt" );
 $pattern = '/[\n]/';
