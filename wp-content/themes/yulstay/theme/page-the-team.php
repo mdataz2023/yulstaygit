@@ -2,7 +2,7 @@
 /*
 	Template Name: The Team
 */
-get_header(); 
+get_header();
 $team_page_title = get_field('team_page_title');
 $team_page_description = get_field('team_page_description');
 
@@ -14,7 +14,7 @@ $team_page_description = get_field('team_page_description');
 				<div>
 					<a href="<?php bloginfo('url'); ?>/home" class="text-gray-400 hover:text-gray-800 font-bold"><?php _e('Home','theme-text-domain'); ?></a>
 				</div>
-				
+
                 <div class="flex items-center content-between">
 					<div>
 						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
@@ -28,20 +28,20 @@ $team_page_description = get_field('team_page_description');
 			<div class="grid grid-cols-3 gap-4">
 			<?php $the_query = new WP_Query( array('post_type' =>'team','posts_per_page' => '9',  'post__not_in'   => array( $id),) );?>
 							     <?php if ( have_posts())   : while ( $the_query->have_posts() ) : $the_query->the_post();?>
-							  
+
 									   <?php
-										$thumbnail_id = get_post_thumbnail_id(); 
+										$thumbnail_id = get_post_thumbnail_id();
 										$thumbnail_url = wp_get_attachment_image_src( $thumbnail_id, 'thumbnail-size', true );
-										$thumbnail_meta = get_post_meta( $thumbnail_id, '_wp_attachment_image_alt', true); 
+										$thumbnail_meta = get_post_meta( $thumbnail_id, '_wp_attachment_image_alt', true);
 
                     $categories = get_the_category();
-										
+
 										?>
 				<div>
-				<?php 
+				<?php
 				if ( has_post_thumbnail() ) {
 					$attachment_image = wp_get_attachment_url( get_post_thumbnail_id() );
-					//echo '<link rel="preload" as="image" href="' . esc_attr( $attachment_image ) . '">';  
+					//echo '<link rel="preload" as="image" href="' . esc_attr( $attachment_image ) . '">';
 				?>
 					<img src="<?php echo $attachment_image; ?>" alt="">
 					<?php } ?>
