@@ -7,11 +7,14 @@ $team_page_title = get_field('team_page_title');
 $team_page_description = get_field('team_page_description');
 
 $addendaFile = file_get_contents( "/home/customer/www/mdataz.com/public_html/yulstaygit/listing-files/ADDENDA.TXT");
-$pattern = "/[\n]/";
+$pattern = '/[\n]/';
 $catch = preg_split($pattern, $addendaFile);
 
 foreach($catch as $value)
 {
+  print_r("<pre>");
+  print_r( $value);
+  print_r("</pre>");
    $replaceValue= str_replace('"',"",$value);
   $valueExplode=explode(",",$replaceValue);
     global $wpdb;
