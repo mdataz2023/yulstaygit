@@ -2,6 +2,7 @@
 /*
 	Template Name: Residential Team
 */
+error_reporting(0);
 get_header();
 $team_page_title = get_field('team_page_title');
 $team_page_description = get_field('team_page_description');
@@ -547,6 +548,27 @@ foreach($visitesLibresileResult as $value)
         );
     }
 }
+
+
+$getResultInscription=$wpdb->get_results("SELECT * FROM INSCRIPTIONS", OBJECT );
+foreach($getResultInscription as $value)
+{
+  if(count($wpdb->get_results("SELECT * FROM ".$wpdb->prefix."posts where post_content='$value->NO_INSCRIPTION'", OBJECT ))==0){
+    // // Create post object
+    $my_post = array(
+      'post_title'    => wp_strip_all_tags( $value->NOM_RUE_COMPLET ),
+      'post_content'  => $value->NO_INSCRIPTION,
+      'post_status'   => 'publish',
+      'post_type'   => 'residential',
+      'post_author'   => 1,
+      'post_category' => array(1 )
+    );
+
+    // // Insert the post into the database
+    wp_insert_post( $my_post );
+  }
+}
+
 ?>
 <style>
 .scroll-style::-webkit-scrollbar-track {
