@@ -58,7 +58,7 @@ foreach($bureauxResult as $value)
           'URL_LOGO_BUREAU' =>$valueExplode[17]
           )
         );
-
+      print_r($wpdb->last_error);
     }
 }
 $caracteristiquesFile = file_get_contents("/home/customer/www/mdataz.com/public_html/yulstaygit/listing-files/CARACTERISTIQUES.TXT");
@@ -506,8 +506,8 @@ foreach($unitesDResult as $value)
 
 // =================================
 $unitesSile = file_get_contents("/home/customer/www/mdataz.com/public_html/yulstaygit/listing-files/UNITES_SOMMAIRES.TXT");
-$unitesDResult = preg_split($pattern, $unitesSile);
-foreach($unitesDResult as $value)
+$unitesSResult = preg_split($pattern, $unitesSile);
+foreach($unitesSResult as $value)
 {
   $replaceValue= str_replace('"',"",$value);
   $valueExplode=explode(",",$replaceValue);
@@ -527,8 +527,8 @@ foreach($unitesDResult as $value)
 
 // =================================
 $visitesLibresile = file_get_contents("/home/customer/www/mdataz.com/public_html/yulstaygit/listing-files/VISITES_LIBRES.TXT");
-$unitesDResult = preg_split($pattern, $visitesLibresile);
-foreach($unitesDResult as $value)
+$visitesLibresileResult = preg_split($pattern, $visitesLibresile);
+foreach($visitesLibresileResult as $value)
 {
   $replaceValue= str_replace('"',"",$value);
   $valueExplode=explode(",",$replaceValue);
