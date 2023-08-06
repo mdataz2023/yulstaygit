@@ -58,7 +58,6 @@ foreach($bureauxResult as $value)
           'URL_LOGO_BUREAU' =>$valueExplode[17]
           )
         );
-      print_r($wpdb->last_error);
     }
 }
 $caracteristiquesFile = file_get_contents("/home/customer/www/mdataz.com/public_html/yulstaygit/listing-files/CARACTERISTIQUES.TXT");
