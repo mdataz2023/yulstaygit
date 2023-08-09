@@ -590,7 +590,19 @@ foreach($getResultInscription as $value)
     );
 
     // // Insert the post into the database
-    wp_insert_post( $my_post );
+    $insertId= wp_insert_post( $my_post );
+    $wpdb->insert('wp_icl_translate', array(
+      'job_id'    => 1,
+      'content_id'  =>0,
+      'field_type'   => "original_id",
+      'field_wrap_tag'   =>"",
+      'field_format'   => "",
+      'field_translate' =>0,
+      'field_data'   => $insertId,
+      'field_data_translated'   =>$insertId,
+      'field_finished'   => 1,
+    )
+  );
   }
 }
 
