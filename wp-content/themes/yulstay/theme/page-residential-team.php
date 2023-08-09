@@ -14,7 +14,8 @@ $catch = preg_split($pattern, $addendaFile);
 
 foreach($catch as $value)
 {
-   $replaceValue= str_replace('"',"",$value);
+   $value1= str_replace('�',"",$value);
+   $replaceValue= str_replace('"',"",$value1);
    $valueExplode=explode(",",$replaceValue);
     $tablename =  "ADDENDA";
     if(count($wpdb->get_results("SELECT * FROM ADDENDA WHERE NO_INSCRIPTION = '".$valueExplode[0]."' and NO_ADDENDA = '".$valueExplode[1]."' and ORDRE_AFFICHAGE = '".$valueExplode[3]."' ", OBJECT ))===0){
@@ -36,8 +37,8 @@ $bureauxFile = file_get_contents("/home/customer/www/mdataz.com/public_html/yuls
 $bureauxResult = preg_split($pattern, $bureauxFile);
 foreach($bureauxResult as $value)
 {
-    $replaceValue= str_replace('"',"",$value);
-    $valueExplode=explode(",",$replaceValue);
+    $value1= str_replace('�',"",$value);
+    $replaceValue= str_replace('"',"",$value1);
     if(count($wpdb->get_results("SELECT * FROM BUREAUX WHERE CODE = '".$valueExplode[0]."'", OBJECT ))==0){
       $wpdb->insert('BUREAUX', array(
           'CODE' =>$valueExplode[0],
@@ -65,7 +66,8 @@ $caracteristiquesFile = file_get_contents("/home/customer/www/mdataz.com/public_
 $caracteristiquesResult = preg_split($pattern, $caracteristiquesFile);
 foreach($caracteristiquesResult as $value)
 {
-    $replaceValue= str_replace('"',"",$value);
+  $value1= str_replace('�',"",$value);
+  $replaceValue= str_replace('"',"",$value1);
     $valueExplode=explode(",",$replaceValue);
     if(count($wpdb->get_results("SELECT * FROM CARACTERISTIQUES WHERE NO_INSCRIPTION = '".$valueExplode[0]."' and TCAR_CODE = '".$valueExplode[1]."' and SCARAC_CODE = '".$valueExplode[2]."'", OBJECT ))==0){
       $wpdb->insert('CARACTERISTIQUES', array(
@@ -86,7 +88,8 @@ $depensesFile = file_get_contents("/home/customer/www/mdataz.com/public_html/yul
 $depensesResult = preg_split($pattern, $depensesFile);
 foreach($depensesResult as $value)
 {
-    $replaceValue= str_replace('"',"",$value);
+    $value1= str_replace('�',"",$value);
+    $replaceValue= str_replace('"',"",$value1);
     $valueExplode=explode(",",$replaceValue);
     if(count($wpdb->get_results("SELECT * FROM DEPENSES WHERE NO_INSCRIPTION = '".$valueExplode[0]."' and TDEP_CODE = '".$valueExplode[2]."' and PART_DEPENSE = '".$valueExplode[7]."'", OBJECT ))==0){
       $wpdb->insert('DEPENSES', array(
@@ -109,7 +112,8 @@ $firmesFile = file_get_contents("/home/customer/www/mdataz.com/public_html/yulst
 $firmesResult = preg_split($pattern, $firmesFile);
 foreach($firmesResult as $value)
 {
-    $replaceValue= str_replace('"',"",$value);
+    $value1= str_replace('�',"",$value);
+    $replaceValue= str_replace('"',"",$value1);
     $valueExplode=explode(",",$replaceValue);
     if(count($wpdb->get_results("SELECT * FROM FIRMES WHERE CODE = '".$valueExplode[0]."' ", OBJECT ))==0){
       $wpdb->insert('FIRMES', array(
@@ -130,7 +134,8 @@ $inscriptionsFile = file_get_contents("/home/customer/www/mdataz.com/public_html
 $inscriptionsResult = preg_split($pattern, $inscriptionsFile);
 foreach($inscriptionsResult as $value)
 {
-    $replaceValue= str_replace('"',"",$value);
+    $value1= str_replace('�',"",$value);
+    $replaceValue= str_replace('"',"",$value1);
     $valueExplode=explode(",",$replaceValue);
     if(count($wpdb->get_results("SELECT * FROM INSCRIPTIONS WHERE NO_INSCRIPTION = '".$valueExplode[0]."' ", OBJECT ))==0){
       $wpdb->insert('INSCRIPTIONS', array(
@@ -302,7 +307,8 @@ $liensAdditionnelsFile = file_get_contents("/home/customer/www/mdataz.com/public
 $liensAdditionnelsResult = preg_split($pattern, $liensAdditionnelsFile);
 foreach($liensAdditionnelsResult as $value)
 {
-    $replaceValue= str_replace('"',"",$value);
+    $value1= str_replace('�',"",$value);
+    $replaceValue= str_replace('"',"",$value1);
     $valueExplode=explode(",",$replaceValue);
     if(count($wpdb->get_results("SELECT * FROM LIENS_ADDITIONNELS WHERE NO_INSCRIPTION = '".$valueExplode[0]."' and SEQ = '".$valueExplode[1]."'  ", OBJECT ))==0){
       $wpdb->insert('LIENS_ADDITIONNELS', array(
@@ -321,7 +327,8 @@ $membresFile = file_get_contents("/home/customer/www/mdataz.com/public_html/yuls
 $membresResult = preg_split($pattern, $membresFile);
 foreach($membresResult as $value)
 {
-  $replaceValue= str_replace('"',"",$value);
+  $value1= str_replace('�',"",$value);
+  $replaceValue= str_replace('"',"",$value1);
   $valueExplode=explode(",",$replaceValue);
   if(count($wpdb->get_results("SELECT * FROM MEMBRES WHERE CODE = '".$valueExplode[0]."' ", OBJECT ))==0){
     $wpdb->insert('MEMBRES', array(
@@ -360,7 +367,8 @@ $membresMSFile = file_get_contents("/home/customer/www/mdataz.com/public_html/yu
 $membresMSResult = preg_split($pattern, $membresMSFile);
 foreach($membresMSResult as $value)
 {
-  $replaceValue= str_replace('"',"",$value);
+  $value1= str_replace('�',"",$value);
+  $replaceValue= str_replace('"',"",$value1);
   $valueExplode=explode(",",$replaceValue);
   if(count($wpdb->get_results("SELECT * FROM MEMBRES_MEDIAS_SOCIAUX WHERE MEMBRE_CODE = '".$valueExplode[0]."' ", OBJECT ))==0){
     $wpdb->insert('MEMBRES_MEDIAS_SOCIAUX', array(
@@ -377,7 +385,8 @@ $photosFile = file_get_contents("/home/customer/www/mdataz.com/public_html/yulst
 $photosResult = preg_split($pattern, $photosFile);
 foreach($photosResult as $value)
 {
-  $replaceValue= str_replace('"',"",$value);
+  $value1= str_replace('�',"",$value);
+  $replaceValue= str_replace('"',"",$value1);
   $valueExplode=explode(",",$replaceValue);
   if(count($wpdb->get_results("SELECT * FROM PHOTOS WHERE NO_INSCRIPTION = '".$valueExplode[0]."' and SEQ='".$valueExplode[1]."' ", OBJECT ))==0){
     $wpdb->insert('PHOTOS', array(
@@ -400,7 +409,8 @@ $piecesUnitesFile = file_get_contents("/home/customer/www/mdataz.com/public_html
 $piecesUnitesResult = preg_split($pattern, $piecesUnitesFile);
 foreach($piecesUnitesResult as $value)
 {
-  $replaceValue= str_replace('"',"",$value);
+  $value1= str_replace('�',"",$value);
+  $replaceValue= str_replace('"',"",$value1);
   $valueExplode=explode(",",$replaceValue);
   if(count($wpdb->get_results("SELECT * FROM PIECES_UNITES WHERE NO_INSCRIPTION = '".$valueExplode[0]."' and SEQ_UNITE_DET='". $valueExplode[1]."' and SEQ='".$valueExplode[2]."' ", OBJECT ))==0){
     $wpdb->insert('PIECES_UNITES', array(
@@ -431,7 +441,8 @@ $remarquesFile = file_get_contents("/home/customer/www/mdataz.com/public_html/yu
 $remarquesResult = preg_split($pattern, $remarquesFile);
 foreach($remarquesResult as $value)
 {
-  $replaceValue= str_replace('"',"",$value);
+  $value1= str_replace('�',"",$value);
+  $replaceValue= str_replace('"',"",$value1);
   $valueExplode=explode(",",$replaceValue);
   if(count($wpdb->get_results("SELECT * FROM REMARQUES WHERE NO_INSCRIPTION = '".$valueExplode[0]."' and NO_REMARQUE='".$valueExplode[1]."' and ORDRE_AFFICHAGE='".$valueExplode[2]."' ", OBJECT ))==0){
     $wpdb->insert('REMARQUES', array(
@@ -452,7 +463,8 @@ $renovationsFile = file_get_contents("/home/customer/www/mdataz.com/public_html/
 $renovationsResult = preg_split($pattern, $renovationsFile);
 foreach($renovationsResult as $value)
 {
-  $replaceValue= str_replace('"',"",$value);
+  $value1= str_replace('�',"",$value);
+  $replaceValue= str_replace('"',"",$value1);
   $valueExplode=explode(",",$replaceValue);
   if(count($wpdb->get_results("SELECT * FROM RENOVATIONS WHERE NO_INSCRIPTION = '".$valueExplode[0]."' and SEQ='".$valueExplode[1]."' ", OBJECT ))==0){
     $wpdb->insert('RENOVATIONS', array(
@@ -474,7 +486,8 @@ $unitesDFile = file_get_contents("/home/customer/www/mdataz.com/public_html/yuls
 $unitesDResult = preg_split($pattern, $unitesDFile);
 foreach($unitesDResult as $value)
 {
-  $replaceValue= str_replace('"',"",$value);
+  $value1= str_replace('�',"",$value);
+  $replaceValue= str_replace('"',"",$value1);
   $valueExplode=explode(",",$replaceValue);
   if(count($wpdb->get_results("SELECT * FROM UNITES_DETAILLEES WHERE NO_INSCRIPTION = '".$valueExplode[0]."' and SEQ='".$valueExplode[1]."' and TYPE_UNITE_DET='".$valueExplode[2]."' ", OBJECT ))==0){
     $wpdb->insert('UNITES_DETAILLEES', array(
@@ -509,7 +522,8 @@ $unitesSile = file_get_contents("/home/customer/www/mdataz.com/public_html/yulst
 $unitesSResult = preg_split($pattern, $unitesSile);
 foreach($unitesSResult as $value)
 {
-  $replaceValue= str_replace('"',"",$value);
+  $value1= str_replace('�',"",$value);
+  $replaceValue= str_replace('"',"",$value1);
   $valueExplode=explode(",",$replaceValue);
   if(count($wpdb->get_results("SELECT * FROM UNITES_SOMMAIRES WHERE NO_INSCRIPTION = '".$valueExplode[0]."' and SEQ='".$valueExplode[1]."' ", OBJECT ))==0){
     $wpdb->insert('UNITES_SOMMAIRES', array(
@@ -530,7 +544,8 @@ $visitesLibresile = file_get_contents("/home/customer/www/mdataz.com/public_html
 $visitesLibresileResult = preg_split($pattern, $visitesLibresile);
 foreach($visitesLibresileResult as $value)
 {
-  $replaceValue= str_replace('"',"",$value);
+  $value1= str_replace('�',"",$value);
+  $replaceValue= str_replace('"',"",$value1);
   $valueExplode=explode(",",$replaceValue);
   if(count($wpdb->get_results("SELECT * FROM VISITES_LIBRES WHERE NO_INSCRIPTION = '".$valueExplode[0]."' and SEQ='".$valueExplode[1]."' ", OBJECT ))==0){
     $wpdb->insert('VISITES_LIBRES', array(
@@ -555,11 +570,21 @@ foreach($getResultInscription as $value)
 {
   if(count($wpdb->get_results("SELECT * FROM ".$wpdb->prefix."posts where post_content='$value->NO_INSCRIPTION'", OBJECT ))==0){
     // // Create post object
+    $postType="";
+    if($value->CATEGORIE_PROPRIETE=="T"){
+      $postType="rental-property"
+    }
+    if($value->CATEGORIE_PROPRIETE=="R"){
+      $postType='residential'
+    }
+    if($value->CATEGORIE_PROPRIETE=="M"){
+      $postType='multi-residential'
+    }
     $my_post = array(
       'post_title'    => wp_strip_all_tags( $value->NOM_RUE_COMPLET ),
       'post_content'  => $value->NO_INSCRIPTION,
       'post_status'   => 'publish',
-      'post_type'   => 'residential',
+      'post_type'   => $postType,
       'post_author'   => 1,
       'post_category' => array(1 )
     );
