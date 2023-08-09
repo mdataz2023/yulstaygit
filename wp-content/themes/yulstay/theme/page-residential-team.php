@@ -572,13 +572,13 @@ foreach($getResultInscription as $value)
     // // Create post object
     $postType="";
     if($value->CATEGORIE_PROPRIETE=="T"){
-      $postType="rental-property"
+      $postType="rental-property";
     }
     if($value->CATEGORIE_PROPRIETE=="R"){
-      $postType='residential'
+      $postType='residential';
     }
     if($value->CATEGORIE_PROPRIETE=="M"){
-      $postType='multi-residential'
+      $postType='multi-residential';
     }
     $my_post = array(
       'post_title'    => wp_strip_all_tags( $value->NOM_RUE_COMPLET ),
