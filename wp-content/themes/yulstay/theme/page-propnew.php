@@ -32,10 +32,10 @@ get_header();
         <div class="h-full w-full pr-12">
             <div class="overflow-y-scroll scroll-style">
               <div class="flex pb-7 overflow-hidden gap-1">
-                <img class="w-[500px]" src="https://mdataz.com/yulstaygit/wp-content/uploads/2023/08/10578486-1-327342585.jpg" alt="">
-                <img class="w-[500px]" src="https://mdataz.com/yulstaygit/wp-content/uploads/2023/08/10578486-1-327342585.jpg" alt="">
-                <img class="w-[500px]" src="https://mdataz.com/yulstaygit/wp-content/uploads/2023/08/10578486-1-327342585.jpg" alt="">
-                <img class="w-[500px]" src="https://mdataz.com/yulstaygit/wp-content/uploads/2023/08/10578486-1-327342585.jpg" alt="">
+                <img class="w-[500px] h-auto" src="https://mdataz.com/yulstaygit/wp-content/uploads/2023/08/10578486-1-327342585.jpg" alt="">
+                <img class="w-[500px] h-auto" src="https://mdataz.com/yulstaygit/wp-content/uploads/2023/08/10578486-1-327342585.jpg" alt="">
+                <img class="w-[500px] h-auto" src="https://mdataz.com/yulstaygit/wp-content/uploads/2023/08/10578486-1-327342585.jpg" alt="">
+                <img class="w-[500px] h-auto" src="https://mdataz.com/yulstaygit/wp-content/uploads/2023/08/10578486-1-327342585.jpg" alt="">
               </div>
               <div class="max-w-7xl mx-auto">
               <div class="flex justify-between pb-7 border-b border-gray-300">
@@ -192,7 +192,7 @@ get_header();
                   <h3 class="text-xl pt-7 pb-4">Contact the listing broker(s)</h3>
                   <div class="grid grid-cols-3 gap-2">
                     <div>
-                      <img src="https://mdataz.com/yulstaygit/wp-content/uploads/2023/08/10578486-1-327342585.jpg" alt="">
+                      <img src="https://mdataz.com/yulstaygit/wp-content/uploads/2023/08/DSC06075-3.jpg" alt="">
                     </div>
                     <div class="col-span-2">
                       <div>Elio Di Spaldro</div>
