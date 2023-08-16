@@ -29,8 +29,8 @@ get_header();
 
 </style>
 
-        <div class="h-full w-full pr-12">
-            <div class="overflow-y-scroll scroll-style">
+        <div class="h-full w-full pr-12 overflow-y-scroll scroll-style">
+            <div class="">
               <div class="flex pb-7 overflow-hidden gap-1">
                 <img class="w-[500px] h-auto" src="https://mdataz.com/yulstaygit/wp-content/uploads/2023/08/10578486-1-327342585.jpg" alt="">
                 <img class="w-[500px] h-auto" src="https://mdataz.com/yulstaygit/wp-content/uploads/2023/08/10578486-1-327342585.jpg" alt="">
