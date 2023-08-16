@@ -6,482 +6,348 @@ get_header();
 
 ?>
 
-<style>
-    .col-scroll {
+        <div class="h-full w-full pr-12">
+            <div class="">
+              <div class="flex pb-7 overflow-hidden gap-1">
+                <img class="w-[500px]" src="./assest/img/10578486-1-327342585.jpg" alt="">
+                <img class="w-[500px]" src="./assest/img/10578486-1-327342585.jpg" alt="">
+                <img class="w-[500px]" src="./assest/img/10578486-1-327342585.jpg" alt="">
+                <img class="w-[500px]" src="./assest/img/10578486-1-327342585.jpg" alt="">
+              </div>
+              <div class="max-w-7xl mx-auto">
+              <div class="flex justify-between pb-7 border-b border-gray-300">
+                <div>
+                  <p class="text-base font-poppins pb-2">Dollard-Des Ormeaux - Centris® No. 23168752</p>
+                  <h1 class="text-4xl font-poppins">294 Rue Barnett</h1>
+                </div>
+                <div class="flex gap-3 font-poppins">
+                  <div class="text-center border-r mt-4 mb-4 pr-4 border-gray-300">
+                    <div class="text-lg">2 + 1</div>
+                    <div class="text-sm">salles de bains</div>
+                  </div>
+                  <div class="text-center border-r mt-4 mb-4 pr-4 border-gray-300">
+                    <div>2 + 1</div>
+                    <div>salles de bains</div>
+                  </div>
+                  <div class="text-center border-r mt-4 mb-4 pr-4 border-gray-300">
+                    <div>2 + 1</div>
+                    <div>salles de bains</div>
+                  </div>
+                  <div class="text-center m-4 pr-4">
+                    <div>599 000.0 $</div>
+                    <div>prix</div>
+                  </div>
+                </div>
+              </div>
 
-overflow-y: scroll;
+              
+              <div class="grid grid-cols-3 gap-7 font-poppins">
+                <div class="col-span-2">
+                  <p class="text-sm pt-7">* dimensions des chambres précis à suivre* Bienvenue dans votre nouvelle maison dans l'ouest de l'île! Cette charmante maison de ville de 2 chambres et 2,5 salles de bains offre une expérience de vie confortable et pratique. Espace de vie lumineux et aéré à aire ouverte avec hauts plafonds, chambre principale avec 2 garde-robes walk-in et un sous-sol spacieux. La maison dispose de deux stationnements intérieurs avec accès direct à la maison. Profitez de la vie en plein air sur le grand patio, parfait pour se détendre et se divertir. Ne manquez pas l'occasion de faire vôtre cette jolie maison de ville! </p>
 
-}
-</style>
+                  <h2 class="text-2xl pt-7">Addenda</h2>
+                  <p class="text-sm pt-3">* dimensions des chambres précis à suivre
+                    * Bienvenue dans votre nouvelle maison dans l'ouest de l'île! Cette charmante maison de ville de 2 chambres et 2,5 salles de bains offre une expérience de vie confortable et pratique. Espace de vie lumineux et aéré à aire ouverte avec hauts plafonds, chambre principale avec 2 garde-robes walk-in et un sous-sol spacieux. La maison dispose de deux stationnements intérieurs avec accès direct à la maison. Profitez de la vie en plein air sur le grand patio, parfait pour se détendre et se divertir. Ne manquez pas l'occasion de faire vôtre cette jolie maison de ville!</p>
 
-<div class="container mx-auto px-12">
-        <div>
-            <h1 class="text-3xl font-bold" >
-                PROPERTIES FOR SALE
-            </h1>
-            <hr class="w-16 h-2  bg-teal-500 border-0  md:my-10 dark:bg-teal-500">
-        </div>
-        <div class="flex items-center justify-center gap-2 ">
-            <p class="">SORT BY:</p>
-            
-            <button id="dropdownHoverButton" data-dropdown-toggle="dropdownHover" data-dropdown-trigger="hover" class="text-black bg-white focus:ring-4   font-medium  text-sm px-10 py-1 text-center inline-flex items-center border-2 border-black " type="button">District <svg class="w-2.5 h-2.5 ml-8" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
-            </svg></button>
-            <!-- Dropdown menu -->
-            <div id="dropdownHover" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
-                <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownHoverButton">
-                <li>
-                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dashboard</a>
-                </li>
-                <li>
-                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Settings</a>
-                </li>
-                <li>
-                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Earnings</a>
-                </li>
-                <li>
-                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Sign out</a>
-                </li>
-                </ul>
-            </div>
+                  <h2  class="text-2xl pt-7">Inclus dans la vente</h2>
+                  <p class="text-sm pt-3">Réfrigérateur, cuisinière, lave-vaisselle, micro-ondes, stores et rideaux tels qu'installés</p>
 
-            
-            <button id="dropdownHoverButton" data-dropdown-toggle="dropdownHover" data-dropdown-trigger="hover" class="text-black bg-white focus:ring-4   font-medium  text-sm px-10 py-1 text-center inline-flex items-center border-2 border-black " type="button">Price <svg class="w-2.5 h-2.5 ml-8" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
-            </svg></button>
-            <!-- Dropdown menu -->
-            <div id="dropdownHover" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
-                <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownHoverButton">
-                <li>
-                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dashboard</a>
-                </li>
-                <li>
-                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Settings</a>
-                </li>
-                <li>
-                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Earnings</a>
-                </li>
-                <li>
-                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Sign out</a>
-                </li>
-                </ul>
-            </div>
-            <button id="dropdownHoverButton" data-dropdown-toggle="dropdownHover" data-dropdown-trigger="hover" class="text-black bg-white focus:ring-4   font-medium  text-sm px-10 py-1 text-center inline-flex items-center border-2 border-black " type="button">Category <svg class="w-2.5 h-2.5 ml-8" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
-            </svg></button>
-            <!-- Dropdown menu -->
-            <div id="dropdownHover" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
-                <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownHoverButton">
-                <li>
-                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dashboard</a>
-                </li>
-                <li>
-                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Settings</a>
-                </li>
-                <li>
-                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Earnings</a>
-                </li>
-                <li>
-                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Sign out</a>
-                </li>
-                </ul>
-            </div>
+                  <h2 class="text-2xl pt-7">Inclus dans la vente</h2>
+                  <div class="grid grid-cols-5 pt-3">
+                    <div class="text-sm font-poppins font-bold py-1">ROOM(S)</div>
+                    <div class="text-sm font-poppins font-bold py-1">LEVEL</div>
+                    <div class="text-sm font-poppins font-bold py-1">DIMENSIONS</div>
+                    <div class="text-sm font-poppins font-bold py-1">TYPE OF FLOORING</div>
+                    <div class="text-sm font-poppins font-bold py-1">ADDITIONAL INFO.</div>
 
+                    <div class="text-sm font-poppins font-medium py-1">Washroom</div>
+                    <div class="text-sm font-poppins font-medium py-1">Ground floor</div>
+                    <div class="text-sm font-poppins font-medium py-1">8x5.6 P - irr</div>
+                    <div class="text-sm font-poppins font-medium py-1">Ceramic tiles</div>
+                    <div class="text-sm font-poppins font-medium py-1"></div>
 
-        </div>
+                    <div class="text-sm font-poppins font-medium py-1">Washroom</div>
+                    <div class="text-sm font-poppins font-medium py-1">Ground floor</div>
+                    <div class="text-sm font-poppins font-medium py-1">8x5.6 P - irr</div>
+                    <div class="text-sm font-poppins font-medium py-1">Ceramic tiles</div>
+                    <div class="text-sm font-poppins font-medium py-1"></div>
 
-        <div class="flex items-center justify-center gap-2 ">
-            <p class="">DISPLAY MODE :</p>
-            <button   class="text-black bg-white   font-medium  text-sm px-10 py-1 my-6 text-center inline-flex items-center border-2 border-black " type="button"><svg class="w-2.5 h-2.5 mr-8" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M40 48C26.7 48 16 58.7 16 72v48c0 13.3 10.7 24 24 24H88c13.3 0 24-10.7 24-24V72c0-13.3-10.7-24-24-24H40zM192 64c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H192zm0 160c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H192zm0 160c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H192zM16 232v48c0 13.3 10.7 24 24 24H88c13.3 0 24-10.7 24-24V232c0-13.3-10.7-24-24-24H40c-13.3 0-24 10.7-24 24zM40 368c-13.3 0-24 10.7-24 24v48c0 13.3 10.7 24 24 24H88c13.3 0 24-10.7 24-24V392c0-13.3-10.7-24-24-24H40z"/></svg> <a href="#list-section">List
-                 </button></a>
-            <button   class="text-white bg-gray-500  font-medium  text-sm px-10 py-1 my-6 text-center inline-flex items-center border-2 border-black " type="button"><svg class="w-2.5 h-2.5 mr-8 "  xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M128 136c0-22.1-17.9-40-40-40L40 96C17.9 96 0 113.9 0 136l0 48c0 22.1 17.9 40 40 40H88c22.1 0 40-17.9 40-40l0-48zm0 192c0-22.1-17.9-40-40-40H40c-22.1 0-40 17.9-40 40l0 48c0 22.1 17.9 40 40 40H88c22.1 0 40-17.9 40-40V328zm32-192v48c0 22.1 17.9 40 40 40h48c22.1 0 40-17.9 40-40V136c0-22.1-17.9-40-40-40l-48 0c-22.1 0-40 17.9-40 40zM288 328c0-22.1-17.9-40-40-40H200c-22.1 0-40 17.9-40 40l0 48c0 22.1 17.9 40 40 40h48c22.1 0 40-17.9 40-40V328zm32-192v48c0 22.1 17.9 40 40 40h48c22.1 0 40-17.9 40-40V136c0-22.1-17.9-40-40-40l-48 0c-22.1 0-40 17.9-40 40zM448 328c0-22.1-17.9-40-40-40H360c-22.1 0-40 17.9-40 40v48c0 22.1 17.9 40 40 40h48c22.1 0 40-17.9 40-40V328z"/></svg><a href="#mosaic-section">Mosaic</a>
-                   </button>    
-        </div>
+                    <div class="text-sm font-poppins font-medium py-1">Washroom</div>
+                    <div class="text-sm font-poppins font-medium py-1">Ground floor</div>
+                    <div class="text-sm font-poppins font-medium py-1">8x5.6 P - irr</div>
+                    <div class="text-sm font-poppins font-medium py-1">Ceramic tiles</div>
+                    <div class="text-sm font-poppins font-medium py-1"></div>
+                  </div>
 
-        
-        <section class="hidden" id="list-section overflow-y-scroll">
-            <div class="overflow-y-scroll">
-            <div class="grid grid-cols-5 gap-8 mt-10">
-                <div class="col-span-2 "> <img src="<?php echo get_template_directory_uri(); ?>/src/images/194417071.jpg" alt="Image" class="w-full"></div>
-                <div class="col-span-3 ">
-                    <h2 class="text-gray-700 hover:text-gray-900 text-2xl border-b border-gray-700 py-2">Montréal (L'Île-Bizard/Sainte-Geneviève)</h2>
-                    <p class="text-gray-900 hover:text-gray-700 text-2xl border-b border-gray-700 py-2">$1,488,000</p>
-                    <div class="flex  gap-2 py-2 ">
-                        <p class="">20</p>
-                        <p class="">5</p>
-                        <p class="">3</p>
-                        <p class="">1</p>
-                    </div>
-                    <a href="" class="text-base py-2">3007, Rue Cherrier</a>
-                    <p class="text-base py-2">This stunning waterfront property boasts 5 bedrooms and 3.5 bathrooms, with walnut and heated ceramic floors throughout. The marble countertop adds an element of elegance to the home, and the large basement provides easy access to the backyard and paved jumbo terrace, perfect for outdoor entertaining. The garage can accommodate a lift for up to 4 cars. The location offers privacy and tranquility, but is just a short drive from all services, providing access to shopping, the REM, and other public transportation. This luxurious home is the perfect retreat for those seeking waterfront living with all the amenities of city life nearby</p>
-                    <p class="text-base py-2"><a href="" class="">Two or more storey for sale </a></p> 
-                    <p class="text-base py-2"><a href="" class="">Centris No. 19441707 </a></p> 
+                  <h2 class="font-poppins text-2xl pt-7 pb-3">Inclus dans la vente</h2>
+
+                  <div class="flex gap-4 text-sm p-4 border-b border-gray-300 hover:bg-slate-100 hover:duration-100">
+                    <div class="font-bold">Property Type</div>
+                    <div class="font-medium text-gray-600">test</div>
+                  </div>
+                  <div class="flex gap-4 text-sm p-4 border-b border-gray-300 hover:bg-slate-100 hover:duration-100">
+                    <div class="font-bold">Property Type</div>
+                    <div class="font-medium text-gray-600">test</div>
+                  </div>
+                  <div class="flex gap-4 text-sm p-4 border-b border-gray-300 hover:bg-slate-100 hover:duration-100">
+                    <div class="font-bold">Property Type</div>
+                    <div class="font-medium text-gray-600">test</div>
+                  </div>
+                  <div class="flex gap-4 text-sm p-4 border-b border-gray-300 hover:bg-slate-100 hover:duration-100">
+                    <div class="font-bold">Property Type</div>
+                    <div class="font-medium text-gray-600">test</div>
+                  </div>
+                  <div class="flex gap-4 text-sm p-4 border-b border-gray-300 hover:bg-slate-100 hover:duration-100">
+                    <div class="font-bold">Property Type</div>
+                    <div class="font-medium text-gray-600">test</div>
+                  </div>
+                  <div class="flex gap-4 text-sm p-4 border-b border-gray-300 hover:bg-slate-100 hover:duration-100">
+                    <div class="font-bold">Property Type</div>
+                    <div class="font-medium text-gray-600">test</div>
+                  </div>
+                  <div class="flex gap-4 text-sm p-4 border-b border-gray-300 hover:bg-slate-100 hover:duration-100">
+                    <div class="font-bold">Property Type</div>
+                    <div class="font-medium text-gray-600">test</div>
+                  </div>
+                  <div class="flex gap-4 text-sm p-4 border-b border-gray-300 hover:bg-slate-100 hover:duration-100">
+                    <div class="font-bold">Property Type</div>
+                    <div class="font-medium text-gray-600">test</div>
+                  </div>
+                  <div class="flex gap-4 text-sm p-4 border-b border-gray-300 hover:bg-slate-100 hover:duration-100">
+                    <div class="font-bold">Property Type</div>
+                    <div class="font-medium text-gray-600">test</div>
+                  </div>
+                  <div class="flex gap-4 text-sm p-4 border-b border-gray-300 hover:bg-slate-100 hover:duration-100">
+                    <div class="font-bold">Property Type</div>
+                    <div class="font-medium text-gray-600">test</div>
+                  </div>
+                  
+                  <h2 class="font-poppins text-2xl pt-7 pb-3">Inclus dans la vente</h2>
+                  <div class="flex gap-4 text-sm p-4 border-b border-gray-300 hover:bg-slate-100 hover:duration-100">
+                    <div class="font-bold">Property Type</div>
+                    <div class="font-medium text-gray-600">test</div>
+                  </div>
+                  <div class="flex gap-4 text-sm p-4 border-b border-gray-300 hover:bg-slate-100 hover:duration-100">
+                    <div class="font-bold">Property Type</div>
+                    <div class="font-medium text-gray-600">test</div>
+                  </div>
+                  <div class="flex gap-4 text-sm p-4 border-b border-gray-300 hover:bg-slate-100 hover:duration-100">
+                    <div class="font-bold">Property Type</div>
+                    <div class="font-medium text-gray-600">test</div>
+                  </div>
+                  <div class="flex gap-4 text-sm p-4 border-b border-gray-300 hover:bg-slate-100 hover:duration-100">
+                    <div class="font-bold">Property Type</div>
+                    <div class="font-medium text-gray-600">test</div>
+                  </div>
+                  <div class="flex gap-4 text-sm p-4 border-b border-gray-300 hover:bg-slate-100 hover:duration-100">
+                    <div class="font-bold">Property Type</div>
+                    <div class="font-medium text-gray-600">test</div>
+                  </div>
+                  <div class="flex gap-4 text-sm p-4 border-b border-gray-300 hover:bg-slate-100 hover:duration-100">
+                    <div class="font-bold">Property Type</div>
+                    <div class="font-medium text-gray-600">test</div>
+                  </div>
+                  <div class="flex gap-4 text-sm p-4 border-b border-gray-300 hover:bg-slate-100 hover:duration-100">
+                    <div class="font-bold">Property Type</div>
+                    <div class="font-medium text-gray-600">test</div>
+                  </div>
+                  <div class="flex gap-4 text-sm p-4 border-b border-gray-300 hover:bg-slate-100 hover:duration-100">
+                    <div class="font-bold">Property Type</div>
+                    <div class="font-medium text-gray-600">test</div>
+                  </div>
+                  <div class="flex gap-4 text-sm p-4 border-b border-gray-300 hover:bg-slate-100 hover:duration-100">
+                    <div class="font-bold">Property Type</div>
+                    <div class="font-medium text-gray-600">test</div>
+                  </div>
+                  <div class="flex gap-4 text-sm p-4 border-b border-gray-300 hover:bg-slate-100 hover:duration-100">
+                    <div class="font-bold">Property Type</div>
+                    <div class="font-medium text-gray-600">test</div>
+                  </div>
                   
                 </div>
-              
-           
+                <div>
+                  <h3 class="text-xl pt-7 pb-4">Contact the listing broker(s)</h3>
+                  <div class="grid grid-cols-3 gap-2">
+                    <div>
+                      <img src="./assest/img/DSC06075-3.jpg" alt="">
+                    </div>
+                    <div class="col-span-2">
+                      <div>Elio Di Spaldro</div>
+                      <div class="text-sm">Residential & Commercial Real Estate Broker</div>
+                      <div class="flex gap-1 items-baseline">
+                        <div>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-at-fill" viewBox="0 0 16 16">
+                            <path d="M2 2A2 2 0 0 0 .05 3.555L8 8.414l7.95-4.859A2 2 0 0 0 14 2H2Zm-2 9.8V4.698l5.803 3.546L0 11.801Zm6.761-2.97-6.57 4.026A2 2 0 0 0 2 14h6.256A4.493 4.493 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586l-1.239-.757ZM16 9.671V4.697l-5.803 3.546.338.208A4.482 4.482 0 0 1 12.5 8c1.414 0 2.675.652 3.5 1.671Z"/>
+                            <path d="M15.834 12.244c0 1.168-.577 2.025-1.587 2.025-.503 0-1.002-.228-1.12-.648h-.043c-.118.416-.543.643-1.015.643-.77 0-1.259-.542-1.259-1.434v-.529c0-.844.481-1.4 1.26-1.4.585 0 .87.333.953.63h.03v-.568h.905v2.19c0 .272.18.42.411.42.315 0 .639-.415.639-1.39v-.118c0-1.277-.95-2.326-2.484-2.326h-.04c-1.582 0-2.64 1.067-2.64 2.724v.157c0 1.867 1.237 2.654 2.57 2.654h.045c.507 0 .935-.07 1.18-.18v.731c-.219.1-.643.175-1.237.175h-.044C10.438 16 9 14.82 9 12.646v-.214C9 10.36 10.421 9 12.485 9h.035c2.12 0 3.314 1.43 3.314 3.034v.21Zm-4.04.21v.227c0 .586.227.8.581.8.31 0 .564-.17.564-.743v-.367c0-.516-.275-.708-.572-.708-.346 0-.573.245-.573.791Z"/>
+                          </svg>
+                        </div>
+                        <div>
+                          <a href="" class="text-sm">admin@mdataz.com</a>
+                        </div>
+                      </div>
+                      <div class="flex gap-1 items-baseline">
+                        <div>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-at-fill" viewBox="0 0 16 16">
+                            <path d="M2 2A2 2 0 0 0 .05 3.555L8 8.414l7.95-4.859A2 2 0 0 0 14 2H2Zm-2 9.8V4.698l5.803 3.546L0 11.801Zm6.761-2.97-6.57 4.026A2 2 0 0 0 2 14h6.256A4.493 4.493 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586l-1.239-.757ZM16 9.671V4.697l-5.803 3.546.338.208A4.482 4.482 0 0 1 12.5 8c1.414 0 2.675.652 3.5 1.671Z"/>
+                            <path d="M15.834 12.244c0 1.168-.577 2.025-1.587 2.025-.503 0-1.002-.228-1.12-.648h-.043c-.118.416-.543.643-1.015.643-.77 0-1.259-.542-1.259-1.434v-.529c0-.844.481-1.4 1.26-1.4.585 0 .87.333.953.63h.03v-.568h.905v2.19c0 .272.18.42.411.42.315 0 .639-.415.639-1.39v-.118c0-1.277-.95-2.326-2.484-2.326h-.04c-1.582 0-2.64 1.067-2.64 2.724v.157c0 1.867 1.237 2.654 2.57 2.654h.045c.507 0 .935-.07 1.18-.18v.731c-.219.1-.643.175-1.237.175h-.044C10.438 16 9 14.82 9 12.646v-.214C9 10.36 10.421 9 12.485 9h.035c2.12 0 3.314 1.43 3.314 3.034v.21Zm-4.04.21v.227c0 .586.227.8.581.8.31 0 .564-.17.564-.743v-.367c0-.516-.275-.708-.572-.708-.346 0-.573.245-.573.791Z"/>
+                          </svg>
+                        </div>
+                        <div>
+                          <a href="" class="text-sm">admin@mdataz.com</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="mt-2.5">
+                      <input type="text" name="last-name" id="last-name" autocomplete="family-name" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-[#00AEC5] focus:ring-opacity-50 placeholder:text-gray-400 focus:outline-none sm:text-sm sm:leading-6 bg-slate-200" placeholder="Your Name">
+                    </div>
+                    <div class="mt-2.5">
+                      <input type="text" name="last-name" id="last-name" autocomplete="family-name" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-[#00AEC5] focus:ring-opacity-50 placeholder:text-gray-400 focus:outline-none sm:text-sm sm:leading-6 bg-slate-200" placeholder="Your Email">
+                    </div>
+                    <div class="mt-2.5">
+                      <input type="text" name="last-name" id="last-name" autocomplete="family-name" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-[#00AEC5] focus:ring-opacity-50 placeholder:text-gray-400 focus:outline-none sm:text-sm sm:leading-6 bg-slate-200" placeholder="Your Phone Number">
+                    </div>
+                    <div class="mt-2.5">
+                      <textarea type="text" name="last-name" id="last-name" autocomplete="family-name" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-[#00AEC5] focus:ring-opacity-50 placeholder:text-gray-400 focus:outline-none sm:text-sm sm:leading-6 bg-slate-200" placeholder="Message"></textarea>
+                    </div>
+                    <div class="mt-2.5">
+                      <button type="submit" class="text-center w-full py-3 rounded-full bg-white hover:bg-[#00AEC5] text-black hover:text-white border border-black hover:border-none">Send message</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              </div>
+
+              <div class="bg-slate-100">
+              <div class="max-w-7xl mx-auto">
+                <h2 class="font-poppins text-5xl pt-20 pb-7">Properties in the Region</h2>
+                <div class="grid grid-cols-3 gap-x-4 gap-y-5 font-poppins">
+                  <div>
+                    <img class="" src="./assest/img/10578486-1-327342585.jpg" alt="">
+                    <div class="text-sm py-1">Dollard-Des Ormeaux</div>
+                    <div class="text-lg">152 Rue Leslie</div>
+                    <p class="text-sm pt-1 pb-1">Spacieuse maison de style Jefferson située dans le quartier prisé de Westpark, près de toutes les commodités. La propriété compte une</p>
+                    <div class="flex gap-3">
+                      <div class="border-r my-4 pr-4 border-gray-300">
+                        <div>2 + 1</div>
+                        <div>salles de bains</div>
+                      </div>
+                      <div class="border-r my-4 pr-4 border-gray-300">
+                        <div>2 + 1</div>
+                        <div>salles de bains</div>
+                      </div>
+                      <div class="my-4 pr-4">
+                        <div>599 000.0 $</div>
+                        <div>prix</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <img class="" src="./assest/img/10578486-1-327342585.jpg" alt="">
+                    <div class="text-sm py-1">Dollard-Des Ormeaux</div>
+                    <div class="text-lg">152 Rue Leslie</div>
+                    <p class="text-sm pt-1 pb-1">Spacieuse maison de style Jefferson située dans le quartier prisé de Westpark, près de toutes les commodités. La propriété compte une</p>
+                    <div class="flex gap-3">
+                      <div class="border-r my-4 pr-4 border-gray-300">
+                        <div>2 + 1</div>
+                        <div>salles de bains</div>
+                      </div>
+                      <div class="border-r my-4 pr-4 border-gray-300">
+                        <div>2 + 1</div>
+                        <div>salles de bains</div>
+                      </div>
+                      <div class="my-4 pr-4">
+                        <div>599 000.0 $</div>
+                        <div>prix</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <img class="" src="./assest/img/10578486-1-327342585.jpg" alt="">
+                    <div class="text-sm py-1">Dollard-Des Ormeaux</div>
+                    <div class="text-lg">152 Rue Leslie</div>
+                    <p class="text-sm pt-1 pb-1">Spacieuse maison de style Jefferson située dans le quartier prisé de Westpark, près de toutes les commodités. La propriété compte une</p>
+                    <div class="flex gap-3">
+                      <div class="border-r my-4 pr-4 border-gray-300">
+                        <div>2 + 1</div>
+                        <div>salles de bains</div>
+                      </div>
+                      <div class="border-r my-4 pr-4 border-gray-300">
+                        <div>2 + 1</div>
+                        <div>salles de bains</div>
+                      </div>
+                      <div class="my-4 pr-4">
+                        <div>599 000.0 $</div>
+                        <div>prix</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <img class="" src="./assest/img/10578486-1-327342585.jpg" alt="">
+                    <div class="text-sm py-1">Dollard-Des Ormeaux</div>
+                    <div class="text-lg">152 Rue Leslie</div>
+                    <p class="text-sm pt-1 pb-1">Spacieuse maison de style Jefferson située dans le quartier prisé de Westpark, près de toutes les commodités. La propriété compte une</p>
+                    <div class="flex gap-3">
+                      <div class="border-r my-4 pr-4 border-gray-300">
+                        <div>2 + 1</div>
+                        <div>salles de bains</div>
+                      </div>
+                      <div class="border-r my-4 pr-4 border-gray-300">
+                        <div>2 + 1</div>
+                        <div>salles de bains</div>
+                      </div>
+                      <div class="my-4 pr-4">
+                        <div>599 000.0 $</div>
+                        <div>prix</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <img class="" src="./assest/img/10578486-1-327342585.jpg" alt="">
+                    <div class="text-sm py-1">Dollard-Des Ormeaux</div>
+                    <div class="text-lg">152 Rue Leslie</div>
+                    <p class="text-sm pt-1 pb-1">Spacieuse maison de style Jefferson située dans le quartier prisé de Westpark, près de toutes les commodités. La propriété compte une</p>
+                    <div class="flex gap-3">
+                      <div class="border-r my-4 pr-4 border-gray-300">
+                        <div>2 + 1</div>
+                        <div>salles de bains</div>
+                      </div>
+                      <div class="border-r my-4 pr-4 border-gray-300">
+                        <div>2 + 1</div>
+                        <div>salles de bains</div>
+                      </div>
+                      <div class="my-4 pr-4">
+                        <div>599 000.0 $</div>
+                        <div>prix</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <img class="" src="./assest/img/10578486-1-327342585.jpg" alt="">
+                    <div class="text-sm py-1">Dollard-Des Ormeaux</div>
+                    <div class="text-lg">152 Rue Leslie</div>
+                    <p class="text-sm pt-1 pb-1">Spacieuse maison de style Jefferson située dans le quartier prisé de Westpark, près de toutes les commodités. La propriété compte une</p>
+                    <div class="flex gap-3">
+                      <div class="border-r my-4 pr-4 border-gray-300">
+                        <div>2 + 1</div>
+                        <div>salles de bains</div>
+                      </div>
+                      <div class="border-r my-4 pr-4 border-gray-300">
+                        <div>2 + 1</div>
+                        <div>salles de bains</div>
+                      </div>
+                      <div class="my-4 pr-4">
+                        <div>599 000.0 $</div>
+                        <div>prix</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              </div>
+
             </div>
-            <div class="grid grid-cols-5 gap-8 mt-10">
-                <div class="col-span-2 "> <img src="<?php echo get_template_directory_uri(); ?>/src/images/194417071.jpg" alt="Image" class="w-full"></div>
-                <div class="col-span-3 ">
-                    <h2 class="text-gray-700 hover:text-gray-900 text-2xl border-b border-gray-700 py-2">Montréal (L'Île-Bizard/Sainte-Geneviève)</h2>
-                    <p class="text-gray-900 hover:text-gray-700 text-2xl border-b border-gray-700 py-2">$1,488,000</p>
-                    <div class="flex  gap-2 py-2 ">
-                        <p class="">20</p>
-                        <p class="">5</p>
-                        <p class="">3</p>
-                        <p class="">1</p>
-                    </div>
-                    <a href="" class="text-base py-2">3007, Rue Cherrier</a>
-                    <p class="text-base py-2">This stunning waterfront property boasts 5 bedrooms and 3.5 bathrooms, with walnut and heated ceramic floors throughout. The marble countertop adds an element of elegance to the home, and the large basement provides easy access to the backyard and paved jumbo terrace, perfect for outdoor entertaining. The garage can accommodate a lift for up to 4 cars. The location offers privacy and tranquility, but is just a short drive from all services, providing access to shopping, the REM, and other public transportation. This luxurious home is the perfect retreat for those seeking waterfront living with all the amenities of city life nearby</p>
-                    <p class="text-base py-2"><a href="" class="">Two or more storey for sale </a></p> 
-                    <p class="text-base py-2"><a href="" class="">Centris No. 19441707 </a></p> 
-                  
-                </div>
-              
-           
-            </div>
-            <div class="grid grid-cols-5 gap-8 mt-10">
-                <div class="col-span-2 "> <img src="<?php echo get_template_directory_uri(); ?>/src/images/194417071.jpg" alt="Image" class="w-full"></div>
-                <div class="col-span-3 ">
-                    <h2 class="text-gray-700 hover:text-gray-900 text-2xl border-b border-gray-700 py-2">Montréal (L'Île-Bizard/Sainte-Geneviève)</h2>
-                    <p class="text-gray-900 hover:text-gray-700 text-2xl border-b border-gray-700 py-2">$1,488,000</p>
-                    <div class="flex  gap-2 py-2 ">
-                        <p class="">20</p>
-                        <p class="">5</p>
-                        <p class="">3</p>
-                        <p class="">1</p>
-                    </div>
-                    <a href="" class="text-base py-2">3007, Rue Cherrier</a>
-                    <p class="text-base py-2">This stunning waterfront property boasts 5 bedrooms and 3.5 bathrooms, with walnut and heated ceramic floors throughout. The marble countertop adds an element of elegance to the home, and the large basement provides easy access to the backyard and paved jumbo terrace, perfect for outdoor entertaining. The garage can accommodate a lift for up to 4 cars. The location offers privacy and tranquility, but is just a short drive from all services, providing access to shopping, the REM, and other public transportation. This luxurious home is the perfect retreat for those seeking waterfront living with all the amenities of city life nearby</p>
-                    <p class="text-base py-2"><a href="" class="">Two or more storey for sale </a></p> 
-                    <p class="text-base py-2"><a href="" class="">Centris No. 19441707 </a></p> 
-                  
-                </div>
-              
-           
-            </div>
-            <div class="grid grid-cols-5 gap-8 mt-10">
-                <div class="col-span-2 "> <img src="<?php echo get_template_directory_uri(); ?>/src/images/194417071.jpg" alt="Image" class="w-full"></div>
-                <div class="col-span-3 ">
-                    <h2 class="text-gray-700 hover:text-gray-900 text-2xl border-b border-gray-700 py-2">Montréal (L'Île-Bizard/Sainte-Geneviève)</h2>
-                    <p class="text-gray-900 hover:text-gray-700 text-2xl border-b border-gray-700 py-2">$1,488,000</p>
-                    <div class="flex  gap-2 py-2 ">
-                        <p class="">20</p>
-                        <p class="">5</p>
-                        <p class="">3</p>
-                        <p class="">1</p>
-                    </div>
-                    <a href="" class="text-base py-2">3007, Rue Cherrier</a>
-                    <p class="text-base py-2">This stunning waterfront property boasts 5 bedrooms and 3.5 bathrooms, with walnut and heated ceramic floors throughout. The marble countertop adds an element of elegance to the home, and the large basement provides easy access to the backyard and paved jumbo terrace, perfect for outdoor entertaining. The garage can accommodate a lift for up to 4 cars. The location offers privacy and tranquility, but is just a short drive from all services, providing access to shopping, the REM, and other public transportation. This luxurious home is the perfect retreat for those seeking waterfront living with all the amenities of city life nearby</p>
-                    <p class="text-base py-2"><a href="" class="">Two or more storey for sale </a></p> 
-                    <p class="text-base py-2"><a href="" class="">Centris No. 19441707 </a></p> 
-                  
-                </div>
-              
-           
-            </div>
-            </div>
-        </section>
-     
-        <section class="pt-5" id="mosaic-section">
-            <div class="grid grid-cols-4 gap-5 mt-10  "  >
-                <div class="col-span-1 "> 
-                    <img src="<?php echo get_template_directory_uri(); ?>/src/images/194417071.jpg" alt="Image" class="w-full">
-                    <h2 class="text-gray-700 hover:text-gray-900 text-xl  py-2">Montréal (L'Île-Bizard/Sainte-Geneviève)</h2>
-                    <p class="text-gray-900 hover:text-gray-700 text-2xl  py-2">$1,488,000</p>
-                    <div class="flex  gap-2 ">
-                        <div class="flex gap-1"><svg class="mt-1" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7 160.2c0 2.7-.2 5.4-.5 8.1V472c0 22.1-17.9 40-40 40H456c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1H416 392c-22.1 0-40-17.9-40-40V448 384c0-17.7-14.3-32-32-32H256c-17.7 0-32 14.3-32 32v64 24c0 22.1-17.9 40-40 40H160 128.1c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2H104c-22.1 0-40-17.9-40-40V360c0-.9 0-1.9 .1-2.8V287.6H32c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z"/></svg>
-                            <p class="">20</p></div>
-                        <div class="flex gap-1"><svg class="mt-1" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M32 32c17.7 0 32 14.3 32 32V320H288V160c0-17.7 14.3-32 32-32H544c53 0 96 43 96 96V448c0 17.7-14.3 32-32 32s-32-14.3-32-32V416H352 320 64v32c0 17.7-14.3 32-32 32s-32-14.3-32-32V64C0 46.3 14.3 32 32 32zm144 96a80 80 0 1 1 0 160 80 80 0 1 1 0-160z"/></svg>
-                                <p class="">5</p></div>
-                        <div class="flex gap-1"><svg class="mt-1" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M96 77.3c0-7.3 5.9-13.3 13.3-13.3c3.5 0 6.9 1.4 9.4 3.9l14.9 14.9C130 91.8 128 101.7 128 112c0 19.9 7.2 38 19.2 52c-5.3 9.2-4 21.1 3.8 29c9.4 9.4 24.6 9.4 33.9 0L289 89c9.4-9.4 9.4-24.6 0-33.9c-7.9-7.9-19.8-9.1-29-3.8C246 39.2 227.9 32 208 32c-10.3 0-20.2 2-29.2 5.5L163.9 22.6C149.4 8.1 129.7 0 109.3 0C66.6 0 32 34.6 32 77.3V256c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H96V77.3zM32 352v16c0 28.4 12.4 54 32 71.6V480c0 17.7 14.3 32 32 32s32-14.3 32-32V464H384v16c0 17.7 14.3 32 32 32s32-14.3 32-32V439.6c19.6-17.6 32-43.1 32-71.6V352H32z"/></svg>
-                                    <p class="">3</p></div>
-                                    <div class="flex gap-1"><svg class="mt-1" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M288 96c0-17.7 14.3-32 32-32s32 14.3 32 32s14.3 32 32 32s32-14.3 32-32c0-53-43-96-96-96s-96 43-96 96V288H160V264c0-30.9-25.1-56-56-56H56c-13.3 0-24 10.7-24 24s10.7 24 24 24h48c4.4 0 8 3.6 8 8v24H32c-17.7 0-32 14.3-32 32s14.3 32 32 32H256 480c17.7 0 32-14.3 32-32s-14.3-32-32-32H400V264c0-4.4 3.6-8 8-8h56c13.3 0 24-10.7 24-24s-10.7-24-24-24H408c-30.9 0-56 25.1-56 56v24H288V96zM480 416V384H32v32c0 53 43 96 96 96H384c53 0 96-43 96-96z"/></svg>
-                                        <p class="">1</p></div>
-                    </div>
-                    <a href="" class="text-sm hover:underline ">3007, Rue Cherrier</a>
-                    <p class="text-sm hover:underline "><a href="" class="">Two or more storey for sale </a></p> 
-                    <p class="text-sm hover:underline "><a href="" class="">Centris No. 19441707 </a></p> 
-                </div>
-                <div class="col-span-1 "> 
-                    <img src="<?php echo get_template_directory_uri(); ?>/src/images/194417071.jpg" alt="Image" class="w-full">
-                    <h2 class="text-gray-700 hover:text-gray-900 text-xl  py-2">Montréal (L'Île-Bizard/Sainte-Geneviève)</h2>
-                    <p class="text-gray-900 hover:text-gray-700 text-2xl  py-2">$1,488,000</p>
-                    <div class="flex  gap-2 ">
-                        <div class="flex gap-1"><svg class="mt-1" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7 160.2c0 2.7-.2 5.4-.5 8.1V472c0 22.1-17.9 40-40 40H456c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1H416 392c-22.1 0-40-17.9-40-40V448 384c0-17.7-14.3-32-32-32H256c-17.7 0-32 14.3-32 32v64 24c0 22.1-17.9 40-40 40H160 128.1c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2H104c-22.1 0-40-17.9-40-40V360c0-.9 0-1.9 .1-2.8V287.6H32c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z"/></svg>
-                            <p class="">20</p></div>
-                        <div class="flex gap-1"><svg class="mt-1" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M32 32c17.7 0 32 14.3 32 32V320H288V160c0-17.7 14.3-32 32-32H544c53 0 96 43 96 96V448c0 17.7-14.3 32-32 32s-32-14.3-32-32V416H352 320 64v32c0 17.7-14.3 32-32 32s-32-14.3-32-32V64C0 46.3 14.3 32 32 32zm144 96a80 80 0 1 1 0 160 80 80 0 1 1 0-160z"/></svg>
-                                <p class="">5</p></div>
-                        <div class="flex gap-1"><svg class="mt-1" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M96 77.3c0-7.3 5.9-13.3 13.3-13.3c3.5 0 6.9 1.4 9.4 3.9l14.9 14.9C130 91.8 128 101.7 128 112c0 19.9 7.2 38 19.2 52c-5.3 9.2-4 21.1 3.8 29c9.4 9.4 24.6 9.4 33.9 0L289 89c9.4-9.4 9.4-24.6 0-33.9c-7.9-7.9-19.8-9.1-29-3.8C246 39.2 227.9 32 208 32c-10.3 0-20.2 2-29.2 5.5L163.9 22.6C149.4 8.1 129.7 0 109.3 0C66.6 0 32 34.6 32 77.3V256c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H96V77.3zM32 352v16c0 28.4 12.4 54 32 71.6V480c0 17.7 14.3 32 32 32s32-14.3 32-32V464H384v16c0 17.7 14.3 32 32 32s32-14.3 32-32V439.6c19.6-17.6 32-43.1 32-71.6V352H32z"/></svg>
-                                    <p class="">3</p></div>
-                                    <div class="flex gap-1"><svg class="mt-1" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M288 96c0-17.7 14.3-32 32-32s32 14.3 32 32s14.3 32 32 32s32-14.3 32-32c0-53-43-96-96-96s-96 43-96 96V288H160V264c0-30.9-25.1-56-56-56H56c-13.3 0-24 10.7-24 24s10.7 24 24 24h48c4.4 0 8 3.6 8 8v24H32c-17.7 0-32 14.3-32 32s14.3 32 32 32H256 480c17.7 0 32-14.3 32-32s-14.3-32-32-32H400V264c0-4.4 3.6-8 8-8h56c13.3 0 24-10.7 24-24s-10.7-24-24-24H408c-30.9 0-56 25.1-56 56v24H288V96zM480 416V384H32v32c0 53 43 96 96 96H384c53 0 96-43 96-96z"/></svg>
-                                        <p class="">1</p></div>
-                    </div>
-                    <a href="" class="text-sm hover:underline ">3007, Rue Cherrier</a>
-                    <p class="text-sm hover:underline "><a href="" class="">Two or more storey for sale </a></p> 
-                    <p class="text-sm hover:underline "><a href="" class="">Centris No. 19441707 </a></p> 
-                </div>
-                <div class="col-span-1 "> 
-                    <img src="<?php echo get_template_directory_uri(); ?>/src/images/194417071.jpg" alt="Image" class="w-full">
-                    <h2 class="text-gray-700 hover:text-gray-900 text-xl  py-2">Montréal (L'Île-Bizard/Sainte-Geneviève)</h2>
-                    <p class="text-gray-900 hover:text-gray-700 text-2xl  py-2">$1,488,000</p>
-                    <div class="flex  gap-2 ">
-                        <div class="flex gap-1"><svg class="mt-1" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7 160.2c0 2.7-.2 5.4-.5 8.1V472c0 22.1-17.9 40-40 40H456c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1H416 392c-22.1 0-40-17.9-40-40V448 384c0-17.7-14.3-32-32-32H256c-17.7 0-32 14.3-32 32v64 24c0 22.1-17.9 40-40 40H160 128.1c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2H104c-22.1 0-40-17.9-40-40V360c0-.9 0-1.9 .1-2.8V287.6H32c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z"/></svg>
-                            <p class="">20</p></div>
-                        <div class="flex gap-1"><svg class="mt-1" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M32 32c17.7 0 32 14.3 32 32V320H288V160c0-17.7 14.3-32 32-32H544c53 0 96 43 96 96V448c0 17.7-14.3 32-32 32s-32-14.3-32-32V416H352 320 64v32c0 17.7-14.3 32-32 32s-32-14.3-32-32V64C0 46.3 14.3 32 32 32zm144 96a80 80 0 1 1 0 160 80 80 0 1 1 0-160z"/></svg>
-                                <p class="">5</p></div>
-                        <div class="flex gap-1"><svg class="mt-1" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M96 77.3c0-7.3 5.9-13.3 13.3-13.3c3.5 0 6.9 1.4 9.4 3.9l14.9 14.9C130 91.8 128 101.7 128 112c0 19.9 7.2 38 19.2 52c-5.3 9.2-4 21.1 3.8 29c9.4 9.4 24.6 9.4 33.9 0L289 89c9.4-9.4 9.4-24.6 0-33.9c-7.9-7.9-19.8-9.1-29-3.8C246 39.2 227.9 32 208 32c-10.3 0-20.2 2-29.2 5.5L163.9 22.6C149.4 8.1 129.7 0 109.3 0C66.6 0 32 34.6 32 77.3V256c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H96V77.3zM32 352v16c0 28.4 12.4 54 32 71.6V480c0 17.7 14.3 32 32 32s32-14.3 32-32V464H384v16c0 17.7 14.3 32 32 32s32-14.3 32-32V439.6c19.6-17.6 32-43.1 32-71.6V352H32z"/></svg>
-                                    <p class="">3</p></div>
-                                    <div class="flex gap-1"><svg class="mt-1" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M288 96c0-17.7 14.3-32 32-32s32 14.3 32 32s14.3 32 32 32s32-14.3 32-32c0-53-43-96-96-96s-96 43-96 96V288H160V264c0-30.9-25.1-56-56-56H56c-13.3 0-24 10.7-24 24s10.7 24 24 24h48c4.4 0 8 3.6 8 8v24H32c-17.7 0-32 14.3-32 32s14.3 32 32 32H256 480c17.7 0 32-14.3 32-32s-14.3-32-32-32H400V264c0-4.4 3.6-8 8-8h56c13.3 0 24-10.7 24-24s-10.7-24-24-24H408c-30.9 0-56 25.1-56 56v24H288V96zM480 416V384H32v32c0 53 43 96 96 96H384c53 0 96-43 96-96z"/></svg>
-                                        <p class="">1</p></div>
-                    </div>
-                    <a href="" class="text-sm hover:underline ">3007, Rue Cherrier</a>
-                    <p class="text-sm hover:underline "><a href="" class="">Two or more storey for sale </a></p> 
-                    <p class="text-sm hover:underline "><a href="" class="">Centris No. 19441707 </a></p> 
-                </div>
-                <div class="col-span-1 "> 
-                    <img src="<?php echo get_template_directory_uri(); ?>/src/images/194417071.jpg" alt="Image" class="w-full">
-                    <h2 class="text-gray-700 hover:text-gray-900 text-xl  py-2">Montréal (L'Île-Bizard/Sainte-Geneviève)</h2>
-                    <p class="text-gray-900 hover:text-gray-700 text-2xl  py-2">$1,488,000</p>
-                    <div class="flex  gap-2 ">
-                        <div class="flex gap-1"><svg class="mt-1" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7 160.2c0 2.7-.2 5.4-.5 8.1V472c0 22.1-17.9 40-40 40H456c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1H416 392c-22.1 0-40-17.9-40-40V448 384c0-17.7-14.3-32-32-32H256c-17.7 0-32 14.3-32 32v64 24c0 22.1-17.9 40-40 40H160 128.1c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2H104c-22.1 0-40-17.9-40-40V360c0-.9 0-1.9 .1-2.8V287.6H32c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z"/></svg>
-                            <p class="">20</p></div>
-                        <div class="flex gap-1"><svg class="mt-1" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M32 32c17.7 0 32 14.3 32 32V320H288V160c0-17.7 14.3-32 32-32H544c53 0 96 43 96 96V448c0 17.7-14.3 32-32 32s-32-14.3-32-32V416H352 320 64v32c0 17.7-14.3 32-32 32s-32-14.3-32-32V64C0 46.3 14.3 32 32 32zm144 96a80 80 0 1 1 0 160 80 80 0 1 1 0-160z"/></svg>
-                                <p class="">5</p></div>
-                        <div class="flex gap-1"><svg class="mt-1" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M96 77.3c0-7.3 5.9-13.3 13.3-13.3c3.5 0 6.9 1.4 9.4 3.9l14.9 14.9C130 91.8 128 101.7 128 112c0 19.9 7.2 38 19.2 52c-5.3 9.2-4 21.1 3.8 29c9.4 9.4 24.6 9.4 33.9 0L289 89c9.4-9.4 9.4-24.6 0-33.9c-7.9-7.9-19.8-9.1-29-3.8C246 39.2 227.9 32 208 32c-10.3 0-20.2 2-29.2 5.5L163.9 22.6C149.4 8.1 129.7 0 109.3 0C66.6 0 32 34.6 32 77.3V256c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H96V77.3zM32 352v16c0 28.4 12.4 54 32 71.6V480c0 17.7 14.3 32 32 32s32-14.3 32-32V464H384v16c0 17.7 14.3 32 32 32s32-14.3 32-32V439.6c19.6-17.6 32-43.1 32-71.6V352H32z"/></svg>
-                                    <p class="">3</p></div>
-                                    <div class="flex gap-1"><svg class="mt-1" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M288 96c0-17.7 14.3-32 32-32s32 14.3 32 32s14.3 32 32 32s32-14.3 32-32c0-53-43-96-96-96s-96 43-96 96V288H160V264c0-30.9-25.1-56-56-56H56c-13.3 0-24 10.7-24 24s10.7 24 24 24h48c4.4 0 8 3.6 8 8v24H32c-17.7 0-32 14.3-32 32s14.3 32 32 32H256 480c17.7 0 32-14.3 32-32s-14.3-32-32-32H400V264c0-4.4 3.6-8 8-8h56c13.3 0 24-10.7 24-24s-10.7-24-24-24H408c-30.9 0-56 25.1-56 56v24H288V96zM480 416V384H32v32c0 53 43 96 96 96H384c53 0 96-43 96-96z"/></svg>
-                                        <p class="">1</p></div>
-                    </div>
-                    <a href="" class="text-sm hover:underline ">3007, Rue Cherrier</a>
-                    <p class="text-sm hover:underline "><a href="" class="">Two or more storey for sale </a></p> 
-                    <p class="text-sm hover:underline "><a href="" class="">Centris No. 19441707 </a></p> 
-                </div>
-                <div class="col-span-1 "> 
-                    <img src="<?php echo get_template_directory_uri(); ?>/src/images/194417071.jpg" alt="Image" class="w-full">
-                    <h2 class="text-gray-700 hover:text-gray-900 text-xl  py-2">Montréal (L'Île-Bizard/Sainte-Geneviève)</h2>
-                    <p class="text-gray-900 hover:text-gray-700 text-2xl  py-2">$1,488,000</p>
-                    <div class="flex  gap-2 ">
-                        <div class="flex gap-1"><svg class="mt-1" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7 160.2c0 2.7-.2 5.4-.5 8.1V472c0 22.1-17.9 40-40 40H456c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1H416 392c-22.1 0-40-17.9-40-40V448 384c0-17.7-14.3-32-32-32H256c-17.7 0-32 14.3-32 32v64 24c0 22.1-17.9 40-40 40H160 128.1c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2H104c-22.1 0-40-17.9-40-40V360c0-.9 0-1.9 .1-2.8V287.6H32c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z"/></svg>
-                            <p class="">20</p></div>
-                        <div class="flex gap-1"><svg class="mt-1" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M32 32c17.7 0 32 14.3 32 32V320H288V160c0-17.7 14.3-32 32-32H544c53 0 96 43 96 96V448c0 17.7-14.3 32-32 32s-32-14.3-32-32V416H352 320 64v32c0 17.7-14.3 32-32 32s-32-14.3-32-32V64C0 46.3 14.3 32 32 32zm144 96a80 80 0 1 1 0 160 80 80 0 1 1 0-160z"/></svg>
-                                <p class="">5</p></div>
-                        <div class="flex gap-1"><svg class="mt-1" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M96 77.3c0-7.3 5.9-13.3 13.3-13.3c3.5 0 6.9 1.4 9.4 3.9l14.9 14.9C130 91.8 128 101.7 128 112c0 19.9 7.2 38 19.2 52c-5.3 9.2-4 21.1 3.8 29c9.4 9.4 24.6 9.4 33.9 0L289 89c9.4-9.4 9.4-24.6 0-33.9c-7.9-7.9-19.8-9.1-29-3.8C246 39.2 227.9 32 208 32c-10.3 0-20.2 2-29.2 5.5L163.9 22.6C149.4 8.1 129.7 0 109.3 0C66.6 0 32 34.6 32 77.3V256c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H96V77.3zM32 352v16c0 28.4 12.4 54 32 71.6V480c0 17.7 14.3 32 32 32s32-14.3 32-32V464H384v16c0 17.7 14.3 32 32 32s32-14.3 32-32V439.6c19.6-17.6 32-43.1 32-71.6V352H32z"/></svg>
-                                    <p class="">3</p></div>
-                                    <div class="flex gap-1"><svg class="mt-1" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M288 96c0-17.7 14.3-32 32-32s32 14.3 32 32s14.3 32 32 32s32-14.3 32-32c0-53-43-96-96-96s-96 43-96 96V288H160V264c0-30.9-25.1-56-56-56H56c-13.3 0-24 10.7-24 24s10.7 24 24 24h48c4.4 0 8 3.6 8 8v24H32c-17.7 0-32 14.3-32 32s14.3 32 32 32H256 480c17.7 0 32-14.3 32-32s-14.3-32-32-32H400V264c0-4.4 3.6-8 8-8h56c13.3 0 24-10.7 24-24s-10.7-24-24-24H408c-30.9 0-56 25.1-56 56v24H288V96zM480 416V384H32v32c0 53 43 96 96 96H384c53 0 96-43 96-96z"/></svg>
-                                        <p class="">1</p></div>
-                    </div>
-                    <a href="" class="text-sm hover:underline ">3007, Rue Cherrier</a>
-                    <p class="text-sm hover:underline "><a href="" class="">Two or more storey for sale </a></p> 
-                    <p class="text-sm hover:underline "><a href="" class="">Centris No. 19441707 </a></p> 
-                </div>
-                <div class="col-span-1 "> 
-                    <img src="<?php echo get_template_directory_uri(); ?>/src/images/194417071.jpg" alt="Image" class="w-full">
-                    <h2 class="text-gray-700 hover:text-gray-900 text-xl  py-2">Montréal (L'Île-Bizard/Sainte-Geneviève)</h2>
-                    <p class="text-gray-900 hover:text-gray-700 text-2xl  py-2">$1,488,000</p>
-                    <div class="flex  gap-2 ">
-                        <div class="flex gap-1"><svg class="mt-1" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7 160.2c0 2.7-.2 5.4-.5 8.1V472c0 22.1-17.9 40-40 40H456c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1H416 392c-22.1 0-40-17.9-40-40V448 384c0-17.7-14.3-32-32-32H256c-17.7 0-32 14.3-32 32v64 24c0 22.1-17.9 40-40 40H160 128.1c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2H104c-22.1 0-40-17.9-40-40V360c0-.9 0-1.9 .1-2.8V287.6H32c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z"/></svg>
-                            <p class="">20</p></div>
-                        <div class="flex gap-1"><svg class="mt-1" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M32 32c17.7 0 32 14.3 32 32V320H288V160c0-17.7 14.3-32 32-32H544c53 0 96 43 96 96V448c0 17.7-14.3 32-32 32s-32-14.3-32-32V416H352 320 64v32c0 17.7-14.3 32-32 32s-32-14.3-32-32V64C0 46.3 14.3 32 32 32zm144 96a80 80 0 1 1 0 160 80 80 0 1 1 0-160z"/></svg>
-                                <p class="">5</p></div>
-                        <div class="flex gap-1"><svg class="mt-1" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M96 77.3c0-7.3 5.9-13.3 13.3-13.3c3.5 0 6.9 1.4 9.4 3.9l14.9 14.9C130 91.8 128 101.7 128 112c0 19.9 7.2 38 19.2 52c-5.3 9.2-4 21.1 3.8 29c9.4 9.4 24.6 9.4 33.9 0L289 89c9.4-9.4 9.4-24.6 0-33.9c-7.9-7.9-19.8-9.1-29-3.8C246 39.2 227.9 32 208 32c-10.3 0-20.2 2-29.2 5.5L163.9 22.6C149.4 8.1 129.7 0 109.3 0C66.6 0 32 34.6 32 77.3V256c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H96V77.3zM32 352v16c0 28.4 12.4 54 32 71.6V480c0 17.7 14.3 32 32 32s32-14.3 32-32V464H384v16c0 17.7 14.3 32 32 32s32-14.3 32-32V439.6c19.6-17.6 32-43.1 32-71.6V352H32z"/></svg>
-                                    <p class="">3</p></div>
-                                    <div class="flex gap-1"><svg class="mt-1" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M288 96c0-17.7 14.3-32 32-32s32 14.3 32 32s14.3 32 32 32s32-14.3 32-32c0-53-43-96-96-96s-96 43-96 96V288H160V264c0-30.9-25.1-56-56-56H56c-13.3 0-24 10.7-24 24s10.7 24 24 24h48c4.4 0 8 3.6 8 8v24H32c-17.7 0-32 14.3-32 32s14.3 32 32 32H256 480c17.7 0 32-14.3 32-32s-14.3-32-32-32H400V264c0-4.4 3.6-8 8-8h56c13.3 0 24-10.7 24-24s-10.7-24-24-24H408c-30.9 0-56 25.1-56 56v24H288V96zM480 416V384H32v32c0 53 43 96 96 96H384c53 0 96-43 96-96z"/></svg>
-                                        <p class="">1</p></div>
-                    </div>
-                    <a href="" class="text-sm hover:underline ">3007, Rue Cherrier</a>
-                    <p class="text-sm hover:underline "><a href="" class="">Two or more storey for sale </a></p> 
-                    <p class="text-sm hover:underline "><a href="" class="">Centris No. 19441707 </a></p> 
-                </div>
-                <div class="col-span-1 "> 
-                    <img src="<?php echo get_template_directory_uri(); ?>/src/images/194417071.jpg" alt="Image" class="w-full">
-                    <h2 class="text-gray-700 hover:text-gray-900 text-xl  py-2">Montréal (L'Île-Bizard/Sainte-Geneviève)</h2>
-                    <p class="text-gray-900 hover:text-gray-700 text-2xl  py-2">$1,488,000</p>
-                    <div class="flex  gap-2 ">
-                        <div class="flex gap-1"><svg class="mt-1" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7 160.2c0 2.7-.2 5.4-.5 8.1V472c0 22.1-17.9 40-40 40H456c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1H416 392c-22.1 0-40-17.9-40-40V448 384c0-17.7-14.3-32-32-32H256c-17.7 0-32 14.3-32 32v64 24c0 22.1-17.9 40-40 40H160 128.1c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2H104c-22.1 0-40-17.9-40-40V360c0-.9 0-1.9 .1-2.8V287.6H32c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z"/></svg>
-                            <p class="">20</p></div>
-                        <div class="flex gap-1"><svg class="mt-1" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M32 32c17.7 0 32 14.3 32 32V320H288V160c0-17.7 14.3-32 32-32H544c53 0 96 43 96 96V448c0 17.7-14.3 32-32 32s-32-14.3-32-32V416H352 320 64v32c0 17.7-14.3 32-32 32s-32-14.3-32-32V64C0 46.3 14.3 32 32 32zm144 96a80 80 0 1 1 0 160 80 80 0 1 1 0-160z"/></svg>
-                                <p class="">5</p></div>
-                        <div class="flex gap-1"><svg class="mt-1" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M96 77.3c0-7.3 5.9-13.3 13.3-13.3c3.5 0 6.9 1.4 9.4 3.9l14.9 14.9C130 91.8 128 101.7 128 112c0 19.9 7.2 38 19.2 52c-5.3 9.2-4 21.1 3.8 29c9.4 9.4 24.6 9.4 33.9 0L289 89c9.4-9.4 9.4-24.6 0-33.9c-7.9-7.9-19.8-9.1-29-3.8C246 39.2 227.9 32 208 32c-10.3 0-20.2 2-29.2 5.5L163.9 22.6C149.4 8.1 129.7 0 109.3 0C66.6 0 32 34.6 32 77.3V256c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H96V77.3zM32 352v16c0 28.4 12.4 54 32 71.6V480c0 17.7 14.3 32 32 32s32-14.3 32-32V464H384v16c0 17.7 14.3 32 32 32s32-14.3 32-32V439.6c19.6-17.6 32-43.1 32-71.6V352H32z"/></svg>
-                                    <p class="">3</p></div>
-                                    <div class="flex gap-1"><svg class="mt-1" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M288 96c0-17.7 14.3-32 32-32s32 14.3 32 32s14.3 32 32 32s32-14.3 32-32c0-53-43-96-96-96s-96 43-96 96V288H160V264c0-30.9-25.1-56-56-56H56c-13.3 0-24 10.7-24 24s10.7 24 24 24h48c4.4 0 8 3.6 8 8v24H32c-17.7 0-32 14.3-32 32s14.3 32 32 32H256 480c17.7 0 32-14.3 32-32s-14.3-32-32-32H400V264c0-4.4 3.6-8 8-8h56c13.3 0 24-10.7 24-24s-10.7-24-24-24H408c-30.9 0-56 25.1-56 56v24H288V96zM480 416V384H32v32c0 53 43 96 96 96H384c53 0 96-43 96-96z"/></svg>
-                                        <p class="">1</p></div>
-                    </div>
-                    <a href="" class="text-sm hover:underline ">3007, Rue Cherrier</a>
-                    <p class="text-sm hover:underline "><a href="" class="">Two or more storey for sale </a></p> 
-                    <p class="text-sm hover:underline "><a href="" class="">Centris No. 19441707 </a></p> 
-                </div>
-                <div class="col-span-1 "> 
-                    <img src="<?php echo get_template_directory_uri(); ?>/src/images/194417071.jpg" alt="Image" class="w-full">
-                    <h2 class="text-gray-700 hover:text-gray-900 text-xl  py-2">Montréal (L'Île-Bizard/Sainte-Geneviève)</h2>
-                    <p class="text-gray-900 hover:text-gray-700 text-2xl  py-2">$1,488,000</p>
-                    <div class="flex  gap-2 ">
-                        <div class="flex gap-1"><svg class="mt-1" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7 160.2c0 2.7-.2 5.4-.5 8.1V472c0 22.1-17.9 40-40 40H456c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1H416 392c-22.1 0-40-17.9-40-40V448 384c0-17.7-14.3-32-32-32H256c-17.7 0-32 14.3-32 32v64 24c0 22.1-17.9 40-40 40H160 128.1c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2H104c-22.1 0-40-17.9-40-40V360c0-.9 0-1.9 .1-2.8V287.6H32c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z"/></svg>
-                            <p class="">20</p></div>
-                        <div class="flex gap-1"><svg class="mt-1" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M32 32c17.7 0 32 14.3 32 32V320H288V160c0-17.7 14.3-32 32-32H544c53 0 96 43 96 96V448c0 17.7-14.3 32-32 32s-32-14.3-32-32V416H352 320 64v32c0 17.7-14.3 32-32 32s-32-14.3-32-32V64C0 46.3 14.3 32 32 32zm144 96a80 80 0 1 1 0 160 80 80 0 1 1 0-160z"/></svg>
-                                <p class="">5</p></div>
-                        <div class="flex gap-1"><svg class="mt-1" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M96 77.3c0-7.3 5.9-13.3 13.3-13.3c3.5 0 6.9 1.4 9.4 3.9l14.9 14.9C130 91.8 128 101.7 128 112c0 19.9 7.2 38 19.2 52c-5.3 9.2-4 21.1 3.8 29c9.4 9.4 24.6 9.4 33.9 0L289 89c9.4-9.4 9.4-24.6 0-33.9c-7.9-7.9-19.8-9.1-29-3.8C246 39.2 227.9 32 208 32c-10.3 0-20.2 2-29.2 5.5L163.9 22.6C149.4 8.1 129.7 0 109.3 0C66.6 0 32 34.6 32 77.3V256c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H96V77.3zM32 352v16c0 28.4 12.4 54 32 71.6V480c0 17.7 14.3 32 32 32s32-14.3 32-32V464H384v16c0 17.7 14.3 32 32 32s32-14.3 32-32V439.6c19.6-17.6 32-43.1 32-71.6V352H32z"/></svg>
-                                    <p class="">3</p></div>
-                                    <div class="flex gap-1"><svg class="mt-1" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M288 96c0-17.7 14.3-32 32-32s32 14.3 32 32s14.3 32 32 32s32-14.3 32-32c0-53-43-96-96-96s-96 43-96 96V288H160V264c0-30.9-25.1-56-56-56H56c-13.3 0-24 10.7-24 24s10.7 24 24 24h48c4.4 0 8 3.6 8 8v24H32c-17.7 0-32 14.3-32 32s14.3 32 32 32H256 480c17.7 0 32-14.3 32-32s-14.3-32-32-32H400V264c0-4.4 3.6-8 8-8h56c13.3 0 24-10.7 24-24s-10.7-24-24-24H408c-30.9 0-56 25.1-56 56v24H288V96zM480 416V384H32v32c0 53 43 96 96 96H384c53 0 96-43 96-96z"/></svg>
-                                        <p class="">1</p></div>
-                    </div>
-                    <a href="" class="text-sm hover:underline ">3007, Rue Cherrier</a>
-                    <p class="text-sm hover:underline "><a href="" class="">Two or more storey for sale </a></p> 
-                    <p class="text-sm hover:underline "><a href="" class="">Centris No. 19441707 </a></p> 
-                </div>
-                <div class="col-span-1 "> 
-                    <img src="<?php echo get_template_directory_uri(); ?>/src/images/194417071.jpg" alt="Image" class="w-full">
-                    <h2 class="text-gray-700 hover:text-gray-900 text-xl  py-2">Montréal (L'Île-Bizard/Sainte-Geneviève)</h2>
-                    <p class="text-gray-900 hover:text-gray-700 text-2xl  py-2">$1,488,000</p>
-                    <div class="flex  gap-2 ">
-                        <div class="flex gap-1"><svg class="mt-1" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7 160.2c0 2.7-.2 5.4-.5 8.1V472c0 22.1-17.9 40-40 40H456c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1H416 392c-22.1 0-40-17.9-40-40V448 384c0-17.7-14.3-32-32-32H256c-17.7 0-32 14.3-32 32v64 24c0 22.1-17.9 40-40 40H160 128.1c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2H104c-22.1 0-40-17.9-40-40V360c0-.9 0-1.9 .1-2.8V287.6H32c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z"/></svg>
-                            <p class="">20</p></div>
-                        <div class="flex gap-1"><svg class="mt-1" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M32 32c17.7 0 32 14.3 32 32V320H288V160c0-17.7 14.3-32 32-32H544c53 0 96 43 96 96V448c0 17.7-14.3 32-32 32s-32-14.3-32-32V416H352 320 64v32c0 17.7-14.3 32-32 32s-32-14.3-32-32V64C0 46.3 14.3 32 32 32zm144 96a80 80 0 1 1 0 160 80 80 0 1 1 0-160z"/></svg>
-                                <p class="">5</p></div>
-                        <div class="flex gap-1"><svg class="mt-1" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M96 77.3c0-7.3 5.9-13.3 13.3-13.3c3.5 0 6.9 1.4 9.4 3.9l14.9 14.9C130 91.8 128 101.7 128 112c0 19.9 7.2 38 19.2 52c-5.3 9.2-4 21.1 3.8 29c9.4 9.4 24.6 9.4 33.9 0L289 89c9.4-9.4 9.4-24.6 0-33.9c-7.9-7.9-19.8-9.1-29-3.8C246 39.2 227.9 32 208 32c-10.3 0-20.2 2-29.2 5.5L163.9 22.6C149.4 8.1 129.7 0 109.3 0C66.6 0 32 34.6 32 77.3V256c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H96V77.3zM32 352v16c0 28.4 12.4 54 32 71.6V480c0 17.7 14.3 32 32 32s32-14.3 32-32V464H384v16c0 17.7 14.3 32 32 32s32-14.3 32-32V439.6c19.6-17.6 32-43.1 32-71.6V352H32z"/></svg>
-                                    <p class="">3</p></div>
-                                    <div class="flex gap-1"><svg class="mt-1" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M288 96c0-17.7 14.3-32 32-32s32 14.3 32 32s14.3 32 32 32s32-14.3 32-32c0-53-43-96-96-96s-96 43-96 96V288H160V264c0-30.9-25.1-56-56-56H56c-13.3 0-24 10.7-24 24s10.7 24 24 24h48c4.4 0 8 3.6 8 8v24H32c-17.7 0-32 14.3-32 32s14.3 32 32 32H256 480c17.7 0 32-14.3 32-32s-14.3-32-32-32H400V264c0-4.4 3.6-8 8-8h56c13.3 0 24-10.7 24-24s-10.7-24-24-24H408c-30.9 0-56 25.1-56 56v24H288V96zM480 416V384H32v32c0 53 43 96 96 96H384c53 0 96-43 96-96z"/></svg>
-                                        <p class="">1</p></div>
-                    </div>
-                    <a href="" class="text-sm hover:underline ">3007, Rue Cherrier</a>
-                    <p class="text-sm hover:underline "><a href="" class="">Two or more storey for sale </a></p> 
-                    <p class="text-sm hover:underline "><a href="" class="">Centris No. 19441707 </a></p> 
-                </div>
-                <div class="col-span-1 "> 
-                    <img src="<?php echo get_template_directory_uri(); ?>/src/images/194417071.jpg" alt="Image" class="w-full">
-                    <h2 class="text-gray-700 hover:text-gray-900 text-xl  py-2">Montréal (L'Île-Bizard/Sainte-Geneviève)</h2>
-                    <p class="text-gray-900 hover:text-gray-700 text-2xl  py-2">$1,488,000</p>
-                    <div class="flex  gap-2 ">
-                        <div class="flex gap-1"><svg class="mt-1" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7 160.2c0 2.7-.2 5.4-.5 8.1V472c0 22.1-17.9 40-40 40H456c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1H416 392c-22.1 0-40-17.9-40-40V448 384c0-17.7-14.3-32-32-32H256c-17.7 0-32 14.3-32 32v64 24c0 22.1-17.9 40-40 40H160 128.1c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2H104c-22.1 0-40-17.9-40-40V360c0-.9 0-1.9 .1-2.8V287.6H32c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z"/></svg>
-                            <p class="">20</p></div>
-                        <div class="flex gap-1"><svg class="mt-1" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M32 32c17.7 0 32 14.3 32 32V320H288V160c0-17.7 14.3-32 32-32H544c53 0 96 43 96 96V448c0 17.7-14.3 32-32 32s-32-14.3-32-32V416H352 320 64v32c0 17.7-14.3 32-32 32s-32-14.3-32-32V64C0 46.3 14.3 32 32 32zm144 96a80 80 0 1 1 0 160 80 80 0 1 1 0-160z"/></svg>
-                                <p class="">5</p></div>
-                        <div class="flex gap-1"><svg class="mt-1" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M96 77.3c0-7.3 5.9-13.3 13.3-13.3c3.5 0 6.9 1.4 9.4 3.9l14.9 14.9C130 91.8 128 101.7 128 112c0 19.9 7.2 38 19.2 52c-5.3 9.2-4 21.1 3.8 29c9.4 9.4 24.6 9.4 33.9 0L289 89c9.4-9.4 9.4-24.6 0-33.9c-7.9-7.9-19.8-9.1-29-3.8C246 39.2 227.9 32 208 32c-10.3 0-20.2 2-29.2 5.5L163.9 22.6C149.4 8.1 129.7 0 109.3 0C66.6 0 32 34.6 32 77.3V256c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H96V77.3zM32 352v16c0 28.4 12.4 54 32 71.6V480c0 17.7 14.3 32 32 32s32-14.3 32-32V464H384v16c0 17.7 14.3 32 32 32s32-14.3 32-32V439.6c19.6-17.6 32-43.1 32-71.6V352H32z"/></svg>
-                                    <p class="">3</p></div>
-                                    <div class="flex gap-1"><svg class="mt-1" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M288 96c0-17.7 14.3-32 32-32s32 14.3 32 32s14.3 32 32 32s32-14.3 32-32c0-53-43-96-96-96s-96 43-96 96V288H160V264c0-30.9-25.1-56-56-56H56c-13.3 0-24 10.7-24 24s10.7 24 24 24h48c4.4 0 8 3.6 8 8v24H32c-17.7 0-32 14.3-32 32s14.3 32 32 32H256 480c17.7 0 32-14.3 32-32s-14.3-32-32-32H400V264c0-4.4 3.6-8 8-8h56c13.3 0 24-10.7 24-24s-10.7-24-24-24H408c-30.9 0-56 25.1-56 56v24H288V96zM480 416V384H32v32c0 53 43 96 96 96H384c53 0 96-43 96-96z"/></svg>
-                                        <p class="">1</p></div>
-                    </div>
-                    <a href="" class="text-sm hover:underline ">3007, Rue Cherrier</a>
-                    <p class="text-sm hover:underline "><a href="" class="">Two or more storey for sale </a></p> 
-                    <p class="text-sm hover:underline "><a href="" class="">Centris No. 19441707 </a></p> 
-                </div>
-                <div class="col-span-1 "> 
-                    <img src="<?php echo get_template_directory_uri(); ?>/src/images/194417071.jpg" alt="Image" class="w-full">
-                    <h2 class="text-gray-700 hover:text-gray-900 text-xl  py-2">Montréal (L'Île-Bizard/Sainte-Geneviève)</h2>
-                    <p class="text-gray-900 hover:text-gray-700 text-2xl  py-2">$1,488,000</p>
-                    <div class="flex  gap-2 ">
-                        <div class="flex gap-1"><svg class="mt-1" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7 160.2c0 2.7-.2 5.4-.5 8.1V472c0 22.1-17.9 40-40 40H456c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1H416 392c-22.1 0-40-17.9-40-40V448 384c0-17.7-14.3-32-32-32H256c-17.7 0-32 14.3-32 32v64 24c0 22.1-17.9 40-40 40H160 128.1c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2H104c-22.1 0-40-17.9-40-40V360c0-.9 0-1.9 .1-2.8V287.6H32c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z"/></svg>
-                            <p class="">20</p></div>
-                        <div class="flex gap-1"><svg class="mt-1" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M32 32c17.7 0 32 14.3 32 32V320H288V160c0-17.7 14.3-32 32-32H544c53 0 96 43 96 96V448c0 17.7-14.3 32-32 32s-32-14.3-32-32V416H352 320 64v32c0 17.7-14.3 32-32 32s-32-14.3-32-32V64C0 46.3 14.3 32 32 32zm144 96a80 80 0 1 1 0 160 80 80 0 1 1 0-160z"/></svg>
-                                <p class="">5</p></div>
-                        <div class="flex gap-1"><svg class="mt-1" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M96 77.3c0-7.3 5.9-13.3 13.3-13.3c3.5 0 6.9 1.4 9.4 3.9l14.9 14.9C130 91.8 128 101.7 128 112c0 19.9 7.2 38 19.2 52c-5.3 9.2-4 21.1 3.8 29c9.4 9.4 24.6 9.4 33.9 0L289 89c9.4-9.4 9.4-24.6 0-33.9c-7.9-7.9-19.8-9.1-29-3.8C246 39.2 227.9 32 208 32c-10.3 0-20.2 2-29.2 5.5L163.9 22.6C149.4 8.1 129.7 0 109.3 0C66.6 0 32 34.6 32 77.3V256c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H96V77.3zM32 352v16c0 28.4 12.4 54 32 71.6V480c0 17.7 14.3 32 32 32s32-14.3 32-32V464H384v16c0 17.7 14.3 32 32 32s32-14.3 32-32V439.6c19.6-17.6 32-43.1 32-71.6V352H32z"/></svg>
-                                    <p class="">3</p></div>
-                                    <div class="flex gap-1"><svg class="mt-1" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M288 96c0-17.7 14.3-32 32-32s32 14.3 32 32s14.3 32 32 32s32-14.3 32-32c0-53-43-96-96-96s-96 43-96 96V288H160V264c0-30.9-25.1-56-56-56H56c-13.3 0-24 10.7-24 24s10.7 24 24 24h48c4.4 0 8 3.6 8 8v24H32c-17.7 0-32 14.3-32 32s14.3 32 32 32H256 480c17.7 0 32-14.3 32-32s-14.3-32-32-32H400V264c0-4.4 3.6-8 8-8h56c13.3 0 24-10.7 24-24s-10.7-24-24-24H408c-30.9 0-56 25.1-56 56v24H288V96zM480 416V384H32v32c0 53 43 96 96 96H384c53 0 96-43 96-96z"/></svg>
-                                        <p class="">1</p></div>
-                    </div>
-                    <a href="" class="text-sm hover:underline ">3007, Rue Cherrier</a>
-                    <p class="text-sm hover:underline "><a href="" class="">Two or more storey for sale </a></p> 
-                    <p class="text-sm hover:underline "><a href="" class="">Centris No. 19441707 </a></p> 
-                </div>
-                <div class="col-span-1 "> 
-                    <img src="<?php echo get_template_directory_uri(); ?>/src/images/194417071.jpg" alt="Image" class="w-full">
-                    <h2 class="text-gray-700 hover:text-gray-900 text-xl  py-2">Montréal (L'Île-Bizard/Sainte-Geneviève)</h2>
-                    <p class="text-gray-900 hover:text-gray-700 text-2xl  py-2">$1,488,000</p>
-                    <div class="flex  gap-2 ">
-                        <div class="flex gap-1"><svg class="mt-1" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7 160.2c0 2.7-.2 5.4-.5 8.1V472c0 22.1-17.9 40-40 40H456c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1H416 392c-22.1 0-40-17.9-40-40V448 384c0-17.7-14.3-32-32-32H256c-17.7 0-32 14.3-32 32v64 24c0 22.1-17.9 40-40 40H160 128.1c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2H104c-22.1 0-40-17.9-40-40V360c0-.9 0-1.9 .1-2.8V287.6H32c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z"/></svg>
-                            <p class="">20</p></div>
-                        <div class="flex gap-1"><svg class="mt-1" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M32 32c17.7 0 32 14.3 32 32V320H288V160c0-17.7 14.3-32 32-32H544c53 0 96 43 96 96V448c0 17.7-14.3 32-32 32s-32-14.3-32-32V416H352 320 64v32c0 17.7-14.3 32-32 32s-32-14.3-32-32V64C0 46.3 14.3 32 32 32zm144 96a80 80 0 1 1 0 160 80 80 0 1 1 0-160z"/></svg>
-                                <p class="">5</p></div>
-                        <div class="flex gap-1"><svg class="mt-1" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M96 77.3c0-7.3 5.9-13.3 13.3-13.3c3.5 0 6.9 1.4 9.4 3.9l14.9 14.9C130 91.8 128 101.7 128 112c0 19.9 7.2 38 19.2 52c-5.3 9.2-4 21.1 3.8 29c9.4 9.4 24.6 9.4 33.9 0L289 89c9.4-9.4 9.4-24.6 0-33.9c-7.9-7.9-19.8-9.1-29-3.8C246 39.2 227.9 32 208 32c-10.3 0-20.2 2-29.2 5.5L163.9 22.6C149.4 8.1 129.7 0 109.3 0C66.6 0 32 34.6 32 77.3V256c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H96V77.3zM32 352v16c0 28.4 12.4 54 32 71.6V480c0 17.7 14.3 32 32 32s32-14.3 32-32V464H384v16c0 17.7 14.3 32 32 32s32-14.3 32-32V439.6c19.6-17.6 32-43.1 32-71.6V352H32z"/></svg>
-                                    <p class="">3</p></div>
-                                    <div class="flex gap-1"><svg class="mt-1" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M288 96c0-17.7 14.3-32 32-32s32 14.3 32 32s14.3 32 32 32s32-14.3 32-32c0-53-43-96-96-96s-96 43-96 96V288H160V264c0-30.9-25.1-56-56-56H56c-13.3 0-24 10.7-24 24s10.7 24 24 24h48c4.4 0 8 3.6 8 8v24H32c-17.7 0-32 14.3-32 32s14.3 32 32 32H256 480c17.7 0 32-14.3 32-32s-14.3-32-32-32H400V264c0-4.4 3.6-8 8-8h56c13.3 0 24-10.7 24-24s-10.7-24-24-24H408c-30.9 0-56 25.1-56 56v24H288V96zM480 416V384H32v32c0 53 43 96 96 96H384c53 0 96-43 96-96z"/></svg>
-                                        <p class="">1</p></div>
-                    </div>
-                    <a href="" class="text-sm hover:underline ">3007, Rue Cherrier</a>
-                    <p class="text-sm hover:underline "><a href="" class="">Two or more storey for sale </a></p> 
-                    <p class="text-sm hover:underline "><a href="" class="">Centris No. 19441707 </a></p> 
-                </div>
-                <div class="col-span-1 "> 
-                    <img src="<?php echo get_template_directory_uri(); ?>/src/images/194417071.jpg" alt="Image" class="w-full">
-                    <h2 class="text-gray-700 hover:text-gray-900 text-xl  py-2">Montréal (L'Île-Bizard/Sainte-Geneviève)</h2>
-                    <p class="text-gray-900 hover:text-gray-700 text-2xl  py-2">$1,488,000</p>
-                    <div class="flex  gap-2 ">
-                        <div class="flex gap-1"><svg class="mt-1" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7 160.2c0 2.7-.2 5.4-.5 8.1V472c0 22.1-17.9 40-40 40H456c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1H416 392c-22.1 0-40-17.9-40-40V448 384c0-17.7-14.3-32-32-32H256c-17.7 0-32 14.3-32 32v64 24c0 22.1-17.9 40-40 40H160 128.1c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2H104c-22.1 0-40-17.9-40-40V360c0-.9 0-1.9 .1-2.8V287.6H32c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z"/></svg>
-                            <p class="">20</p></div>
-                        <div class="flex gap-1"><svg class="mt-1" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M32 32c17.7 0 32 14.3 32 32V320H288V160c0-17.7 14.3-32 32-32H544c53 0 96 43 96 96V448c0 17.7-14.3 32-32 32s-32-14.3-32-32V416H352 320 64v32c0 17.7-14.3 32-32 32s-32-14.3-32-32V64C0 46.3 14.3 32 32 32zm144 96a80 80 0 1 1 0 160 80 80 0 1 1 0-160z"/></svg>
-                                <p class="">5</p></div>
-                        <div class="flex gap-1"><svg class="mt-1" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M96 77.3c0-7.3 5.9-13.3 13.3-13.3c3.5 0 6.9 1.4 9.4 3.9l14.9 14.9C130 91.8 128 101.7 128 112c0 19.9 7.2 38 19.2 52c-5.3 9.2-4 21.1 3.8 29c9.4 9.4 24.6 9.4 33.9 0L289 89c9.4-9.4 9.4-24.6 0-33.9c-7.9-7.9-19.8-9.1-29-3.8C246 39.2 227.9 32 208 32c-10.3 0-20.2 2-29.2 5.5L163.9 22.6C149.4 8.1 129.7 0 109.3 0C66.6 0 32 34.6 32 77.3V256c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H96V77.3zM32 352v16c0 28.4 12.4 54 32 71.6V480c0 17.7 14.3 32 32 32s32-14.3 32-32V464H384v16c0 17.7 14.3 32 32 32s32-14.3 32-32V439.6c19.6-17.6 32-43.1 32-71.6V352H32z"/></svg>
-                                    <p class="">3</p></div>
-                                    <div class="flex gap-1"><svg class="mt-1" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M288 96c0-17.7 14.3-32 32-32s32 14.3 32 32s14.3 32 32 32s32-14.3 32-32c0-53-43-96-96-96s-96 43-96 96V288H160V264c0-30.9-25.1-56-56-56H56c-13.3 0-24 10.7-24 24s10.7 24 24 24h48c4.4 0 8 3.6 8 8v24H32c-17.7 0-32 14.3-32 32s14.3 32 32 32H256 480c17.7 0 32-14.3 32-32s-14.3-32-32-32H400V264c0-4.4 3.6-8 8-8h56c13.3 0 24-10.7 24-24s-10.7-24-24-24H408c-30.9 0-56 25.1-56 56v24H288V96zM480 416V384H32v32c0 53 43 96 96 96H384c53 0 96-43 96-96z"/></svg>
-                                        <p class="">1</p></div>
-                    </div>
-                    <a href="" class="text-sm hover:underline ">3007, Rue Cherrier</a>
-                    <p class="text-sm hover:underline "><a href="" class="">Two or more storey for sale </a></p> 
-                    <p class="text-sm hover:underline "><a href="" class="">Centris No. 19441707 </a></p> 
-                </div>
-                <div class="col-span-1 "> 
-                    <img src="<?php echo get_template_directory_uri(); ?>/src/images/194417071.jpg" alt="Image" class="w-full">
-                    <h2 class="text-gray-700 hover:text-gray-900 text-xl  py-2">Montréal (L'Île-Bizard/Sainte-Geneviève)</h2>
-                    <p class="text-gray-900 hover:text-gray-700 text-2xl  py-2">$1,488,000</p>
-                    <div class="flex  gap-2 ">
-                        <div class="flex gap-1"><svg class="mt-1" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7 160.2c0 2.7-.2 5.4-.5 8.1V472c0 22.1-17.9 40-40 40H456c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1H416 392c-22.1 0-40-17.9-40-40V448 384c0-17.7-14.3-32-32-32H256c-17.7 0-32 14.3-32 32v64 24c0 22.1-17.9 40-40 40H160 128.1c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2H104c-22.1 0-40-17.9-40-40V360c0-.9 0-1.9 .1-2.8V287.6H32c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z"/></svg>
-                            <p class="">20</p></div>
-                        <div class="flex gap-1"><svg class="mt-1" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M32 32c17.7 0 32 14.3 32 32V320H288V160c0-17.7 14.3-32 32-32H544c53 0 96 43 96 96V448c0 17.7-14.3 32-32 32s-32-14.3-32-32V416H352 320 64v32c0 17.7-14.3 32-32 32s-32-14.3-32-32V64C0 46.3 14.3 32 32 32zm144 96a80 80 0 1 1 0 160 80 80 0 1 1 0-160z"/></svg>
-                                <p class="">5</p></div>
-                        <div class="flex gap-1"><svg class="mt-1" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M96 77.3c0-7.3 5.9-13.3 13.3-13.3c3.5 0 6.9 1.4 9.4 3.9l14.9 14.9C130 91.8 128 101.7 128 112c0 19.9 7.2 38 19.2 52c-5.3 9.2-4 21.1 3.8 29c9.4 9.4 24.6 9.4 33.9 0L289 89c9.4-9.4 9.4-24.6 0-33.9c-7.9-7.9-19.8-9.1-29-3.8C246 39.2 227.9 32 208 32c-10.3 0-20.2 2-29.2 5.5L163.9 22.6C149.4 8.1 129.7 0 109.3 0C66.6 0 32 34.6 32 77.3V256c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H96V77.3zM32 352v16c0 28.4 12.4 54 32 71.6V480c0 17.7 14.3 32 32 32s32-14.3 32-32V464H384v16c0 17.7 14.3 32 32 32s32-14.3 32-32V439.6c19.6-17.6 32-43.1 32-71.6V352H32z"/></svg>
-                                    <p class="">3</p></div>
-                                    <div class="flex gap-1"><svg class="mt-1" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M288 96c0-17.7 14.3-32 32-32s32 14.3 32 32s14.3 32 32 32s32-14.3 32-32c0-53-43-96-96-96s-96 43-96 96V288H160V264c0-30.9-25.1-56-56-56H56c-13.3 0-24 10.7-24 24s10.7 24 24 24h48c4.4 0 8 3.6 8 8v24H32c-17.7 0-32 14.3-32 32s14.3 32 32 32H256 480c17.7 0 32-14.3 32-32s-14.3-32-32-32H400V264c0-4.4 3.6-8 8-8h56c13.3 0 24-10.7 24-24s-10.7-24-24-24H408c-30.9 0-56 25.1-56 56v24H288V96zM480 416V384H32v32c0 53 43 96 96 96H384c53 0 96-43 96-96z"/></svg>
-                                        <p class="">1</p></div>
-                    </div>
-                    <a href="" class="text-sm hover:underline ">3007, Rue Cherrier</a>
-                    <p class="text-sm hover:underline "><a href="" class="">Two or more storey for sale </a></p> 
-                    <p class="text-sm hover:underline "><a href="" class="">Centris No. 19441707 </a></p> 
-                </div>
-                <div class="col-span-1 "> 
-                    <img src="<?php echo get_template_directory_uri(); ?>/src/images/194417071.jpg" alt="Image" class="w-full">
-                    <h2 class="text-gray-700 hover:text-gray-900 text-xl  py-2">Montréal (L'Île-Bizard/Sainte-Geneviève)</h2>
-                    <p class="text-gray-900 hover:text-gray-700 text-2xl  py-2">$1,488,000</p>
-                    <div class="flex  gap-2 ">
-                        <div class="flex gap-1"><svg class="mt-1" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7 160.2c0 2.7-.2 5.4-.5 8.1V472c0 22.1-17.9 40-40 40H456c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1H416 392c-22.1 0-40-17.9-40-40V448 384c0-17.7-14.3-32-32-32H256c-17.7 0-32 14.3-32 32v64 24c0 22.1-17.9 40-40 40H160 128.1c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2H104c-22.1 0-40-17.9-40-40V360c0-.9 0-1.9 .1-2.8V287.6H32c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z"/></svg>
-                            <p class="">20</p></div>
-                        <div class="flex gap-1"><svg class="mt-1" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M32 32c17.7 0 32 14.3 32 32V320H288V160c0-17.7 14.3-32 32-32H544c53 0 96 43 96 96V448c0 17.7-14.3 32-32 32s-32-14.3-32-32V416H352 320 64v32c0 17.7-14.3 32-32 32s-32-14.3-32-32V64C0 46.3 14.3 32 32 32zm144 96a80 80 0 1 1 0 160 80 80 0 1 1 0-160z"/></svg>
-                                <p class="">5</p></div>
-                        <div class="flex gap-1"><svg class="mt-1" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M96 77.3c0-7.3 5.9-13.3 13.3-13.3c3.5 0 6.9 1.4 9.4 3.9l14.9 14.9C130 91.8 128 101.7 128 112c0 19.9 7.2 38 19.2 52c-5.3 9.2-4 21.1 3.8 29c9.4 9.4 24.6 9.4 33.9 0L289 89c9.4-9.4 9.4-24.6 0-33.9c-7.9-7.9-19.8-9.1-29-3.8C246 39.2 227.9 32 208 32c-10.3 0-20.2 2-29.2 5.5L163.9 22.6C149.4 8.1 129.7 0 109.3 0C66.6 0 32 34.6 32 77.3V256c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H96V77.3zM32 352v16c0 28.4 12.4 54 32 71.6V480c0 17.7 14.3 32 32 32s32-14.3 32-32V464H384v16c0 17.7 14.3 32 32 32s32-14.3 32-32V439.6c19.6-17.6 32-43.1 32-71.6V352H32z"/></svg>
-                                    <p class="">3</p></div>
-                                    <div class="flex gap-1"><svg class="mt-1" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M288 96c0-17.7 14.3-32 32-32s32 14.3 32 32s14.3 32 32 32s32-14.3 32-32c0-53-43-96-96-96s-96 43-96 96V288H160V264c0-30.9-25.1-56-56-56H56c-13.3 0-24 10.7-24 24s10.7 24 24 24h48c4.4 0 8 3.6 8 8v24H32c-17.7 0-32 14.3-32 32s14.3 32 32 32H256 480c17.7 0 32-14.3 32-32s-14.3-32-32-32H400V264c0-4.4 3.6-8 8-8h56c13.3 0 24-10.7 24-24s-10.7-24-24-24H408c-30.9 0-56 25.1-56 56v24H288V96zM480 416V384H32v32c0 53 43 96 96 96H384c53 0 96-43 96-96z"/></svg>
-                                        <p class="">1</p></div>
-                    </div>
-                    <a href="" class="text-sm hover:underline ">3007, Rue Cherrier</a>
-                    <p class="text-sm hover:underline "><a href="" class="">Two or more storey for sale </a></p> 
-                    <p class="text-sm hover:underline "><a href="" class="">Centris No. 19441707 </a></p> 
-                </div>
-                <div class="col-span-1 "> 
-                    <img src="<?php echo get_template_directory_uri(); ?>/src/images/194417071.jpg" alt="Image" class="w-full">
-                    <h2 class="text-gray-700 hover:text-gray-900 text-xl  py-2">Montréal (L'Île-Bizard/Sainte-Geneviève)</h2>
-                    <p class="text-gray-900 hover:text-gray-700 text-2xl  py-2">$1,488,000</p>
-                    <div class="flex  gap-2 ">
-                        <div class="flex gap-1"><svg class="mt-1" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7 160.2c0 2.7-.2 5.4-.5 8.1V472c0 22.1-17.9 40-40 40H456c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1H416 392c-22.1 0-40-17.9-40-40V448 384c0-17.7-14.3-32-32-32H256c-17.7 0-32 14.3-32 32v64 24c0 22.1-17.9 40-40 40H160 128.1c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2H104c-22.1 0-40-17.9-40-40V360c0-.9 0-1.9 .1-2.8V287.6H32c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z"/></svg>
-                            <p class="">20</p></div>
-                        <div class="flex gap-1"><svg class="mt-1" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M32 32c17.7 0 32 14.3 32 32V320H288V160c0-17.7 14.3-32 32-32H544c53 0 96 43 96 96V448c0 17.7-14.3 32-32 32s-32-14.3-32-32V416H352 320 64v32c0 17.7-14.3 32-32 32s-32-14.3-32-32V64C0 46.3 14.3 32 32 32zm144 96a80 80 0 1 1 0 160 80 80 0 1 1 0-160z"/></svg>
-                                <p class="">5</p></div>
-                        <div class="flex gap-1"><svg class="mt-1" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M96 77.3c0-7.3 5.9-13.3 13.3-13.3c3.5 0 6.9 1.4 9.4 3.9l14.9 14.9C130 91.8 128 101.7 128 112c0 19.9 7.2 38 19.2 52c-5.3 9.2-4 21.1 3.8 29c9.4 9.4 24.6 9.4 33.9 0L289 89c9.4-9.4 9.4-24.6 0-33.9c-7.9-7.9-19.8-9.1-29-3.8C246 39.2 227.9 32 208 32c-10.3 0-20.2 2-29.2 5.5L163.9 22.6C149.4 8.1 129.7 0 109.3 0C66.6 0 32 34.6 32 77.3V256c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H96V77.3zM32 352v16c0 28.4 12.4 54 32 71.6V480c0 17.7 14.3 32 32 32s32-14.3 32-32V464H384v16c0 17.7 14.3 32 32 32s32-14.3 32-32V439.6c19.6-17.6 32-43.1 32-71.6V352H32z"/></svg>
-                                    <p class="">3</p></div>
-                                    <div class="flex gap-1"><svg class="mt-1" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M288 96c0-17.7 14.3-32 32-32s32 14.3 32 32s14.3 32 32 32s32-14.3 32-32c0-53-43-96-96-96s-96 43-96 96V288H160V264c0-30.9-25.1-56-56-56H56c-13.3 0-24 10.7-24 24s10.7 24 24 24h48c4.4 0 8 3.6 8 8v24H32c-17.7 0-32 14.3-32 32s14.3 32 32 32H256 480c17.7 0 32-14.3 32-32s-14.3-32-32-32H400V264c0-4.4 3.6-8 8-8h56c13.3 0 24-10.7 24-24s-10.7-24-24-24H408c-30.9 0-56 25.1-56 56v24H288V96zM480 416V384H32v32c0 53 43 96 96 96H384c53 0 96-43 96-96z"/></svg>
-                                        <p class="">1</p></div>
-                    </div>
-                    <a href="" class="text-sm hover:underline ">3007, Rue Cherrier</a>
-                    <p class="text-sm hover:underline "><a href="" class="">Two or more storey for sale </a></p> 
-                    <p class="text-sm hover:underline "><a href="" class="">Centris No. 19441707 </a></p> 
-                </div>
-               
-                
-            </div>
-        </section>
-            
-        
-        
-        
-    </div>  
+          </div>
 
 <?php get_footer(); ?>
