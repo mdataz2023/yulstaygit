@@ -7,7 +7,7 @@ get_header();
 ?>
 
         <div class="h-full w-full pr-12">
-            <div class="">
+            <div class="overflow-y-scroll scroll-style">
               <div class="flex pb-7 overflow-hidden gap-1">
                 <img class="w-[500px]" src="<?php echo get_template_directory_uri(); ?>/assest/img/10578486-1-327342585.jpg" alt="">
                 <img class="w-[500px]" src="<?php echo get_template_directory_uri(); ?>/assest/img/10578486-1-327342585.jpg" alt="">
