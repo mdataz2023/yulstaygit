@@ -32,10 +32,10 @@ get_header();
         <div class="h-full w-full pr-12">
             <div class="overflow-y-scroll scroll-style">
               <div class="flex pb-7 overflow-hidden gap-1">
-                <img class="w-[500px]" src="<?php echo get_template_directory_uri(); ?>/assets/img/10578486-1-327342585.jpg" alt="">
-                <img class="w-[500px]" src="<?php echo get_template_directory_uri(); ?>/assets/img/10578486-1-327342585.jpg" alt="">
-                <img class="w-[500px]" src="<?php echo get_template_directory_uri(); ?>/assets/img/10578486-1-327342585.jpg" alt="">
-                <img class="w-[500px]" src="<?php echo get_template_directory_uri(); ?>/assets/img/10578486-1-327342585.jpg" alt="">
+                <img class="w-[500px]" src="https://mdataz.com/yulstaygit/wp-content/uploads/2023/08/10578486-1-327342585.jpg" alt="">
+                <img class="w-[500px]" src="https://mdataz.com/yulstaygit/wp-content/uploads/2023/08/10578486-1-327342585.jpg" alt="">
+                <img class="w-[500px]" src="https://mdataz.com/yulstaygit/wp-content/uploads/2023/08/10578486-1-327342585.jpg" alt="">
+                <img class="w-[500px]" src="https://mdataz.com/yulstaygit/wp-content/uploads/2023/08/10578486-1-327342585.jpg" alt="">
               </div>
               <div class="max-w-7xl mx-auto">
               <div class="flex justify-between pb-7 border-b border-gray-300">
@@ -192,7 +192,7 @@ get_header();
                   <h3 class="text-xl pt-7 pb-4">Contact the listing broker(s)</h3>
                   <div class="grid grid-cols-3 gap-2">
                     <div>
-                      <img src=".<?php echo get_template_directory_uri(); ?>/assets/img/DSC06075-3.jpg" alt="">
+                      <img src="https://mdataz.com/yulstaygit/wp-content/uploads/2023/08/10578486-1-327342585.jpg" alt="">
                     </div>
                     <div class="col-span-2">
                       <div>Elio Di Spaldro</div>
@@ -247,7 +247,7 @@ get_header();
                 <h2 class="font-poppins text-5xl pt-20 pb-7">Properties in the Region</h2>
                 <div class="grid grid-cols-3 gap-x-4 gap-y-5 font-poppins">
                   <div>
-                    <img class="" src="<?php echo get_template_directory_uri(); ?>/assets/img/10578486-1-327342585.jpg" alt="">
+                    <img class="" src="https://mdataz.com/yulstaygit/wp-content/uploads/2023/08/10578486-1-327342585.jpg" alt="">
                     <div class="text-sm py-1">Dollard-Des Ormeaux</div>
                     <div class="text-lg">152 Rue Leslie</div>
                     <p class="text-sm pt-1 pb-1">Spacieuse maison de style Jefferson située dans le quartier prisé de Westpark, près de toutes les commodités. La propriété compte une</p>
@@ -267,7 +267,7 @@ get_header();
                     </div>
                   </div>
                   <div>
-                    <img class="" src="<?php echo get_template_directory_uri(); ?>/assets/img/10578486-1-327342585.jpg" alt="">
+                    <img class="" src="https://mdataz.com/yulstaygit/wp-content/uploads/2023/08/10578486-1-327342585.jpg" alt="">
                     <div class="text-sm py-1">Dollard-Des Ormeaux</div>
                     <div class="text-lg">152 Rue Leslie</div>
                     <p class="text-sm pt-1 pb-1">Spacieuse maison de style Jefferson située dans le quartier prisé de Westpark, près de toutes les commodités. La propriété compte une</p>
@@ -287,7 +287,7 @@ get_header();
                     </div>
                   </div>
                   <div>
-                    <img class="" src="<?php echo get_template_directory_uri(); ?>/assets/img/10578486-1-327342585.jpg" alt="">
+                    <img class="" src="https://mdataz.com/yulstaygit/wp-content/uploads/2023/08/10578486-1-327342585.jpg" alt="">
                     <div class="text-sm py-1">Dollard-Des Ormeaux</div>
                     <div class="text-lg">152 Rue Leslie</div>
                     <p class="text-sm pt-1 pb-1">Spacieuse maison de style Jefferson située dans le quartier prisé de Westpark, près de toutes les commodités. La propriété compte une</p>
@@ -307,7 +307,7 @@ get_header();
                     </div>
                   </div>
                   <div>
-                    <img class="" src="<?php echo get_template_directory_uri(); ?>/assets/img/10578486-1-327342585.jpg" alt="">
+                    <img class="" src="https://mdataz.com/yulstaygit/wp-content/uploads/2023/08/10578486-1-327342585.jpg" alt="">
                     <div class="text-sm py-1">Dollard-Des Ormeaux</div>
                     <div class="text-lg">152 Rue Leslie</div>
                     <p class="text-sm pt-1 pb-1">Spacieuse maison de style Jefferson située dans le quartier prisé de Westpark, près de toutes les commodités. La propriété compte une</p>
@@ -327,7 +327,7 @@ get_header();
                     </div>
                   </div>
                   <div>
-                    <img class="" src="<?php echo get_template_directory_uri(); ?>/assets/img/10578486-1-327342585.jpg" alt="">
+                    <img class="" src="https://mdataz.com/yulstaygit/wp-content/uploads/2023/08/10578486-1-327342585.jpg" alt="">
                     <div class="text-sm py-1">Dollard-Des Ormeaux</div>
                     <div class="text-lg">152 Rue Leslie</div>
                     <p class="text-sm pt-1 pb-1">Spacieuse maison de style Jefferson située dans le quartier prisé de Westpark, près de toutes les commodités. La propriété compte une</p>
@@ -347,7 +347,7 @@ get_header();
                     </div>
                   </div>
                   <div>
-                    <img class="" src="<?php echo get_template_directory_uri(); ?>/assets/img/10578486-1-327342585.jpg" alt="">
+                    <img class="" src="https://mdataz.com/yulstaygit/wp-content/uploads/2023/08/10578486-1-327342585.jpg" alt="">
                     <div class="text-sm py-1">Dollard-Des Ormeaux</div>
                     <div class="text-lg">152 Rue Leslie</div>
                     <p class="text-sm pt-1 pb-1">Spacieuse maison de style Jefferson située dans le quartier prisé de Westpark, près de toutes les commodités. La propriété compte une</p>
