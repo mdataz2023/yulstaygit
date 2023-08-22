@@ -1,6 +1,6 @@
 <?php
 /*
-	Template Name: Pro
+	Template Name: Pro Landing
 */
 get_header(); 
 
