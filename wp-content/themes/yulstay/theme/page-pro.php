@@ -12,14 +12,12 @@ get_header();
             background-color: #00AEC5; /* Change to your desired active button background color */
         }
     </style>
-    <div class="h-full w-full pr-12">
+    <div class="h-screen w-screen pr-12 overflow-y-scroll scroll-style">
         <div class="">
             <div class="flex pb-7 overflow-hidden gap-1 h-[500px]">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d36553983.44087083!2d-96!3d56!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4b0d03d337cc6ad9%3A0x9968b72aa2438fa5!2sCanada!5e0!3m2!1sen!2slk!4v1692665654783!5m2!1sen!2slk" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
 
-
-    
             <div class="">
             <div class="max-w-7xl mx-auto">
 
@@ -132,7 +130,7 @@ get_header();
 
               <div id="gridView" class="grid grid-cols-3 gap-x-4 gap-y-5 font-poppins">
                 <div>
-                  <img class="" src="./assest/img/10578486-1-327342585.jpg" alt="">
+                  <img class="" src="https://mdataz.com/yulstaygit/wp-content/uploads/2023/08/10578486-1-327342585.jpg" alt="">
                   <div class="text-sm py-2">Dollard-Des Ormeaux</div>
                   <div class="text-lg">152 Rue Leslie</div>
                   <p class="text-sm pt-1 pb-1">Spacieuse maison de style Jefferson située dans le quartier prisé de Westpark, près de toutes les commodités. La propriété compte une</p>
@@ -152,7 +150,7 @@ get_header();
                   </div>
                 </div>
                 <div>
-                    <img class="" src="./assest/img/10578486-1-327342585.jpg" alt="">
+                    <img class="" src="https://mdataz.com/yulstaygit/wp-content/uploads/2023/08/10578486-1-327342585.jpg" alt="">
                     <div class="text-sm py-2">Dollard-Des Ormeaux</div>
                     <div class="text-lg">152 Rue Leslie</div>
                     <p class="text-sm pt-1 pb-1">Spacieuse maison de style Jefferson située dans le quartier prisé de Westpark, près de toutes les commodités. La propriété compte une</p>
@@ -172,7 +170,7 @@ get_header();
                     </div>
                   </div>
                   <div>
-                    <img class="" src="./assest/img/10578486-1-327342585.jpg" alt="">
+                    <img class="" src="https://mdataz.com/yulstaygit/wp-content/uploads/2023/08/10578486-1-327342585.jpg" alt="">
                     <div class="text-sm py-2">Dollard-Des Ormeaux</div>
                     <div class="text-lg">152 Rue Leslie</div>
                     <p class="text-sm pt-1 pb-1">Spacieuse maison de style Jefferson située dans le quartier prisé de Westpark, près de toutes les commodités. La propriété compte une</p>
@@ -192,7 +190,7 @@ get_header();
                     </div>
                   </div>
                   <div>
-                    <img class="" src="./assest/img/10578486-1-327342585.jpg" alt="">
+                    <img class="" src="https://mdataz.com/yulstaygit/wp-content/uploads/2023/08/10578486-1-327342585.jpg" alt="">
                     <div class="text-sm py-2">Dollard-Des Ormeaux</div>
                     <div class="text-lg">152 Rue Leslie</div>
                     <p class="text-sm pt-1 pb-1">Spacieuse maison de style Jefferson située dans le quartier prisé de Westpark, près de toutes les commodités. La propriété compte une</p>
@@ -212,7 +210,7 @@ get_header();
                     </div>
                   </div>
                   <div>
-                    <img class="" src="./assest/img/10578486-1-327342585.jpg" alt="">
+                    <img class="" src="https://mdataz.com/yulstaygit/wp-content/uploads/2023/08/10578486-1-327342585.jpg" alt="">
                     <div class="text-sm py-2">Dollard-Des Ormeaux</div>
                     <div class="text-lg">152 Rue Leslie</div>
                     <p class="text-sm pt-1 pb-1">Spacieuse maison de style Jefferson située dans le quartier prisé de Westpark, près de toutes les commodités. La propriété compte une</p>
@@ -232,7 +230,7 @@ get_header();
                     </div>
                   </div>
                   <div>
-                    <img class="" src="./assest/img/10578486-1-327342585.jpg" alt="">
+                    <img class="" src="https://mdataz.com/yulstaygit/wp-content/uploads/2023/08/10578486-1-327342585.jpg" alt="">
                     <div class="text-sm py-2">Dollard-Des Ormeaux</div>
                     <div class="text-lg">152 Rue Leslie</div>
                     <p class="text-sm pt-1 pb-1">Spacieuse maison de style Jefferson située dans le quartier prisé de Westpark, près de toutes les commodités. La propriété compte une</p>
@@ -252,7 +250,7 @@ get_header();
                     </div>
                   </div>
                   <div>
-                    <img class="" src="./assest/img/10578486-1-327342585.jpg" alt="">
+                    <img class="" src="https://mdataz.com/yulstaygit/wp-content/uploads/2023/08/10578486-1-327342585.jpg" alt="">
                     <div class="text-sm py-2">Dollard-Des Ormeaux</div>
                     <div class="text-lg">152 Rue Leslie</div>
                     <p class="text-sm pt-1 pb-1">Spacieuse maison de style Jefferson située dans le quartier prisé de Westpark, près de toutes les commodités. La propriété compte une</p>
@@ -276,7 +274,7 @@ get_header();
 
               <div id="listView" class="grid grid-cols-3 content-center mb-8 gap-7">
                 <div>
-                    <img class="" src="./assest/img/10578486-1-327342585.jpg" alt="">
+                    <img class="" src="https://mdataz.com/yulstaygit/wp-content/uploads/2023/08/10578486-1-327342585.jpg" alt="">
                 </div>
                 <div class="col-span-2 flex flex-col justify-between">
                     <div>
@@ -301,7 +299,7 @@ get_header();
                   </div>
                 </div>
                 <div>
-                    <img class="" src="./assest/img/10578486-1-327342585.jpg" alt="">
+                    <img class="" src="https://mdataz.com/yulstaygit/wp-content/uploads/2023/08/10578486-1-327342585.jpg" alt="">
                 </div>
                 <div class="col-span-2 flex flex-col justify-between">
                     <div>
@@ -326,7 +324,7 @@ get_header();
                   </div>
                 </div>
                 <div>
-                    <img class="" src="./assest/img/10578486-1-327342585.jpg" alt="">
+                    <img class="" src="https://mdataz.com/yulstaygit/wp-content/uploads/2023/08/10578486-1-327342585.jpg" alt="">
                 </div>
                 <div class="col-span-2 flex flex-col justify-between">
                     <div>
@@ -351,7 +349,7 @@ get_header();
                   </div>
                 </div>
                 <div>
-                    <img class="" src="./assest/img/10578486-1-327342585.jpg" alt="">
+                    <img class="" src="https://mdataz.com/yulstaygit/wp-content/uploads/2023/08/10578486-1-327342585.jpg" alt="">
                 </div>
                 <div class="col-span-2 flex flex-col justify-between">
                     <div>
@@ -376,7 +374,7 @@ get_header();
                   </div>
                 </div>
                 <div>
-                    <img class="" src="./assest/img/10578486-1-327342585.jpg" alt="">
+                    <img class="" src="https://mdataz.com/yulstaygit/wp-content/uploads/2023/08/10578486-1-327342585.jpg" alt="">
                 </div>
                 <div class="col-span-2 flex flex-col justify-between">
                     <div>
