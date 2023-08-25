@@ -130,6 +130,7 @@ get_header();
 
               <div id="gridView" class="grid grid-cols-3 gap-x-4 gap-y-5 font-poppins">
                 <div>
+                  <a href="http://">
                   <img class="" src="https://mdataz.com/yulstaygit/wp-content/uploads/2023/08/10578486-1-327342585.jpg" alt="">
                   <div class="text-sm py-2">Dollard-Des Ormeaux</div>
                   <div class="text-lg">152 Rue Leslie</div>
@@ -148,6 +149,7 @@ get_header();
                       <div>599 000.0 $</div>
                     </div>
                   </div>
+                  </a>
                 </div>
                 
               </div>
@@ -157,11 +159,13 @@ get_header();
                     <img class="" src="https://mdataz.com/yulstaygit/wp-content/uploads/2023/08/10578486-1-327342585.jpg" alt="">
                 </div>
                 <div class="col-span-2 flex flex-col justify-between">
+                  <a href="http://">
                     <div>
                         <div class="text-base py-2 border-b border-gray-400">Dollard-Des Ormeaux</div>
                         <div class="text-3xl py-2 border-b border-gray-400">152 Rue Leslie</div>
                         <p class="text-lg py-2 border-b border-gray-400">Spacieuse maison de style Jefferson située dans le quartier prisé de Westpark, près de toutes les commodités. La propriété compte une</p>
                     </div>
+                  </a>
                   
                   <div class="flex gap-3">
                     <div class="border-r my-4 pr-4 border-gray-400">
