@@ -51,15 +51,15 @@ get_header();
                   </div>
                   <div class="text-center border-r mt-4 mb-4 pr-4 border-gray-300">
                     <div>2 + 1</div>
-                    <div>salles de bains</div>
+                    <div>Bedrooms</div>
                   </div>
                   <div class="text-center border-r mt-4 mb-4 pr-4 border-gray-300">
                     <div>2 + 1</div>
-                    <div>salles de bains</div>
+                    <div>Bathrooms</div>
                   </div>
                   <div class="text-center m-4 pr-4">
                     <div>599 000.0 $</div>
-                    <div>prix</div>
+                    <div>price</div>
                   </div>
                 </div>
               </div>

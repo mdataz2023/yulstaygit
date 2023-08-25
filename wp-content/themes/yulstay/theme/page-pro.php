@@ -136,140 +136,20 @@ get_header();
                   <p class="text-sm pt-1 pb-1">Spacieuse maison de style Jefferson située dans le quartier prisé de Westpark, près de toutes les commodités. La propriété compte une</p>
                   <div class="flex gap-3">
                     <div class="border-r my-4 pr-4 border-gray-400">
-                      <div>2 + 1</div>
-                      <div>salles de bains</div>
+                      <div>Bedrooms</div>
+                      <div>3</div>
                     </div>
                     <div class="border-r my-4 pr-4 border-gray-400">
-                      <div>2 + 1</div>
-                      <div>salles de bains</div>
+                      <div>Bathrooms</div>
+                      <div>2</div>
                     </div>
                     <div class="my-4 pr-4">
+                      <div>price</div>
                       <div>599 000.0 $</div>
-                      <div>prix</div>
                     </div>
                   </div>
                 </div>
-                <div>
-                    <img class="" src="https://mdataz.com/yulstaygit/wp-content/uploads/2023/08/10578486-1-327342585.jpg" alt="">
-                    <div class="text-sm py-2">Dollard-Des Ormeaux</div>
-                    <div class="text-lg">152 Rue Leslie</div>
-                    <p class="text-sm pt-1 pb-1">Spacieuse maison de style Jefferson située dans le quartier prisé de Westpark, près de toutes les commodités. La propriété compte une</p>
-                    <div class="flex gap-3">
-                      <div class="border-r my-4 pr-4 border-gray-400">
-                        <div>2 + 1</div>
-                        <div>salles de bains</div>
-                      </div>
-                      <div class="border-r my-4 pr-4 border-gray-400">
-                        <div>2 + 1</div>
-                        <div>salles de bains</div>
-                      </div>
-                      <div class="my-4 pr-4">
-                        <div>599 000.0 $</div>
-                        <div>prix</div>
-                      </div>
-                    </div>
-                  </div>
-                  <div>
-                    <img class="" src="https://mdataz.com/yulstaygit/wp-content/uploads/2023/08/10578486-1-327342585.jpg" alt="">
-                    <div class="text-sm py-2">Dollard-Des Ormeaux</div>
-                    <div class="text-lg">152 Rue Leslie</div>
-                    <p class="text-sm pt-1 pb-1">Spacieuse maison de style Jefferson située dans le quartier prisé de Westpark, près de toutes les commodités. La propriété compte une</p>
-                    <div class="flex gap-3">
-                      <div class="border-r my-4 pr-4 border-gray-400">
-                        <div>2 + 1</div>
-                        <div>salles de bains</div>
-                      </div>
-                      <div class="border-r my-4 pr-4 border-gray-400">
-                        <div>2 + 1</div>
-                        <div>salles de bains</div>
-                      </div>
-                      <div class="my-4 pr-4">
-                        <div>599 000.0 $</div>
-                        <div>prix</div>
-                      </div>
-                    </div>
-                  </div>
-                  <div>
-                    <img class="" src="https://mdataz.com/yulstaygit/wp-content/uploads/2023/08/10578486-1-327342585.jpg" alt="">
-                    <div class="text-sm py-2">Dollard-Des Ormeaux</div>
-                    <div class="text-lg">152 Rue Leslie</div>
-                    <p class="text-sm pt-1 pb-1">Spacieuse maison de style Jefferson située dans le quartier prisé de Westpark, près de toutes les commodités. La propriété compte une</p>
-                    <div class="flex gap-3">
-                      <div class="border-r my-4 pr-4 border-gray-400">
-                        <div>2 + 1</div>
-                        <div>salles de bains</div>
-                      </div>
-                      <div class="border-r my-4 pr-4 border-gray-400">
-                        <div>2 + 1</div>
-                        <div>salles de bains</div>
-                      </div>
-                      <div class="my-4 pr-4">
-                        <div>599 000.0 $</div>
-                        <div>prix</div>
-                      </div>
-                    </div>
-                  </div>
-                  <div>
-                    <img class="" src="https://mdataz.com/yulstaygit/wp-content/uploads/2023/08/10578486-1-327342585.jpg" alt="">
-                    <div class="text-sm py-2">Dollard-Des Ormeaux</div>
-                    <div class="text-lg">152 Rue Leslie</div>
-                    <p class="text-sm pt-1 pb-1">Spacieuse maison de style Jefferson située dans le quartier prisé de Westpark, près de toutes les commodités. La propriété compte une</p>
-                    <div class="flex gap-3">
-                      <div class="border-r my-4 pr-4 border-gray-400">
-                        <div>2 + 1</div>
-                        <div>salles de bains</div>
-                      </div>
-                      <div class="border-r my-4 pr-4 border-gray-400">
-                        <div>2 + 1</div>
-                        <div>salles de bains</div>
-                      </div>
-                      <div class="my-4 pr-4">
-                        <div>599 000.0 $</div>
-                        <div>prix</div>
-                      </div>
-                    </div>
-                  </div>
-                  <div>
-                    <img class="" src="https://mdataz.com/yulstaygit/wp-content/uploads/2023/08/10578486-1-327342585.jpg" alt="">
-                    <div class="text-sm py-2">Dollard-Des Ormeaux</div>
-                    <div class="text-lg">152 Rue Leslie</div>
-                    <p class="text-sm pt-1 pb-1">Spacieuse maison de style Jefferson située dans le quartier prisé de Westpark, près de toutes les commodités. La propriété compte une</p>
-                    <div class="flex gap-3">
-                      <div class="border-r my-4 pr-4 border-gray-400">
-                        <div>2 + 1</div>
-                        <div>salles de bains</div>
-                      </div>
-                      <div class="border-r my-4 pr-4 border-gray-400">
-                        <div>2 + 1</div>
-                        <div>salles de bains</div>
-                      </div>
-                      <div class="my-4 pr-4">
-                        <div>599 000.0 $</div>
-                        <div>prix</div>
-                      </div>
-                    </div>
-                  </div>
-                  <div>
-                    <img class="" src="https://mdataz.com/yulstaygit/wp-content/uploads/2023/08/10578486-1-327342585.jpg" alt="">
-                    <div class="text-sm py-2">Dollard-Des Ormeaux</div>
-                    <div class="text-lg">152 Rue Leslie</div>
-                    <p class="text-sm pt-1 pb-1">Spacieuse maison de style Jefferson située dans le quartier prisé de Westpark, près de toutes les commodités. La propriété compte une</p>
-                    <div class="flex gap-3">
-                      <div class="border-r my-4 pr-4 border-gray-400">
-                        <div>2 + 1</div>
-                        <div>salles de bains</div>
-                      </div>
-                      <div class="border-r my-4 pr-4 border-gray-400">
-                        <div>2 + 1</div>
-                        <div>salles de bains</div>
-                      </div>
-                      <div class="my-4 pr-4">
-                        <div>599 000.0 $</div>
-                        <div>prix</div>
-                      </div>
-                    </div>
-                  </div>
-                            
+                
               </div>
 
               <div id="listView" class="grid grid-cols-3 content-center mb-8 gap-7">
@@ -285,119 +165,20 @@ get_header();
                   
                   <div class="flex gap-3">
                     <div class="border-r my-4 pr-4 border-gray-400">
-                      <div>2 + 1</div>
-                      <div>salles de bains</div>
+                      <div>Bedrooms</div>
+                      <div>3</div>
                     </div>
                     <div class="border-r my-4 pr-4 border-gray-400">
-                      <div>2 + 1</div>
-                      <div>salles de bains</div>
+                      <div>Bathrooms</div>
+                      <div>2</div>
                     </div>
                     <div class="my-4 pr-4">
+                      <div>price</div>
                       <div>599 000.0 $</div>
-                      <div>prix</div>
                     </div>
                   </div>
                 </div>
-                <div>
-                    <img class="" src="https://mdataz.com/yulstaygit/wp-content/uploads/2023/08/10578486-1-327342585.jpg" alt="">
-                </div>
-                <div class="col-span-2 flex flex-col justify-between">
-                    <div>
-                        <div class="text-base py-2 border-b border-gray-400">Dollard-Des Ormeaux</div>
-                        <div class="text-3xl py-2 border-b border-gray-400">152 Rue Leslie</div>
-                        <p class="text-lg py-2 border-b border-gray-400">Spacieuse maison de style Jefferson située dans le quartier prisé de Westpark, près de toutes les commodités. La propriété compte une</p>
-                    </div>
-                  
-                  <div class="flex gap-3">
-                    <div class="border-r my-4 pr-4 border-gray-400">
-                      <div>2 + 1</div>
-                      <div>salles de bains</div>
-                    </div>
-                    <div class="border-r my-4 pr-4 border-gray-400">
-                      <div>2 + 1</div>
-                      <div>salles de bains</div>
-                    </div>
-                    <div class="my-4 pr-4">
-                      <div>599 000.0 $</div>
-                      <div>prix</div>
-                    </div>
-                  </div>
-                </div>
-                <div>
-                    <img class="" src="https://mdataz.com/yulstaygit/wp-content/uploads/2023/08/10578486-1-327342585.jpg" alt="">
-                </div>
-                <div class="col-span-2 flex flex-col justify-between">
-                    <div>
-                        <div class="text-base py-2 border-b border-gray-400">Dollard-Des Ormeaux</div>
-                        <div class="text-3xl py-2 border-b border-gray-400">152 Rue Leslie</div>
-                        <p class="text-lg py-2 border-b border-gray-400">Spacieuse maison de style Jefferson située dans le quartier prisé de Westpark, près de toutes les commodités. La propriété compte une</p>
-                    </div>
-                  
-                  <div class="flex gap-3">
-                    <div class="border-r my-4 pr-4 border-gray-400">
-                      <div>2 + 1</div>
-                      <div>salles de bains</div>
-                    </div>
-                    <div class="border-r my-4 pr-4 border-gray-400">
-                      <div>2 + 1</div>
-                      <div>salles de bains</div>
-                    </div>
-                    <div class="my-4 pr-4">
-                      <div>599 000.0 $</div>
-                      <div>prix</div>
-                    </div>
-                  </div>
-                </div>
-                <div>
-                    <img class="" src="https://mdataz.com/yulstaygit/wp-content/uploads/2023/08/10578486-1-327342585.jpg" alt="">
-                </div>
-                <div class="col-span-2 flex flex-col justify-between">
-                    <div>
-                        <div class="text-base py-2 border-b border-gray-400">Dollard-Des Ormeaux</div>
-                        <div class="text-3xl py-2 border-b border-gray-400">152 Rue Leslie</div>
-                        <p class="text-lg py-2 border-b border-gray-400">Spacieuse maison de style Jefferson située dans le quartier prisé de Westpark, près de toutes les commodités. La propriété compte une</p>
-                    </div>
-                  
-                  <div class="flex gap-3">
-                    <div class="border-r my-4 pr-4 border-gray-400">
-                      <div>2 + 1</div>
-                      <div>salles de bains</div>
-                    </div>
-                    <div class="border-r my-4 pr-4 border-gray-400">
-                      <div>2 + 1</div>
-                      <div>salles de bains</div>
-                    </div>
-                    <div class="my-4 pr-4">
-                      <div>599 000.0 $</div>
-                      <div>prix</div>
-                    </div>
-                  </div>
-                </div>
-                <div>
-                    <img class="" src="https://mdataz.com/yulstaygit/wp-content/uploads/2023/08/10578486-1-327342585.jpg" alt="">
-                </div>
-                <div class="col-span-2 flex flex-col justify-between">
-                    <div>
-                        <div class="text-base py-2 border-b border-gray-400">Dollard-Des Ormeaux</div>
-                        <div class="text-3xl py-2 border-b border-gray-400">152 Rue Leslie</div>
-                        <p class="text-lg py-2 border-b border-gray-400">Spacieuse maison de style Jefferson située dans le quartier prisé de Westpark, près de toutes les commodités. La propriété compte une</p>
-                    </div>
-                  
-                  <div class="flex gap-3">
-                    <div class="border-r my-4 pr-4 border-gray-400">
-                      <div>2 + 1</div>
-                      <div>salles de bains</div>
-                    </div>
-                    <div class="border-r my-4 pr-4 border-gray-400">
-                      <div>2 + 1</div>
-                      <div>salles de bains</div>
-                    </div>
-                    <div class="my-4 pr-4">
-                      <div>599 000.0 $</div>
-                      <div>prix</div>
-                    </div>
-                  </div>
-                </div>
+                
               </div>
 
               
