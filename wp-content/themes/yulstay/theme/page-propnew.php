@@ -46,20 +46,20 @@ get_header();
                 </div>
                 <div class="flex gap-3 font-poppins">
                   <div class="text-center border-r mt-4 mb-4 pr-4 border-gray-300">
+                    <div class="text-lg">722.26</div>
+                    <div class="text-sm">sqft</div>
+                  </div>
+                  <div class="text-center border-r mt-4 mb-4 pr-4 border-gray-300">
                     <div class="text-lg">2 + 1</div>
-                    <div class="text-sm">salles de bains</div>
+                    <div class="text-sm">Bedrooms</div>
                   </div>
                   <div class="text-center border-r mt-4 mb-4 pr-4 border-gray-300">
-                    <div>2 + 1</div>
-                    <div>Bedrooms</div>
-                  </div>
-                  <div class="text-center border-r mt-4 mb-4 pr-4 border-gray-300">
-                    <div>2 + 1</div>
-                    <div>Bathrooms</div>
+                    <div class="text-lg">2 + 1</div>
+                    <div class="text-sm">Bathrooms</div>
                   </div>
                   <div class="text-center m-4 pr-4">
-                    <div>599 000.0 $</div>
-                    <div>price</div>
+                    <div class="text-lg">599 000.0 $</div>
+                    <div class="text-sm">price</div>
                   </div>
                 </div>
               </div>
