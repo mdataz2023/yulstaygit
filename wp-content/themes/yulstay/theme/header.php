@@ -29,7 +29,7 @@
 <meta name="theme-color" content="#ffffff">
 
 
-  <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css" rel="stylesheet" /> -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css" rel="stylesheet" />
 	<?php wp_head(); ?>
 </head>
 
