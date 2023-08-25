@@ -73,10 +73,10 @@ get_header();
                   <p class="text-sm pt-3">* dimensions des chambres précis à suivre
                     * Bienvenue dans votre nouvelle maison dans l'ouest de l'île! Cette charmante maison de ville de 2 chambres et 2,5 salles de bains offre une expérience de vie confortable et pratique. Espace de vie lumineux et aéré à aire ouverte avec hauts plafonds, chambre principale avec 2 garde-robes walk-in et un sous-sol spacieux. La maison dispose de deux stationnements intérieurs avec accès direct à la maison. Profitez de la vie en plein air sur le grand patio, parfait pour se détendre et se divertir. Ne manquez pas l'occasion de faire vôtre cette jolie maison de ville!</p>
 
-                  <h2  class="text-2xl pt-7">Inclus dans la vente</h2>
+                  <h2  class="text-2xl pt-7">Included in the sale</h2>
                   <p class="text-sm pt-3">Réfrigérateur, cuisinière, lave-vaisselle, micro-ondes, stores et rideaux tels qu'installés</p>
 
-                  <h2 class="text-2xl pt-7">Inclus dans la vente</h2>
+                  <h2 class="text-2xl pt-7">Room Details</h2>
                   <div class="grid grid-cols-5 pt-3">
                     <div class="text-sm font-poppins font-bold py-1">ROOM(S)</div>
                     <div class="text-sm font-poppins font-bold py-1">LEVEL</div>
@@ -103,7 +103,7 @@ get_header();
                     <div class="text-sm font-poppins font-medium py-1"></div>
                   </div>
 
-                  <h2 class="font-poppins text-2xl pt-7 pb-3">Inclus dans la vente</h2>
+                  <h2 class="font-poppins text-2xl pt-7 pb-3">Assessment, taxes and other costs</h2>
 
                   <div class="flex gap-4 text-sm p-4 border-b border-gray-300 hover:bg-slate-100 hover:duration-100">
                     <div class="font-bold">Property Type</div>

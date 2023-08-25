@@ -156,7 +156,9 @@ get_header();
 
               <div id="listView" class="grid grid-cols-3 content-center mb-8 gap-7">
                 <div>
+                  <a href="http://">
                     <img class="" src="https://mdataz.com/yulstaygit/wp-content/uploads/2023/08/10578486-1-327342585.jpg" alt="">
+                  </a>
                 </div>
                 <div class="col-span-2 flex flex-col justify-between">
                   <a href="http://">
