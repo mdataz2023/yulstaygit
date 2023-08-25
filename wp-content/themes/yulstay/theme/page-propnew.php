@@ -111,11 +111,11 @@ get_header();
                     <div class="text-sm">sqft</div>
                   </div>
                   <div class="text-center border-r mt-4 mb-4 pr-4 border-gray-300">
-                    <div class="text-lg">2 + 1</div>
+                    <div class="text-lg">2</div>
                     <div class="text-sm">Bedrooms</div>
                   </div>
                   <div class="text-center border-r mt-4 mb-4 pr-4 border-gray-300">
-                    <div class="text-lg">2 + 1</div>
+                    <div class="text-lg">2</div>
                     <div class="text-sm">Bathrooms</div>
                   </div>
                   <div class="text-center m-4 pr-4">
