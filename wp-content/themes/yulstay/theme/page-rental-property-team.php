@@ -17,9 +17,9 @@ $team_page_description = get_field('team_page_description');
                 <p>We serve a broad range of investors from all corners of the globe, and our team manages the investments of over 100 real estate investors worldwide. With Yulstay, you can rest assured that your real estate investments in Montreal are in the best possible hands.</p>
                 <p>Our team has consistently ranked in the top producers nationwide and continues to deliver its promises of peace of mind, transparency and results. Do not hesitate to book a consultation to discuss how we can help you maximize your investments.</p>
             </div>
-            <div class="m-8">
-                <a href="http://">
-                    <div class="w-full h-full rounded-xl border border-black hover:border-none hover:bg-[#00AEC5] p-5 text-black hover:text-white">
+            <div class="m-16">
+                <a href="https://mdataz.com/yulstaygit/rental-property-contact/">
+                    <div class="w-full h-full rounded-xl border border-black hover:border-none hover:bg-[#00AEC5] p-5 text-black hover:text-white flex items-center justify-center">
                         <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor" class="bi bi-headset" viewBox="0 0 16 16">
                         <path d="M8 1a5 5 0 0 0-5 5v1h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a6 6 0 1 1 12 0v6a2.5 2.5 0 0 1-2.5 2.5H9.366a1 1 0 0 1-.866.5h-1a1 1 0 1 1 0-2h1a1 1 0 0 1 .866.5H11.5A1.5 1.5 0 0 0 13 12h-1a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h1V6a5 5 0 0 0-5-5z"/>
                         </svg>
