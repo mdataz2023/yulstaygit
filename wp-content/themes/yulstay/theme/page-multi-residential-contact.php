@@ -28,52 +28,77 @@ $team_page_description = get_field('team_page_description');
 				<div class="font-medium"><?php the_title(); ?>
 			</div>
 			</div>
-			<div class="grid grid-cols-3 gap-4">
-    <?php
-    $ids_to_display = array(123, 116, 114); // IDs of the posts you want to display114, 116, 123
+			<h2 class="text-3xl font-bold tracking-tight text-gray-900">Get in Touch</h2>
 
-    $the_query = new WP_Query(array(
-        'post_type' => 'team',
-        'post__in' => $ids_to_display,
-        'posts_per_page' => count($ids_to_display),
-    ));
+<p class="mt-6 text-lg leading-8 text-black">Through our relationship in the industry and our volume of transactions, we are happy to have access to many new construction projects. This allows us to offer many benefits to any of our clients looking to purchase or invest in new co</p>
 
-    if ($the_query->have_posts()) {
-        while ($the_query->have_posts()) {
-            $the_query->the_post();
+<div class="grid grid-cols-1">
 
-            $thumbnail_id = get_post_thumbnail_id();
-            $thumbnail_url = wp_get_attachment_image_src($thumbnail_id, 'thumbnail-size', true);
-            $thumbnail_meta = get_post_meta($thumbnail_id, '_wp_attachment_image_alt', true);
+  <dl class="mt-10 space-y-4 text-base leading-7 text-black">
 
-            $categories = get_the_category();
-            ?>
-            
-            <div class="hover:bg-gray-400">
-            <a href="<?php the_permalink(); ?>">
-                <?php
-                if (has_post_thumbnail()) {
-                    $attachment_image = wp_get_attachment_url($thumbnail_id);
-                    //echo '<link rel="preload" as="image" href="' . esc_attr($attachment_image) . '">';
-                ?>
-                    <img src="<?php echo $attachment_image; ?>" alt="">
-                <?php } ?>
-                <div class="text-center">
-                    <a href="<?php the_permalink(); ?>"><h3 class="text-2xl font-semibold hover:font-bold"><?php the_title(); ?></h3></a>
-                    <p><?php the_excerpt(); ?></p>
-                </div>
-                </a>
-            </div>
-    <?php
-        }
-    } else {
-        echo 'No posts found.';
-    }
+    <div class="flex gap-x-4 hover:animate-bounce">
 
-    wp_reset_postdata();
-    ?>
+      <dt class="flex-none">
+
+        <span class="sr-only">Address</span>
+
+        <svg class="h-7 w-6 text-black" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+
+          <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 3.75h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008z" />
+
+        </svg>
+
+      </dt>
+
+      <dd>
+686 St-Paul O. Montreal Quebec H3C 1M4</dd>
+
+    </div>
+
+    <div class="flex gap-x-4 hover:animate-bounce">
+
+      <dt class="flex-none">
+
+        <span class="sr-only">Telephone</span>
+
+        <svg class="h-7 w-6 text-black" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+
+          <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
+
+        </svg>
+
+      </dt>
+
+      <dd><a class="hover:text-gray-900" href="tel:<?php echo $phone_number_link; ?>">514.961.7663</a></dd>
+
+    </div>
+
+    <div class="flex gap-x-4 hover:animate-bounce">
+
+      <dt class="flex-none">
+
+        <span class="sr-only">Email</span>
+
+        <svg class="h-7 w-6 text-black" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+
+          <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+
+        </svg>
+
+      </dt>
+
+      <dd><a class="hover:text-gray-900" href="mailto:<?php echo $email_link; ?>">admin@yulstay.com</a></dd>
+
+    </div>
+
+  </dl>
+
+  
+
 </div>
-		</div>
+</div>
+
+
         <div class="md:overflow-y-scroll hide-scroll-bar">
         <div>
         <h2 class="font-poppins font-medium text-base pb-1 text-justify">Yulstay is your one-stop-shop for all your real estate needs in Montreal. We offer a comprehensive range of strategic advice and services that cover everything from purchasing, financing, managing, selling and optimizing your multiresidential properties.</h2>
