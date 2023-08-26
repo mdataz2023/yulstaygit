@@ -9,7 +9,7 @@ $team_page_description = get_field('team_page_description');
 ?>
 
 
-<div class="w-screen h-screen pr-12 max-w-7xl mx-auto mt-12 overflow-y-scroll scroll-style">
+<div class="w-screen h-screen max-w-7xl mx-auto mt-12 overflow-y-scroll scroll-style mb-16">
         <div class="w-2/3">
             <h1 class="text-4xl font-poppins mb-4">Residential Team</h1>
             <p>Yulstay is your one-stop-shop for all your real estate needs in Montreal. We offer a comprehensive range of strategic advice and services that cover everything from purchasing, financing, managing, selling and optimizing your multiresidential properties.</p>
