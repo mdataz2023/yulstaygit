@@ -29,9 +29,9 @@ $team_page_description = get_field('team_page_description');
 			</div>
 			</div>
 
-      <h2 class="text-3xl font-bold tracking-tight text-gray-900"><?php echo $contact_page_title; ?></h2>
+      <h2 class="text-3xl font-bold tracking-tight text-gray-900">Get in Touch</h2>
 
-<p class="mt-6 text-lg leading-8 text-black"><?php echo $contact_page_description; ?></p>
+<p class="mt-6 text-lg leading-8 text-black">Through our relationship in the industry and our volume of transactions, we are happy to have access to many new construction projects. This allows us to offer many benefits to any of our clients looking to purchase or invest in new co</p>
 
 <div class="grid grid-cols-1">
 
@@ -51,7 +51,8 @@ $team_page_description = get_field('team_page_description');
 
       </dt>
 
-      <dd><?php echo $address; ?></dd>
+      <dd>
+686 St-Paul O. Montreal Quebec H3C 1M4</dd>
 
     </div>
 
@@ -69,7 +70,7 @@ $team_page_description = get_field('team_page_description');
 
       </dt>
 
-      <dd><a class="hover:text-gray-900" href="tel:<?php echo $phone_number_link; ?>"><?php echo $phone_number; ?></a></dd>
+      <dd><a class="hover:text-gray-900" href="tel:<?php echo $phone_number_link; ?>">514.961.7663</a></dd>
 
     </div>
 
@@ -87,7 +88,7 @@ $team_page_description = get_field('team_page_description');
 
       </dt>
 
-      <dd><a class="hover:text-gray-900" href="mailto:<?php echo $email_link; ?>"><?php echo $email; ?></a></dd>
+      <dd><a class="hover:text-gray-900" href="mailto:<?php echo $email_link; ?>">admin@yulstay.com</a></dd>
 
     </div>
 
