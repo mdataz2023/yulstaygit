@@ -234,7 +234,7 @@ get_header();
 
 
 /* 本体には関係ないスタイル */
-.container{
+.container1{
     width : 100% ;
     height : 300px ;
     display : flex ;
@@ -287,23 +287,82 @@ button:active {
 
 
 </style>
-<div class="container gap-6">
+<div class="container1 gap-6">
 
-    <a href="#" class="button">
-      <div class="button__line"></div>
-      <div class="button__line"></div>
-      <span class="button__text">ENTRY</span>
-      <div class="button__drow1"></div>
-      <div class="button__drow2"></div>
-    </a>
-  
     <button>Button</button>
-    <button style="--color:#f3738a;--border:2px;--slant:.5em">Button</button>
-    <button style="--color:#69db3a;--slant:40px;--border:8px">Button</button>
-    
+
   </div>
   </div>
   
 </div>
+
+<div class="center">
+          <button class="btn">
+            <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
+              <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
+              <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+            </svg>
+            <span>HOVER ME</span>
+          </button>
+        </div>
+
+      <style>
+        @import url('https://fonts.googleapis.com/css?family=Lato:100&display=swap');
+
+
+
+.container {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.center {
+  width: 180px;
+  height: 60px;
+  position: absolute;
+}
+
+.btn {
+  width: 180px;
+  height: 60px;
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid #00AEC5;
+  outline: none;
+  transition: 1s ease-in-out;
+}
+
+svg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  fill: none;
+  stroke: #00AEC5;
+  stroke-dasharray: 150 480;
+  stroke-dashoffset: 150;
+  transition: 1s ease-in-out;
+}
+
+.btn:hover {
+  transition: 1s ease-in-out;
+  background: #ffffff;
+}
+
+.btn:hover svg {
+  stroke-dashoffset: -480;
+}
+
+.btn span {
+  color: #00AEC5;
+  font-size: 18px;
+  font-weight: 100;
+}
 
 <?php get_footer(); ?>
