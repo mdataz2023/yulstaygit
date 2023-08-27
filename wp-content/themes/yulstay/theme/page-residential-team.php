@@ -98,11 +98,10 @@ foreach($depensesResult as $value)
           'MONTANT_DEPENSE' =>$valueExplode[2],
           'ANNEE' =>$valueExplode[3],
           'ANNEE_EXPIRATION' =>$valueExplode[4],
-          'INFORMATIONS_ANGLAISES' =>$valueExplode[5],
-          'FREQUENCE' =>$valueExplode[6],
-          'PART_DEPENSE' =>$valueExplode[7],
-          'AU_DEPENSE_INFO_F' =>$valueExplode[8],
-          'AU_DEPENSE_INFO_A' =>$valueExplode[9]
+          'FREQUENCE' =>$valueExplode[5],
+          'PART_DEPENSE' =>$valueExplode[6],
+          'AU_DEPENSE_INFO_F' =>$valueExplode[7],
+          'AU_DEPENSE_INFO_A' =>$valueExplode[8]
           )
         );
     }
