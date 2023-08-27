@@ -294,13 +294,13 @@ button:active {
   </div>
   </div>
 
-  <div class="center">
-          <button class="btn">
+  <div class="center1">
+          <button class="btn1">
             <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
               <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
               <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
             </svg>
-            <span>HOVER ME</span>
+            <span class="span1">HOVER ME</span>
           </button>
         </div>
 
@@ -321,13 +321,13 @@ button:active {
   align-items: center;
 }
 
-.center {
+.center1 {
   width: 180px;
   height: 60px;
   position: absolute;
 }
 
-.btn {
+.btn1 {
   width: 180px;
   height: 60px;
   cursor: pointer;
@@ -348,16 +348,16 @@ svg {
   transition: 1s ease-in-out;
 }
 
-.btn:hover {
+.btn1:hover {
   transition: 1s ease-in-out;
   background: #ffffff;
 }
 
-.btn:hover svg {
+.btn1:hover svg {
   stroke-dashoffset: -480;
 }
 
-.btn span {
+.btn1 .span1 {
   color: #00AEC5;
   font-size: 18px;
   font-weight: 100;
