@@ -182,27 +182,27 @@ $residential_info_right_section_investment_description_three = get_field('reside
   
   button1.addEventListener("mouseout", () => {
   if(!b1){
-    document.getElementById("col9").style.background="#9ca3af";
-    document.getElementById("col2").style.background="#9ca3af";
-    document.getElementById("col3").style.background="#9ca3af"; 
-    document.getElementById("col19").style.background="#9ca3af";
-    document.getElementById("col21").style.background="#9ca3af";
+    document.getElementById("col9").style.background="#ffffff";
+    document.getElementById("col2").style.background="#ffffff";
+    document.getElementById("col3").style.background="#ffffff"; 
+    document.getElementById("col19").style.background="#ffffff";
+    document.getElementById("col21").style.background="#ffffff";
   }
   });
   button2.addEventListener("mouseout", () => {
   if(!b2){
-    document.getElementById("col13").style.background="#9ca3af";
-    document.getElementById("col19").style.background="#9ca3af";
-    document.getElementById("col21").style.background="#9ca3af";
+    document.getElementById("col13").style.background="#ffffff";
+    document.getElementById("col19").style.background="#ffffff";
+    document.getElementById("col21").style.background="#ffffff";
   }
   });
   button3.addEventListener("mouseout", () => {
   if(!b3){
-    document.getElementById("col4").style.background="#9ca3af";
-    document.getElementById("col5").style.background="#9ca3af";
-    document.getElementById("col17").style.background="#9ca3af";
-    document.getElementById("col19").style.background="#9ca3af";
-    document.getElementById("col21").style.background="#9ca3af";
+    document.getElementById("col4").style.background="#ffffff";
+    document.getElementById("col5").style.background="#ffffff";
+    document.getElementById("col17").style.background="#ffffff";
+    document.getElementById("col19").style.background="#ffffff";
+    document.getElementById("col21").style.background="#ffffff";
   }
   });
 
@@ -232,10 +232,10 @@ $residential_info_right_section_investment_description_three = get_field('reside
     document.getElementById("col19").style.background="#00AEC5";
     document.getElementById("col21").style.background="#00AEC5";
 
-    document.getElementById("col13").style.background="#9ca3af";
-    document.getElementById("col4").style.background="#9ca3af";
-    document.getElementById("col5").style.background="#9ca3af";
-    document.getElementById("col17").style.background="#9ca3af";
+    document.getElementById("col13").style.background="#ffffff";
+    document.getElementById("col4").style.background="#ffffff";
+    document.getElementById("col5").style.background="#ffffff";
+    document.getElementById("col17").style.background="#ffffff";
     setActiveButton(button1);
   });
 
@@ -262,12 +262,12 @@ $residential_info_right_section_investment_description_three = get_field('reside
     document.getElementById("col19").style.background="#00AEC5";
     document.getElementById("col21").style.background="#00AEC5";
 
-    document.getElementById("col4").style.background="#9ca3af";
-    document.getElementById("col5").style.background="#9ca3af";
-    document.getElementById("col17").style.background="#9ca3af";
-    document.getElementById("col9").style.background="#9ca3af";
-    document.getElementById("col2").style.background="#9ca3af";
-    document.getElementById("col3").style.background="#9ca3af";
+    document.getElementById("col4").style.background="#ffffff";
+    document.getElementById("col5").style.background="#ffffff";
+    document.getElementById("col17").style.background="#ffffff";
+    document.getElementById("col9").style.background="#ffffff";
+    document.getElementById("col2").style.background="#ffffff";
+    document.getElementById("col3").style.background="#ffffff";
     mainDiv.innerHTML = purchaseContent;
     setActiveButton(button2);
   });
@@ -300,10 +300,10 @@ $residential_info_right_section_investment_description_three = get_field('reside
     document.getElementById("col19").style.background="#00AEC5";
     document.getElementById("col21").style.background="#00AEC5";
 
-    document.getElementById("col9").style.background="#9ca3af";
-    document.getElementById("col2").style.background="#9ca3af";
-    document.getElementById("col3").style.background="#9ca3af";
-    document.getElementById("col13").style.background="#9ca3af";
+    document.getElementById("col9").style.background="#ffffff";
+    document.getElementById("col2").style.background="#ffffff";
+    document.getElementById("col3").style.background="#ffffff";
+    document.getElementById("col13").style.background="#ffffff";
     mainDiv.innerHTML = investmentContent;
     setActiveButton(button3);
   });
