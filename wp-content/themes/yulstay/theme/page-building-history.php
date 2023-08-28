@@ -35,7 +35,7 @@ text-decoration: none;
 text-align: center;
 border-radius: 50px;
 border: 3px solid seagreen;
-color: seagreen;
+color: #00AEC5;
 font-size: 20px;
 font-family: arial;
 position: relative;
@@ -53,7 +53,7 @@ width: 100%;
 height: 100%;
 top: -100%;
 left: 0;
-background: seagreen;
+background: #00AEC5;
 z-index: -1;
 transition: all .35s;
 }
