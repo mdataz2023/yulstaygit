@@ -34,7 +34,7 @@ line-height: 46px;
 text-decoration: none;
 text-align: center;
 border-radius: 50px;
-border: 3px solid seagreen;
+border: 3px solid #00AEC5;
 color: #00AEC5;
 font-size: 20px;
 font-family: arial;
