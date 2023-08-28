@@ -105,7 +105,7 @@
 
               <div class="dropdown-container grid grid-cols-2">
                 <div>
-                  <a href="<?php bloginfo('url'); ?>/residential-info" class="text-gray-700 text-3xl hover:font-bold hover:text-[#00AEC5]"><?php _e('Residential','theme-text-domain'); ?></a>
+                  <a href="<?php bloginfo('url'); ?>/residential-info" class="text-gray-700 text-3xl hover:font-bold hover:text-[#00AEC5] hover:duration-150"><?php _e('Residential','theme-text-domain'); ?></a>
                 </div>
                 <div class="font-poppins">
                 <div class="ml-2">
