@@ -13,7 +13,7 @@ $team_page_description = get_field('team_page_description');
   <div class="max-w-7xl mx-auto pr-12 pt-12 pb-16">
         <div class="grid grid-cols-3 gap-6">
             <div class="col-span-2">
-                <h1 class="text-4xl font-poppins mb-4">Residential Team</h1>
+                <h1 class="text-4xl font-poppins mb-4">Multi Residential Team</h1>
                 <p>Yulstay is your one-stop-shop for all your real estate needs in Montreal. We offer a comprehensive range of strategic advice and services that cover everything from purchasing, financing, managing, selling and optimizing your multiresidential properties.</p>
                 <p>We serve a broad range of investors from all corners of the globe, and our team manages the investments of over 100 real estate investors worldwide. With Yulstay, you can rest assured that your real estate investments in Montreal are in the best possible hands.</p>
                 <p>Our team has consistently ranked in the top producers nationwide and continues to deliver its promises of peace of mind, transparency and results. Do not hesitate to book a consultation to discuss how we can help you maximize your investments.</p>
