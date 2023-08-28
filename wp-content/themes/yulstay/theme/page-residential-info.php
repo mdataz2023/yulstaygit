@@ -94,7 +94,7 @@ $residential_info_right_section_investment_description_three = get_field('reside
   <div id="" class=""></div>
   <div id="" class=""></div>
   <div id="" class="grid grid-cols-12">
-    <div id="col21" class="bg-gray-400"></div>
+    <div id="col21" class=" white"></div>
     <div id="" class="col-span-11"></div>
   </div>
   <div id="" class=""></div>
@@ -103,30 +103,30 @@ $residential_info_right_section_investment_description_three = get_field('reside
 
 <div class="grid grid-cols-6 h-2">
   <div id="col1" class=""></div>
-  <div id="col2" class="bg-gray-400"></div>
-  <div id="col3" class="bg-gray-400"></div>
-  <div id="col4" class="bg-gray-400 grid grid-cols-12">
-    <div id="col19" class="bg-gray-400"></div>
+  <div id="col2" class=" white"></div>
+  <div id="col3" class=" white"></div>
+  <div id="col4" class=" white grid grid-cols-12">
+    <div id="col19" class=" white"></div>
     <div id="col20" class="col-span-11"></div>
   </div>
-  <div id="col5" class="bg-gray-400"></div>
+  <div id="col5" class=" white"></div>
   <div id="col6" class=""></div>
 </div>
 
 <div class="grid grid-cols-6">
   <div id="col7"></div>
   <div id="col8" class="grid grid-cols-12 h-9">
-    <div id="col9" class="bg-gray-400"></div>
+    <div id="col9" class=" white"></div>
     <div id="col10" class="col-span-11"></div>
   </div>
   <div id="col11"></div>
   <div id="col12" class="grid grid-cols-12 h-9">
-    <div id="col13" class="bg-gray-400"></div>
+    <div id="col13" class=" white"></div>
     <div id="col14" class="col-span-11"></div>
   </div>
   <div id="col15" class="grid grid-cols-12 h-9">
     <div id="col16" class="col-span-11"></div>
-    <div id="col17" class="bg-gray-400"></div>
+    <div id="col17" class=" white"></div>
   </div>
   <div id="col18"></div>
 </div>
