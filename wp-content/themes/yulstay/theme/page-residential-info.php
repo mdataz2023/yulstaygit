@@ -71,7 +71,7 @@ $residential_info_right_section_investment_description_three = get_field('reside
     <div class="">
         <div class="flex justify-between">
           <div class="flex gap-3 mb-3">
-            <div>
+            <div class="flex items-center content-between">
               <a href="<?php bloginfo('url'); ?>/home" class="text-gray-400 hover:text-gray-800 font-bold"><?php _e('Home','theme-text-domain'); ?></a>
             </div>
             <div class="flex items-center content-between">
@@ -81,7 +81,7 @@ $residential_info_right_section_investment_description_three = get_field('reside
                 </svg>
               </div>
             </div>
-            <div class="font-medium"><?php the_title(); ?></div>
+            <div class="font-medium flex items-center content-between"><?php the_title(); ?></div>
           </div>
           <div>
                 <a href="https://mdataz.com/yulstaygit/rental-property-contact/">
