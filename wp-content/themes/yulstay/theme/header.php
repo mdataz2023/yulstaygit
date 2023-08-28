@@ -96,8 +96,11 @@
     </nav>
 
     <div id="myModal" class="modal z-40 transition-color duration-300" style="background-color: #fff;">
-        <div class="grid grid-cols-1 md:grid-cols-2 w-screen mr-12">
-          <div class="px-6 py-14 md:p-14 h-screen flex flex-col justify-between">
+        <div class="grid grid-cols-1 md:grid-cols-4 w-screen mr-12">
+
+        <div></div>
+
+          <div class="col-span-2 px-6 py-14 md:p-14 h-screen flex flex-col justify-between">
             <div class="text-2xl uppercase">
 
               <div class="dropdown-container grid grid-cols-2">
