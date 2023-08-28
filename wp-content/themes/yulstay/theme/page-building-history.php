@@ -8,8 +8,8 @@ get_header();
 
 <div class="h-screen w-screen mr-12 grid grid-cols-1 md:grid-cols-2 p-14 gap-6">
 
-<!-- <div class="wrapper">
-    <a href="#">Hover Me!</a>
+<div class="wrapper">
+    <a class="btn-a" href="#">Hover Me!</a>
   </div>
 
   <style>
@@ -26,7 +26,7 @@ left: 50%;
 transform: translate(-50%, -50%);
 }
 
-a{
+.btn-a{
 display: block;
 width: 250px;
 height: 50px;
@@ -45,8 +45,8 @@ text-transform: uppercase;
 transition: all .35s;
 }
 
-a:before,
-a:after{
+.btn-a:before,
+.btn-a:after{
 position: absolute;
 content: "";
 width: 100%;
@@ -58,23 +58,23 @@ z-index: -1;
 transition: all .35s;
 }
 
-a:before{
+.btn-a:before{
 opacity: .5;
 }
 
-a:after{
+.btn-a:after{
 transition-delay: .2s;
 }
 
-a:hover{
+.btn-a:hover{
 color: #fff;
 }
 
-a:hover:before,
-a:hover:after{
+.btn-a:hover:before,
+.btn-a:hover:after{
 top: 0;
 }
-  </style> -->
+  </style>
 
 <div hidden class="box-1">
     <div class="btn btn-one">
