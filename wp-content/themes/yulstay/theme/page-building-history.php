@@ -174,7 +174,7 @@ top: 0;
 ========================
 */
 .btn-three {
-  color: ##00AEC5;
+  color: #00AEC5;
   transition: all 0.5s;
   position: relative;
 }
