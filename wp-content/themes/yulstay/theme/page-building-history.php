@@ -101,9 +101,9 @@ top: 0;
   align-items: center;
 }
 
-.box-1 { background-color: #00AEC5; }
-.box-2 { background-color: #00AEC5; }
-.box-3 { background-color: #00AEC5; }
+.box-1 { background-color: #ffffff; }
+.box-2 { background-color: #ffffff; }
+.box-3 { background-color: #ffffff; }
 
 .btn {
   line-height: 50px;
@@ -140,8 +140,8 @@ top: 0;
   border-bottom-width: 1px;
   border-top-style: solid;
   border-bottom-style: solid;
-  border-top-color: rgba(255,255,255,0.5);
-  border-bottom-color: rgba(255,255,255,0.5);
+  border-top-color: rgba(0, 174, 197, 0.5);
+  border-bottom-color: rgba(0, 174, 197, 0.5);
   transform: scale(0.1, 1);
 }
 .btn-one:hover span {
@@ -160,7 +160,7 @@ top: 0;
   height: 100%;
   z-index: 1;
   transition: all 0.3s;
-  background-color: rgba(255,255,255,0.1);
+  background-color: rgba(0, 174, 197, 0.5);
 }
 .btn-one:hover::after {
   opacity: 0; 
@@ -174,7 +174,7 @@ top: 0;
 ========================
 */
 .btn-three {
-  color: #FFF;
+  color: ##00AEC5;
   transition: all 0.5s;
   position: relative;
 }
@@ -186,7 +186,7 @@ top: 0;
   width: 100%;
   height: 100%;
   z-index: 1;
-  background-color: rgba(255,255,255,0.1);
+  background-color: rgba(0, 174, 197, 0.5);
   transition: all 0.3s;
 }
 .btn-three:hover::before {
@@ -203,7 +203,7 @@ top: 0;
   z-index: 1;
   opacity: 0;
   transition: all 0.3s;
-  border: 1px solid rgba(255,255,255,0.5);
+  border: 1px solid rgba(0, 174, 197, 0.5);
   transform: scale(1.2,1.2);
 }
 .btn-three:hover::after {
