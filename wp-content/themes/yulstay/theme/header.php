@@ -109,13 +109,13 @@
                 </div>
                 <div class="font-poppins">
                 <div class="ml-2">
-                    <a href="<?php bloginfo('url'); ?>/residential-info" class="text-gray-600 link link-underline link-underline-[#00AEC5] hover:font-bold hover:text-[#00AEC5]"><?php _e('Residential Info','theme-text-domain'); ?></a>
+                    <a href="<?php bloginfo('url'); ?>/residential-info" class="text-gray-600 link link-underline link-underline-black hover:font-bold hover:text-[#00AEC5]"><?php _e('Residential Info','theme-text-domain'); ?></a>
                   </div>
                   <div class="ml-2">
-                    <a href="<?php bloginfo('url'); ?>/residential" class="text-gray-600 link link-underline link-underline-[#00AEC5] hover:font-bold hover:text-[#00AEC5]"><?php _e('Properties','theme-text-domain'); ?></a>
+                    <a href="<?php bloginfo('url'); ?>/residential" class="text-gray-600 link link-underline link-underline-black hover:font-bold hover:text-[#00AEC5]"><?php _e('Properties','theme-text-domain'); ?></a>
                   </div>
                   <div class="ml-2">
-                    <a href="<?php bloginfo('url'); ?>/residential-team" class="text-gray-600 link link-underline link-underline-[#00AEC5] hover:font-bold hover:text-[#00AEC5]"><?php _e('Team','theme-text-domain'); ?></a>
+                    <a href="<?php bloginfo('url'); ?>/residential-team" class="text-gray-600 link link-underline link-underline-black hover:font-bold hover:text-[#00AEC5]"><?php _e('Team','theme-text-domain'); ?></a>
                   </div>
                   
                 </div>
@@ -127,13 +127,13 @@
                 </div>
                 <div class="font-poppins">
                 <div class="ml-2">
-                    <a href="<?php bloginfo('url'); ?>/multi-residential-info" class="text-gray-600 link link-underline link-underline-[#00AEC5] hover:font-bold hover:text-[#00AEC5]"><?php _e('Multi-Residential Info','theme-text-domain'); ?></a>
+                    <a href="<?php bloginfo('url'); ?>/multi-residential-info" class="text-gray-600 link link-underline link-underline-black hover:font-bold hover:text-[#00AEC5]"><?php _e('Multi-Residential Info','theme-text-domain'); ?></a>
                   </div>
                 <div class="ml-2">
-                  <a href="<?php bloginfo('url'); ?>/multi-residential" class="text-gray-600 link link-underline link-underline-[#00AEC5] hover:font-bold hover:text-[#00AEC5]"><?php _e('Properties','theme-text-domain'); ?></a>
+                  <a href="<?php bloginfo('url'); ?>/multi-residential" class="text-gray-600 link link-underline link-underline-black hover:font-bold hover:text-[#00AEC5]"><?php _e('Properties','theme-text-domain'); ?></a>
                 </div>
                 <div class="ml-2">
-                  <a href="<?php bloginfo('url'); ?>/multi-residential-team" class="text-gray-600 link link-underline link-underline-[#00AEC5] hover:font-bold hover:text-[#00AEC5]"><?php _e('Team','theme-text-domain'); ?></a>
+                  <a href="<?php bloginfo('url'); ?>/multi-residential-team" class="text-gray-600 link link-underline link-underline-black hover:font-bold hover:text-[#00AEC5]"><?php _e('Team','theme-text-domain'); ?></a>
                 </div>
                 
                 </div>
@@ -145,13 +145,13 @@
                   </div>
                   <div class="font-poppins">
                   <div class="ml-2">
-                    <a href="<?php bloginfo('url'); ?>/rental-property-info" class="text-gray-600 link link-underline link-underline-[#00AEC5] hover:font-bold hover:text-[#00AEC5]"><?php _e('Rental + Property Info','theme-text-domain'); ?></a>
+                    <a href="<?php bloginfo('url'); ?>/rental-property-info" class="text-gray-600 link link-underline link-underline-black hover:font-bold hover:text-[#00AEC5]"><?php _e('Rental + Property Info','theme-text-domain'); ?></a>
                     </div>
                     <div class="ml-2">
-                      <a href="<?php bloginfo('url'); ?>/rental-property" class="text-gray-600 link link-underline link-underline-[#00AEC5] hover:font-bold hover:text-[#00AEC5]"><?php _e('Properties','theme-text-domain'); ?></a>
+                      <a href="<?php bloginfo('url'); ?>/rental-property" class="text-gray-600 link link-underline link-underline-black hover:font-bold hover:text-[#00AEC5]"><?php _e('Properties','theme-text-domain'); ?></a>
                     </div>
                     <div class="ml-2">
-                      <a href="<?php bloginfo('url'); ?>/rental-property-team" class="text-gray-600 link link-underline link-underline-[#00AEC5] hover:font-bold hover:text-[#00AEC5]"><?php _e('Team','theme-text-domain'); ?></a>
+                      <a href="<?php bloginfo('url'); ?>/rental-property-team" class="text-gray-600 link link-underline link-underline-black hover:font-bold hover:text-[#00AEC5]"><?php _e('Team','theme-text-domain'); ?></a>
                     </div>
                     
                   </div>
@@ -163,25 +163,25 @@
                   </div>
                   <div class="font-poppins">
                     <div class="ml-2">
-                      <a href="<?php bloginfo('url'); ?>/events-collaboration" class="text-gray-600 link link-underline link-underline-[#00AEC5] hover:font-bold hover:text-[#00AEC5]"><?php _e('Events & Collaboration','theme-text-domain'); ?></a>
+                      <a href="<?php bloginfo('url'); ?>/events-collaboration" class="text-gray-600 link link-underline link-underline-black hover:font-bold hover:text-[#00AEC5]"><?php _e('Events & Collaboration','theme-text-domain'); ?></a>
                     </div>
                     <div class="ml-2">
-                      <a href="<?php bloginfo('url'); ?>/podcasts" class="text-gray-600 link link-underline link-underline-[#00AEC5] hover:font-bold hover:text-[#00AEC5]"><?php _e('Podcasts','theme-text-domain'); ?></a>
+                      <a href="<?php bloginfo('url'); ?>/podcasts" class="text-gray-600 link link-underline link-underline-black hover:font-bold hover:text-[#00AEC5]"><?php _e('Podcasts','theme-text-domain'); ?></a>
                     </div>
                     <div class="ml-2">
-                      <a href="<?php bloginfo('url'); ?>/building-history" class="text-gray-600 link link-underline link-underline-[#00AEC5] hover:font-bold hover:text-[#00AEC5]"><?php _e('Building History','theme-text-domain'); ?></a>
+                      <a href="<?php bloginfo('url'); ?>/building-history" class="text-gray-600 link link-underline link-underline-black hover:font-bold hover:text-[#00AEC5]"><?php _e('Building History','theme-text-domain'); ?></a>
                     </div>
                     <div class="ml-2">
-                      <a href="<?php bloginfo('url'); ?>/join-our-team" class="text-gray-600 link link-underline link-underline-[#00AEC5] hover:font-bold hover:text-[#00AEC5]"><?php _e('Join the Team','theme-text-domain'); ?></a>
+                      <a href="<?php bloginfo('url'); ?>/join-our-team" class="text-gray-600 link link-underline link-underline-black hover:font-bold hover:text-[#00AEC5]"><?php _e('Join the Team','theme-text-domain'); ?></a>
                     </div>
                   </div>
                 </div>
 
                 <div class="mt-2">
-                  <a href="<?php bloginfo('url'); ?>/new-construction" class="text-gray-700 text-3xl link link-underline link-underline-[#00AEC5] hover:font-bold hover:text-[#00AEC5]"><?php _e('New Construction','theme-text-domain'); ?></a>
+                  <a href="<?php bloginfo('url'); ?>/new-construction" class="text-gray-700 text-3xl link link-underline link-underline-black hover:font-bold hover:text-[#00AEC5]"><?php _e('New Construction','theme-text-domain'); ?></a>
                 </div>
                 <div class="mt-2">
-                  <a href="<?php bloginfo('url'); ?>/contact-us" class="text-gray-700 text-3xl link link-underline link-underline-[#00AEC5] hover:font-bold hover:text-[#00AEC5]"><?php _e('Contact Us','theme-text-domain'); ?></a>
+                  <a href="<?php bloginfo('url'); ?>/contact-us" class="text-gray-700 text-3xl link link-underline link-underline-black hover:font-bold hover:text-[#00AEC5]"><?php _e('Contact Us','theme-text-domain'); ?></a>
                 </div>
                 
                 
