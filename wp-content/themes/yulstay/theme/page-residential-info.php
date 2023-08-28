@@ -69,21 +69,23 @@ $residential_info_right_section_investment_description_three = get_field('reside
 
 <div class="h-screen w-screen p-14 mr-14 gap-6 overflow-y-scroll scroll-style">
     <div class="">
-
-        <div class="flex gap-3 mb-3">
-				<div>
-					<a href="<?php bloginfo('url'); ?>/home" class="text-gray-400 hover:text-gray-800 font-bold"><?php _e('Home','theme-text-domain'); ?></a>
-				</div>
-				
-                <div class="flex items-center content-between">
-					<div>
-						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
-						<path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
-						</svg>
-					</div>
-				</div>
-				<div class="font-medium"><?php the_title(); ?></div>
+        <div class="flex justify-between">
+          <div class="flex gap-3 mb-3">
+            <div>
+              <a href="<?php bloginfo('url'); ?>/home" class="text-gray-400 hover:text-gray-800 font-bold"><?php _e('Home','theme-text-domain'); ?></a>
+            </div>
+            <div class="flex items-center content-between">
+              <div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                </svg>
+              </div>
+            </div>
+            <div class="font-medium"><?php the_title(); ?></div>
+          </div>
+          <div>test</div>
         </div>
+
         <div class="md:block hidden flex justify-center">
             <a href="<?php bloginfo('url'); ?>/home" class="flex justify-center"><img src="<?php echo $residential_info_left_section_company_logo; ?>" class="w-60 pb-4" alt=""></a>
         </div>
