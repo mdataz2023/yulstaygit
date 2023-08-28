@@ -8,7 +8,7 @@
  */
 
 get_header();
-
+global $wpdb;
 $image_one = get_field('image_one');
 $image_two = get_field('image_two');
 $image_three = get_field('image_three');
@@ -46,7 +46,6 @@ $residential_image_seven = get_field('residential_image_seven');
 $residential_image_eight = get_field('residential_image_eight');
 $residential_image_nine = get_field('residential_image_nine');
 $residential_image_ten = get_field('residential_image_ten');
-
 
 ?>
 
@@ -119,7 +118,12 @@ $residential_image_ten = get_field('residential_image_ten');
                             </div>
                             <div class="grid grid-cols-2 text-sm py-1 border-dashed border-b border-gray-500">
                                 <div class="font-medium">Water supply</div>
-                                <div class="font-light">test</div>
+                                <div class="font-light"><?php
+                                $results = $wpdb->get_results(" SELECT * FROM type_caracteristiques tc join caracteristiques c on c.TCAR_CODE=tc.SCARAC_CODE where TCAR_CODE='EAU' and NO_INSCRIPTION = '".get_the_content()."'", OBJECT );
+                                foreach ($results as $page) {
+                                   echo $page->DESCRIPTION_ANGLAISE.' ';
+                                }
+                                ?></div>
                             </div>
                             <div class="grid grid-cols-2 text-sm py-1 border-dashed border-b border-gray-500">
                                 <div class="font-medium">Roofing</div>
@@ -184,7 +188,12 @@ $residential_image_ten = get_field('residential_image_ten');
 
                             <div class="grid grid-cols-2 text-sm py-1 border-dashed border-b border-gray-500">
                                 <div class="font-medium">Parking (total)</div>
-                                <div class="font-light">test</div>
+                                <div class="font-light"><?php
+                                $results = $wpdb->get_results(" SELECT * FROM type_caracteristiques tc join caracteristiques c on c.TCAR_CODE=tc.SCARAC_CODE where TCAR_CODE='STAT' and NO_INSCRIPTION = '".get_the_content()."'", OBJECT );
+                                foreach ($results as $page) {
+                                   echo $page->DESCRIPTION_ANGLAISE.' ';
+                                }
+                                ?></div>
                             </div>
                             <div class="grid grid-cols-2 text-sm py-1 border-dashed border-b border-gray-500">
                                 <div class="font-medium">Driveway</div>
@@ -212,7 +221,12 @@ $residential_image_ten = get_field('residential_image_ten');
                             </div>
                             <div class="grid grid-cols-2 text-sm pt-1 mb-8 border-dashed border-b border-gray-500">
                                 <div class="font-medium">Parking</div>
-                                <div class="font-light">test</div>
+                                <div class="font-light"><?php
+                                $results = $wpdb->get_results(" SELECT * FROM type_caracteristiques tc join caracteristiques c on c.TCAR_CODE=tc.SCARAC_CODE where TCAR_CODE='STAC' and NO_INSCRIPTION = '".get_the_content()."'", OBJECT );
+                                foreach ($results as $page) {
+                                   echo $page->DESCRIPTION_ANGLAISE.' ';
+                                }?>
+                                </div>
                             </div>
 
                             <div class="grid grid-cols-2 gap-5 pb-8">
@@ -311,12 +325,10 @@ $residential_image_ten = get_field('residential_image_ten');
                         <div class="tab-pane hidden" id="content4">
                             <div class="text-sm font-medium py-1 font-poppins">
                                 <?php
-                                 global $wpdb;
-                                 $results = $wpdb->get_results("SELECT * FROM ADDENDA WHERE NO_INSCRIPTION = '".get_the_content()."'", OBJECT );
+                                 $results = $wpdb->get_results("SELECT * FROM ADDENDA WHERE NO_INSCRIPTION = '".get_the_content()."' and CODE_LANGUE='A'", OBJECT );
                                  foreach ($results as $page) {
                                     echo $page->TEXTE.'<br/>';
                                  }
-                               print_r(  $wpdb->last_error);
                                 ?>
                             </div>
                         </div>
@@ -352,8 +364,6 @@ $residential_image_ten = get_field('residential_image_ten');
                 // Simulate click on the first tab to open it on page load
                 tabs[0].click();
                 </script>
-
-
             </div>
 
         </div>
