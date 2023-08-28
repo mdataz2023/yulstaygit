@@ -8,7 +8,7 @@ get_header();
 
 <div class="h-screen w-screen mr-12 grid grid-cols-1 md:grid-cols-2 p-14 gap-6">
 
-<div class="wrapper">
+<!-- <div class="wrapper">
     <a href="#">Hover Me!</a>
   </div>
 
@@ -74,7 +74,7 @@ a:hover:before,
 a:hover:after{
 top: 0;
 }
-  </style>
+  </style> -->
 
 <div hidden class="box-1">
     <div class="btn btn-one">
