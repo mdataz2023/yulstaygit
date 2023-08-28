@@ -119,7 +119,7 @@ top: 0;
 ========================
 */
 .btn-one {
-  color: #FFF;
+  color: #00AEC5;
   transition: all 0.3s;
   position: relative;
 }
