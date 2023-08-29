@@ -8,34 +8,181 @@
 
 get_header(); ?>
 
-
-
-<div class="h-screen w-screen mr-12 grid grid-cols-1 md:grid-cols-2 p-14 gap-6">
-
-    <div>
-
-        <div>
-        <div class="flex gap-3 mb-3 mt-14">
-				<div>
-					<a href="<?php bloginfo('url'); ?>/home" class="text-gray-400 hover:text-gray-800 font-bold"><?php _e('Home','theme-text-domain'); ?></a>
-				</div>
-				<div class="flex items-center content-between">
-					<div>
-						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
-						<path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
-						</svg>
-					</div>
-				</div>
-				
-				<div class="font-medium"><?php the_title(); ?>
-			</div>
+<style>
+/* Add custom styles if needed */
+.active-button {
+    background-color: #00AEC5;
+    /* Change to your desired active button background color */
+}
+</style>
+<div class="h-screen w-screen pr-12 overflow-y-scroll scroll-style">
+    <div class="">
+        <div class="flex pb-7 overflow-hidden gap-1 h-[500px]">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d36553983.44087083!2d-96!3d56!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4b0d03d337cc6ad9%3A0x9968b72aa2438fa5!2sCanada!5e0!3m2!1sen!2slk!4v1692665654783!5m2!1sen!2slk"
+                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
-        </div>
-        <div class="md:block hidden">
-        <a href="<?php bloginfo('url'); ?>/home"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/7.png" class="w-32 pb-4" alt=""></a>
-          </div>
 
-        <?php
+        <div class="">
+            <div class="max-w-7xl mx-auto">
+
+                <div class="flex justify-between">
+                    <div class="flex gap-10 mb-7 mt-5">
+
+                        <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown"
+                            class="text-black bg-gray-100 hover:bg-gray-200 font-medium rounded-lg text-sm px-5 py-2 text-center inline-flex items-center  "
+                            type="button">Municipality <svg class="w-2.5 h-2.5 ml-2.5" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="m1 1 4 4 4-4" />
+                            </svg></button>
+                        <!-- Dropdown menu -->
+                        <div id="dropdown"
+                            class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-lg w-44 dark:bg-gray-700">
+                            <ul class="py-2 text-sm text-gray-700 dark:text-gray-200"
+                                aria-labelledby="dropdownDefaultButton">
+                                <li>
+                                    <a href="#"
+                                        class="block px-4 py-2 hover:bg-gray-200 dark:hover:bg-gray-600 dark:hover:text-black">Dashboard</a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="block px-4 py-2 hover:bg-gray-200 dark:hover:bg-gray-600 dark:hover:text-black">Settings</a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="block px-4 py-2 hover:bg-gray-200 dark:hover:bg-gray-600 dark:hover:text-black">Earnings</a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="block px-4 py-2 hover:bg-gray-200 dark:hover:bg-gray-600 dark:hover:text-black">Sign
+                                        out</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown"
+                            class="text-black bg-gray-100  hover:bg-gray-200  font-medium rounded-lg text-sm px-5 py-2 text-center inline-flex items-center  "
+                            type="button">Bathrooms <svg class="w-2.5 h-2.5 ml-2.5" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="m1 1 4 4 4-4" />
+                            </svg></button>
+                        <!-- Dropdown menu -->
+                        <div id="dropdown"
+                            class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-lg w-44 dark:bg-gray-700">
+                            <ul class="py-2 text-sm text-gray-700 dark:text-gray-200"
+                                aria-labelledby="dropdownDefaultButton">
+                                <li>
+                                    <a href="#"
+                                        class="block px-4 py-2 hover:bg-gray-200 dark:hover:bg-gray-600 dark:hover:text-black">Dashboard</a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="block px-4 py-2 hover:bg-gray-200 dark:hover:bg-gray-600 dark:hover:text-black">Settings</a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="block px-4 py-2 hover:bg-gray-200 dark:hover:bg-gray-600 dark:hover:text-black">Earnings</a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="block px-4 py-2 hover:bg-gray-200 dark:hover:bg-gray-600 dark:hover:text-black">Sign
+                                        out</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown"
+                            class="text-black bg-gray-100  hover:bg-gray-200  font-medium rounded-lg text-sm px-5 py-2 text-center inline-flex items-center  "
+                            type="button">Bedrooms <svg class="w-2.5 h-2.5 ml-2.5" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="m1 1 4 4 4-4" />
+                            </svg></button>
+                        <!-- Dropdown menu -->
+                        <div id="dropdown"
+                            class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-lg w-44 dark:bg-gray-700">
+                            <ul class="py-2 text-sm text-gray-700 dark:text-gray-200"
+                                aria-labelledby="dropdownDefaultButton">
+                                <li>
+                                    <a href="#"
+                                        class="block px-4 py-2 hover:bg-gray-200 dark:hover:bg-gray-600 dark:hover:text-black">Dashboard</a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="block px-4 py-2 hover:bg-gray-200 dark:hover:bg-gray-600 dark:hover:text-black">Settings</a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="block px-4 py-2 hover:bg-gray-200 dark:hover:bg-gray-600 dark:hover:text-black">Earnings</a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="block px-4 py-2 hover:bg-gray-200 dark:hover:bg-gray-600 dark:hover:text-black">Sign
+                                        out</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown"
+                            class="text-black bg-gray-100  hover:bg-gray-200  font-medium rounded-lg text-sm px-5 py-2 text-center inline-flex items-center  "
+                            type="button">Prix <svg class="w-2.5 h-2.5 ml-2.5" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="m1 1 4 4 4-4" />
+                            </svg></button>
+                        <!-- Dropdown menu -->
+                        <div id="dropdown"
+                            class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-lg w-44 dark:bg-gray-700">
+                            <ul class="py-2 text-sm text-gray-700 dark:text-gray-200"
+                                aria-labelledby="dropdownDefaultButton">
+                                <li>
+                                    <a href="#"
+                                        class="block px-4 py-2 hover:bg-gray-200 dark:hover:bg-gray-600 dark:hover:text-black">Dashboard</a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="block px-4 py-2 hover:bg-gray-200 dark:hover:bg-gray-600 dark:hover:text-black">Settings</a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="block px-4 py-2 hover:bg-gray-200 dark:hover:bg-gray-600 dark:hover:text-black">Earnings</a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="block px-4 py-2 hover:bg-gray-200 dark:hover:bg-gray-600 dark:hover:text-black">Sign
+                                        out</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="pt-5">
+                        <!-- Buttons to toggle between Grid and List views -->
+                        <button id="gridButton"
+                            class="border border-gray-500 text-black px-4 py-2 rounded mr-2 active-button">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-grid-3x2-gap-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M1 4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V4zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V4zM1 9a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V9zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V9zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V9z" />
+                            </svg>
+                        </button>
+                        <button id="listButton" class="border border-gray-500 text-black px-4 py-2 rounded">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-view-list" viewBox="0 0 16 16">
+                                <path
+                                    d="M3 4.5h10a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2zm0 1a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1H3zM1 2a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13A.5.5 0 0 1 1 2zm0 12a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13A.5.5 0 0 1 1 14z" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+
+
+
+
+                <?php
 
 $the_query = new WP_Query(array(
 
@@ -47,187 +194,165 @@ $the_query = new WP_Query(array(
 
 ));
 
-
-
 if ($the_query->have_posts()) {
 
     $displayed_categories = array(); // Array to store displayed category names
 
+    ?>
 
-
-    while ($the_query->have_posts()) {
-
-        $the_query->the_post();
-
-
-
-        $thumbnail_id = get_post_thumbnail_id();
-
-        $thumbnail_url = wp_get_attachment_image_src($thumbnail_id, 'thumbnail-size', true);
-
-        $thumbnail_meta = get_post_meta($thumbnail_id, '_wp_attachment_image_alt', true);
-
-
-
-        $categories = get_the_category();
-
-
-
-        if ($categories) {
-            foreach ($categories as $category) {
-                if (!in_array($category->name, $displayed_categories)) {
-                    $categoryDivName1=$category->name;
-                    echo '<div>';
-                    echo '<div class="text-6xl category-name-class transitionCS" style="color:#c1c1c1;line-height: 80px;"   onmouseover="categoryMouseOver('."'".$categoryDivName1."'".',this)" onmouseout="categoryMouseOut('."'".$categoryDivName1."'".')">' . esc_html($category->name) . '</div>';
-                    echo '</div>';
-                    $displayed_categories[] = $category->name; // Add the category name to the displayed array
-                }
-            }
-
-        }
-
-    }
-
-    wp_reset_postdata();
-
-}
-
-?>
-
-    </div>
-
-    <div class="col-scroll">
-
-        <div class="text-black">
-
-            <div class="d-flex flex-row mb-3 text-white mt-4 gap-4 text-uppercase text-black">
-
-                <div class="text-black" style="font-size: 25px;font-weight: bold;"><a href>Residential</a></div>
-
-            </div>
-
-
-
-            <div class="text-black" style="font-size: 22px;">
-
-
-
-            </div>
-
-
-
-            <div class="mt-5">
-
-                <!-- <a href><div class="text-5xl"><h1>1500 De Maisonneuve</div></a> -->
-
-                <div>
-
+                <div id="gridView" class="grid grid-cols-3 gap-x-4 gap-y-5 font-poppins">
                     <?php
+                while ($the_query->have_posts()) {
+                    $inscriptionsData = $wpdb->get_row(" SELECT * FROM INSCRIPTIONS where NO_INSCRIPTION = '".get_the_content()."'", OBJECT );
 
-$categories = get_categories(array(
-
-    'taxonomy' => 'category', // Replace 'category' with your custom taxonomy if needed
-
-    'hide_empty' => false,
-
-));
-
-
-$i=0;
-foreach ($categories as $category) {
-$categoryDivName=$category->name;
-    echo '<div>';
-
-    echo '<h2 class="category-name text-black text-6xl md:text-lg md:text-white">' . esc_html($category->name) . '</h2>';
-
-    echo '<ul>';
-
-    $category_posts = new WP_Query(array(
-
-        'post_type' => 'residential',
-
-        'posts_per_page' => -1,
-
-        'tax_query' => array(
-
-            array(
-
-                'taxonomy' => 'category', // Replace 'category' with your custom taxonomy if needed
-
-                'field' => 'term_id',
-
-                'terms' => $category->term_id,
-
-            ),
-
-        ),
-
-    ));
+                    $the_query->the_post();
+                    $thumbnail_id = get_post_thumbnail_id();
+                    $thumbnail_url = wp_get_attachment_image_src($thumbnail_id, 'thumbnail-size', true);
+                    $thumbnail_meta = get_post_meta($thumbnail_id, '_wp_attachment_image_alt', true);
+                    $categories = get_the_category();
 
 
-    echo "<div id='".$categoryDivName."' class='".$categoryDivName."'>";
-    if ($category_posts->have_posts()) {
-        while ($category_posts->have_posts()) {
-            $category_posts->the_post();
-            echo '<li><a class="text-4xl multi-residential-post transitionCS" style="color: #c1c1c1;" href="' . esc_url(get_permalink()) . '">' . get_the_title() . '</a></li>';
 
+                    // if ($categories) {
+                    //     foreach ($categories as $category) {
+                    //         if (!in_array($category->name, $displayed_categories)) {
+                                // $categoryDivName1=$category->name;
+                                $results = $wpdb->get_row(" SELECT * FROM PHOTOS where  NO_INSCRIPTION = '".get_the_content()."'", OBJECT );
+
+                ?>
+                    <div>
+                        <a href="<?php echo get_permalink();?>">
+                            <img class="" src="<?php echo $results->PhotoURL;?>" alt="">
+                            <div class="text-sm py-2"><?php
+                    $municipalite = $wpdb->get_row(" SELECT * FROM MUNICIPALITES where CODE = '".$inscriptionsData->MUN_CODE."'", OBJECT );
+                    echo $municipalite->DESCRIPTION;?></div>
+                            <div class="text-lg"><?php the_title();?></div>
+                            <p class="text-sm pt-1 pb-1"><?php $remarques = $wpdb->get_row(" SELECT * FROM REMARQUES where NO_INSCRIPTION = '".get_the_content()."' and CODE_LANGUE='A'", OBJECT );
+                    echo $remarques->TEXTE;
+                    ?></p>
+                            <div class="flex gap-3">
+                                <div class="border-r my-4 pr-4 border-gray-400">
+                                    <div>Bedrooms</div>
+                                    <div>3</div>
+                                </div>
+                                <div class="border-r my-4 pr-4 border-gray-400">
+                                    <div>Bathrooms</div>
+                                    <div>2</div>
+                                </div>
+                                <div class="my-4 pr-4">
+                                    <div>price</div>
+                                    <div>599 000.0 $</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <?php
+            //      }
+            //     }
+
+            // }
         }
-
     }
-    echo "</div>";
-
-
-    echo '</ul>';
-
-    echo '</div>';
-
-
-
-    wp_reset_postdata(); // Reset the post data for the inner query
-    $i++;
-}
-
-?>
-
-
+     ?>
                 </div>
+
+
+                <div id="listView" class="grid grid-cols-3 content-center mb-8 gap-7 hidden">
+                    <?php
+                while ($the_query->have_posts()) {
+                    $inscriptionsData = $wpdb->get_row(" SELECT * FROM INSCRIPTIONS where NO_INSCRIPTION = '".get_the_content()."'", OBJECT );
+
+                    $the_query->the_post();
+                    $thumbnail_id = get_post_thumbnail_id();
+                    $thumbnail_url = wp_get_attachment_image_src($thumbnail_id, 'thumbnail-size', true);
+                    $thumbnail_meta = get_post_meta($thumbnail_id, '_wp_attachment_image_alt', true);
+                    $categories = get_the_category();
+
+
+
+                    // if ($categories) {
+                    //     foreach ($categories as $category) {
+                    //         if (!in_array($category->name, $displayed_categories)) {
+                                // $categoryDivName1=$category->name;
+                                $results = $wpdb->get_row(" SELECT * FROM PHOTOS where  NO_INSCRIPTION = '".get_the_content()."'", OBJECT );
+
+                ?>
+                    <div>
+                        <a href="<?php echo get_permalink();?>">
+                            <img class="" src="<?php  echo $results->PhotoURL;?>" alt="">
+                        </a>
+                    </div>
+                    <div class="col-span-2 flex flex-col justify-between">
+                        <a href="<?php echo get_permalink();?>">
+                            <div>
+                                <div class="text-base py-2 border-b border-gray-400"><?php
+                    $municipalite = $wpdb->get_row(" SELECT * FROM MUNICIPALITES where CODE = '".$inscriptionsData->MUN_CODE."'", OBJECT );
+                    echo $municipalite->DESCRIPTION;?></div>
+                                <div class="text-3xl py-2 border-b border-gray-400"><?php the_title();?></div>
+                                <p class="text-lg py-2 border-b border-gray-400"><?php $remarques = $wpdb->get_row(" SELECT * FROM REMARQUES where NO_INSCRIPTION = '".get_the_content()."' and CODE_LANGUE='A'", OBJECT );
+                                echo $remarques->TEXTE;
+                                ?></p>
+                            </div>
+                        </a>
+
+                        <div class="flex gap-3">
+                            <div class="border-r my-4 pr-4 border-gray-400">
+                                <div>Bedrooms</div>
+                                <div>3</div>
+                            </div>
+                            <div class="border-r my-4 pr-4 border-gray-400">
+                                <div>Bathrooms</div>
+                                <div>2</div>
+                            </div>
+                            <div class="my-4 pr-4">
+                                <div>price</div>
+                                <div>599 000.0 $</div>
+                            </div>
+                        </div>
+                    </div>
+                    <?php
+            //      }
+            //     }
+
+            // }
+        }
+     ?>
+                </div>
+
             </div>
         </div>
+
     </div>
-
 </div>
-
-</div>
-
-
 <script>
-function categoryMouseOver(categoryName, el) {
-    window.location.hash = '#' + categoryName;
-    document.querySelectorAll('.category-name-class').forEach(function(classNames) {
-        classNames.style.color = "#c1c1c1";
-    });
-    document.getElementById(categoryName).style.color = "black";
+// Get references to the buttons and views
+const gridButton = document.getElementById('gridButton');
+const listButton = document.getElementById('listButton');
+const gridView = document.getElementById('gridView');
+const listView = document.getElementById('listView');
 
-    el.style.color = "black";
+// Initially hide listView and display gridView
+listView.classList.add('hidden');
+gridView.classList.remove('hidden');
 
-    document.querySelectorAll('.category-mouse-over-class').forEach(function(classNames) {
-        classNames.classList.remove('category-mouse-over-class');
-    });
+// Function to toggle between Grid and List views
+gridButton.addEventListener('click', () => {
+    gridView.classList.remove('hidden');
+    listView.classList.add('hidden');
 
-    var element = document.getElementById(categoryName);
-    element.classList.add("category-mouse-over-class");
-    element.classList.remove("category-mouse-end-class");
+    // Highlight the clicked button
+    gridButton.classList.add('active-button');
+    listButton.classList.remove('active-button');
+});
 
-}
+listButton.addEventListener('click', () => {
+    gridView.classList.add('hidden');
+    listView.classList.remove('hidden');
 
-function categoryMouseOut(categoryName) {
-    // window.location.hash = '#' + categoryName;
-    // document.getElementById(categoryName).style.color = "#c1c1c1";
-
-    // var element = document.getElementById(categoryName);
-    // element.classList.remove("category-mouse-over-class");
-    // element.classList.add("category-mouse-end-class");
-}
+    // Highlight the clicked button
+    listButton.classList.add('active-button');
+    gridButton.classList.remove('active-button');
+});
 </script>
 
 
