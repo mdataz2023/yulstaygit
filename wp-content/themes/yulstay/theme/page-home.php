@@ -3,6 +3,7 @@
 	Template Name: Home
 */
 get_header();
+error_reporting(0);
 
 
 $addendaFile = file_get_contents( "/home/customer/www/mdataz.com/public_html/yulstaygit/listing-files/ADDENDA.TXT");
