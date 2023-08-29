@@ -47,445 +47,354 @@ $residential_image_eight = get_field('residential_image_eight');
 $residential_image_nine = get_field('residential_image_nine');
 $residential_image_ten = get_field('residential_image_ten');
 
+$inscriptionsData = $wpdb->get_row(" SELECT * FROM INSCRIPTIONS where NO_INSCRIPTION = '".get_the_content()."'", OBJECT );
 ?>
 
-<div class="h-screen w-screen mr-12 grid grid-cols-1 md:grid-cols-12 px-14 gap-4">
+<style>
+.scroll-style::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px #fff;
+    background-color: #fff;
 
-    <div class="col-span-5 md:col-span-5 col-scroll" id="idCol5">
+}
 
+.scroll-style::-webkit-scrollbar {
+    width: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+}
 
+.scroll-style::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #9cebf6;
+    border: 2px solid #9cebf6;
+}
+</style>
 
-        <div>
-            <h1 class="text-2xl font-light font-poppins"><?php echo get_the_title(); ?></h1>
-            <div class="transitionCS7 pt-1 font-poppins" id="detailId2">
-                <div class="font-bold text-base">Address</div>
-                <div class="text-sm font-normal">3007 , Rue Cherrier , Montréal (L'Île-Bizard/Sainte-Geneviève)</div>
-                <div class="font-bold text-base pt-1">Description - MLS 19441707 </div>
-                <div class="text-sm font-normal">Room(s) : 20 | Bedroom(s) : 5 | Bathroom(s) : 3 | Powder room(s) : 1
-                </div>
-                <div class="text-sm font-normal pt-1">This stunning waterfront property boasts 5 bedrooms and 3.5
-                    bathrooms, with walnut and heated ceramic floors throughout. The marble countertop adds an element
-                    of elegance to the home, and the large basement provides easy access to the backyard and paved jumbo
-                    terrace, perfect for outdoor entertaining. The garage can accommodate a lift for up to 4 cars. The
-                    location offers privacy and tranquility, but is just a short drive from all services, providing
-                    access to shopping, the REM, and other public transportation. This luxurious home is the perfect
-                    retreat for those seeking waterfront living with all the amenities of city life nearby </div>
-            </div>
-            <div class="transitionCS7" id="detailId1">
-                <div class="container mx-auto">
-                    <div class="flex justify-between border-b text-black border-gray-300">
-                        <div class="cursor-pointer my-2 text-base font-normal hover:text-[#00AEC5] pr-1 border-r border-black"
-                            id="tab1">Characteristics</div>
-                        <div class="cursor-pointer my-2 text-base font-normal hover:text-[#00AEC5] pr-1 border-r border-black"
-                            id="tab2">Room Dimentions</div>
-                        <div class="cursor-pointer my-2 text-base font-normal hover:text-[#00AEC5] pr-1 border-r border-black"
-                            id="tab3">Inclusions</div>
-                        <div class="cursor-pointer my-2 text-base font-normal hover:text-[#00AEC5] pr-1 border-r border-black"
-                            id="tab4">Addenda</div>
-                        <div class="cursor-pointer my-2 text-base font-normal hover:text-[#00AEC5] pr-1 border-r border-black"
-                            id="tab5">Calculators</div>
-                        <div class="cursor-pointer my-2 text-base font-normal hover:text-[#00AEC5] pr-1 border-r border-black"
-                            id="tab6">Map</div>
-                        <div class="cursor-pointer my-2 text-base font-normal hover:text-[#00AEC5]" id="tab7">Contact
-                        </div>
+<div class="h-screen w-screen pr-12 overflow-y-scroll scroll-style">
+
+    <div class="">
+        <!-- caro -->
+        <div id="app" class="transition-all duration-500 ease-linear pb-7">
+            <div class="relative">
+                <div
+                    class="slides-container h-[350px] flex snap-x snap-mandatory overflow-hidden overflow-x-auto space-x-2 rounded scroll-smooth before:w-[45vw] before:shrink-0 after:w-[45vw] after:shrink-0 md:before:w-0 md:after:w-0">
+                    <?php
+                        $results = $wpdb->get_results(" SELECT * FROM PHOTOS where  NO_INSCRIPTION = '".get_the_content()."'", OBJECT );
+                        foreach ($results as $page) {
+                    ?>
+                    <div class="slide aspect-[4/3] h-full flex-shrink-0 snap-center overflow-hidden">
+                        <img class="w-full h-full object-cover" src="<?php echo $page->PhotoURL;?>"
+                            alt="<?php echo $page->CODE_DESCRIPTION_PHOTO;?>">
                     </div>
-                    <div class="py-4l" id="tabContent">
-                        <!-- tab 1 -->
-                        <div class="tab-pane hidden" id="content1">
-                            <div class="grid grid-cols-2 text-sm py-1 border-dashed border-b border-gray-500">
-                                <div class="font-medium">Property Type</div>
-                                <div class="font-light">test</div>
-                            </div>
-                            <div class="grid grid-cols-2 text-sm py-1 border-dashed border-b border-gray-500">
-                                <div class="font-medium">Type of building</div>
-                                <div class="font-light">test</div>
-                            </div>
-                            <div class="grid grid-cols-2 text-sm py-1 border-dashed border-b border-gray-500">
-                                <div class="font-medium">Building dimensions</div>
-                                <div class="font-light">test</div>
-                            </div>
-                            <div class="grid grid-cols-2 text-sm py-1 border-dashed border-b border-gray-500">
-                                <div class="font-medium">Living Area</div>
-                                <div class="font-light">test</div>
-                            </div>
-                            <div class="grid grid-cols-2 text-sm py-1 border-dashed border-b border-gray-500">
-                                <div class="font-medium">Lot dimensions</div>
-                                <div class="font-light">test</div>
-                            </div>
-                            <div class="grid grid-cols-2 text-sm py-1 border-dashed border-b border-gray-500">
-                                <div class="font-medium">Zoning</div>
-                                <div class="font-light">test</div>
-                            </div>
-                            <div class="grid grid-cols-2 text-sm py-1 border-dashed border-b border-gray-500">
-                                <div class="font-medium">Water supply</div>
-                                <div class="font-light"><?php
-                                $results = $wpdb->get_results(" SELECT * FROM type_caracteristiques tc join caracteristiques c on c.TCAR_CODE=tc.SCARAC_CODE where TCAR_CODE='EAU' and NO_INSCRIPTION = '".get_the_content()."'", OBJECT );
-                                foreach ($results as $page) {
-                                   echo $page->DESCRIPTION_ANGLAISE.' ';
-                                }
-                                ?></div>
-                            </div>
-                            <div class="grid grid-cols-2 text-sm py-1 border-dashed border-b border-gray-500">
-                                <div class="font-medium">Roofing</div>
-                                <div class="font-light">test</div>
-                            </div>
-                            <div class="grid grid-cols-2 text-sm py-1 border-dashed border-b border-gray-500">
-                                <div class="font-medium">Siding</div>
-                                <div class="font-light">test</div>
-                            </div>
-                            <div class="grid grid-cols-2 text-sm py-1 border-dashed border-b border-gray-500">
-                                <div class="font-medium">Windows</div>
-                                <div class="font-light">test</div>
-                            </div>
-                            <div class="grid grid-cols-2 text-sm py-1 border-dashed border-b border-gray-500">
-                                <div class="font-medium">Window Type</div>
-                                <div class="font-light">test</div>
-                            </div>
-                            <div class="grid grid-cols-2 text-sm py-1 border-dashed border-b border-gray-500">
-                                <div class="font-medium">Energy/Heating</div>
-                                <div class="font-light">test</div>
-                            </div>
-                            <div class="grid grid-cols-2 text-sm py-1 border-dashed border-b border-gray-500">
-                                <div class="font-medium">Basement</div>
-                                <div class="font-light">test</div>
-                            </div>
-                            <div class="grid grid-cols-2 text-sm py-1 border-dashed border-b border-gray-500">
-                                <div class="font-medium">Bathroom</div>
-                                <div class="font-light">test</div>
-                            </div>
-                            <div class="grid grid-cols-2 text-sm py-1 border-dashed border-b border-gray-500">
-                                <div class="font-medium">Heating system</div>
-                                <div class="font-light">test</div>
-                            </div>
-                            <div class="grid grid-cols-2 text-sm py-1 border-dashed border-b border-gray-500">
-                                <div class="font-medium">Sewage system</div>
-                                <div class="font-light">test</div>
-                            </div>
-                            <div class="grid grid-cols-2 text-sm py-1 border-dashed border-b border-gray-500">
-                                <div class="font-medium">Year of construction</div>
-                                <div class="font-light">test</div>
-                            </div>
-                            <div class="grid grid-cols-2 text-sm py-1 border-dashed border-b border-gray-500">
-                                <div class="font-medium">Trade possible</div>
-                                <div class="font-light">test</div>
-                            </div>
-                            <div class="grid grid-cols-2 text-sm py-1 border-dashed border-b border-gray-500">
-                                <div class="font-medium">Certificate of Location</div>
-                                <div class="font-light">test</div>
-                            </div>
-                            <div class="grid grid-cols-2 text-sm py-1 border-dashed border-b border-gray-500">
-                                <div class="font-medium">Certificate of Location</div>
-                                <div class="font-light">test</div>
-                            </div>
-                            <div class="grid grid-cols-2 text-sm py-1 border-dashed border-b border-gray-500">
-                                <div class="font-medium">Deed of Sale Signature</div>
-                                <div class="font-light">test</div>
-                            </div>
-                            <div class="grid grid-cols-2 text-sm py-1 border-dashed border-b border-gray-500">
-                                <div class="font-medium">Pool</div>
-                                <div class="font-light">test</div>
-                            </div>
+                    <?php
+                        }
+                    ?>
+                </div>
 
-                            <div class="grid grid-cols-2 text-sm py-1 border-dashed border-b border-gray-500">
-                                <div class="font-medium">Parking (total)</div>
-                                <div class="font-light"><?php
-                                $results = $wpdb->get_results(" SELECT * FROM type_caracteristiques tc join caracteristiques c on c.TCAR_CODE=tc.SCARAC_CODE where TCAR_CODE='STAT' and NO_INSCRIPTION = '".get_the_content()."'", OBJECT );
-                                foreach ($results as $page) {
-                                   echo $page->DESCRIPTION_ANGLAISE.' ';
-                                }
-                                ?></div>
-                            </div>
-                            <div class="grid grid-cols-2 text-sm py-1 border-dashed border-b border-gray-500">
-                                <div class="font-medium">Driveway</div>
-                                <div class="font-light">test</div>
-                            </div>
-                            <div class="grid grid-cols-2 text-sm py-1 border-dashed border-b border-gray-500">
-                                <div class="font-medium">Garage</div>
-                                <div class="font-light">test</div>
-                            </div>
-                            <div class="grid grid-cols-2 text-sm py-1 border-dashed border-b border-gray-500">
-                                <div class="font-medium">Lot</div>
-                                <div class="font-light">test</div>
-                            </div>
-                            <div class="grid grid-cols-2 text-sm py-1 border-dashed border-b border-gray-500">
-                                <div class="font-medium">Topography</div>
-                                <div class="font-light">test</div>
-                            </div>
-                            <div class="grid grid-cols-2 text-sm py-1 border-dashed border-b border-gray-500">
-                                <div class="font-medium">Distinctive Features</div>
-                                <div class="font-light">test</div>
-                            </div>
-                            <div class="grid grid-cols-2 text-sm py-1 border-dashed border-b border-gray-500">
-                                <div class="font-medium">Proximity</div>
-                                <div class="font-light">test</div>
-                            </div>
-                            <div class="grid grid-cols-2 text-sm pt-1 mb-8 border-dashed border-b border-gray-500">
-                                <div class="font-medium">Parking</div>
-                                <div class="font-light"><?php
-                                $results = $wpdb->get_results(" SELECT * FROM type_caracteristiques tc join caracteristiques c on c.TCAR_CODE=tc.SCARAC_CODE where TCAR_CODE='STAC' and NO_INSCRIPTION = '".get_the_content()."'", OBJECT );
-                                foreach ($results as $page) {
-                                   echo $page->DESCRIPTION_ANGLAISE.' ';
-                                }?>
-                                </div>
-                            </div>
+                <div class="absolute top-0 left-2 h-full items-center hidden md:flex">
+                    <button role="button" class="prev px-2 py-2 rounded-full bg-neutral-100 text-neutral-900 group"
+                        aria-label="prev"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke-width="1.5" stroke="currentColor"
+                            class="w-5 h-5 group-active:-translate-x-2 transition-all duration-200 ease-linear">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+                        </svg>
 
-                            <div class="grid grid-cols-2 gap-5 pb-8">
-                                <div>
-                                    <div class="text-base font-semibold">Dimensions</div>
-                                    <div class="grid grid-cols-3 text-sm py-1 gap-y-1">
-                                        <div class="font-medium col-span-2">Width of the building</div>
-                                        <div class="font-light">test</div>
+                    </button>
+                </div>
+                <div class="absolute top-0 right-2 h-full items-center hidden md:flex">
+                    <button role="button" class="next px-2 py-2 rounded-full bg-neutral-100 text-neutral-900 group"
+                        aria-label="next"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke-width="1.5" stroke="currentColor"
+                            class="w-5 h-5 group-active:translate-x-2 transition-all duration-200 ease-linear">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <script>
+        const slidesContainer = document.querySelector(".slides-container");
+        const slideWidth = slidesContainer.querySelector(".slide").clientWidth;
+        const prevButton = document.querySelector(".prev");
+        const nextButton = document.querySelector(".next");
 
-                                        <div class="font-medium col-span-2">Depth building</div>
-                                        <div class="font-light">test</div>
+        nextButton.addEventListener("click", () => {
+            slidesContainer.scrollLeft += slideWidth;
+        });
 
-                                        <div class="font-medium col-span-2">Living area</div>
-                                        <div class="font-light">test</div>
+        prevButton.addEventListener("click", () => {
+            slidesContainer.scrollLeft -= slideWidth;
+        });
+        </script>
+        <!-- caro -->
+        <div class="max-w-7xl mx-auto">
+            <div class="flex justify-between pb-7 border-b border-gray-300">
+                <div>
+                    <p class="text-base font-poppins pb-2"><?php
+                    $municipalite = $wpdb->get_row(" SELECT * FROM MUNICIPALITES where CODE = '".$inscriptionsData->MUN_CODE."'", OBJECT );
+                    echo $municipalite->DESCRIPTION;?></p>
+                    <h1 class="text-4xl font-poppins"><?php the_title();?></h1>
+                </div>
+                <div class="flex gap-3 font-poppins">
+                    <div class="text-center border-r mt-4 mb-4 pr-4 border-gray-300">
+                        <div class="text-lg">722.26</div>
+                        <div class="text-sm">sqft</div>
+                    </div>
+                    <div class="text-center border-r mt-4 mb-4 pr-4 border-gray-300">
+                        <div class="text-lg">2</div>
+                        <div class="text-sm">Bedrooms</div>
+                    </div>
+                    <div class="text-center border-r mt-4 mb-4 pr-4 border-gray-300">
+                        <div class="text-lg">2</div>
+                        <div class="text-sm">Bathrooms</div>
+                    </div>
+                    <div class="text-center m-4 pr-4">
+                        <div class="text-lg">599 000.0 $</div>
+                        <div class="text-sm">price</div>
+                    </div>
+                </div>
+            </div>
 
-                                        <div class="font-medium col-span-2">Lot frontage</div>
-                                        <div class="font-light">test</div>
 
-                                        <div class="font-medium col-span-2">Depth of field</div>
-                                        <div class="font-light">test</div>
+            <div class="grid grid-cols-3 gap-7 font-poppins">
+                <div class="col-span-2">
+                    <p class="text-sm pt-7"><?php
+                    $remarques = $wpdb->get_row(" SELECT * FROM REMARQUES where NO_INSCRIPTION = '".$inscriptionsData->NO_INSCRIPTION."' and CODE_LANGUE='A'", OBJECT );
+                    echo $remarques->TEXTE;
+                    ?></p>
 
-                                        <div class="font-medium col-span-2">Lot dimensions (Sq. ft.)</div>
-                                        <div class="font-light">test</div>
-                                    </div>
-                                </div>
-                                <div>
-                                    <div class="text-base font-semibold">Fees and taxes</div>
-                                    <div class="grid grid-cols-3 text-sm py-1 gap-y-1">
-                                        <div class="font-medium col-span-2">Municipal Taxes :</div>
-                                        <div class="font-light">test</div>
-
-                                        <div class="font-medium col-span-2">School taxes :</div>
-                                        <div class="font-light">test</div>
-
-                                        <div class="font-medium col-span-2">Total</div>
-                                        <div class="font-light">test</div>
-                                    </div>
-                                </div>
-                                <div>
-                                    <div class="text-base font-semibold">Municipal evaluation</div>
-                                    <div class="grid grid-cols-3 text-sm py-1 gap-y-1">
-                                        <div class="font-medium col-span-2">Year</div>
-                                        <div class="font-light">test</div>
-
-                                        <div class="font-medium col-span-2">Lot</div>
-                                        <div class="font-light">test</div>
-
-                                        <div class="font-medium col-span-2">Total</div>
-                                        <div class="font-light">test</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- tab 2 -->
-                        <div class="tab-pane hidden" id="content2">
-                            <div class="flex justify-between border-b-2 px-1 border-black">
-                                <div class="text-sm font-bold font-poppins">
-                                    Room(s) : 20
-                                </div>
-                                <div class="text-sm font-bold font-poppins">
-                                    Bedroom(s) : 5
-                                </div>
-                                <div class="text-sm font-bold font-poppins">
-                                    Bathroom(s) : 3
-                                </div>
-                                <div class="text-sm font-bold font-poppins">
-                                    Powder room(s) : 1
-                                </div>
-                            </div>
-                            <div class="grid grid-cols-5">
-                                <div class="text-xs font-poppins font-medium py-1">ROOM(S)</div>
-                                <div class="text-xs font-poppins font-medium py-1">LEVEL</div>
-                                <div class="text-xs font-poppins font-medium py-1">DIMENSIONS</div>
-                                <div class="text-xs font-poppins font-medium py-1">TYPE OF FLOORING</div>
-                                <div class="text-xs font-poppins font-medium py-1">ADDITIONAL INFO.</div>
-
-                                <div class="text-xs font-poppins font-medium py-1">Washroom</div>
-                                <div class="text-xs font-poppins font-medium py-1">Ground floor</div>
-                                <div class="text-xs font-poppins font-medium py-1">8x5.6 P - irr</div>
-                                <div class="text-xs font-poppins font-medium py-1">Ceramic tiles</div>
-                                <div class="text-xs font-poppins font-medium py-1"></div>
-
-                                <div class="text-xs font-poppins font-medium py-1">Washroom</div>
-                                <div class="text-xs font-poppins font-medium py-1">Ground floor</div>
-                                <div class="text-xs font-poppins font-medium py-1">8x5.6 P - irr</div>
-                                <div class="text-xs font-poppins font-medium py-1">Ceramic tiles</div>
-                                <div class="text-xs font-poppins font-medium py-1"></div>
-                            </div>
-                        </div>
-                        <!-- tab 3 -->
-                        <div class="tab-pane hidden" id="content3">
-                            <div class="text-sm font-medium py-1 font-poppins">
-                                All major appliances.
-                            </div>
-                        </div>
-                        <div class="tab-pane hidden" id="content4">
-                            <div class="text-sm font-medium py-1 font-poppins">
-                                <?php
+                    <h2 class="text-2xl pt-7">Addenda</h2>
+                    <p class="text-sm pt-3">
+                        <?php
                                  $results = $wpdb->get_results("SELECT * FROM ADDENDA WHERE NO_INSCRIPTION = '".get_the_content()."' and CODE_LANGUE='A'", OBJECT );
                                  foreach ($results as $page) {
                                     echo $page->TEXTE.'<br/>';
                                  }
-                                ?>
+                    ?>
+                    </p>
+
+                    <h2 class="text-2xl pt-7">Included in the sale</h2>
+                    <p class="text-sm pt-3">
+                        <?php echo $inscriptionsData->INCLUS_ANGLAIS.', '.$inscriptionsData->INCLUS_FRANCAIS;?></p>
+
+                    <h2 class="text-2xl pt-7">Room Details</h2>
+                    <div class="grid grid-cols-5 pt-3">
+                        <div class="text-sm font-poppins font-bold py-1">ROOM(S)</div>
+                        <div class="text-sm font-poppins font-bold py-1">LEVEL</div>
+                        <div class="text-sm font-poppins font-bold py-1">DIMENSIONS</div>
+                        <div class="text-sm font-poppins font-bold py-1">TYPE OF FLOORING</div>
+                        <div class="text-sm font-poppins font-bold py-1">ADDITIONAL INFO.</div>
+
+                        <?php
+                            $results = $wpdb->get_results("SELECT * FROM PIECES_UNITES WHERE NO_INSCRIPTION = '".get_the_content()."' ", OBJECT );
+                            foreach ($results as $page) {
+                                $valeursFixes = $wpdb->get_row("SELECT * FROM VALEURS_FIXES WHERE DOMAINE ='COUVRE_PLANCHER_CODE' AND VALEUR='".$page->COUVRE_PLANCHER_CODE."' ", OBJECT );
+                        ?>
+                        <div class="text-sm font-poppins font-medium py-1">Washroom</div>
+                        <div class="text-sm font-poppins font-medium py-1">Ground floor</div>
+                        <div class="text-sm font-poppins font-medium py-1"><?php echo $page->DIMENSIONS;?></div>
+                        <div class="text-sm font-poppins font-medium py-1">
+                            <?php echo $valeursFixes->DESCRIPTION_ABREGEE_ANGLAISE;?></div>
+                        <div class="text-sm font-poppins font-medium py-1"></div>
+                        <?php
+                            }
+                        ?>
+                    </div>
+
+                    <h2 class="font-poppins text-2xl pt-7 pb-3">Assessment, taxes and other costs</h2>
+                    <?php
+                        $results = $wpdb->get_results("SELECT * FROM CARACTERISTIQUES WHERE NO_INSCRIPTION = '".get_the_content()."' ", OBJECT );
+                        foreach ($results as $page) {
+                            $SOUS_TYPE_CARACTERISTIQUES = $wpdb->get_row("SELECT * FROM SOUS_TYPE_CARACTERISTIQUES WHERE CODE ='".$page->SCARAC_CODE."' AND TCAR_CODE='".$page->TCAR_CODE."' ", OBJECT );
+                            $TYPE_CARACTERISTIQUES = $wpdb->get_row("SELECT * FROM TYPE_CARACTERISTIQUES WHERE  CODE='".$page->TCAR_CODE."' ", OBJECT );
+                    ?>
+                    <div class="flex gap-4 text-sm p-4 border-b border-gray-300 hover:bg-slate-100 hover:duration-100">
+                        <div class="font-bold"><?php echo $SOUS_TYPE_CARACTERISTIQUES->DESCRIPTION_ANGLAISE;?></div>
+                        <div class="font-medium text-gray-600">
+                            <?php echo $TYPE_CARACTERISTIQUES->DESCRIPTION_ANGLAISE;?></div>
+                    </div>
+                    <?php } ?>
+
+                    <h2 class="font-poppins text-2xl pt-7 pb-3">Inclus dans la vente</h2>
+                    <div class="flex gap-4 text-sm p-4 border-b border-gray-300 hover:bg-slate-100 hover:duration-100">
+                        <div class="font-bold">Property Type</div>
+                        <div class="font-medium text-gray-600">test</div>
+                    </div>
+                    <div class="flex gap-4 text-sm p-4 border-b border-gray-300 hover:bg-slate-100 hover:duration-100">
+                        <div class="font-bold">Property Type</div>
+                        <div class="font-medium text-gray-600">test</div>
+                    </div>
+                    <div class="flex gap-4 text-sm p-4 border-b border-gray-300 hover:bg-slate-100 hover:duration-100">
+                        <div class="font-bold">Property Type</div>
+                        <div class="font-medium text-gray-600">test</div>
+                    </div>
+                    <div class="flex gap-4 text-sm p-4 border-b border-gray-300 hover:bg-slate-100 hover:duration-100">
+                        <div class="font-bold">Property Type</div>
+                        <div class="font-medium text-gray-600">test</div>
+                    </div>
+                    <div class="flex gap-4 text-sm p-4 border-b border-gray-300 hover:bg-slate-100 hover:duration-100">
+                        <div class="font-bold">Property Type</div>
+                        <div class="font-medium text-gray-600">test</div>
+                    </div>
+                    <div class="flex gap-4 text-sm p-4 border-b border-gray-300 hover:bg-slate-100 hover:duration-100">
+                        <div class="font-bold">Property Type</div>
+                        <div class="font-medium text-gray-600">test</div>
+                    </div>
+                    <div class="flex gap-4 text-sm p-4 border-b border-gray-300 hover:bg-slate-100 hover:duration-100">
+                        <div class="font-bold">Property Type</div>
+                        <div class="font-medium text-gray-600">test</div>
+                    </div>
+                    <div class="flex gap-4 text-sm p-4 border-b border-gray-300 hover:bg-slate-100 hover:duration-100">
+                        <div class="font-bold">Property Type</div>
+                        <div class="font-medium text-gray-600">test</div>
+                    </div>
+                    <div class="flex gap-4 text-sm p-4 border-b border-gray-300 hover:bg-slate-100 hover:duration-100">
+                        <div class="font-bold">Property Type</div>
+                        <div class="font-medium text-gray-600">test</div>
+                    </div>
+                    <div class="flex gap-4 text-sm p-4 border-b border-gray-300 hover:bg-slate-100 hover:duration-100">
+                        <div class="font-bold">Property Type</div>
+                        <div class="font-medium text-gray-600">test</div>
+                    </div>
+
+                </div>
+                <div>
+                    <h3 class="text-xl pt-7 pb-4">Contact the listing broker(s)</h3>
+                    <div class="grid grid-cols-3 gap-2">
+                        <div>
+                            <img src="https://mdataz.com/yulstaygit/wp-content/uploads/2023/08/DSC06075-3.jpg" alt="">
+                        </div>
+                        <div class="col-span-2">
+                            <div>Elio Di Spaldro</div>
+                            <div class="text-sm">Residential & Commercial Real Estate Broker</div>
+                            <div class="flex gap-1 items-baseline">
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-envelope-at-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M2 2A2 2 0 0 0 .05 3.555L8 8.414l7.95-4.859A2 2 0 0 0 14 2H2Zm-2 9.8V4.698l5.803 3.546L0 11.801Zm6.761-2.97-6.57 4.026A2 2 0 0 0 2 14h6.256A4.493 4.493 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586l-1.239-.757ZM16 9.671V4.697l-5.803 3.546.338.208A4.482 4.482 0 0 1 12.5 8c1.414 0 2.675.652 3.5 1.671Z" />
+                                        <path
+                                            d="M15.834 12.244c0 1.168-.577 2.025-1.587 2.025-.503 0-1.002-.228-1.12-.648h-.043c-.118.416-.543.643-1.015.643-.77 0-1.259-.542-1.259-1.434v-.529c0-.844.481-1.4 1.26-1.4.585 0 .87.333.953.63h.03v-.568h.905v2.19c0 .272.18.42.411.42.315 0 .639-.415.639-1.39v-.118c0-1.277-.95-2.326-2.484-2.326h-.04c-1.582 0-2.64 1.067-2.64 2.724v.157c0 1.867 1.237 2.654 2.57 2.654h.045c.507 0 .935-.07 1.18-.18v.731c-.219.1-.643.175-1.237.175h-.044C10.438 16 9 14.82 9 12.646v-.214C9 10.36 10.421 9 12.485 9h.035c2.12 0 3.314 1.43 3.314 3.034v.21Zm-4.04.21v.227c0 .586.227.8.581.8.31 0 .564-.17.564-.743v-.367c0-.516-.275-.708-.572-.708-.346 0-.573.245-.573.791Z" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <a href="" class="text-sm">admin@mdataz.com</a>
+                                </div>
+                            </div>
+                            <div class="flex gap-1 items-baseline">
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-envelope-at-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M2 2A2 2 0 0 0 .05 3.555L8 8.414l7.95-4.859A2 2 0 0 0 14 2H2Zm-2 9.8V4.698l5.803 3.546L0 11.801Zm6.761-2.97-6.57 4.026A2 2 0 0 0 2 14h6.256A4.493 4.493 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586l-1.239-.757ZM16 9.671V4.697l-5.803 3.546.338.208A4.482 4.482 0 0 1 12.5 8c1.414 0 2.675.652 3.5 1.671Z" />
+                                        <path
+                                            d="M15.834 12.244c0 1.168-.577 2.025-1.587 2.025-.503 0-1.002-.228-1.12-.648h-.043c-.118.416-.543.643-1.015.643-.77 0-1.259-.542-1.259-1.434v-.529c0-.844.481-1.4 1.26-1.4.585 0 .87.333.953.63h.03v-.568h.905v2.19c0 .272.18.42.411.42.315 0 .639-.415.639-1.39v-.118c0-1.277-.95-2.326-2.484-2.326h-.04c-1.582 0-2.64 1.067-2.64 2.724v.157c0 1.867 1.237 2.654 2.57 2.654h.045c.507 0 .935-.07 1.18-.18v.731c-.219.1-.643.175-1.237.175h-.044C10.438 16 9 14.82 9 12.646v-.214C9 10.36 10.421 9 12.485 9h.035c2.12 0 3.314 1.43 3.314 3.034v.21Zm-4.04.21v.227c0 .586.227.8.581.8.31 0 .564-.17.564-.743v-.367c0-.516-.275-.708-.572-.708-.346 0-.573.245-.573.791Z" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <a href="" class="text-sm">admin@mdataz.com</a>
+                                </div>
                             </div>
                         </div>
-                        <div class="tab-pane hidden" id="content5">Content of Tab 2</div>
-                        <div class="tab-pane hidden" id="content6">Content of Tab 3</div>
-                        <div class="tab-pane hidden" id="content7">Content of Tab 4</div>
+                    </div>
+                    <div>
+                        <div class="mt-2.5">
+                            <input type="text" name="last-name" id="last-name" autocomplete="family-name"
+                                class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-[#00AEC5] focus:ring-opacity-50 placeholder:text-gray-400 focus:outline-none sm:text-sm sm:leading-6 bg-slate-200"
+                                placeholder="Your Name">
+                        </div>
+                        <div class="mt-2.5">
+                            <input type="text" name="last-name" id="last-name" autocomplete="family-name"
+                                class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-[#00AEC5] focus:ring-opacity-50 placeholder:text-gray-400 focus:outline-none sm:text-sm sm:leading-6 bg-slate-200"
+                                placeholder="Your Email">
+                        </div>
+                        <div class="mt-2.5">
+                            <input type="text" name="last-name" id="last-name" autocomplete="family-name"
+                                class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-[#00AEC5] focus:ring-opacity-50 placeholder:text-gray-400 focus:outline-none sm:text-sm sm:leading-6 bg-slate-200"
+                                placeholder="Your Phone Number">
+                        </div>
+                        <div class="mt-2.5">
+                            <textarea type="text" name="last-name" id="last-name" autocomplete="family-name"
+                                class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-[#00AEC5] focus:ring-opacity-50 placeholder:text-gray-400 focus:outline-none sm:text-sm sm:leading-6 bg-slate-200"
+                                placeholder="Message"></textarea>
+                        </div>
+                        <div class="mt-2.5">
+                            <button type="submit"
+                                class="text-center w-full py-3 rounded-full bg-white hover:bg-[#00AEC5] text-black hover:text-white border border-black hover:border-none">Send
+                                message</button>
+                        </div>
                     </div>
                 </div>
-
-                <script>
-                // JavaScript to handle tab switching
-                const tabs = document.querySelectorAll('[id^="tab"]');
-                const tabContents = document.querySelectorAll('[id^="content"]');
-
-                tabs.forEach(tab => {
-                    tab.addEventListener('click', () => {
-                        // Hide all tab contents
-                        tabContents.forEach(content => content.classList.add('hidden'));
-
-                        // Remove 'text-[#00AEC5]' class from all tabs
-                        tabs.forEach(t => t.classList.remove('text-[#00AEC5]'));
-
-                        // Show the selected tab content
-                        const tabContentId = tab.getAttribute('id').replace('tab', 'content');
-                        const tabContent = document.getElementById(tabContentId);
-                        tabContent.classList.remove('hidden');
-
-                        // Add 'text-[#00AEC5]' class to the clicked tab
-                        tab.classList.add('text-[#00AEC5]');
-                    });
-                });
-
-                // Simulate click on the first tab to open it on page load
-                tabs[0].click();
-                </script>
             </div>
-
         </div>
+        <?php
 
+$the_query = new WP_Query(array(
+
+    'post_type' => 'residential',
+
+    'posts_per_page' => '6',
+
+    'post__not_in' => array($id),
+
+));
+
+if ($the_query->have_posts()) {
+
+    $displayed_categories = array(); // Array to store displayed category names
+
+    ?>
+        <div class="bg-slate-100">
+            <div class="max-w-7xl mx-auto">
+                <h2 class="font-poppins text-5xl pt-20 pb-7">Properties in the Region</h2>
+                <div class="grid grid-cols-3 gap-x-4 gap-y-5 font-poppins">
+                    <?php
+                while ($the_query->have_posts()) {
+                    $inscriptionsData = $wpdb->get_row(" SELECT * FROM INSCRIPTIONS where NO_INSCRIPTION = '".get_the_content()."'", OBJECT );
+
+                    $the_query->the_post();
+                    $thumbnail_id = get_post_thumbnail_id();
+                    $thumbnail_url = wp_get_attachment_image_src($thumbnail_id, 'thumbnail-size', true);
+                    $thumbnail_meta = get_post_meta($thumbnail_id, '_wp_attachment_image_alt', true);
+                    $categories = get_the_category();
+
+                     $results = $wpdb->get_row(" SELECT * FROM PHOTOS where NO_INSCRIPTION = '".get_the_content()."'", OBJECT );
+
+                ?>
+                    <div>
+                        <a href="<?php echo get_permalink();?>">
+                            <img class="" src="<?php echo $results->PhotoURL;?>" alt="">
+                            <div class="text-sm py-1"><?php
+                    $municipalite = $wpdb->get_row(" SELECT * FROM MUNICIPALITES where CODE = '".$inscriptionsData->MUN_CODE."'", OBJECT );
+                    echo $municipalite->DESCRIPTION;?></div>
+                            <div class="text-lg"><?php the_title();?></div>
+                            <p class="text-sm pt-1 pb-1"><?php $remarques = $wpdb->get_row(" SELECT * FROM REMARQUES where NO_INSCRIPTION = '".get_the_content()."' and CODE_LANGUE='A'", OBJECT );
+                    echo $remarques->TEXTE;
+                    ?></p>
+                            <div class="flex gap-3">
+                                <div class="border-r my-4 pr-4 border-gray-300">
+                                    <div>2 + 1</div>
+                                    <div>salles de bains</div>
+                                </div>
+                                <div class="border-r my-4 pr-4 border-gray-300">
+                                    <div>2 + 1</div>
+                                    <div>salles de bains</div>
+                                </div>
+                                <div class="my-4 pr-4">
+                                    <div>599 000.0 $</div>
+                                    <div>prix</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <?php } ?>
+
+                </div>
+            </div>
+        </div>
     </div>
-
-    <div class="md:col-span-1 flex flex-col items-end p-3">
-        <svg id="closeIcon" onClick="closeButtonClick()" style="
-                width: 40px;
-                bottom: 0;
-                display:none;
-                position: fixed;
-                margin:20px;" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
-            class="bi bi-x-lg transitionCS7 mt-auto w-12 h-auto" viewBox="0 0 16 16">
-            <path
-                d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" />
-        </svg>
-        <svg onClick="plusButtonClick()" style="
-                width: 40px;
-                bottom: 0;
-                position: fixed;
-                margin:20px;" id="plusIcon" class="mt-auto w-12 h-auto" style="" xmlns="http://www.w3.org/2000/svg"
-            width="30" height="30" fill="currentColor" class="bi bi-plus-lg transitionCS7" viewBox="0 0 16 16">
-            <path fill-rule="evenodd"
-                d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z" />
-        </svg>
-    </div>
-
-    <div class="col-span-1 md:col-span-6 col-scroll" id="idCol6" style="text-align: -webkit-center;">
-        <div class="bg-cover h-full mb-4  transitionCS7"
-            style="background-image: url('<?php echo $residential_image_one; ?>');">
-        </div>
-        <div class="bg-cover h-full mb-4  transitionCS7"
-            style="background-image: url('<?php echo $residential_image_two; ?>');">
-        </div>
-        <div class="bg-cover h-full mb-4  transitionCS7"
-            style="background-image: url('<?php echo $residential_image_three; ?>');">
-        </div>
-        <div class="bg-cover h-full mb-4  transitionCS7"
-            style="background-image: url('<?php echo $residential_image_four; ?>');">
-        </div>
-        <div class="bg-cover h-full mb-4 transitionCS7"
-            style="background-image: url('<?php echo $residential_image_five; ?>');">
-        </div>
-        <div class="bg-cover h-full mb-4 transitionCS7"
-            style="background-image: url('<?php echo $residential_image_six; ?>');">
-        </div>
-        <div class="bg-cover h-full mb-4 transitionCS7"
-            style="background-image: url('<?php echo $residential_image_seven; ?>');">
-        </div>
-        <div class="bg-cover h-full mb-4 transitionCS7"
-            style="background-image: url('<?php echo $residential_image_eight; ?>');">
-        </div>
-        <div class="bg-cover h-full mb-4 transitionCS7"
-            style="background-image: url('<?php echo $residential_image_nine; ?>');">
-        </div>
-        <div class="bg-cover h-full mb-4 transitionCS7"
-            style="background-image: url('<?php echo $residential_image_ten; ?>');">
-        </div>
-    </div>
+    <?php } ?>
 </div>
-
-
-<script>
-function plusButtonClick() {
-    var element = document.getElementById("idCol6");
-    var element2 = document.getElementById("idCol5");
-    document.getElementById("plusIcon").style.display = "none";
-    document.getElementById("closeIcon").style.display = "block";
-
-    element.classList.add("col-span-9");
-    element.classList.remove("col-span-6");
-    element.classList.add("md:col-span-9");
-    element.classList.remove("md:col-span-6");
-
-    element2.classList.add("col-span-2");
-    element2.classList.remove("col-span-5");
-    element2.classList.add("md:col-span-2");
-    element2.classList.remove("md:col-span-5");
-
-    document.getElementById("detailId1").style.opacity = 0;
-    document.getElementById("detailId").style.opacity = 0;
-    document.getElementById("detailId2").style.opacity = 0;
-}
-
-function closeButtonClick() {
-    var element = document.getElementById("idCol6");
-    var element2 = document.getElementById("idCol5");
-    document.getElementById("detailId2").style.opacity = 1;
-    document.getElementById("detailId1").style.opacity = 1;
-    document.getElementById("detailId").style.opacity = 1;
-
-    document.getElementById("plusIcon").style.display = "block";
-    document.getElementById("closeIcon").style.display = "none";
-
-    element.classList.add("col-span-6");
-    element.classList.remove("col-span-9");
-    element.classList.add("md:col-span-6");
-    element.classList.remove("md:col-span-9");
-
-    element2.classList.add("col-span-5");
-    element2.classList.remove("col-span-2");
-    element2.classList.add("md:col-span-5");
-    element2.classList.remove("md:col-span-2");
-}
-
-function slideToggle(el, type) {
-    var elem = document.getElementById(el);
-    elem.classList.toggle("open");
-
-    var moreDetailId = document.getElementById("moreDetailId");
-    var closeDetailId = document.getElementById("closeDetailId");
-
-    if (type == 'open') {
-        moreDetailId.style.display = "none";
-        closeDetailId.style.display = "block";
-    } else {
-        moreDetailId.style.display = "block";
-        closeDetailId.style.display = "none";
-    }
-}
-</script>
 
 <?php
 get_footer();

@@ -9,10 +9,12 @@
  * @package yulstay
  */
 
+
 ?>
 
 
 <?php wp_footer(); ?>
 
 </body>
+
 </html>
