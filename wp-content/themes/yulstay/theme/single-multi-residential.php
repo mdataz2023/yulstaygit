@@ -183,7 +183,12 @@ $inscriptionsData = $wpdb->get_row(" SELECT * FROM INSCRIPTIONS where NO_INSCRIP
                         <div class="font-medium text-gray-600">
                             <?php
                             $GENRES_PROPRIETES = $wpdb->get_row("SELECT * FROM GENRES_PROPRIETES WHERE GENRE_PROPRIETE ='".$inscriptionsData->GENRE_PROPRIETE."'", OBJECT );
-                            echo $GENRES_PROPRIETES->DESCRIPTION_ABREGEE_ANGLAISE;?></div>
+                            if ($lang == 'en-US'){
+                                echo $GENRES_PROPRIETES->DESCRIPTION_ANGLAISE;
+                            }else{
+                                 echo $GENRES_PROPRIETES->DESCRIPTION_FRANCAISE;
+                            }
+                             ?></div>
                     </div>
                     <div class="flex gap-4 text-sm p-4 border-b border-gray-300 hover:bg-slate-100 hover:duration-100">
                         <div class="font-bold">Living Area</div>
