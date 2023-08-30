@@ -6,7 +6,15 @@
 
 */
 
-get_header(); ?>
+get_header();
+$lang = get_bloginfo("language");
+$language="A";
+if ($lang == 'en-US'){
+   $language="A";
+}else{
+   $language="F";
+}
+?>
 
 <style>
 /* Add custom styles if needed */
@@ -30,37 +38,25 @@ get_header(); ?>
                 <div class="flex justify-between">
                     <div class="flex gap-10 mb-7 mt-5">
 
-                        <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown"
+                        <!-- <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown"
                             class="text-black bg-gray-100 hover:bg-gray-200 font-medium rounded-lg text-sm px-5 py-2 text-center inline-flex items-center  "
                             type="button">Municipality <svg class="w-2.5 h-2.5 ml-2.5" aria-hidden="true"
                                 xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
                                     stroke-width="2" d="m1 1 4 4 4-4" />
-                            </svg></button>
+                            </svg></button> -->
                         <!-- Dropdown menu -->
-                        <div id="dropdown"
-                            class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-lg w-44 dark:bg-gray-700">
-                            <ul class="py-2 text-sm text-gray-700 dark:text-gray-200"
-                                aria-labelledby="dropdownDefaultButton">
-                                <li>
-                                    <a href="#"
-                                        class="block px-4 py-2 hover:bg-gray-200 dark:hover:bg-gray-600 dark:hover:text-black">Dashboard</a>
-                                </li>
-                                <li>
-                                    <a href="#"
-                                        class="block px-4 py-2 hover:bg-gray-200 dark:hover:bg-gray-600 dark:hover:text-black">Settings</a>
-                                </li>
-                                <li>
-                                    <a href="#"
-                                        class="block px-4 py-2 hover:bg-gray-200 dark:hover:bg-gray-600 dark:hover:text-black">Earnings</a>
-                                </li>
-                                <li>
-                                    <a href="#"
-                                        class="block px-4 py-2 hover:bg-gray-200 dark:hover:bg-gray-600 dark:hover:text-black">Sign
-                                        out</a>
-                                </li>
-                            </ul>
-                        </div>
+                        <select class="py-2 text-sm text-gray-700 dark:text-gray-200">
+                            <option selected desabled><b>Municipality</b></option>
+                            <?php
+                                $municipalite = $wpdb->get_results(" SELECT * FROM MUNICIPALITES", OBJECT );
+                                foreach ($municipalite as $page) { ?>
+                            <option id="<?php echo $page->CODE;?>"><?php echo $page->DESCRIPTION;?></option>
+                            <?php
+                            }
+                        ?>
+                        </select>
+
 
                         <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown"
                             class="text-black bg-gray-100  hover:bg-gray-200  font-medium rounded-lg text-sm px-5 py-2 text-center inline-flex items-center  "
@@ -188,7 +184,7 @@ $the_query = new WP_Query(array(
 
     'post_type' => 'residential',
 
-    'posts_per_page' => '10',
+    'posts_per_page' => '1000',
 
     'post__not_in' => array($id),
 
@@ -227,21 +223,23 @@ if ($the_query->have_posts()) {
                     $municipalite = $wpdb->get_row(" SELECT * FROM MUNICIPALITES where CODE = '".$inscriptionsData->MUN_CODE."'", OBJECT );
                     echo $municipalite->DESCRIPTION;?></div>
                             <div class="text-lg"><?php the_title();?></div>
-                            <p class="text-sm pt-1 pb-1"><?php $remarques = $wpdb->get_row(" SELECT * FROM REMARQUES where NO_INSCRIPTION = '".get_the_content()."' and CODE_LANGUE='A'", OBJECT );
+                            <p class="text-sm pt-1 pb-1"><?php $remarques = $wpdb->get_row(" SELECT * FROM REMARQUES where NO_INSCRIPTION = '".get_the_content()."' and CODE_LANGUE='".$language."'", OBJECT );
                     echo $remarques->TEXTE;
                     ?></p>
                             <div class="flex gap-3">
                                 <div class="border-r my-4 pr-4 border-gray-400">
                                     <div>Bedrooms</div>
-                                    <div>3</div>
+                                    <div><?php echo $inscriptionsData->NB_CHAMBRES;?></div>
                                 </div>
                                 <div class="border-r my-4 pr-4 border-gray-400">
                                     <div>Bathrooms</div>
-                                    <div>2</div>
+                                    <div><?php echo $inscriptionsData->NB_CHAMBRES_HORS_SOL;?></div>
                                 </div>
                                 <div class="my-4 pr-4">
                                     <div>price</div>
-                                    <div>599 000.0 $</div>
+                                    <div>
+                                        <?php echo $inscriptionsData->PRIX_DEMANDE.' '.$inscriptionsData->DEVISE_PRIX_DEMANDE  ;?>
+                                    </div>
                                 </div>
                             </div>
                         </a>
@@ -286,10 +284,10 @@ if ($the_query->have_posts()) {
                         <a href="<?php echo get_permalink();?>">
                             <div>
                                 <div class="text-base py-2 border-b border-gray-400"><?php
-                    $municipalite = $wpdb->get_row(" SELECT * FROM MUNICIPALITES where CODE = '".$inscriptionsData->MUN_CODE."'", OBJECT );
-                    echo $municipalite->DESCRIPTION;?></div>
+                                $municipalite = $wpdb->get_row(" SELECT * FROM MUNICIPALITES where CODE = '".$inscriptionsData->MUN_CODE."'", OBJECT );
+                                echo $municipalite->NOM_RUE_COMPLET;?></div>
                                 <div class="text-3xl py-2 border-b border-gray-400"><?php the_title();?></div>
-                                <p class="text-lg py-2 border-b border-gray-400"><?php $remarques = $wpdb->get_row(" SELECT * FROM REMARQUES where NO_INSCRIPTION = '".get_the_content()."' and CODE_LANGUE='A'", OBJECT );
+                                <p class="text-lg py-2 border-b border-gray-400"><?php $remarques = $wpdb->get_row(" SELECT * FROM REMARQUES where NO_INSCRIPTION = '".get_the_content()."' and CODE_LANGUE='".$language."'", OBJECT );
                                 echo $remarques->TEXTE;
                                 ?></p>
                             </div>
@@ -298,15 +296,17 @@ if ($the_query->have_posts()) {
                         <div class="flex gap-3">
                             <div class="border-r my-4 pr-4 border-gray-400">
                                 <div>Bedrooms</div>
-                                <div>3</div>
+                                <div><?php echo $inscriptionsData->NB_CHAMBRES;?></div>
                             </div>
                             <div class="border-r my-4 pr-4 border-gray-400">
                                 <div>Bathrooms</div>
-                                <div>2</div>
+                                <div><?php echo $inscriptionsData->NB_CHAMBRES_HORS_SOL;?></div>
                             </div>
                             <div class="my-4 pr-4">
                                 <div>price</div>
-                                <div>599 000.0 $</div>
+                                <div>
+                                    <?php echo $inscriptionsData->PRIX_DEMANDE.' '.$inscriptionsData->DEVISE_PRIX_DEMANDE  ;?>
+                                </div>
                             </div>
                         </div>
                     </div>

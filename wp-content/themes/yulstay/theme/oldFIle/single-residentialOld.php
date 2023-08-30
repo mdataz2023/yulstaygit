@@ -14,6 +14,14 @@ $image_two = get_field('image_two');
 $image_three = get_field('image_three');
 
 
+$lang = get_bloginfo("language");
+$language="A";
+if ($lang == 'en-US'){
+   $language="A";
+}else{
+   $language="F";
+}
+
 $residential_list_title_one = get_field('residential_list_title_one');
 $residential_list_description_one = get_field('residential_list_description_one');
 $residential_list_title_two = get_field('residential_list_title_two');
@@ -325,7 +333,7 @@ $residential_image_ten = get_field('residential_image_ten');
                         <div class="tab-pane hidden" id="content4">
                             <div class="text-sm font-medium py-1 font-poppins">
                                 <?php
-                                 $results = $wpdb->get_results("SELECT * FROM ADDENDA WHERE NO_INSCRIPTION = '".get_the_content()."' and CODE_LANGUE='A'", OBJECT );
+                                 $results = $wpdb->get_results("SELECT * FROM ADDENDA WHERE NO_INSCRIPTION = '".get_the_content()."' and CODE_LANGUE='".$language."'", OBJECT );
                                  foreach ($results as $page) {
                                     echo $page->TEXTE.'<br/>';
                                  }

@@ -12,41 +12,13 @@ global $wpdb;
 $image_one = get_field('image_one');
 $image_two = get_field('image_two');
 $image_three = get_field('image_three');
-
-
-$residential_list_title_one = get_field('residential_list_title_one');
-$residential_list_description_one = get_field('residential_list_description_one');
-$residential_list_title_two = get_field('residential_list_title_two');
-$residential_list_description_two = get_field('residential_list_description_two');
-$residential_list_title_three = get_field('residential_list_title_three');
-$residential_list_description_three = get_field('residential_list_description_three');
-$residential_list_title_four = get_field('residential_list_title_four');
-$residential_list_description_four = get_field('residential_list_description_four');
-$residential_list_title_five = get_field('residential_list_title_five');
-$residential_list_description_five = get_field('residential_list_description_five');
-$residential_list_title_six = get_field('residential_list_title_six');
-$residential_list_description_six = get_field('residential_list_description_six');
-$residential_list_title_seven = get_field('residential_list_title_seven');
-$residential_list_description_seven = get_field('residential_list_description_seven');
-$residential_list_title_eight = get_field('residential_list_title_eight');
-$residential_list_description_eight = get_field('residential_list_description_eight');
-$residential_list_title_nine = get_field('residential_list_title_nine');
-$residential_list_description_nine = get_field('residential_list_description_nine');
-
-$residential_details_description = get_field('residential_details_description');
-$residential_address = get_field('residential_address');
-
-$residential_image_one = get_field('residential_image_one');
-$residential_image_two = get_field('residential_image_two');
-$residential_image_three = get_field('residential_image_three');
-$residential_image_four = get_field('residential_image_four');
-$residential_image_five = get_field('residential_image_five');
-$residential_image_six = get_field('residential_image_six');
-$residential_image_seven = get_field('residential_image_seven');
-$residential_image_eight = get_field('residential_image_eight');
-$residential_image_nine = get_field('residential_image_nine');
-$residential_image_ten = get_field('residential_image_ten');
-
+$lang = get_bloginfo("language");
+$language="A";
+if ($lang == 'en-US'){
+   $language="A";
+}else{
+   $language="F";
+}
 $inscriptionsData = $wpdb->get_row(" SELECT * FROM INSCRIPTIONS where NO_INSCRIPTION = '".get_the_content()."'", OBJECT );
 ?>
 
@@ -132,24 +104,26 @@ $inscriptionsData = $wpdb->get_row(" SELECT * FROM INSCRIPTIONS where NO_INSCRIP
                 <div>
                     <p class="text-base font-poppins pb-2"><?php
                     $municipalite = $wpdb->get_row(" SELECT * FROM MUNICIPALITES where CODE = '".$inscriptionsData->MUN_CODE."'", OBJECT );
-                    echo $municipalite->DESCRIPTION;?></p>
+                    echo $municipalite->DESCRIPTION;?> - <?php echo $inscriptionsData->NO_INSCRIPTION;?> </p>
                     <h1 class="text-4xl font-poppins"><?php the_title();?></h1>
                 </div>
                 <div class="flex gap-3 font-poppins">
                     <div class="text-center border-r mt-4 mb-4 pr-4 border-gray-300">
-                        <div class="text-lg">722.26</div>
+                        <div class="text-lg"><?php echo $inscriptionsData->UM_SUPERFICIE_HABITABLE;?></div>
                         <div class="text-sm">sqft</div>
                     </div>
                     <div class="text-center border-r mt-4 mb-4 pr-4 border-gray-300">
-                        <div class="text-lg">2</div>
+                        <div class="text-lg"><?php echo $inscriptionsData->NB_CHAMBRES;?></div>
                         <div class="text-sm">Bedrooms</div>
                     </div>
                     <div class="text-center border-r mt-4 mb-4 pr-4 border-gray-300">
-                        <div class="text-lg">2</div>
+                        <div class="text-lg"><?php echo $inscriptionsData->NB_CHAMBRES_HORS_SOL;?></div>
                         <div class="text-sm">Bathrooms</div>
                     </div>
                     <div class="text-center m-4 pr-4">
-                        <div class="text-lg">599 000.0 $</div>
+                        <div class="text-lg">
+                            <?php echo $inscriptionsData->PRIX_DEMANDE.' '.$inscriptionsData->DEVISE_PRIX_DEMANDE  ;?>
+                        </div>
                         <div class="text-sm">price</div>
                     </div>
                 </div>
@@ -159,14 +133,14 @@ $inscriptionsData = $wpdb->get_row(" SELECT * FROM INSCRIPTIONS where NO_INSCRIP
             <div class="grid grid-cols-3 gap-7 font-poppins">
                 <div class="col-span-2">
                     <p class="text-sm pt-7"><?php
-                    $remarques = $wpdb->get_row(" SELECT * FROM REMARQUES where NO_INSCRIPTION = '".$inscriptionsData->NO_INSCRIPTION."' and CODE_LANGUE='A'", OBJECT );
+                    $remarques = $wpdb->get_row(" SELECT * FROM REMARQUES where NO_INSCRIPTION = '".$inscriptionsData->NO_INSCRIPTION."' and CODE_LANGUE='".$language."'", OBJECT );
                     echo $remarques->TEXTE;
                     ?></p>
 
                     <h2 class="text-2xl pt-7">Addenda</h2>
                     <p class="text-sm pt-3">
                         <?php
-                                 $results = $wpdb->get_results("SELECT * FROM ADDENDA WHERE NO_INSCRIPTION = '".get_the_content()."' and CODE_LANGUE='A'", OBJECT );
+                                 $results = $wpdb->get_results("SELECT * FROM ADDENDA WHERE NO_INSCRIPTION = '".get_the_content()."' and CODE_LANGUE='".$language."'", OBJECT );
                                  foreach ($results as $page) {
                                     echo $page->TEXTE.'<br/>';
                                  }
@@ -202,6 +176,35 @@ $inscriptionsData = $wpdb->get_row(" SELECT * FROM INSCRIPTIONS where NO_INSCRIP
                     </div>
 
                     <h2 class="font-poppins text-2xl pt-7 pb-3">Assessment, taxes and other costs</h2>
+                    <div class="flex gap-4 text-sm p-4 border-b border-gray-300 hover:bg-slate-100 hover:duration-100">
+                        <div class="font-bold">Property Type</div>
+                        <div class="font-medium text-gray-600">
+                            <?php
+                            $GENRES_PROPRIETES = $wpdb->get_row("SELECT * FROM GENRES_PROPRIETES WHERE GENRE_PROPRIETE ='".$inscriptionsData->GENRE_PROPRIETE."'", OBJECT );
+                            echo $GENRES_PROPRIETES->DESCRIPTION_ABREGEE_ANGLAISE;?></div>
+                    </div>
+                    <div class="flex gap-4 text-sm p-4 border-b border-gray-300 hover:bg-slate-100 hover:duration-100">
+                        <div class="font-bold">Living Area</div>
+                        <div class="font-medium text-gray-600">
+                            <?php
+                            echo $inscriptionsData->SUPERFICIE_HABITABLE;?></div>
+                    </div>
+                    <div class="flex gap-4 text-sm p-4 border-b border-gray-300 hover:bg-slate-100 hover:duration-100">
+                        <div class="font-bold">Year of construction</div>
+                        <div class="font-medium text-gray-600">
+                            <?php
+                            echo $inscriptionsData->ANNEE_CONTRUCTION;?></div>
+                    </div>
+                    <div class="flex gap-4 text-sm p-4 border-b border-gray-300 hover:bg-slate-100 hover:duration-100">
+                        <div class="font-bold">Deed of sale Signature</div>
+                        <div class="font-medium text-gray-600">
+                            <?php
+// ." ".$inscriptionsData->DELAI_OCCUPATION_ANGLAIS franse
+
+                            echo $inscriptionsData->DELAI_OCCUPATION_ANGLAIS;?></div>
+                    </div>
+
+
                     <?php
                         $results = $wpdb->get_results("SELECT * FROM CARACTERISTIQUES WHERE NO_INSCRIPTION = '".get_the_content()."' ", OBJECT );
                         foreach ($results as $page) {
@@ -214,58 +217,18 @@ $inscriptionsData = $wpdb->get_row(" SELECT * FROM INSCRIPTIONS where NO_INSCRIP
                             <?php echo $TYPE_CARACTERISTIQUES->DESCRIPTION_ANGLAISE;?></div>
                     </div>
                     <?php } ?>
-
-                    <h2 class="font-poppins text-2xl pt-7 pb-3">Inclus dans la vente</h2>
-                    <div class="flex gap-4 text-sm p-4 border-b border-gray-300 hover:bg-slate-100 hover:duration-100">
-                        <div class="font-bold">Property Type</div>
-                        <div class="font-medium text-gray-600">test</div>
-                    </div>
-                    <div class="flex gap-4 text-sm p-4 border-b border-gray-300 hover:bg-slate-100 hover:duration-100">
-                        <div class="font-bold">Property Type</div>
-                        <div class="font-medium text-gray-600">test</div>
-                    </div>
-                    <div class="flex gap-4 text-sm p-4 border-b border-gray-300 hover:bg-slate-100 hover:duration-100">
-                        <div class="font-bold">Property Type</div>
-                        <div class="font-medium text-gray-600">test</div>
-                    </div>
-                    <div class="flex gap-4 text-sm p-4 border-b border-gray-300 hover:bg-slate-100 hover:duration-100">
-                        <div class="font-bold">Property Type</div>
-                        <div class="font-medium text-gray-600">test</div>
-                    </div>
-                    <div class="flex gap-4 text-sm p-4 border-b border-gray-300 hover:bg-slate-100 hover:duration-100">
-                        <div class="font-bold">Property Type</div>
-                        <div class="font-medium text-gray-600">test</div>
-                    </div>
-                    <div class="flex gap-4 text-sm p-4 border-b border-gray-300 hover:bg-slate-100 hover:duration-100">
-                        <div class="font-bold">Property Type</div>
-                        <div class="font-medium text-gray-600">test</div>
-                    </div>
-                    <div class="flex gap-4 text-sm p-4 border-b border-gray-300 hover:bg-slate-100 hover:duration-100">
-                        <div class="font-bold">Property Type</div>
-                        <div class="font-medium text-gray-600">test</div>
-                    </div>
-                    <div class="flex gap-4 text-sm p-4 border-b border-gray-300 hover:bg-slate-100 hover:duration-100">
-                        <div class="font-bold">Property Type</div>
-                        <div class="font-medium text-gray-600">test</div>
-                    </div>
-                    <div class="flex gap-4 text-sm p-4 border-b border-gray-300 hover:bg-slate-100 hover:duration-100">
-                        <div class="font-bold">Property Type</div>
-                        <div class="font-medium text-gray-600">test</div>
-                    </div>
-                    <div class="flex gap-4 text-sm p-4 border-b border-gray-300 hover:bg-slate-100 hover:duration-100">
-                        <div class="font-bold">Property Type</div>
-                        <div class="font-medium text-gray-600">test</div>
-                    </div>
-
                 </div>
                 <div>
                     <h3 class="text-xl pt-7 pb-4">Contact the listing broker(s)</h3>
                     <div class="grid grid-cols-3 gap-2">
+                        <?php
+                            $MEMBRES = $wpdb->get_row("SELECT * FROM MEMBRES WHERE CODE ='".$inscriptionsData->COURTIER_INSCRIPTEUR_1."'", OBJECT );
+                        ?>
                         <div>
-                            <img src="https://mdataz.com/yulstaygit/wp-content/uploads/2023/08/DSC06075-3.jpg" alt="">
+                            <img src="<?php echo $MEMBRES->PHOTO_URL?>" alt="">
                         </div>
                         <div class="col-span-2">
-                            <div>Elio Di Spaldro</div>
+                            <div><?php echo $MEMBRES->NOM." ".$MEMBRES->PRENOM?></div>
                             <div class="text-sm">Residential & Commercial Real Estate Broker</div>
                             <div class="flex gap-1 items-baseline">
                                 <div>
@@ -278,7 +241,7 @@ $inscriptionsData = $wpdb->get_row(" SELECT * FROM INSCRIPTIONS where NO_INSCRIP
                                     </svg>
                                 </div>
                                 <div>
-                                    <a href="" class="text-sm">admin@mdataz.com</a>
+                                    <a href="" class="text-sm"><?php echo $MEMBRES->COURRIEL?></a>
                                 </div>
                             </div>
                             <div class="flex gap-1 items-baseline">
@@ -292,7 +255,7 @@ $inscriptionsData = $wpdb->get_row(" SELECT * FROM INSCRIPTIONS where NO_INSCRIP
                                     </svg>
                                 </div>
                                 <div>
-                                    <a href="" class="text-sm">admin@mdataz.com</a>
+                                    <a href="" class="text-sm"><?php echo $MEMBRES->TELEPHONE_1?></a>
                                 </div>
                             </div>
                         </div>
@@ -368,7 +331,7 @@ if ($the_query->have_posts()) {
                     $municipalite = $wpdb->get_row(" SELECT * FROM MUNICIPALITES where CODE = '".$inscriptionsData->MUN_CODE."'", OBJECT );
                     echo $municipalite->DESCRIPTION;?></div>
                             <div class="text-lg"><?php the_title();?></div>
-                            <p class="text-sm pt-1 pb-1"><?php $remarques = $wpdb->get_row(" SELECT * FROM REMARQUES where NO_INSCRIPTION = '".get_the_content()."' and CODE_LANGUE='A'", OBJECT );
+                            <p class="text-sm pt-1 pb-1"><?php $remarques = $wpdb->get_row(" SELECT * FROM REMARQUES where NO_INSCRIPTION = '".get_the_content()."' and CODE_LANGUE='".$language."'", OBJECT );
                     echo $remarques->TEXTE;
                     ?></p>
                             <div class="flex gap-3">
