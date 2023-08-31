@@ -294,7 +294,7 @@ $inscriptionsData = $wpdb->get_row(" SELECT * FROM INSCRIPTIONS where NO_INSCRIP
                                 message</button>
                         </div>
                     </div>
-                    <div class="bg-slate-100 p-4 rounded-2xl">
+                    <div class="bg-slate-100 p-4 rounded-2xl my-9">
                     <h2 class="text-center font-poppins text-2xl pt-7 pb-3">CALCULATORS</h2>
                     <h2 class="text-center text-xl pb-4">PURCHASING POWER</h2>
                     <div class="grid grid-cols-2 gap-3">
