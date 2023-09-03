@@ -238,7 +238,7 @@ if ($the_query->have_posts()) {
                                 <div class="my-4 pr-4">
                                     <div>price</div>
                                     <div>
-                                        <?php echo $inscriptionsData->PRIX_DEMANDE.' '.$inscriptionsData->DEVISE_PRIX_DEMANDE  ;?>
+                                        <?php echo $inscriptionsData->PRIX_DEMANDE.' '.($inscriptionsData->DEVISE_PRIX_DEMANDE==="CAN"?"$":$inscriptionsData->DEVISE_PRIX_DEMANDE)  ;?>
                                     </div>
                                 </div>
                             </div>
@@ -305,7 +305,7 @@ if ($the_query->have_posts()) {
                             <div class="my-4 pr-4">
                                 <div>price</div>
                                 <div>
-                                    <?php echo $inscriptionsData->PRIX_DEMANDE.' '.$inscriptionsData->DEVISE_PRIX_DEMANDE  ;?>
+                                    <?php echo $inscriptionsData->PRIX_DEMANDE.' '.($inscriptionsData->DEVISE_PRIX_DEMANDE==="CAN"?"$":$inscriptionsData->DEVISE_PRIX_DEMANDE)  ;?>
                                 </div>
                             </div>
                         </div>

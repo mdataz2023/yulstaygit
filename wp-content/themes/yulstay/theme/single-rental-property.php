@@ -124,7 +124,7 @@ $inscriptionsData = $wpdb->get_row(" SELECT * FROM INSCRIPTIONS where NO_INSCRIP
                     </div>
                     <div class="text-center m-4 pr-4">
                         <div class="text-lg">
-                            <?php  echo $inscriptionsData->DEVISE_PRIX_LOCATION_DEMANDE .' '.$inscriptionsData->PRIX_LOCATION_DEMANDE  ;?>
+                            <?php  echo $inscriptionsData->DEVISE_PRIX_LOCATION_DEMANDE .' '.($inscriptionsData->PRIX_LOCATION_DEMANDE==="CAN"?"$":$inscriptionsData->PRIX_LOCATION_DEMANDE)     ;?>
                         </div>
                         <div class="text-sm">price</div>
                     </div>

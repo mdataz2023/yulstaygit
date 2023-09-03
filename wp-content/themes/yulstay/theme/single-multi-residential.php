@@ -124,7 +124,7 @@ $inscriptionsData = $wpdb->get_row(" SELECT * FROM INSCRIPTIONS where NO_INSCRIP
                     </div>
                     <div class="text-center m-4 pr-4">
                         <div class="text-lg">
-                            <?php echo $inscriptionsData->PRIX_DEMANDE.' '.$inscriptionsData->DEVISE_PRIX_DEMANDE  ;?>
+                            <?php echo $inscriptionsData->PRIX_DEMANDE.' '.($inscriptionsData->DEVISE_PRIX_DEMANDE==="CAN"?"$":$inscriptionsData->DEVISE_PRIX_DEMANDE) ;?>
                         </div>
                         <div class="text-sm">price</div>
                     </div>
@@ -211,19 +211,34 @@ $inscriptionsData = $wpdb->get_row(" SELECT * FROM INSCRIPTIONS where NO_INSCRIP
                             echo $inscriptionsData->DELAI_OCCUPATION_ANGLAIS;?></div>
                     </div>
 
-
                     <?php
                         $results = $wpdb->get_results("SELECT * FROM CARACTERISTIQUES WHERE NO_INSCRIPTION = '".get_the_content()."' ", OBJECT );
+                        $Proximity="";
                         foreach ($results as $page) {
                             $SOUS_TYPE_CARACTERISTIQUES = $wpdb->get_row("SELECT * FROM SOUS_TYPE_CARACTERISTIQUES WHERE CODE ='".$page->SCARAC_CODE."' AND TCAR_CODE='".$page->TCAR_CODE."' ", OBJECT );
                             $TYPE_CARACTERISTIQUES = $wpdb->get_row("SELECT * FROM TYPE_CARACTERISTIQUES WHERE  CODE='".$page->TCAR_CODE."' ", OBJECT );
-                    ?>
+
+                        if($TYPE_CARACTERISTIQUES->DESCRIPTION_ANGLAISE==="Proximity"){
+                            $Proximity=($Proximity===""?$SOUS_TYPE_CARACTERISTIQUES->DESCRIPTION_ANGLAISE:$Proximity.", ".$SOUS_TYPE_CARACTERISTIQUES->DESCRIPTION_ANGLAISE);
+                        }else{
+                   ?>
                     <div class="flex gap-4 text-sm p-4 border-b border-gray-300 hover:bg-slate-100 hover:duration-100">
                         <div class="font-bold"><?php echo $SOUS_TYPE_CARACTERISTIQUES->DESCRIPTION_ANGLAISE;?></div>
                         <div class="font-medium text-gray-600">
                             <?php echo $TYPE_CARACTERISTIQUES->DESCRIPTION_ANGLAISE;?></div>
                     </div>
-                    <?php } ?>
+                    <?php }
+                    }
+                    if($Proximity!==""){
+                     ?>
+                    <div class="flex gap-4 text-sm p-4 border-b border-gray-300 hover:bg-slate-100 hover:duration-100">
+                        <div class="font-bold">Proximity</div>
+                        <div class="font-medium text-gray-600">
+                            <?php echo $Proximity?></div>
+                    </div>
+                    <?php
+                    }
+                     ?>
                 </div>
                 <div>
                     <h3 class="text-xl pt-7 pb-4">Contact the listing broker(s)</h3>
