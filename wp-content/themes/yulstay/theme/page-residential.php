@@ -31,12 +31,12 @@ if ($lang == 'en-US'){
 </style>
 <div class="h-screen w-screen pr-12 overflow-y-scroll scroll-style">
     <div class="pt-20">
-        <div class="flex pb-7 overflow-hidden gap-1 h-[500px] max-w-7xl mx-auto">
-            <!-- <iframe
+        <!-- <div class="flex pb-7 overflow-hidden gap-1 h-[500px] max-w-7xl mx-auto">
+            <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d36553983.44087083!2d-96!3d56!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4b0d03d337cc6ad9%3A0x9968b72aa2438fa5!2sCanada!5e0!3m2!1sen!2slk!4v1692665654783!5m2!1sen!2slk"
                 width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe> -->
-        </div>
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>-->
         <div id="map"></div>
 
         <div class="">
