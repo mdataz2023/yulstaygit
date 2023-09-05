@@ -98,6 +98,9 @@ $inscriptionsData = $wpdb->get_row(" SELECT * FROM INSCRIPTIONS where NO_INSCRIP
             slidesContainer.scrollLeft -= slideWidth;
         });
         </script>
+        <iframe width="100%" height="270" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+            src="https://maps.google.com/maps?q=<?php echo $inscriptionsData->LATITUDE;?>,<?php echo $inscriptionsData->LONGITUDE;?>&hl=es&z=10&amp;output=embed">
+        </iframe>
         <!-- caro -->
         <div class="max-w-7xl mx-auto">
             <div class="flex justify-between pb-7 border-b border-gray-300">
