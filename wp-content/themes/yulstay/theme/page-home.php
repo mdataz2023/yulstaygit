@@ -14,7 +14,7 @@ $catch = preg_split($pattern, $addendaFile);
 foreach($catch as $value)
 {
    $value1= str_replace('�',"",$value);
-   $replaceValue= str_replace('"',"",$value1);
+   $replaceValue= str_replace('"',"",str_replace('MontrÃ©al',"Montréal",$value1));
    $valueExplode=explode(",",$replaceValue);
     $tablename =  "ADDENDA";
     if(count($wpdb->get_results("SELECT * FROM ADDENDA WHERE NO_INSCRIPTION = '".$valueExplode[0]."' and NO_ADDENDA = '".$valueExplode[1]."' and ORDRE_AFFICHAGE = '".$valueExplode[3]."' ", OBJECT ))===0){
@@ -37,7 +37,7 @@ $bureauxResult = preg_split($pattern, $bureauxFile);
 foreach($bureauxResult as $value)
 {
     $value1= str_replace('�',"",$value);
-    $replaceValue= str_replace('"',"",$value1);
+    $replaceValue= str_replace('"',"",str_replace('MontrÃ©al',"Montréal",$value1));
     if(count($wpdb->get_results("SELECT * FROM BUREAUX WHERE CODE = '".$valueExplode[0]."'", OBJECT ))==0){
       $wpdb->insert('BUREAUX', array(
           'CODE' =>$valueExplode[0],
@@ -66,7 +66,7 @@ $caracteristiquesResult = preg_split($pattern, $caracteristiquesFile);
 foreach($caracteristiquesResult as $value)
 {
   $value1= str_replace('�',"",$value);
-  $replaceValue= str_replace('"',"",$value1);
+  $replaceValue= str_replace('"',"",str_replace('MontrÃ©al',"Montréal",$value1));
     $valueExplode=explode(",",$replaceValue);
     if(count($wpdb->get_results("SELECT * FROM CARACTERISTIQUES WHERE NO_INSCRIPTION = '".$valueExplode[0]."' and TCAR_CODE = '".$valueExplode[1]."' and SCARAC_CODE = '".$valueExplode[2]."'", OBJECT ))==0){
       $wpdb->insert('CARACTERISTIQUES', array(
@@ -88,7 +88,7 @@ $depensesResult = preg_split($pattern, $depensesFile);
 foreach($depensesResult as $value)
 {
     $value1= str_replace('�',"",$value);
-    $replaceValue= str_replace('"',"",$value1);
+    $replaceValue= str_replace('"',"",str_replace('MontrÃ©al',"Montréal",$value1));
     $valueExplode=explode(",",$replaceValue);
     if(count($wpdb->get_results("SELECT * FROM DEPENSES WHERE NO_INSCRIPTION = '".$valueExplode[0]."' and TDEP_CODE = '".$valueExplode[2]."' and PART_DEPENSE = '".$valueExplode[7]."'", OBJECT ))==0){
       $wpdb->insert('DEPENSES', array(
@@ -111,7 +111,7 @@ $firmesResult = preg_split($pattern, $firmesFile);
 foreach($firmesResult as $value)
 {
     $value1= str_replace('�',"",$value);
-    $replaceValue= str_replace('"',"",$value1);
+    $replaceValue= str_replace('"',"",str_replace('MontrÃ©al',"Montréal",$value1));
     $valueExplode=explode(",",$replaceValue);
     if(count($wpdb->get_results("SELECT * FROM FIRMES WHERE CODE = '".$valueExplode[0]."' ", OBJECT ))==0){
       $wpdb->insert('FIRMES', array(
@@ -133,7 +133,7 @@ $inscriptionsResult = preg_split($pattern, $inscriptionsFile);
 foreach($inscriptionsResult as $value)
 {
     $value1= str_replace('�',"",$value);
-    $replaceValue= str_replace('"',"",$value1);
+    $replaceValue= str_replace('"',"",str_replace('MontrÃ©al',"Montréal",$value1));
     $valueExplode=explode(",",$replaceValue);
     if(count($wpdb->get_results("SELECT * FROM INSCRIPTIONS WHERE NO_INSCRIPTION = '".$valueExplode[0]."' ", OBJECT ))==0){
       $wpdb->insert('INSCRIPTIONS', array(
@@ -306,7 +306,7 @@ $liensAdditionnelsResult = preg_split($pattern, $liensAdditionnelsFile);
 foreach($liensAdditionnelsResult as $value)
 {
     $value1= str_replace('�',"",$value);
-    $replaceValue= str_replace('"',"",$value1);
+    $replaceValue= str_replace('"',"",str_replace('MontrÃ©al',"Montréal",$value1));
     $valueExplode=explode(",",$replaceValue);
     if(count($wpdb->get_results("SELECT * FROM LIENS_ADDITIONNELS WHERE NO_INSCRIPTION = '".$valueExplode[0]."' and SEQ = '".$valueExplode[1]."'  ", OBJECT ))==0){
       $wpdb->insert('LIENS_ADDITIONNELS', array(
@@ -326,7 +326,7 @@ $membresResult = preg_split($pattern, $membresFile);
 foreach($membresResult as $value)
 {
   $value1= str_replace('�',"",$value);
-  $replaceValue= str_replace('"',"",$value1);
+  $replaceValue= str_replace('"',"",str_replace('MontrÃ©al',"Montréal",$value1));
   $valueExplode=explode(",",$replaceValue);
   if(count($wpdb->get_results("SELECT * FROM MEMBRES WHERE CODE = '".$valueExplode[0]."' ", OBJECT ))==0){
     $wpdb->insert('MEMBRES', array(
@@ -366,7 +366,7 @@ $membresMSResult = preg_split($pattern, $membresMSFile);
 foreach($membresMSResult as $value)
 {
   $value1= str_replace('�',"",$value);
-  $replaceValue= str_replace('"',"",$value1);
+  $replaceValue= str_replace('"',"",str_replace('MontrÃ©al',"Montréal",$value1));
   $valueExplode=explode(",",$replaceValue);
   if(count($wpdb->get_results("SELECT * FROM MEMBRES_MEDIAS_SOCIAUX WHERE MEMBRE_CODE = '".$valueExplode[0]."' ", OBJECT ))==0){
     $wpdb->insert('MEMBRES_MEDIAS_SOCIAUX', array(
@@ -384,7 +384,7 @@ $photosResult = preg_split($pattern, $photosFile);
 foreach($photosResult as $value)
 {
   $value1= str_replace('�',"",$value);
-  $replaceValue= str_replace('"',"",$value1);
+  $replaceValue= str_replace('"',"",str_replace('MontrÃ©al',"Montréal",$value1));
   $valueExplode=explode(",",$replaceValue);
   if(count($wpdb->get_results("SELECT * FROM PHOTOS WHERE NO_INSCRIPTION = '".$valueExplode[0]."' and SEQ='".$valueExplode[1]."' ", OBJECT ))==0){
     $wpdb->insert('PHOTOS', array(
@@ -408,7 +408,7 @@ $piecesUnitesResult = preg_split($pattern, $piecesUnitesFile);
 foreach($piecesUnitesResult as $value)
 {
   $value1= str_replace('�',"",$value);
-  $replaceValue= str_replace('"',"",$value1);
+  $replaceValue= str_replace('"',"",str_replace('MontrÃ©al',"Montréal",$value1));
   $valueExplode=explode(",",$replaceValue);
   if(count($wpdb->get_results("SELECT * FROM PIECES_UNITES WHERE NO_INSCRIPTION = '".$valueExplode[0]."' and SEQ_UNITE_DET='". $valueExplode[1]."' and SEQ='".$valueExplode[2]."' ", OBJECT ))==0){
     $wpdb->insert('PIECES_UNITES', array(
@@ -440,7 +440,7 @@ $remarquesResult = preg_split($pattern, $remarquesFile);
 foreach($remarquesResult as $value)
 {
   $value1= str_replace('�',"",$value);
-  $replaceValue= str_replace('"',"",$value1);
+  $replaceValue= str_replace('"',"",str_replace('MontrÃ©al',"Montréal",$value1));
   $valueExplode=explode(",",$replaceValue);
   if(count($wpdb->get_results("SELECT * FROM REMARQUES WHERE NO_INSCRIPTION = '".$valueExplode[0]."' and NO_REMARQUE='".$valueExplode[1]."' and ORDRE_AFFICHAGE='".$valueExplode[2]."' ", OBJECT ))==0){
     $wpdb->insert('REMARQUES', array(
@@ -462,7 +462,7 @@ $renovationsResult = preg_split($pattern, $renovationsFile);
 foreach($renovationsResult as $value)
 {
   $value1= str_replace('�',"",$value);
-  $replaceValue= str_replace('"',"",$value1);
+  $replaceValue= str_replace('"',"",str_replace('MontrÃ©al',"Montréal",$value1));
   $valueExplode=explode(",",$replaceValue);
   if(count($wpdb->get_results("SELECT * FROM RENOVATIONS WHERE NO_INSCRIPTION = '".$valueExplode[0]."' and SEQ='".$valueExplode[1]."' ", OBJECT ))==0){
     $wpdb->insert('RENOVATIONS', array(
@@ -485,7 +485,7 @@ $unitesDResult = preg_split($pattern, $unitesDFile);
 foreach($unitesDResult as $value)
 {
   $value1= str_replace('�',"",$value);
-  $replaceValue= str_replace('"',"",$value1);
+  $replaceValue= str_replace('"',"",str_replace('MontrÃ©al',"Montréal",$value1));
   $valueExplode=explode(",",$replaceValue);
   if(count($wpdb->get_results("SELECT * FROM UNITES_DETAILLEES WHERE NO_INSCRIPTION = '".$valueExplode[0]."' and SEQ='".$valueExplode[1]."' and TYPE_UNITE_DET='".$valueExplode[2]."' ", OBJECT ))==0){
     $wpdb->insert('UNITES_DETAILLEES', array(
@@ -521,7 +521,7 @@ $unitesSResult = preg_split($pattern, $unitesSile);
 foreach($unitesSResult as $value)
 {
   $value1= str_replace('�',"",$value);
-  $replaceValue= str_replace('"',"",$value1);
+  $replaceValue= str_replace('"',"",str_replace('MontrÃ©al',"Montréal",$value1));
   $valueExplode=explode(",",$replaceValue);
   if(count($wpdb->get_results("SELECT * FROM UNITES_SOMMAIRES WHERE NO_INSCRIPTION = '".$valueExplode[0]."' and SEQ='".$valueExplode[1]."' ", OBJECT ))==0){
     $wpdb->insert('UNITES_SOMMAIRES', array(
@@ -544,7 +544,7 @@ $unitesSResult = preg_split($pattern, $unitesSile);
 foreach($unitesSResult as $value)
 {
   $value1= str_replace('�',"",$value);
-  $replaceValue= str_replace('"',"",$value1);
+  $replaceValue= str_replace('"',"",str_replace('MontrÃ©al',"Montréal",$value1));
   $valueExplode=explode(",",$replaceValue);
   if(count($wpdb->get_results("SELECT * FROM VALEURS_FIXES WHERE DOMAINE = '".$valueExplode[0]."' and VALEUR='".$valueExplode[1]."' ", OBJECT ))==0){
     $wpdb->insert('VALEURS_FIXES', array(
@@ -564,7 +564,7 @@ $visitesLibresileResult = preg_split($pattern, $visitesLibresile);
 foreach($visitesLibresileResult as $value)
 {
   $value1= str_replace('�',"",$value);
-  $replaceValue= str_replace('"',"",$value1);
+  $replaceValue= str_replace('"',"",str_replace('MontrÃ©al',"Montréal",$value1));
   $valueExplode=explode(",",$replaceValue);
   if(count($wpdb->get_results("SELECT * FROM VISITES_LIBRES WHERE NO_INSCRIPTION = '".$valueExplode[0]."' and SEQ='".$valueExplode[1]."' ", OBJECT ))==0){
     $wpdb->insert('VISITES_LIBRES', array(
