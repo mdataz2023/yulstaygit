@@ -19,7 +19,8 @@ if ($lang == 'en-US'){
 <style>
 #map {
     width: 100%;
-    height: 450px;;
+    height: 450px;
+    ;
 }
 
 /* Add custom styles if needed */
@@ -370,14 +371,13 @@ function initMap() {
             lng: -74
         }
     });
-
     setMarkers(map);
 }
 var mapLocation = [];
 <?php
-                                $datas = $wpdb->get_results("SELECT LATITUDE,LONGITUDE,count(LONGITUDE) as NO_OF_LOCATION FROM INSCRIPTIONS group by LATITUDE,LONGITUDE;", OBJECT );
-                               $m=1;
-                               foreach ($datas as $page) { ?>
+                        $datas = $wpdb->get_results("SELECT LATITUDE,LONGITUDE,count(LONGITUDE) as NO_OF_LOCATION FROM INSCRIPTIONS group by LATITUDE,LONGITUDE;", OBJECT );
+                        $m=1;
+                        foreach ($datas as $page) { ?>
 
 mapLocation.push([<?php echo $page->NO_OF_LOCATION;?>, <?php echo $page->LATITUDE;?>,
     <?php echo $page->LONGITUDE;?>, <?php echo $m;?>
