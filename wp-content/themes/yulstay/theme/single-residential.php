@@ -315,6 +315,128 @@ $inscriptionsData = $wpdb->get_row(" SELECT * FROM INSCRIPTIONS where NO_INSCRIP
                 </div>
             </div>
         </div>
+
+
+            <div class="max-w-7xl mx-auto my-10">
+                <h2 class="text-center font-poppins text-2xl pt-7 pb-3">CALCULATORS</h2>
+                <div class="grid grid-cols-3 gap-4">
+                  <div class="bg-slate-100 p-4 rounded-2xl">
+                    <h2 class="text-center text-xl pb-4">MONTHLY PAYMENT</h2>
+                    <div class="grid grid-cols-2 gap-3">
+                      <div class="flex items-center text-base">
+                        <div>Purchase price :</div>
+                      </div>
+                      <div class="mt-2.5">
+                        <input type="text" name="last-name" id="last-name" autocomplete="family-name" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-[#00AEC5] focus:ring-opacity-50 placeholder:text-gray-400 focus:outline-none sm:text-sm sm:leading-6">
+                      </div>
+                      <div class="flex items-center text-base">
+                        <div>Interest rate :</div>
+                      </div>
+                      <div class="mt-2.5">
+                        <input type="text" name="last-name" id="last-name" autocomplete="family-name" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-[#00AEC5] focus:ring-opacity-50 placeholder:text-gray-400 focus:outline-none sm:text-sm sm:leading-6">
+                      </div>
+                      <div class="flex items-center text-base">
+                        <div>Amortization:</div>
+                      </div>
+                      <div class="mt-2.5">
+                        <select id="countries" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                        <option selected>Choose a type</option>
+                        <option value="US">Condo</option>
+                        <option value="CA">House</option>
+                        <option value="FR">Plex</option>
+                        </select>
+                      </div>
+                      <div class="flex items-center text-base">
+                        <div>Down payment:</div>
+                      </div>
+                      <div class="mt-2.5">
+                          <select id="countries" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                          <option selected>Choose a type</option>
+                          <option value="US">Condo</option>
+                          <option value="CA">House</option>
+                          <option value="FR">Plex</option>
+                          </select>
+                      </div>
+                      <div class="flex items-center text-base">
+                        <div>Mortgage amount:</div>
+                      </div>
+                      <div class="mt-2.5">
+                        <input type="text" name="last-name" id="last-name" autocomplete="family-name" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-[#00AEC5] focus:ring-opacity-50 placeholder:text-gray-400 focus:outline-none sm:text-sm sm:leading-6">
+                      </div>
+                    </div>
+                    <div class="text-center py-5 mt-2.5"> answer </div>
+                    <div class="mt-1">
+                      <button type="submit" class="text-center w-full py-2 rounded-full bg-white hover:bg-[#00AEC5] text-black hover:text-white border border-black hover:border-none">CALCULAT</button>
+                    </div>
+                  </div>
+                  <div class="bg-gray-50 p-4 rounded-2xl">
+                    <h2 class="text-center text-xl pb-4">WELCOME TAX</h2>
+                    <div class="grid grid-cols-2 gap-3">
+                      <div class="flex items-center text-base">
+                        <div>Purchase price:</div>
+                      </div>
+                      <div class="mt-2.5">
+                        <input type="text" name="last-name" id="last-name" autocomplete="family-name" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-[#00AEC5] focus:ring-opacity-50 placeholder:text-gray-400 focus:outline-none sm:text-sm sm:leading-6">
+                      </div>
+                    </div>
+                    <div class="text-center py-5 mt-2.5"> answer </div>
+                    <div class="mt-1">
+                      <button type="submit" class="text-center w-full py-2 rounded-full bg-white hover:bg-[#00AEC5] text-black hover:text-white border border-black hover:border-none">CALCULAT</button>
+                    </div>
+                  </div>
+                  <div class="bg-slate-100 p-4 rounded-2xl">
+                    <h2 class="text-center text-xl pb-4">PURCHASING POWER</h2>
+                    <div class="grid grid-cols-2 gap-3">
+                      <div class="flex items-center text-base">
+                        <div>Payment</div>
+                      </div>
+                      <div class="mt-2.5">
+                        <input type="text" name="last-name" id="last-name" autocomplete="family-name" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-[#00AEC5] focus:ring-opacity-50 placeholder:text-gray-400 focus:outline-none sm:text-sm sm:leading-6">
+                      </div>
+                      <div class="flex items-center text-base">
+                        <div>Payment frequency</div>
+                      </div>
+                      <div class="mt-2.5">
+                          <select id="countries" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                          <option selected>Choose a type</option>
+                          <option value="US">Condo</option>
+                          <option value="CA">House</option>
+                          <option value="FR">Plex</option>
+                          </select>
+                      </div>
+                      <div class="flex items-center text-base">
+                        <div>Interest rate</div>
+                      </div>
+                      <div class="mt-2.5">
+                        <input type="text" name="last-name" id="last-name" autocomplete="family-name" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-[#00AEC5] focus:ring-opacity-50 placeholder:text-gray-400 focus:outline-none sm:text-sm sm:leading-6">
+                      </div>
+                      <div class="flex items-center text-base">
+                        <div>Amortization period</div>
+                      </div>
+                      <div class="mt-2.5">
+                        <select id="countries" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                        <option selected>Choose a type</option>
+                        <option value="US">Condo</option>
+                        <option value="CA">House</option>
+                        <option value="FR">Plex</option>
+                        </select>
+                      </div>
+                      <div class="flex items-center text-base">
+                        <div>Down payment</div>
+                      </div>
+                      <div class="mt-2.5">
+                        <input type="text" name="last-name" id="last-name" autocomplete="family-name" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-[#00AEC5] focus:ring-opacity-50 placeholder:text-gray-400 focus:outline-none sm:text-sm sm:leading-6">
+                      </div>
+                    </div>
+                    <div class="text-center py-5 mt-2.5"> answer </div>
+                    <div class="mt-1">
+                      <button type="submit" class="text-center w-full py-2 rounded-full bg-white hover:bg-[#00AEC5] text-black hover:text-white border border-black hover:border-none">CALCULAT</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
         <?php
 
 $the_query = new WP_Query(array(
