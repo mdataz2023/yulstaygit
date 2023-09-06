@@ -240,13 +240,21 @@
                           );
                       }
                       ?> -->
-                      <div id="language-switcher" class="py-2">
-                    <ul class="flex justify-end">
-                      <li>
-                      <?php do_action('wpml_add_language_selector'); ?>
-                      </li>
-                    </ul>
-                  </div>
+                          <div class="flex items-center space-x-2">
+                            <?php if ($lang == 'si-SL') : ?>
+                                <span class="text-blue-500">සිංහල</span>
+                                <span class="text-gray-400">|</span>
+                                <a href="?lang=en-US" class="cursor-pointer transition duration-300 ease-in-out hover:text-blue-500">English</a>
+                            <?php elseif ($lang == 'en-US') : ?>
+                                <a href="?lang=si-SL" class="cursor-pointer transition duration-300 ease-in-out hover:text-blue-500">සිංහල</a>
+                                <span class="text-gray-400">|</span>
+                                <span class="text-blue-500">English</span> 
+                            <?php else : ?>
+                                <a href="?lang=si-SL" class="cursor-pointer transition duration-300 ease-in-out hover:text-blue-500">සිංහල</a>
+                                <span class="text-gray-400">|</span>
+                                <a href="?lang=en-US" class="cursor-pointer transition duration-300 ease-in-out hover:text-blue-500">English</a>
+                            <?php endif; ?>
+                        </div>
                     </div>
                   </div>
             </div>
