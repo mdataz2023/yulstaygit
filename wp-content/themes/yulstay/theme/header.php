@@ -230,17 +230,23 @@
                                    </svg>
                     </a>
                     <div>
-                      <?php
+                      <!-- <?php
                       if (has_nav_menu('main-menu')) {
                           wp_nav_menu(
                               array(
                                   'theme_location' => 'main-menu',
-                                  'menu_class'     => 'main-menu', // Optional: Add a custom CSS class to the menu
-                                  // Additional arguments for customizing the menu output can be added here
+                                  'menu_class'     => 'main-menu', 
                               )
                           );
                       }
-                      ?>
+                      ?> -->
+                      <div id="language-switcher" class="py-2">
+                    <ul class="flex justify-end">
+                      <li>
+                      <?php do_action('wpml_add_language_selector'); ?>
+                      </li>
+                    </ul>
+                  </div>
                     </div>
                   </div>
             </div>
