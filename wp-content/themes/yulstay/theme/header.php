@@ -235,12 +235,13 @@
                           wp_nav_menu(
                               array(
                                   'theme_location' => 'main-menu',
-                                  'menu_class'     => 'main-menu', // Optional: Add a custom CSS class to the menu
-                                  // Additional arguments for customizing the menu output can be added here
+                                  'menu_class'     => 'main-menu', 
                               )
                           );
                       }
                       ?>
+                          
+
                     </div>
                   </div>
             </div>

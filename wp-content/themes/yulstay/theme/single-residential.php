@@ -98,9 +98,7 @@ $inscriptionsData = $wpdb->get_row(" SELECT * FROM INSCRIPTIONS where NO_INSCRIP
             slidesContainer.scrollLeft -= slideWidth;
         });
         </script>
-        <iframe width="100%" height="270" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
-            src="https://maps.google.com/maps?q=<?php echo $inscriptionsData->LATITUDE;?>,<?php echo $inscriptionsData->LONGITUDE;?>&hl=es&z=10&amp;output=embed">
-        </iframe>
+
         <!-- caro -->
         <div class="max-w-7xl mx-auto">
             <div class="flex justify-between pb-7 border-b border-gray-300">
@@ -286,31 +284,34 @@ $inscriptionsData = $wpdb->get_row(" SELECT * FROM INSCRIPTIONS where NO_INSCRIP
                         </div>
                     </div>
                     <div>
-                        <div class="mt-2.5">
-                            <input type="text" name="last-name" id="last-name" autocomplete="family-name"
-                                class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-[#00AEC5] focus:ring-opacity-50 placeholder:text-gray-400 focus:outline-none sm:text-sm sm:leading-6 bg-slate-200"
-                                placeholder="Your Name">
-                        </div>
-                        <div class="mt-2.5">
-                            <input type="text" name="last-name" id="last-name" autocomplete="family-name"
-                                class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-[#00AEC5] focus:ring-opacity-50 placeholder:text-gray-400 focus:outline-none sm:text-sm sm:leading-6 bg-slate-200"
-                                placeholder="Your Email">
-                        </div>
-                        <div class="mt-2.5">
-                            <input type="text" name="last-name" id="last-name" autocomplete="family-name"
-                                class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-[#00AEC5] focus:ring-opacity-50 placeholder:text-gray-400 focus:outline-none sm:text-sm sm:leading-6 bg-slate-200"
-                                placeholder="Your Phone Number">
-                        </div>
-                        <div class="mt-2.5">
-                            <textarea type="text" name="last-name" id="last-name" autocomplete="family-name"
-                                class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-[#00AEC5] focus:ring-opacity-50 placeholder:text-gray-400 focus:outline-none sm:text-sm sm:leading-6 bg-slate-200"
-                                placeholder="Message"></textarea>
-                        </div>
-                        <div class="mt-2.5">
-                            <button type="submit"
-                                class="text-center w-full py-3 rounded-full bg-white hover:bg-[#00AEC5] text-black hover:text-white border border-black hover:border-none">Send
-                                message</button>
-                        </div>
+                    <?php echo do_shortcode('[contact-form-7 id="1283" title="Ralph Contact Form"]'); ?>
+                        <!-- <form action="">
+                            <div class="mt-2.5">
+                                <input type="text" name="last-name" id="last-name" autocomplete="family-name"
+                                    class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-[#00AEC5] focus:ring-opacity-50 placeholder:text-gray-400 focus:outline-none sm:text-sm sm:leading-6 bg-slate-200"
+                                    placeholder="Your Name">
+                            </div>
+                            <div class="mt-2.5">
+                                <input type="text" name="last-name" id="last-name" autocomplete="family-name"
+                                    class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-[#00AEC5] focus:ring-opacity-50 placeholder:text-gray-400 focus:outline-none sm:text-sm sm:leading-6 bg-slate-200"
+                                    placeholder="Your Email">
+                            </div>
+                            <div class="mt-2.5">
+                                <input type="text" name="last-name" id="last-name" autocomplete="family-name"
+                                    class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-[#00AEC5] focus:ring-opacity-50 placeholder:text-gray-400 focus:outline-none sm:text-sm sm:leading-6 bg-slate-200"
+                                    placeholder="Your Phone Number">
+                            </div>
+                            <div class="mt-2.5">
+                                <textarea type="text" name="last-name" id="last-name" autocomplete="family-name"
+                                    class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-[#00AEC5] focus:ring-opacity-50 placeholder:text-gray-400 focus:outline-none sm:text-sm sm:leading-6 bg-slate-200"
+                                    placeholder="Message"></textarea>
+                            </div>
+                            <div class="mt-2.5">
+                                <button type="submit"
+                                    class="text-center w-full py-3 rounded-full bg-white hover:bg-[#00AEC5] text-black hover:text-white border border-black hover:border-none">Send
+                                    message</button>
+                            </div>
+                        </form> -->
                     </div>
                 </div>
             </div>
@@ -435,6 +436,12 @@ $inscriptionsData = $wpdb->get_row(" SELECT * FROM INSCRIPTIONS where NO_INSCRIP
                   </div>
                 </div>
               </div>
+
+            <div class="max-w-7xl mx-auto">
+                <iframe width="100%" height="270" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+                    src="https://maps.google.com/maps?q=<?php echo $inscriptionsData->LATITUDE;?>,<?php echo $inscriptionsData->LONGITUDE;?>&hl=es&z=10&amp;output=embed">
+                </iframe>
+            </div>
 
 
         <?php

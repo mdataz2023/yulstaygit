@@ -213,3 +213,8 @@ function register_main_menu() {
 	register_nav_menu('main-menu',__( 'Main Menu' ));
   }
   add_action( 'init', 'register_main_menu' );
+
+  function register_small_menu_lang() {
+	register_nav_menu('small-menu-lang',__( 'Small Menu Lang' ));
+  }
+  add_action( 'init', 'register_small_menu_lang' );
