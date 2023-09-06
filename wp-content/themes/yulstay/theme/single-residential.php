@@ -284,7 +284,8 @@ $inscriptionsData = $wpdb->get_row(" SELECT * FROM INSCRIPTIONS where NO_INSCRIP
                         </div>
                     </div>
                     <div>
-                        <form action="">
+                    <?php echo do_shortcode('[contact-form-7 id="1283" title="Ralph Contact Form"]'); ?>
+                        <!-- <form action="">
                             <div class="mt-2.5">
                                 <input type="text" name="last-name" id="last-name" autocomplete="family-name"
                                     class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-[#00AEC5] focus:ring-opacity-50 placeholder:text-gray-400 focus:outline-none sm:text-sm sm:leading-6 bg-slate-200"
@@ -310,7 +311,7 @@ $inscriptionsData = $wpdb->get_row(" SELECT * FROM INSCRIPTIONS where NO_INSCRIP
                                     class="text-center w-full py-3 rounded-full bg-white hover:bg-[#00AEC5] text-black hover:text-white border border-black hover:border-none">Send
                                     message</button>
                             </div>
-                        </form>
+                        </form> -->
                     </div>
                 </div>
             </div>
