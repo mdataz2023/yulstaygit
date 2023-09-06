@@ -5,7 +5,6 @@
 	Template Name: Residential
 
 */
-
 get_header();
 $lang = get_bloginfo("language");
 $language="A";
@@ -17,11 +16,7 @@ if ($lang == 'en-US'){
 ?>
 
 <style>
-#map {
-    width: 100%;
-    height: 450px;
-    ;
-}
+
 
 /* Add custom styles if needed */
 .active-button {
