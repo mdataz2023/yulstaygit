@@ -244,10 +244,8 @@
 														$lang = get_bloginfo("language"); 
 														if ($lang == 'en-US') { ?>
 															English
-															<?php } elseif($lang == 'sh-SL' || $lang == 'si-SL' ) {?>
-															සිංහල
-															<?php } elseif($lang == 'ta-IN') {?>
-															தமிழ்
+															<?php } elseif($lang == 'fr_FR') {?>
+															French
 													<?php }?>
 
                           <?php wp_nav_menu( array( 
