@@ -371,13 +371,12 @@ var map = new google.maps.Map(document.getElementById('map'),options);
       //Add marker
       var markers = [];
       <?php
-                        $datas = $wpdb->get_results("SELECT LATITUDE,LONGITUDE,MUN_CODE FROM INSCRIPTIONS", OBJECT );
+                        $datas = $wpdb->get_results("SELECT LATITUDE,LONGITUDE,NO_INSCRIPTION FROM INSCRIPTIONS", OBJECT );
                         foreach ($datas as $page) {
-                        $municipalite1 = $wpdb->get_row(" SELECT * FROM MUNICIPALITES where CODE = '".$page->MUN_CODE."'", OBJECT );
                         ?>
                             markers.push({
                                 coords:{lat:<?php echo $page->LATITUDE;?>,lng:<?php echo $page->LONGITUDE;?>},
-                                content:'<h1><?php  echo $municipalite1->DESCRIPTION;?></h1>'
+                                content:'<h1><?php  echo $page->NO_INSCRIPTION;?></h1>'
                         });
                         <?php
                         }
