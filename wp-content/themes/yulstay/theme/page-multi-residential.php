@@ -15,6 +15,8 @@ if ($lang == 'en-US'){
    $language="F";
 }
 ?>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyALbrsESmR55p0PLDbeL-SQ_YPuRpucYrw&libraries=places"></script>
+<script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
 
 <style>
 /* Add custom styles if needed */
@@ -356,49 +358,65 @@ listButton.addEventListener('click', () => {
 });
 </script>
 <script>
-function initMap() {
-    var map = new google.maps.Map(document.getElementById('map'), {
-        zoom: 6,
-        center: {
-            lat: 46,
-            lng: -74
+function initMap(){
+      // map options
+      var options = {
+        zoom:7,
+        center:{lat: 46, lng:-74}
         }
-    });
-    setMarkers(map);
-}
-var mapLocation = [];
-<?php
-                        $datas = $wpdb->get_results("SELECT LATITUDE,LONGITUDE,count(LONGITUDE) as NO_OF_LOCATION FROM INSCRIPTIONS group by LATITUDE,LONGITUDE;", OBJECT );
-                        $m=1;
-                        foreach ($datas as $page) { ?>
+var map = new google.maps.Map(document.getElementById('map'),options);
+      // Add a marker clusterer to manage the markers.
 
-mapLocation.push([<?php echo $page->NO_OF_LOCATION;?>, <?php echo $page->LATITUDE;?>,
-    <?php echo $page->LONGITUDE;?>, <?php echo $m;?>
-]);
+      //Add marker
+      var markers = [];
+      <?php
+                        $datas = $wpdb->get_results("SELECT LATITUDE,LONGITUDE,NO_INSCRIPTION FROM INSCRIPTIONS", OBJECT );
+                        foreach ($datas as $page) {
+                        ?>
+                            markers.push({
+                                coords:{lat:<?php echo $page->LATITUDE;?>,lng:<?php echo $page->LONGITUDE;?>},
+                                content:'<h1><?php  echo $page->NO_INSCRIPTION;?></h1>'
+                        });
+                        <?php
+                        }
+                        ?>
 
-<?php
-$m++;
-}
-?>
-console.log(mapLocation);
+      // Loop through markers
+      var gmarkers = [];
+      for(var i = 0; i < markers.length; i++){
+        gmarkers.push(addMarker(markers[i]));
+      }
 
-function setMarkers(map) {
-    for (var i = 0; i < mapLocation.length; i++) {
-        var beach = mapLocation[i];
+      //Add MArker function
+      function addMarker(props){
         var marker = new google.maps.Marker({
-            position: {
-                lat: beach[1],
-                lng: beach[2]
-            },
-            map: map,
-            title: beach[0],
-            zIndex: beach[3]
+          position:props.coords,
+          map:map,
+
         });
+
+        /* if(props.iconImage){
+          marker.setIcon(props.iconImage);
+        } */
+
+        //Check content
+        if(props.content){
+          var infoWindow = new google.maps.InfoWindow({
+            content:props.content
+          });
+          marker.addListener('click',function(){
+            infoWindow.open(map,marker);
+          });
+        }
+        return marker;
+      }
+    var markerCluster = new MarkerClusterer(map, gmarkers,
+      {
+        imagePath:
+        'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'
+      });
     }
-}
-</script>
-<script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyALbrsESmR55p0PLDbeL-SQ_YPuRpucYrw&callback=initMap">
+  google.maps.event.addDomListener(window, 'load', initMap)
 </script>
 
 <?php get_footer(); ?>
