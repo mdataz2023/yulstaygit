@@ -14,6 +14,7 @@ if ($lang == 'en-US'){
    $language="F";
 }
 ?>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
 
 <style>
 
@@ -32,7 +33,7 @@ if ($lang == 'en-US'){
                 width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>-->
-        <div class="max-w-7xl mx-auto" id="map"></div>
+        <div class="max-w-7xl mx-auto" id="map" style="height: 450px;"></div>
 
         <div class="">
             <div class="max-w-7xl mx-auto">
@@ -358,48 +359,65 @@ listButton.addEventListener('click', () => {
 </script>
 
 <script>
-function initMap() {
-    var map = new google.maps.Map(document.getElementById('map'), {
-        zoom: 6,
-        center: {
-            lat: 46,
-            lng: -74
-        }
+
+
+
+// =====================================================
+async function initMap() {
+  // Request needed libraries.
+  const { Map, InfoWindow } = await google.maps.importLibrary("maps");
+  const { AdvancedMarkerElement, PinElement } = await google.maps.importLibrary(
+    "marker",
+  );
+  const map = new google.maps.Map(document.getElementById("map"), {
+    zoom: 3,
+    center: { lat: 46, lng:-74},
+    mapId: "DEMO_MAP_ID",
+  });
+  const infoWindow = new google.maps.InfoWindow({
+    content: "",
+    disableAutoPan: true,
+  });
+  // Create an array of alphabetical characters used to label the markers.
+  const labels = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  // Add some markers to the map.
+  const markers = locations.map((position, i) => {
+    const label = labels[i % labels.length];
+    const pinGlyph = new google.maps.marker.PinElement({
+      glyph: label,
+      glyphColor: "white",
     });
-    setMarkers(map);
+    const marker = new google.maps.marker.AdvancedMarkerElement({
+      position,
+      content: pinGlyph.element,
+    });
+
+    // markers can only be keyboard focusable when they have click listeners
+    // open info window when marker is clicked
+    marker.addListener("click", () => {
+      infoWindow.setContent(position.lat + ", " + position.lng);
+      infoWindow.open(map, marker);
+    });
+    return marker;
+  });
+
+  // Add a marker clusterer to manage the markers.
+  new MarkerClusterer({ markers, map });
 }
-var mapLocation = [];
+
+const locations = [ ];
 <?php
                         $datas = $wpdb->get_results("SELECT LATITUDE,LONGITUDE,count(LONGITUDE) as NO_OF_LOCATION FROM INSCRIPTIONS group by LATITUDE,LONGITUDE;", OBJECT );
-                        $m=1;
                         foreach ($datas as $page) { ?>
-
-mapLocation.push([<?php echo $page->NO_OF_LOCATION;?>, <?php echo $page->LATITUDE;?>,
-    <?php echo $page->LONGITUDE;?>, <?php echo $m;?>
-]);
-
+locations.push({lat:<?php echo $page->LATITUDE;?>,lng:<?php echo $page->LONGITUDE;?>});
 <?php
-$m++;
 }
 ?>
-console.log(mapLocation);
-
-function setMarkers(map) {
-    for (var i = 0; i < mapLocation.length; i++) {
-        var beach = mapLocation[i];
-        var marker = new google.maps.Marker({
-            position: {
-                lat: beach[1],
-                lng: beach[2]
-            },
-            map: map,
-            title: beach[0],
-            zIndex: beach[3]
-        });
-    }
-}
+initMap();
 </script>
-<script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyALbrsESmR55p0PLDbeL-SQ_YPuRpucYrw&callback=initMap">
+<script  async defer>(g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})
+        ({key: "AIzaSyALbrsESmR55p0PLDbeL-SQ_YPuRpucYrw", v: "weekly"});</script>
+<!-- <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyALbrsESmR55p0PLDbeL-SQ_YPuRpucYrw&callback=initMap"> -->
 </script>
 <?php get_footer(); ?>
