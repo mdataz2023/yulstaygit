@@ -364,6 +364,18 @@ listButton.addEventListener('click', () => {
 
 
 // =====================================================
+
+const locations = [ ];
+<?php
+                        $datas = $wpdb->get_results("SELECT LATITUDE,LONGITUDE FROM INSCRIPTIONS", OBJECT );
+                        // ,count(LONGITUDE) as NO_OF_LOCATION
+                        // group by LATITUDE,LONGITUDE;
+                        foreach ($datas as $page) { ?>
+locations.push({lat:<?php echo $page->LATITUDE;?>,lng:<?php echo $page->LONGITUDE;?>});
+<?php
+}
+?>
+console.log(locations,'xx');
 async function initMap() {
   // Request needed libraries.
   const { Map, InfoWindow } = await google.maps.importLibrary("maps");
@@ -406,14 +418,6 @@ async function initMap() {
   new MarkerClusterer({ markers, map });
 }
 
-const locations = [ ];
-<?php
-                        $datas = $wpdb->get_results("SELECT LATITUDE,LONGITUDE,count(LONGITUDE) as NO_OF_LOCATION FROM INSCRIPTIONS group by LATITUDE,LONGITUDE;", OBJECT );
-                        foreach ($datas as $page) { ?>
-locations.push({lat:<?php echo $page->LATITUDE;?>,lng:<?php echo $page->LONGITUDE;?>});
-<?php
-}
-?>
 initMap();
 </script>
 
