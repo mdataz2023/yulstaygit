@@ -49,7 +49,7 @@ $team_page_description = get_field('team_page_description');
 
             $categories = get_the_category();
             ?>
-            <div>
+            <div class="grid justify-items-center">
                 <a href="<?php the_permalink(); ?>">
                 <?php
                 if (has_post_thumbnail()) {
