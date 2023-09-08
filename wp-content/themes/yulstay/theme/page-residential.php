@@ -26,7 +26,7 @@ if ($lang == 'en-US'){
     /* Change to your desired active button background color */
 }
 </style>
-<div class="h-screen w-screen pr-12 overflow-y-scroll scroll-style">
+<div class="h-screen w-screen pt-12 md:pr-12 overflow-y-scroll scroll-style">
     <div class="pt-20">
         <!-- <div class="flex pb-7 overflow-hidden gap-1 h-[500px] max-w-7xl mx-auto">
             <iframe
@@ -62,7 +62,7 @@ if ($lang == 'en-US'){
                         </select>
 
 
-                        <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown"
+                        <button class="hidden md:block" id="dropdownDefaultButton" data-dropdown-toggle="dropdown"
                             class="text-black bg-gray-100  hover:bg-gray-200  font-medium rounded-lg text-sm px-5 py-2 text-center inline-flex items-center  "
                             type="button">Bathrooms <svg class="w-2.5 h-2.5 ml-2.5" aria-hidden="true"
                                 xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
@@ -94,7 +94,7 @@ if ($lang == 'en-US'){
                             </ul>
                         </div>
 
-                        <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown"
+                        <button class="hidden md:block" id="dropdownDefaultButton" data-dropdown-toggle="dropdown"
                             class="text-black bg-gray-100  hover:bg-gray-200  font-medium rounded-lg text-sm px-5 py-2 text-center inline-flex items-center  "
                             type="button">Bedrooms <svg class="w-2.5 h-2.5 ml-2.5" aria-hidden="true"
                                 xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
@@ -126,7 +126,7 @@ if ($lang == 'en-US'){
                             </ul>
                         </div>
 
-                        <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown"
+                        <button class="hidden md:block" id="dropdownDefaultButton" data-dropdown-toggle="dropdown"
                             class="text-black bg-gray-100  hover:bg-gray-200  font-medium rounded-lg text-sm px-5 py-2 text-center inline-flex items-center  "
                             type="button">Prix <svg class="w-2.5 h-2.5 ml-2.5" aria-hidden="true"
                                 xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
@@ -158,7 +158,7 @@ if ($lang == 'en-US'){
                             </ul>
                         </div>
                     </div>
-                    <div class="pt-5">
+                    <div class="pt-5 hidden md:block">
                         <!-- Buttons to toggle between Grid and List views -->
                         <button id="gridButton"
                             class="border border-gray-500 text-black px-4 py-2 rounded mr-2 active-button">
@@ -200,7 +200,7 @@ if ($the_query->have_posts()) {
 
     ?>
 
-                <div id="gridView" class="grid grid-cols-3 gap-x-4 gap-y-5 font-poppins">
+                <div id="gridView" class="grid grid-cols-1 md:grid-cols-3 gap-x-4 gap-y-5 font-poppins">
                     <?php
                 while ($the_query->have_posts()) {
                     $inscriptionsData = $wpdb->get_row(" SELECT * FROM INSCRIPTIONS where NO_INSCRIPTION = '".get_the_content()."'", OBJECT );
