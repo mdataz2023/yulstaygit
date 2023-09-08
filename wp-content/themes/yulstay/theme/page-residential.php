@@ -50,7 +50,7 @@ if ($lang == 'en-US'){
                                     stroke-width="2" d="m1 1 4 4 4-4" />
                             </svg></button> -->
                         <!-- Dropdown menu -->
-                        <select class="py-2 text-sm w-auto px-3 text-gray-700 dark:text-gray-200">
+                        <select class="py-2 text-sm w-screen md:w-auto px-3 text-gray-700 dark:text-gray-200">
                             <option selected desabled><b>Municipality</b></option>
                             <?php
                                 $municipalite = $wpdb->get_results(" SELECT * FROM MUNICIPALITES", OBJECT );
