@@ -100,7 +100,7 @@ $inscriptionsData = $wpdb->get_row(" SELECT * FROM INSCRIPTIONS where NO_INSCRIP
         </script>
 
         <!-- caro -->
-        <div class="max-w-7xl md:mx-auto px-3">
+        <div class="max-w-7xl md:mx-auto px-3 md:px-0">
             <div class="flex flex-col md:flex-row justify-between pb-7 border-b border-gray-300">
                 <div>
                     <p class="text-base font-poppins pb-2"><?php
@@ -318,7 +318,7 @@ $inscriptionsData = $wpdb->get_row(" SELECT * FROM INSCRIPTIONS where NO_INSCRIP
         </div>
 
 
-            <div class="max-w-7xl mx-auto my-10">
+            <div class="max-w-7xl mx-auto my-10 px-3 md:px-0">
                 <h2 class="text-center font-poppins text-2xl pt-7 pb-3"><?php _e('CALCULATORS','theme-text-domain'); ?></h2>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
                   <div class="bg-slate-100 p-4 rounded-2xl">
@@ -464,7 +464,7 @@ if ($the_query->have_posts()) {
         <div class="bg-slate-100">
             <div class="max-w-7xl mx-auto">
                 <h2 class="font-poppins text-5xl pt-20 pb-7"><?php _e('Properties in the Region','theme-text-domain'); ?></h2>
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-x-4 gap-y-5 font-poppins">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-x-4 gap-y-5 font-poppins px-3 md:px-0">
                     <?php
                 while ($the_query->have_posts()) {
                     $inscriptionsData = $wpdb->get_row(" SELECT * FROM INSCRIPTIONS where NO_INSCRIPTION = '".get_the_content()."'", OBJECT );
