@@ -42,7 +42,7 @@ $inscriptionsData = $wpdb->get_row(" SELECT * FROM INSCRIPTIONS where NO_INSCRIP
 }
 </style>
 
-<div class="h-screen w-screen pt-12 md:pt-0 md:pr-12 md:overflow-y-scroll scroll-style">
+<div class="h-screen w-screen pt-12 md:pt-0 md:pr-12 overflow-y-scroll md:scroll-style">
 
     <div class="">
         <!-- caro -->
