@@ -60,15 +60,24 @@ if ($lang == 'en-US'){
                         ?>
                         </select>
 
+                        <select class="py-2 text-sm text-gray-700 dark:text-gray-200">
+                            <option selected desabled><b>Bathrooms</b></option>
+                            <?php
+                              for ($i=1; $i <11; $i++) {
+                                    ?>
+                            <option id="<?php echo $i;?>"><?php echo $i;?></option>
+                            <?php
+                            }
+                        ?>
+                        </select>
 
-                        <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown"
+                        <!-- <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown"
                             class="text-black bg-gray-100  hover:bg-gray-200  font-medium rounded-lg text-sm px-5 py-2 text-center inline-flex items-center  "
                             type="button">Bathrooms <svg class="w-2.5 h-2.5 ml-2.5" aria-hidden="true"
                                 xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
                                     stroke-width="2" d="m1 1 4 4 4-4" />
                             </svg></button>
-                        <!-- Dropdown menu -->
                         <div id="dropdown"
                             class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-lg w-44 dark:bg-gray-700">
                             <ul class="py-2 text-sm text-gray-700 dark:text-gray-200"
@@ -91,16 +100,25 @@ if ($lang == 'en-US'){
                                         out</a>
                                 </li>
                             </ul>
-                        </div>
+                        </div> -->
+                        <select class="py-2 text-sm text-gray-700 dark:text-gray-200">
+                            <option selected desabled><b>Bedrooms</b></option>
+                            <?php
+                              for ($i=1; $i <11; $i++) {
+                                    ?>
+                            <option id="<?php echo $i;?>"><?php echo $i;?></option>
+                            <?php
+                            }
+                        ?>
+                        </select>
 
-                        <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown"
+                        <!-- <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown"
                             class="text-black bg-gray-100  hover:bg-gray-200  font-medium rounded-lg text-sm px-5 py-2 text-center inline-flex items-center  "
                             type="button">Bedrooms <svg class="w-2.5 h-2.5 ml-2.5" aria-hidden="true"
                                 xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
                                     stroke-width="2" d="m1 1 4 4 4-4" />
                             </svg></button>
-                        <!-- Dropdown menu -->
                         <div id="dropdown"
                             class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-lg w-44 dark:bg-gray-700">
                             <ul class="py-2 text-sm text-gray-700 dark:text-gray-200"
@@ -123,7 +141,7 @@ if ($lang == 'en-US'){
                                         out</a>
                                 </li>
                             </ul>
-                        </div>
+                        </div> -->
 
                         <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown"
                             class="text-black bg-gray-100  hover:bg-gray-200  font-medium rounded-lg text-sm px-5 py-2 text-center inline-flex items-center  "
@@ -301,11 +319,13 @@ if ($the_query->have_posts()) {
                         <div class="flex gap-3">
                             <div class="border-r my-4 pr-4 border-gray-400">
                                 <div>Bedrooms</div>
-                                <div><?php echo $inscriptionsData->NB_CHAMBRES;?></div>
+                                <div><?php
+                                $UNITES_DETAILLEES = $wpdb->get_row("SELECT * FROM UNITES_DETAILLEES WHERE NO_INSCRIPTION='".get_the_content()."' ", OBJECT );
+                                echo $UNITES_DETAILLEES->NB_CHAMBRES;?></div>
                             </div>
                             <div class="border-r my-4 pr-4 border-gray-400">
                                 <div>Bathrooms</div>
-                                <div><?php echo $inscriptionsData->NB_CHAMBRES_HORS_SOL;?></div>
+                                <div><?php echo $inscriptionsData->NB_SALLES_BAINS;?></div>
                             </div>
                             <div class="my-4 pr-4">
                                 <div>price</div>
@@ -374,10 +394,11 @@ var map = new google.maps.Map(document.getElementById('map'),options);
       <?php
                         $datas = $wpdb->get_results("SELECT LATITUDE,LONGITUDE,NO_INSCRIPTION FROM INSCRIPTIONS", OBJECT );
                         foreach ($datas as $page) {
+                            $post = $wpdb->get_row("SELECT ID from wp_posts where post_content='".$page->NO_INSCRIPTION."'", OBJECT );
                         ?>
                             markers.push({
                                 coords:{lat:<?php echo $page->LATITUDE;?>,lng:<?php echo $page->LONGITUDE;?>},
-                                content:'<h1><?php  echo $page->NO_INSCRIPTION;?></h1>'
+                                content:'<a href="<?php  echo get_permalink( $post->ID );?>"><h1><?php  echo $page->NO_INSCRIPTION;?></h1></a>'
                         });
                         <?php
                         }
