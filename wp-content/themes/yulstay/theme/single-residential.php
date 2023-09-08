@@ -153,7 +153,7 @@ $inscriptionsData = $wpdb->get_row(" SELECT * FROM INSCRIPTIONS where NO_INSCRIP
                         <?php echo $inscriptionsData->INCLUS_ANGLAIS.', '.$inscriptionsData->INCLUS_FRANCAIS;?></p>
 
                     <h2 class="text-2xl pt-7"><?php _e('Room Details','theme-text-domain'); ?></h2>
-                    <div class="grid grid-cols-5 pt-3">
+                    <div class="grid grid-cols-5 pt-3 overflow-x-auto">
                         <div class="text-sm font-poppins font-bold py-1"><?php _e('ROOM(S)','theme-text-domain'); ?></div>
                         <div class="text-sm font-poppins font-bold py-1"><?php _e('LEVEL','theme-text-domain'); ?></div>
                         <div class="text-sm font-poppins font-bold py-1"><?php _e('DIMENSIONS','theme-text-domain'); ?></div>
