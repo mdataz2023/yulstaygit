@@ -297,13 +297,15 @@ if ($the_query->have_posts()) {
                         </a>
 
                         <div class="flex gap-3">
-                            <div class="border-r my-4 pr-4 border-gray-400">
+                        <div class="border-r my-4 pr-4 border-gray-400">
                                 <div>Bedrooms</div>
-                                <div><?php echo $inscriptionsData->NB_CHAMBRES;?></div>
+                                <div><?php
+                                $UNITES_DETAILLEES = $wpdb->get_row("SELECT * FROM UNITES_DETAILLEES WHERE NO_INSCRIPTION='".get_the_content()."' ", OBJECT );
+                                echo $UNITES_DETAILLEES->NB_CHAMBRES;?></div>
                             </div>
                             <div class="border-r my-4 pr-4 border-gray-400">
                                 <div>Bathrooms</div>
-                                <div><?php echo $inscriptionsData->NB_CHAMBRES_HORS_SOL;?></div>
+                                <div><?php echo $inscriptionsData->NB_SALLES_BAINS;?></div>
                             </div>
                             <div class="my-4 pr-4">
                                 <div>price</div>
@@ -372,11 +374,12 @@ var map = new google.maps.Map(document.getElementById('map'),options);
       <?php
                         $datas = $wpdb->get_results("SELECT LATITUDE,LONGITUDE,NO_INSCRIPTION FROM INSCRIPTIONS", OBJECT );
                         foreach ($datas as $page) {
+                            $post = $wpdb->get_row("SELECT ID from wp_posts where post_content='".$page->NO_INSCRIPTION."'", OBJECT );
                         ?>
-                            markers.push({
-                                coords:{lat:<?php echo $page->LATITUDE;?>,lng:<?php echo $page->LONGITUDE;?>},
-                                content:'<h1><?php  echo $page->NO_INSCRIPTION;?></h1>'
-                        });
+                                markers.push({
+                                    coords:{lat:<?php echo $page->LATITUDE;?>,lng:<?php echo $page->LONGITUDE;?>},
+                                    content:'<a href="<?php  echo get_permalink( $post->ID );?>"><h1><?php  echo $page->NO_INSCRIPTION;?></h1></a>'
+                            });
                         <?php
                         }
                         ?>

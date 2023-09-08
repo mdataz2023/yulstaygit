@@ -116,11 +116,13 @@ $inscriptionsData = $wpdb->get_row(" SELECT * FROM INSCRIPTIONS where NO_INSCRIP
                         <div class="text-sm"><?php _e('sqft','theme-text-domain'); ?></div>
                     </div>
                     <div class="text-center border-r mt-4 mb-4 pr-4 border-gray-300">
-                        <div class="text-lg"><?php echo $inscriptionsData->NB_CHAMBRES;?></div>
+                        <div class="text-lg"><?php
+                                $UNITES_DETAILLEES = $wpdb->get_row("SELECT * FROM UNITES_DETAILLEES WHERE NO_INSCRIPTION='". $inscriptionsData->NO_INSCRIPTION."' ", OBJECT );
+                                echo $UNITES_DETAILLEES->NB_CHAMBRES;?></div>
                         <div class="text-sm"><?php _e('Bedrooms','theme-text-domain'); ?></div>
                     </div>
                     <div class="text-center border-r mt-4 mb-4 pr-4 border-gray-300">
-                        <div class="text-lg"><?php echo $inscriptionsData->NB_CHAMBRES_HORS_SOL;?></div>
+                        <div class="text-lg"><?php echo $inscriptionsData->NB_SALLES_BAINS;?></div>
                         <div class="text-sm"><?php _e('Bathrooms','theme-text-domain'); ?></div>
                     </div>
                     <div class="text-center m-4 pr-4">
