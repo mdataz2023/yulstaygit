@@ -10,7 +10,7 @@ $team_page_description = get_field('team_page_description');
 
 
 <div class="w-screen h-screen overflow-y-scroll md:scroll-style">
-  <div class="max-w-7xl mx-auto pr-12 pt-12 pb-16">
+  <div class="max-w-7xl mx-auto pr-0 md:pr-12 pt-12 pb-16">
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6 px-3 md:px-0">
             <div class="col-span-2">
                 <h1 class="text-4xl font-poppins mb-4">Multi Residential Team</h1>
