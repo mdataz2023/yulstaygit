@@ -463,7 +463,7 @@ if ($the_query->have_posts()) {
     ?>
         <div class="bg-slate-100">
             <div class="max-w-7xl mx-auto">
-                <h2 class="font-poppins text-5xl pt-20 pb-7"><?php _e('Properties in the Region','theme-text-domain'); ?></h2>
+                <h2 class="font-poppins text-5xl pt-20 px-3 pb-7"><?php _e('Properties in the Region','theme-text-domain'); ?></h2>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-x-4 gap-y-5 font-poppins px-3 md:px-0">
                     <?php
                 while ($the_query->have_posts()) {
