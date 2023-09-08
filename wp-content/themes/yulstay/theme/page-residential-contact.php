@@ -1,6 +1,6 @@
 <?php
 /*
-	Template Name: Multi Residential contact
+	Template Name: Residential contact
 */
 get_header(); 
 $team_page_title = get_field('team_page_title');
