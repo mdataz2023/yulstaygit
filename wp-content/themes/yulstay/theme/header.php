@@ -78,7 +78,7 @@
           }
         }
         </script>
-    <nav class="h-12 w-screen md:w-12 md:h-screen right-0 fixed opacity-100 md:bg-white border-l border-gray-500 z-50 flex justify-between md:items-center md:content-between">
+    <nav class="h-12 w-screen md:w-12 md:h-screen right-0 fixed opacity-100 md:bg-white border-b md:border-l border-gray-500 z-50 flex justify-between md:items-center md:content-between">
        <div class="md:hidden mx-6">
         <a href="<?php bloginfo('url'); ?>/home">
         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.png" class="h-11" alt="">
