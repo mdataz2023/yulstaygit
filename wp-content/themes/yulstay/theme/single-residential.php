@@ -100,7 +100,7 @@ $inscriptionsData = $wpdb->get_row(" SELECT * FROM INSCRIPTIONS where NO_INSCRIP
         </script>
 
         <!-- caro -->
-        <div class="max-w-7xl mx-auto">
+        <div class="max-w-7xl md:mx-auto px-3">
             <div class="flex flex-col md:flex-row justify-between pb-7 border-b border-gray-300">
                 <div>
                     <p class="text-base font-poppins pb-2"><?php
