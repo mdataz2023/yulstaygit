@@ -2144,6 +2144,11 @@ video {
   padding-bottom: 1.25rem;
 }
 
+.px-0 {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
 .pb-1 {
   padding-bottom: 0.25rem;
 }
@@ -2234,6 +2239,10 @@ video {
 
 .pt-7 {
   padding-top: 1.75rem;
+}
+
+.pt-0 {
+  padding-top: 0px;
 }
 
 .text-left {
@@ -2945,6 +2954,11 @@ video {
     padding-bottom: 1.25rem;
   }
 
+  .md\:px-0 {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
   .md\:pr-12 {
     padding-right: 3rem;
   }
@@ -2955,6 +2969,10 @@ video {
 
   .md\:pt-0 {
     padding-top: 0px;
+  }
+
+  .md\:pt-20 {
+    padding-top: 5rem;
   }
 
   .md\:text-lg {
