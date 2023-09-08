@@ -367,7 +367,7 @@ $inscriptionsData = $wpdb->get_row(" SELECT * FROM INSCRIPTIONS where NO_INSCRIP
                     </div>
                     <div class="text-center py-5 mt-2.5"> answer </div>
                     <div class="mt-1">
-                      <button type="submit" class="text-center w-full py-2 rounded-full bg-white hover:bg-[#00AEC5] text-black hover:text-white border border-black hover:border-none">CALCULAT</button>
+                      <button type="submit" class="text-center w-full py-2 rounded-full bg-white hover:bg-[#00AEC5] text-black hover:text-white border border-black hover:border-none"><?php _e('CALCULAT','theme-text-domain'); ?></button>
                     </div>
                   </div>
                   <div class="bg-gray-50 p-4 rounded-2xl">
@@ -382,7 +382,7 @@ $inscriptionsData = $wpdb->get_row(" SELECT * FROM INSCRIPTIONS where NO_INSCRIP
                     </div>
                     <div class="text-center py-5 mt-2.5"> answer </div>
                     <div class="mt-1">
-                      <button type="submit" class="text-center w-full py-2 rounded-full bg-white hover:bg-[#00AEC5] text-black hover:text-white border border-black hover:border-none">CALCULAT</button>
+                      <button type="submit" class="text-center w-full py-2 rounded-full bg-white hover:bg-[#00AEC5] text-black hover:text-white border border-black hover:border-none"><?php _e('CALCULAT','theme-text-domain'); ?></button>
                     </div>
                   </div>
                   <div class="bg-slate-100 p-4 rounded-2xl">
@@ -431,7 +431,7 @@ $inscriptionsData = $wpdb->get_row(" SELECT * FROM INSCRIPTIONS where NO_INSCRIP
                     </div>
                     <div class="text-center py-5 mt-2.5"> answer </div>
                     <div class="mt-1">
-                      <button type="submit" class="text-center w-full py-2 rounded-full bg-white hover:bg-[#00AEC5] text-black hover:text-white border border-black hover:border-none">CALCULAT</button>
+                      <button type="submit" class="text-center w-full py-2 rounded-full bg-white hover:bg-[#00AEC5] text-black hover:text-white border border-black hover:border-none"><?php _e('CALCULAT','theme-text-domain'); ?></button>
                     </div>
                   </div>
                 </div>
