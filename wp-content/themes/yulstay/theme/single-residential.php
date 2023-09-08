@@ -319,7 +319,7 @@ $inscriptionsData = $wpdb->get_row(" SELECT * FROM INSCRIPTIONS where NO_INSCRIP
 
 
             <div class="max-w-7xl mx-auto my-10 px-3 md:px-0">
-                <h2 class="text-center font-poppins text-2xl pt-7 pb-3 p-1 bg-[#00AEC5]"><?php _e('CALCULATORS','theme-text-domain'); ?></h2>
+                <h2 class="text-center font-poppins text-2xl mt-7 mb-3 p-1 bg-[#00AEC5] rounded-full"><?php _e('CALCULATORS','theme-text-domain'); ?></h2>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
                   <div class="bg-slate-100 p-4 rounded-2xl">
                     <h2 class="text-center text-xl pb-4"><?php _e('MONTHLY PAYMENT','theme-text-domain'); ?></h2>

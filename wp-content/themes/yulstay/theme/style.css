@@ -1474,6 +1474,10 @@ video {
   margin-top: auto;
 }
 
+.mt-7 {
+  margin-top: 1.75rem;
+}
+
 .block {
   display: block;
 }
