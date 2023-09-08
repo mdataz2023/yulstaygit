@@ -111,21 +111,21 @@ $inscriptionsData = $wpdb->get_row(" SELECT * FROM INSCRIPTIONS where NO_INSCRIP
                 <div class="flex gap-3 font-poppins">
                     <div class="text-center border-r mt-4 mb-4 pr-4 border-gray-300">
                         <div class="text-lg"><?php echo $inscriptionsData->UM_SUPERFICIE_HABITABLE;?></div>
-                        <div class="text-sm">sqft</div>
+                        <div class="text-sm"><?php _e('sqft','theme-text-domain'); ?></div>
                     </div>
                     <div class="text-center border-r mt-4 mb-4 pr-4 border-gray-300">
                         <div class="text-lg"><?php echo $inscriptionsData->NB_CHAMBRES;?></div>
-                        <div class="text-sm">Bedrooms</div>
+                        <div class="text-sm"><?php _e('Bedrooms','theme-text-domain'); ?></div>
                     </div>
                     <div class="text-center border-r mt-4 mb-4 pr-4 border-gray-300">
                         <div class="text-lg"><?php echo $inscriptionsData->NB_CHAMBRES_HORS_SOL;?></div>
-                        <div class="text-sm">Bathrooms</div>
+                        <div class="text-sm"><?php _e('Bathrooms','theme-text-domain'); ?></div>
                     </div>
                     <div class="text-center m-4 pr-4">
                         <div class="text-lg">
                             <?php echo $inscriptionsData->PRIX_DEMANDE.' '.($inscriptionsData->DEVISE_PRIX_DEMANDE==="CAN"?"$":$inscriptionsData->DEVISE_PRIX_DEMANDE) ;?>
                         </div>
-                        <div class="text-sm">price</div>
+                        <div class="text-sm"><?php _e('price','theme-text-domain'); ?></div>
                     </div>
                 </div>
             </div>
@@ -138,7 +138,7 @@ $inscriptionsData = $wpdb->get_row(" SELECT * FROM INSCRIPTIONS where NO_INSCRIP
                     echo $remarques->TEXTE;
                     ?></p>
 
-                    <h2 class="text-2xl pt-7">Addenda</h2>
+                    <h2 class="text-2xl pt-7"><?php _e('Addenda','theme-text-domain'); ?></h2>
                     <p class="text-sm pt-3">
                         <?php
                                  $results = $wpdb->get_results("SELECT * FROM ADDENDA WHERE NO_INSCRIPTION = '".get_the_content()."' and CODE_LANGUE='".$language."'", OBJECT );
@@ -148,17 +148,17 @@ $inscriptionsData = $wpdb->get_row(" SELECT * FROM INSCRIPTIONS where NO_INSCRIP
                     ?>
                     </p>
 
-                    <h2 class="text-2xl pt-7">Included in the sale</h2>
+                    <h2 class="text-2xl pt-7"><?php _e('Included in the sale','theme-text-domain'); ?></h2>
                     <p class="text-sm pt-3">
                         <?php echo $inscriptionsData->INCLUS_ANGLAIS.', '.$inscriptionsData->INCLUS_FRANCAIS;?></p>
 
-                    <h2 class="text-2xl pt-7">Room Details</h2>
+                    <h2 class="text-2xl pt-7"><?php _e('Room Details','theme-text-domain'); ?></h2>
                     <div class="grid grid-cols-5 pt-3">
-                        <div class="text-sm font-poppins font-bold py-1">ROOM(S)</div>
-                        <div class="text-sm font-poppins font-bold py-1">LEVEL</div>
-                        <div class="text-sm font-poppins font-bold py-1">DIMENSIONS</div>
-                        <div class="text-sm font-poppins font-bold py-1">TYPE OF FLOORING</div>
-                        <div class="text-sm font-poppins font-bold py-1">ADDITIONAL INFO.</div>
+                        <div class="text-sm font-poppins font-bold py-1"><?php _e('ROOM(S)','theme-text-domain'); ?></div>
+                        <div class="text-sm font-poppins font-bold py-1"><?php _e('LEVEL','theme-text-domain'); ?></div>
+                        <div class="text-sm font-poppins font-bold py-1"><?php _e('DIMENSIONS','theme-text-domain'); ?></div>
+                        <div class="text-sm font-poppins font-bold py-1"><?php _e('TYPE OF FLOORING','theme-text-domain'); ?></div>
+                        <div class="text-sm font-poppins font-bold py-1"><?php _e('ADDITIONAL INFO.','theme-text-domain'); ?></div>
 
                         <?php
                             $results = $wpdb->get_results("SELECT * FROM PIECES_UNITES WHERE NO_INSCRIPTION = '".get_the_content()."' ", OBJECT );
@@ -176,9 +176,9 @@ $inscriptionsData = $wpdb->get_row(" SELECT * FROM INSCRIPTIONS where NO_INSCRIP
                         ?>
                     </div>
 
-                    <h2 class="font-poppins text-2xl pt-7 pb-3">Assessment, taxes and other costs</h2>
+                    <h2 class="font-poppins text-2xl pt-7 pb-3"><?php _e('Assessment, taxes and other costs','theme-text-domain'); ?></h2>
                     <div class="flex gap-4 text-sm p-4 border-b border-gray-300 hover:bg-slate-100 hover:duration-100">
-                        <div class="font-bold">Property Type</div>
+                        <div class="font-bold"><?php _e('Property Type','theme-text-domain'); ?></div>
                         <div class="font-medium text-gray-600">
                             <?php
                             $GENRES_PROPRIETES = $wpdb->get_row("SELECT * FROM GENRES_PROPRIETES WHERE GENRE_PROPRIETE ='".$inscriptionsData->GENRE_PROPRIETE."'", OBJECT );
@@ -190,20 +190,20 @@ $inscriptionsData = $wpdb->get_row(" SELECT * FROM INSCRIPTIONS where NO_INSCRIP
                             ?></div>
                     </div>
                     <div class="flex gap-4 text-sm p-4 border-b border-gray-300 hover:bg-slate-100 hover:duration-100">
-                        <div class="font-bold">Living Area</div>
+                        <div class="font-bold"><?php _e('Living Area','theme-text-domain'); ?></div>
                         <div class="font-medium text-gray-600">
                             <?php
                             echo $inscriptionsData->SUPERFICIE_HABITABLE;
                             ?></div>
                     </div>
                     <div class="flex gap-4 text-sm p-4 border-b border-gray-300 hover:bg-slate-100 hover:duration-100">
-                        <div class="font-bold">Year of construction</div>
+                        <div class="font-bold"><?php _e('Year of construction','theme-text-domain'); ?></div>
                         <div class="font-medium text-gray-600">
                             <?php
                             echo $inscriptionsData->ANNEE_CONTRUCTION;?></div>
                     </div>
                     <div class="flex gap-4 text-sm p-4 border-b border-gray-300 hover:bg-slate-100 hover:duration-100">
-                        <div class="font-bold">Deed of sale Signature</div>
+                        <div class="font-bold"><?php _e('Deed of sale Signature','theme-text-domain'); ?></div>
                         <div class="font-medium text-gray-600">
                             <?php
 // ." ".$inscriptionsData->DELAI_OCCUPATION_ANGLAIS franse
@@ -233,7 +233,7 @@ $inscriptionsData = $wpdb->get_row(" SELECT * FROM INSCRIPTIONS where NO_INSCRIP
                     if($Proximity!==""){
                      ?>
                     <div class="flex gap-4 text-sm p-4 border-b border-gray-300 hover:bg-slate-100 hover:duration-100">
-                        <div class="font-bold">Proximity</div>
+                        <div class="font-bold"><?php _e('Proximity','theme-text-domain'); ?></div>
                         <div class="font-medium text-gray-600">
                             <?php echo $Proximity?></div>
                     </div>
@@ -242,7 +242,7 @@ $inscriptionsData = $wpdb->get_row(" SELECT * FROM INSCRIPTIONS where NO_INSCRIP
                      ?>
                 </div>
                 <div>
-                    <h3 class="text-xl pt-7 pb-4">Contact the listing broker(s)</h3>
+                    <h3 class="text-xl pt-7 pb-4"><?php _e('Contact the listing broker(s)','theme-text-domain'); ?></h3>
                     <div class="grid grid-cols-3 gap-2">
                         <?php
                             $MEMBRES = $wpdb->get_row("SELECT * FROM MEMBRES WHERE CODE ='".$inscriptionsData->COURTIER_INSCRIPTEUR_1."'", OBJECT );
@@ -319,25 +319,25 @@ $inscriptionsData = $wpdb->get_row(" SELECT * FROM INSCRIPTIONS where NO_INSCRIP
 
 
             <div class="max-w-7xl mx-auto my-10">
-                <h2 class="text-center font-poppins text-2xl pt-7 pb-3">CALCULATORS</h2>
+                <h2 class="text-center font-poppins text-2xl pt-7 pb-3"><?php _e('CALCULATORS','theme-text-domain'); ?></h2>
                 <div class="grid grid-cols-3 gap-4">
                   <div class="bg-slate-100 p-4 rounded-2xl">
-                    <h2 class="text-center text-xl pb-4">MONTHLY PAYMENT</h2>
+                    <h2 class="text-center text-xl pb-4"><?php _e('MONTHLY PAYMENT','theme-text-domain'); ?></h2>
                     <div class="grid grid-cols-2 gap-3">
                       <div class="flex items-center text-base">
-                        <div>Purchase price :</div>
+                        <div><?php _e('Purchase price :','theme-text-domain'); ?></div>
                       </div>
                       <div class="mt-2.5">
                         <input type="text" name="last-name" id="last-name" autocomplete="family-name" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-[#00AEC5] focus:ring-opacity-50 placeholder:text-gray-400 focus:outline-none sm:text-sm sm:leading-6">
                       </div>
                       <div class="flex items-center text-base">
-                        <div>Interest rate :</div>
+                        <div><?php _e('Interest rate :','theme-text-domain'); ?></div>
                       </div>
                       <div class="mt-2.5">
                         <input type="text" name="last-name" id="last-name" autocomplete="family-name" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-[#00AEC5] focus:ring-opacity-50 placeholder:text-gray-400 focus:outline-none sm:text-sm sm:leading-6">
                       </div>
                       <div class="flex items-center text-base">
-                        <div>Amortization:</div>
+                        <div><?php _e('Amortization :','theme-text-domain'); ?></div>
                       </div>
                       <div class="mt-2.5">
                         <select id="countries" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:focus:ring-blue-500 dark:focus:border-blue-500">
@@ -348,7 +348,7 @@ $inscriptionsData = $wpdb->get_row(" SELECT * FROM INSCRIPTIONS where NO_INSCRIP
                         </select>
                       </div>
                       <div class="flex items-center text-base">
-                        <div>Down payment:</div>
+                        <div><?php _e('Down payment :','theme-text-domain'); ?></div>
                       </div>
                       <div class="mt-2.5">
                           <select id="countries" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:focus:ring-blue-500 dark:focus:border-blue-500">
@@ -359,7 +359,7 @@ $inscriptionsData = $wpdb->get_row(" SELECT * FROM INSCRIPTIONS where NO_INSCRIP
                           </select>
                       </div>
                       <div class="flex items-center text-base">
-                        <div>Mortgage amount:</div>
+                        <div><?php _e('Mortgage amount :','theme-text-domain'); ?></div>
                       </div>
                       <div class="mt-2.5">
                         <input type="text" name="last-name" id="last-name" autocomplete="family-name" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-[#00AEC5] focus:ring-opacity-50 placeholder:text-gray-400 focus:outline-none sm:text-sm sm:leading-6">
@@ -371,10 +371,10 @@ $inscriptionsData = $wpdb->get_row(" SELECT * FROM INSCRIPTIONS where NO_INSCRIP
                     </div>
                   </div>
                   <div class="bg-gray-50 p-4 rounded-2xl">
-                    <h2 class="text-center text-xl pb-4">WELCOME TAX</h2>
+                    <h2 class="text-center text-xl pb-4"><?php _e('WELCOME TAX','theme-text-domain'); ?></h2>
                     <div class="grid grid-cols-2 gap-3">
                       <div class="flex items-center text-base">
-                        <div>Purchase price:</div>
+                        <div><?php _e('Purchase price :','theme-text-domain'); ?></div>
                       </div>
                       <div class="mt-2.5">
                         <input type="text" name="last-name" id="last-name" autocomplete="family-name" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-[#00AEC5] focus:ring-opacity-50 placeholder:text-gray-400 focus:outline-none sm:text-sm sm:leading-6">
@@ -386,16 +386,16 @@ $inscriptionsData = $wpdb->get_row(" SELECT * FROM INSCRIPTIONS where NO_INSCRIP
                     </div>
                   </div>
                   <div class="bg-slate-100 p-4 rounded-2xl">
-                    <h2 class="text-center text-xl pb-4">PURCHASING POWER</h2>
+                    <h2 class="text-center text-xl pb-4"><?php _e('PURCHASING POWER','theme-text-domain'); ?></h2>
                     <div class="grid grid-cols-2 gap-3">
                       <div class="flex items-center text-base">
-                        <div>Payment</div>
+                        <div><?php _e('Payment','theme-text-domain'); ?></div>
                       </div>
                       <div class="mt-2.5">
                         <input type="text" name="last-name" id="last-name" autocomplete="family-name" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-[#00AEC5] focus:ring-opacity-50 placeholder:text-gray-400 focus:outline-none sm:text-sm sm:leading-6">
                       </div>
                       <div class="flex items-center text-base">
-                        <div>Payment frequency</div>
+                        <div><?php _e('Payment frequency','theme-text-domain'); ?></div>
                       </div>
                       <div class="mt-2.5">
                           <select id="countries" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:focus:ring-blue-500 dark:focus:border-blue-500">
@@ -406,13 +406,13 @@ $inscriptionsData = $wpdb->get_row(" SELECT * FROM INSCRIPTIONS where NO_INSCRIP
                           </select>
                       </div>
                       <div class="flex items-center text-base">
-                        <div>Interest rate</div>
+                        <div><?php _e('Interest rate','theme-text-domain'); ?></div>
                       </div>
                       <div class="mt-2.5">
                         <input type="text" name="last-name" id="last-name" autocomplete="family-name" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-[#00AEC5] focus:ring-opacity-50 placeholder:text-gray-400 focus:outline-none sm:text-sm sm:leading-6">
                       </div>
                       <div class="flex items-center text-base">
-                        <div>Amortization period</div>
+                        <div><?php _e('Amortization period','theme-text-domain'); ?></div>
                       </div>
                       <div class="mt-2.5">
                         <select id="countries" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:focus:ring-blue-500 dark:focus:border-blue-500">
@@ -423,7 +423,7 @@ $inscriptionsData = $wpdb->get_row(" SELECT * FROM INSCRIPTIONS where NO_INSCRIP
                         </select>
                       </div>
                       <div class="flex items-center text-base">
-                        <div>Down payment</div>
+                        <div><?php _e('Down payment','theme-text-domain'); ?></div>
                       </div>
                       <div class="mt-2.5">
                         <input type="text" name="last-name" id="last-name" autocomplete="family-name" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-[#00AEC5] focus:ring-opacity-50 placeholder:text-gray-400 focus:outline-none sm:text-sm sm:leading-6">
@@ -463,7 +463,7 @@ if ($the_query->have_posts()) {
     ?>
         <div class="bg-slate-100">
             <div class="max-w-7xl mx-auto">
-                <h2 class="font-poppins text-5xl pt-20 pb-7">Properties in the Region</h2>
+                <h2 class="font-poppins text-5xl pt-20 pb-7"><?php _e('Properties in the Region','theme-text-domain'); ?></h2>
                 <div class="grid grid-cols-3 gap-x-4 gap-y-5 font-poppins">
                     <?php
                 while ($the_query->have_posts()) {
@@ -491,15 +491,15 @@ if ($the_query->have_posts()) {
                             <div class="flex gap-3">
                                 <div class="border-r my-4 pr-4 border-gray-300">
                                     <div>2 + 1</div>
-                                    <div>salles de bains</div>
+                                    <div><?php _e('Bedroom','theme-text-domain'); ?></div>
                                 </div>
                                 <div class="border-r my-4 pr-4 border-gray-300">
                                     <div>2 + 1</div>
-                                    <div>salles de bains</div>
+                                    <div><?php _e('Bathroom','theme-text-domain'); ?></div>
                                 </div>
                                 <div class="my-4 pr-4">
                                     <div>599 000.0 $</div>
-                                    <div>prix</div>
+                                    <div><?php _e('price','theme-text-domain'); ?></div>
                                 </div>
                             </div>
                         </a>
