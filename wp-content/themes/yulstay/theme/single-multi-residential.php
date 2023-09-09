@@ -44,7 +44,7 @@ $inscriptionsData = $wpdb->get_row(" SELECT * FROM INSCRIPTIONS where NO_INSCRIP
 }
 </style>
 
-<div class="h-screen w-screen pr-12 overflow-y-scroll scroll-style">
+<div class="h-screen w-screen pt-12 md:pt-0 md:pr-12 overflow-y-scroll md:scroll-style">
 
     <div class="">
         <!-- caro -->
@@ -102,8 +102,8 @@ $inscriptionsData = $wpdb->get_row(" SELECT * FROM INSCRIPTIONS where NO_INSCRIP
         </script>
 
         <!-- caro -->
-        <div class="max-w-7xl mx-auto">
-            <div class="flex justify-between pb-7 border-b border-gray-300">
+        <div class="max-w-7xl md:mx-auto px-3 md:px-0">
+            <div class="flex flex-col md:flex-row justify-between pb-7 border-b border-gray-300">
                 <div>
                     <p class="text-base font-poppins pb-2"><?php
                     $municipalite = $wpdb->get_row(" SELECT * FROM MUNICIPALITES where CODE = '".$inscriptionsData->MUN_CODE."'", OBJECT );
@@ -136,7 +136,7 @@ $inscriptionsData = $wpdb->get_row(" SELECT * FROM INSCRIPTIONS where NO_INSCRIP
             </div>
 
 
-            <div class="grid grid-cols-3 gap-7 font-poppins">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-7 font-poppins">
                 <div class="col-span-2">
                     <p class="text-sm pt-7"><?php
                     $remarques = $wpdb->get_row(" SELECT * FROM REMARQUES where NO_INSCRIPTION = '".$inscriptionsData->NO_INSCRIPTION."' and CODE_LANGUE='".$language."'", OBJECT );
@@ -157,8 +157,8 @@ $inscriptionsData = $wpdb->get_row(" SELECT * FROM INSCRIPTIONS where NO_INSCRIP
                     <p class="text-sm pt-3">
                         <?php echo $inscriptionsData->INCLUS_ANGLAIS.', '.$inscriptionsData->INCLUS_FRANCAIS;?></p>
 
-                    <h2 class="text-2xl pt-7"><?php _e('Room Details','theme-text-domain'); ?></h2>
-                    <div class="grid grid-cols-5 pt-3">
+                    <h2 class="text-2xl pt-7 hidden md:block"><?php _e('Room Details','theme-text-domain'); ?></h2>
+                    <div class="md:grid grid-cols-5 pt-3 overflow-x-auto hidden">
                         <div class="text-sm font-poppins font-bold py-1"><?php _e('ROOM(S)','theme-text-domain'); ?></div>
                         <div class="text-sm font-poppins font-bold py-1"><?php _e('LEVEL','theme-text-domain'); ?></div>
                         <div class="text-sm font-poppins font-bold py-1"><?php _e('DIMENSIONS','theme-text-domain'); ?></div>
@@ -318,9 +318,9 @@ $inscriptionsData = $wpdb->get_row(" SELECT * FROM INSCRIPTIONS where NO_INSCRIP
         </div>
 
 
-        <div class="max-w-7xl mx-auto my-10">
+        <div class="max-w-7xl mx-auto my-10 px-3 md:px-0">
                 <h2 class="text-center font-poppins text-2xl pt-7 pb-3"><?php _e('CALCULATORS','theme-text-domain'); ?></h2>
-                <div class="grid grid-cols-3 gap-4">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
                   <div class="bg-slate-100 p-4 rounded-2xl">
                     <h2 class="text-center text-xl pb-4"><?php _e('MONTHLY PAYMENT','theme-text-domain'); ?></h2>
                     <div class="grid grid-cols-2 gap-3">
@@ -464,7 +464,7 @@ if ($the_query->have_posts()) {
         <div class="bg-slate-100">
             <div class="max-w-7xl mx-auto">
                 <h2 class="font-poppins text-5xl pt-20 pb-7"><?php _e('Properties in the Region','theme-text-domain'); ?></h2>
-                <div class="grid grid-cols-3 gap-x-4 gap-y-5 font-poppins">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-x-4 gap-y-5 font-poppins px-3 md:px-0">
                     <?php
                 while ($the_query->have_posts()) {
                     $inscriptionsData = $wpdb->get_row(" SELECT * FROM INSCRIPTIONS where NO_INSCRIPTION = '".get_the_content()."'", OBJECT );
